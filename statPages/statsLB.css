@@ -1,0 +1,200 @@
+/*Navagation Bar*/
+#navBar {
+  margin-left: -10px;
+  margin-top: -15px;
+  width: 110%;
+  height: 60px;
+  background-color: #9a49aa;
+  position: fixed;
+  box-shadow: 0px 0px 0px 10px rgba(128, 60, 140, 1);
+  z-index: 5;
+}
+
+.navLink {
+  float: right;
+  font-size: 18px;
+  padding-right: 10px;
+  margin-top: 15px;
+  transition-duration: 0.2s;
+  text-decoration: none;
+  color: white;
+  font-family: Nunito;
+  font-weight: 600;
+}
+
+.navLink:hover {
+  font-size: 23px;
+}
+
+/*Main Section*/
+
+#bg {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  height: 1000%;
+  width: 200%;
+  background-size: 550px;
+  margin-left: -100px;
+  background-image: url("https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png");
+  opacity: 0.1;
+  transform: rotate(15deg);
+}
+body {
+  background-color: #0bc2cf;
+  overflow-x: hidden;
+}
+#main {
+  z-index: 2;
+  transform: rotate(0deg);
+}
+#mainHeader {
+  font-family: Titan One;
+  font-size: 60px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+/*Popular Leaderboards Section*/
+
+#statsBoards {
+  background-color: #40115f;
+  float: left;
+  width: 60%;
+  padding-left: 10px;
+  border-radius: 10px;
+  z-index: 3;
+}
+
+/*Yellow and Orange Bubbles*/
+
+.YO_Container {
+  background-color: #ef7426;
+  border-radius: 7px;
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 22%;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.2), inset 0 -4px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+}
+
+.YO_Text {
+  background: linear-gradient(#fcd843, #fcd843 50%, #feb31a 50.01%, #feb31a);
+  font-family: Titan One;
+  padding: 0 15px;
+  border-radius: 5px;
+  color: white;
+  align-items: center;
+  font-size: 26px;
+  text-shadow: -1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464,
+    2px 2px 0 #646464;
+  text-align: center;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ef7426;
+}
+
+/*Stat Boxes*/
+.statsBox {
+  background-color: #9a49aa;
+  border-radius: 7px;
+  width: 200px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 5px 5px 11px;
+  margin: 5px;
+  box-shadow: inset 0 -6px rgba(0, 0, 0, 0.2);
+}
+
+.statTitle {
+  font-family: Titan One;
+  color: white;
+  font-size: 20px;
+}
+
+.statImg {
+  width: 50px;
+  transform: translateY(-50%) rotate(-15deg);
+  position: absolute;
+  top: 65%;
+  left: -20px;
+}
+/*Info Section*/
+#info {
+  float: right;
+  background-color: #40115f;
+  width: 30%;
+  border-radius: 10px;
+  z-index: 3;
+}
+
+.RYO_Container {
+  background-color: #ef7426;
+  border-radius: 7px;
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 12%;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.2), inset 0 -4px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+}
+
+.RYO_Text {
+  background: linear-gradient(#fcd843, #fcd843 50%, #feb31a 50.01%, #feb31a);
+  font-family: Titan One;
+  padding: 0 15px;
+  border-radius: 5px;
+  color: white;
+  align-items: center;
+  font-size: 26px;
+  text-shadow: -1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464,
+    2px 2px 0 #646464;
+  text-align: center;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ef7426;
+}
+/*Submission*/
+#submission {
+  background-color: #40115f;
+
+  border-radius: 10px;
+  z-index: 3;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.SYO_Container {
+  background-color: #ef7426;
+  border-radius: 7px;
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 100px;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.2), inset 0 -4px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+}
+
+.SYO_Text {
+  background: linear-gradient(#fcd843, #fcd843 50%, #feb31a 50.01%, #feb31a);
+  font-family: Titan One;
+  padding: 0 15px;
+  border-radius: 5px;
+  color: white;
+  align-items: center;
+  font-size: 26px;
+  text-shadow: -1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464,
+    2px 2px 0 #646464;
+  text-align: center;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ef7426;
+}
