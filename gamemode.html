@@ -5,6 +5,7 @@
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
     <link rel='stylesheet' href='gamemode.css'>
+  
   </head>
   <body>
     <div id='navBar'>
@@ -12,9 +13,10 @@
       <a href='settings.html' class='navLink'> Settings </a>
       <a href='submissions.html' class='navLink'> Submissions </a>
       <a href='suggestions.html' class='navLink'> Suggestions </a>
-      <a href='gamemode.html' class='navLink'> Gamemodes </a>
+      <a href='gamemodes.html' class='navLink'> Gamemodes </a>
       <a href='index.html' class='navLink'> Home </a>
     </div>
+  
     <br>
     <br>
     <div id='bg'></div>
@@ -29,23 +31,24 @@
         <div>
           <table style='justify-content: space-evenly;'>
             <tr>
-              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Factory_Logo_Resized.png' alt='Factory Logo' class='imgLink'></td>
-              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663366470/Media/logos/Monster_Brawl_270x156_1.png' alt='Monster Brawl Logo' class='imgLink'></td>
-              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Fishing_Frenzy_Logo_Resized.png' alt='Fishing Frenzy Logo' class='imgLink'></td>
+              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Factory_Logo_Resized.png' alt='Factory Logo' class='imgLink' onclick='factoryPage()'></td>
+              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663366470/Media/logos/Monster_Brawl_270x156_1.png' alt='Monster Brawl Logo' class='imgLink' onclick='monsterPage()'></td>
+              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Fishing_Frenzy_Logo_Resized.png' alt='Fishing Frenzy Logo' class='imgLink' onclick='fishingPage()'></td>
             </tr>
             <tr>
-              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Tower_Defense_Logo_Resized.png' alt='Tower Defense Logo' class='imgLink'></td>
-              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1676079918/Media/logos/Tower_Defense_2_Logo_Resize.png' alt='Tower Defense 2 Logo' class='imgLink'></td>
-              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Cafe_Logo_Resized.png' alt='Cafe Logo' class='imgLink'></td>
+              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Tower_Defense_Logo_Resized.png' alt='Tower Defense Logo' class='imgLink' onclick='towerOnePage()'></td>
+              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1676079918/Media/logos/Tower_Defense_2_Logo_Resize.png' alt='Tower Defense 2 Logo' class='imgLink' onclick='towerTwoPage()'></td>
+              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Cafe_Logo_Resized.png' alt='Cafe Logo' class='imgLink' onclick='cafePage()'></td>
             </tr>
             <tr>
-              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212882/Media/logos/Crypto_Hack_Logo_Resized.png' alt='Crypto Hack Logo' class='imgLink'></td>
-              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Gold_Quest_Logo_Resized.png' alt='Gold Quest Logo' class='imgLink'></td>
-              <td><img src="https://i.ibb.co/BPWmCJN/Screenshot-2024-02-18-11-12-56-PM.png" alt="Screenshot-2024-02-18-11-12-56-PM" width='100%' class='imgLink'> </td>
+              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212882/Media/logos/Crypto_Hack_Logo_Resized.png' alt='Crypto Hack Logo' class='imgLink' onclick='cryptoPage()'></td>
+              <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Gold_Quest_Logo_Resized.png' alt='Gold Quest Logo' class='imgLink' onclick='goldPage()'></td>
+              <td><img src="https://i.ibb.co/BPWmCJN/Screenshot-2024-02-18-11-12-56-PM.png" alt="Screenshot-2024-02-18-11-12-56-PM" width='100%' class='imgLink' onclick='statsPage()'> </td>
             </tr>
           </table>
         </div>
       </div>
     </div>
+    <script src='gamemode.js'>
   </body>
 </html>
