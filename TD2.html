@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <title> Blooket Leaderboards </title>
+    <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
+    <link rel='stylesheet' href='TD2.css'>
+  </head>
+  <body>
+    <div id='navBar'>
+      <a href='https://discord.gg/5nYGQtqyBZ' class='navLink' style='padding-right: 160px;'> Discord </a>
+      <a href='settings.html' class='navLink'> Settings </a>
+      <a href='submissions.html' class='navLink'> Submissions </a>
+      <a href='suggestions.html' class='navLink'> Suggestions </a>
+      <a href='gamemode.html' class='navLink'> Gamemodes </a>
+      <a href='index.html' class='navLink'> Home </a>
+    </div>
+  
+    <br>
+    <br>
+    <div id='bg'>
+  
+    </div>
+    <div id='main'>
+      <h1 id='mainHeader'> Tower Defense 2 Leaderboards </h1>
+      <br>
+      <div id='statsBoards'>
+        <div class='YO_Container'>
+          <div class='YO_Text'> Leaderboards </div>
+        </div>
+        <br>
+        <br>
+        <table style='justify-content: space-evenly; display: flex;'>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="easySM()">
+                <div class='statTitle' style='font-size: 16px;'> (Easy) Sunny Meadows </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="easyLD()">
+                <div class='statTitle' style='font-size: 19px;'> (Easy) Lost Desert </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/Ycjvjh4/download-11.png' alt='Classic Image'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="easyAM()">
+                <div class='statTitle' style='font-size: 16px;'> (Easy) Abandoned Mine </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/Bs3CKCX/download-8.png' alt='Image of Red X'>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="easyC()">
+                <div class='statTitle' style='font-size: 22px;'> (Easy) Crossroads </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/RcXbqHS/download-12.png' alt='Checkmark Image'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="easyFF()">
+                <div class='statTitle' style='font-size: 16px;'> (Easy) Fractured Factory </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/dJQgM6Q/download-10.png' alt='BR Image'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="normalSM()">
+                <div class='statTitle' style='font-size: 17px;'> (Normal) Sunny Meadows </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/QmPmbtC/download-13.png' alt='Games Image'>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="normalLD()">
+                <div class='statTitle' style='font-size: 18px;'> (Normal) Lost Desert </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="normalAM()">
+                <div class='statTitle' style='font-size: 17px;'> (Normal) Abandoned Mine </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/m0bzdfj/download-9.png' alt='Factory Image'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="normalC()">
+                <div class='statTitle' style='font-size: 20px;'> (Normal) Crossroads </div>
+                <div class='statImg' style='transform: translateY(-50%)  rotate(-30deg);'>
+                  <img src='https://i.ibb.co/Yj04vs9/download-7.png' alt='Image of Red X'>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="normalFF()">
+                <div class='statTitle' style='font-size: 16px;'> (Normal) Fractured Factory </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="hardSM()">
+                <div class='statTitle' style='font-size: 18px;'> (Hard) Sunny Meadows </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/m0bzdfj/download-9.png' alt='Factory Image'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="hardLD()">
+                <div class='statTitle' style='font-size: 20px;'> (Hard) Lost Desert </div>
+                <div class='statImg' style='transform: translateY(-50%)  rotate(-30deg);'>
+                  <img src='https://i.ibb.co/Yj04vs9/download-7.png' alt='Image of Red X'>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="hardAM()">
+                <div class='statTitle' style='font-size: 19px;'> (Hard) Abandoned Mine </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="hardC()">
+                <div class='statTitle' style='font-size: 21px;'> (Hard) Crossroads </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/m0bzdfj/download-9.png' alt='Factory Image'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="hardFF()">
+                <div class='statTitle' style='font-size: 17px;'> (Hard) Fractured Factory </div>
+                <div class='statImg' style='transform: translateY(-50%)  rotate(-30deg);'>
+                  <img src='https://i.ibb.co/Yj04vs9/download-7.png' alt='Image of Red X'>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src='stats.js'></script>
+  </body>
+</html>
