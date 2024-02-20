@@ -17,7 +17,7 @@ function towerOnePage() {
 }
 
 function towerTwoPage() {
-  window.location.href = "towerTwo.html";
+  window.location.href = "TD2.html";
 }
 
 function cafePage() {
