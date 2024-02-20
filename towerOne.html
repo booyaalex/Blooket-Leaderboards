@@ -1,0 +1,249 @@
+<html>
+  <head>
+    <title> Blooket Leaderboards </title>
+    <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
+    <link rel='stylesheet' href='stats.css'>
+  </head>
+  <body>
+    <div id='navBar'>
+      <a href='https://discord.gg/5nYGQtqyBZ' class='navLink' style='padding-right: 160px;'> Discord </a>
+      <a href='settings.html' class='navLink'> Settings </a>
+      <a href='submissions.html' class='navLink'> Submissions </a>
+      <a href='suggestions.html' class='navLink'> Suggestions </a>
+      <a href='gamemode.html' class='navLink'> Gamemodes </a>
+      <a href='index.html' class='navLink'> Home </a>
+    </div>
+    <br>
+    <br>
+    <div id='bg'></div>
+    <div id='main'>
+      <h1 id='mainHeader'> Tower Defense Leaderboards </h1>
+      <br>
+      <div>
+      <!--Highest Table-->
+      <div id='statsBoards'>
+        <div class='YO_Container'>
+          <div class='YO_Text'> Highest Round </div>
+        </div>
+        <br>
+        <br>
+        <table style='justify-content: space-evenly; display: flex;'>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="winsPage()">
+                <div class='statTitle' style='font-size: 24px;'> Sunny Meadows </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="answersPage()">
+                <div class='statTitle'> Lost Desert </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/RcXbqHS/download-12.png' alt='Checkmark Image'>
+                </div>
+              </div>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="blooksPage()">
+                <div class='statTitle' style='font-size: 24px;'> Abandoned Mine </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      
+      <!--One Blook Table-->
+      <div id='roundsBoards'>
+        <div class='RYO_Container'>
+          <div class='RYO_Text'> One Blook </div>
+        </div>
+        <br>
+        <br>
+        <table style='justify-content: space-evenly; display: flex;'>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="winsPage()">
+                <div class='statTitle'> Chick </div>
+                <div class='statImg'>
+                  <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/farmAnimals/chick.svg' alt='Chick Blook'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="classicPage()">
+                <div class='statTitle'> Squirrel </div>
+                <div class='statImg'>
+                  <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/forestAnimals/squirrel.svg' alt='Squirrel Blook'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="answersPage()">
+                <div class='statTitle'> Owl </div>
+                <div class='statImg'>
+                  <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/forestAnimals/owl.svg' alt='Owl Blook'>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="brPage()">
+                <div class='statTitle'> Fish </div>
+                <div class='statImg'>
+                  <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/pets/goldfish.svg' alt='Fish Blook'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="answersPage()">
+                <div class='statTitle'> Elf </div>
+                <div class='statImg'>
+                  <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/medieval/elf.svg' alt='Elf Blook'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="answersPage()">
+                <div class='statTitle'> Pig </div>
+                <div class='statImg'>
+                  <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/farmAnimals/pig.svg' alt='Pig Blook'>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="blooksPage()">
+                <div class='statTitle'> Dragon </div>
+                <div class='statImg'>
+                  <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/medieval/dragon.svg' alt='Dragon Blook'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="factoryPage()">
+                <div class='statTitle'> Wizzard </div>
+                <div class='statImg'>
+                  <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/medieval/wizard.svg' alt='Wizzard Blook'>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class='statsBox' onclick="answersPage()">
+                <div class='statTitle'> Unicorn </div>
+                <div class='statImg'>
+                  <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/medieval/unicorn.svg' alt='Unicorn Blook'>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      </div>
+      <!------------------------->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div>
+        <!--Speedrun Table-->
+          
+        <div id='statsBoards'>
+          <div class='YO_Container'>
+            <div class='YO_Text'> Speedruns </div>
+          </div>
+          <br>
+          <br>
+          <table style='justify-content: space-evenly; display: flex;'>
+            <tr>
+              <td>
+                <div class='statsBox' onclick="winsPage()">
+                  <div class='statTitle' style='font-size: 24px;'> Sunny Meadows </div>
+                  <div class='statImg'>
+                    <img src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class='statsBox' onclick="answersPage()">
+                  <div class='statTitle'> Lost Desert </div>
+                  <div class='statImg'>
+                    <img src='https://i.ibb.co/RcXbqHS/download-12.png' alt='Checkmark Image'>
+                  </div>
+                </div>
+            </tr>
+            <tr>
+              <td>
+                <div class='statsBox' onclick="blooksPage()">
+                  <div class='statTitle' style='font-size: 24px;'> Abandoned Mine </div>
+                  <div class='statImg'>
+                    <img src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+            
+        <!--Extra Table-->
+        <div id='statsBoards' style='float:right;'>
+          <div class='RYO_Container'>
+            <div class='RYO_Text'> Extras </div>
+          </div>
+          <br>
+          <br>
+          <table style='justify-content: space-evenly; display: flex;'>
+            <tr>
+              <td>
+                <div class='statsBox' onclick="winsPage()">
+                  <div class='statTitle'> Most Damage </div>
+                  <div class='statImg'>
+                    <img src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class='statsBox' onclick="answersPage()">
+                  <div class='statTitle'> Total Damage </div>
+                  <div class='statImg'>
+                    <img src='https://i.ibb.co/3vgFqKp/download-14.png' alt='Damage Image'>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class='statsBox' onclick="classicPage()">
+                  <div class='statTitle'> Total Rounds </div>
+                  <div class='statImg'>
+                    <img src='https://i.ibb.co/Ycjvjh4/download-11.png' alt='Classic Image'>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src='stats.js'></script>
+  </body>
+</html>
