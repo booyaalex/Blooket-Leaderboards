@@ -40,6 +40,45 @@
   opacity: 0.1;
   transform: rotate(15deg);
 }
+
+#SMBG {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  height: 1000%;
+  width: 200%;
+  background-size: 550px;
+  margin-left: -100px;
+  background-image: url("https://i.ibb.co/Tqy7Nsx/Screenshot-2024-02-20-6-24-13-PM.png");
+  opacity: 0.1;
+}
+
+#LDBG {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  height: 1000%;
+  width: 200%;
+  background-size: 550px;
+  margin-left: -100px;
+  background-image: url("https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png");
+  opacity: 0.1;
+  transform: rotate(15deg);
+}
+
+#AMBG {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  height: 1000%;
+  width: 200%;
+  background-size: 550px;
+  margin-left: -100px;
+  background-image: url("https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png");
+  opacity: 0.1;
+  transform: rotate(15deg);
+}
+
 body {
   background-color: #0bc2cf;
   overflow-x: hidden;
