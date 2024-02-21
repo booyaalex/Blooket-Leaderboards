@@ -55,8 +55,8 @@
             <td>
               <div class='statsBox'>
                 <div class='statTitle' style='font-size: 24px;'>
-                  <input type='text' placeholder='type in blooket username here'>
-                  <input type="submit" value="Submit" onclick='HeHe()'>
+                  <input id='input' type='text' placeholder='type in blooket username here'>
+                  <input id='submit' type="submit" value="Submit" onclick='HeHe()'>
                 </div>
               </div>
             </td>
@@ -67,6 +67,7 @@
     <script>
       function HeHe() {
         alert("You thought you could escape the discord. Nice try! >:P");
+        document.getElementById("mainHeader").innerHTML = "You Can't Escape!";
       }
     </script>
   </body>
