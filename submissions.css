@@ -146,6 +146,28 @@ body {
 /*Input*/
 
 #input {
+  width: 95%;
   background: linear-gradient(#fcd843, #fcd843 50%, #feb31a 50.01%, #feb31a);
   border-radius: 5px;
+  border-color: #ef7426;
   box-shadow: 0 4px rgba(0, 0, 0, 0.2), inset 0 -4px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 26px;
+  font-family: Titan One;
+  font-weight: 650;
+  text-shadow: -1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464,
+    2px 2px 0 #646464;
+  margin-bottom: 5px;
+}
+
+#submit {
+  background: linear-gradient(#fcd843, #fcd843 50%, #feb31a 50.01%, #feb31a);
+  border-radius: 5px;
+  border-color: #ef7426;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.2), inset 0 -4px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  font-family: Nunito;
+  color: white;
+  font-weight: 750;
+  text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.3);
+}
