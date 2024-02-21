@@ -12,15 +12,15 @@ function snowHit() {
 }
 
 //Section II
-function snow() {
+function clock() {
   window.location.href = "MB/clock_LB";
 }
 
-function snowItem() {
+function clockItem() {
   window.location.href = "MB/clockItem_LB";
 }
 
-function snowHit() {
+function clockHit() {
   window.location.href = "MB/clockHit_LB";
 }
 
