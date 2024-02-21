@@ -35,3 +35,15 @@ function goldPage() {
 function statsPage() {
   window.location.href = "stats.html";
 }
+
+function kingdomPage() {
+  window.location.href = "kingdom.html";
+}
+
+function TODPage() {
+  window.location.href = "TOD.html";
+}
+
+function dinoPage() {
+  window.location.href = "dino.html";
+}
