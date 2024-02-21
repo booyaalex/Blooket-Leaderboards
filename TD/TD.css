@@ -43,40 +43,29 @@
 
 #SMBG {
   position: absolute;
-  top: -100%;
-  left: -100%;
   height: 1000%;
   width: 200%;
   background-size: 550px;
   margin-left: -100px;
   background-image: url("https://i.ibb.co/Tqy7Nsx/Screenshot-2024-02-20-6-24-13-PM.png");
-  opacity: 0.1;
 }
 
 #LDBG {
   position: absolute;
-  top: -100%;
-  left: -100%;
   height: 1000%;
   width: 200%;
   background-size: 550px;
   margin-left: -100px;
-  background-image: url("https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png");
-  opacity: 0.1;
-  transform: rotate(15deg);
+  background-image: url("https://i.ibb.co/cCbfVCg/LDBG.png");
 }
 
 #AMBG {
   position: absolute;
-  top: -100%;
-  left: -100%;
   height: 1000%;
   width: 200%;
   background-size: 550px;
   margin-left: -100px;
-  background-image: url("https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png");
-  opacity: 0.1;
-  transform: rotate(15deg);
+  background-image: url("https://i.ibb.co/Lk3Xjsn/AMBG.png");
 }
 
 body {
@@ -105,6 +94,8 @@ body {
   width: 75%;
   border-radius: 10px;
   z-index: 3;
+  display: flex;
+  justify-content: center;
 }
 
 /*Yellow and Orange Bubbles*/
@@ -114,8 +105,7 @@ body {
   border-radius: 7px;
   box-sizing: border-box;
   position: absolute;
-  margin-top: -20px;
-  margin-left: 31%;
+  margin-top: -30px;
   box-shadow: 0 4px rgba(0, 0, 0, 0.2), inset 0 -4px rgba(0, 0, 0, 0.2);
   z-index: 4;
 }
@@ -158,11 +148,11 @@ body {
 }
 
 .statImg {
+  width: 75;
   top: 65%;
   margin-right: auto;
   margin-left: auto;
   display: flex;
-  width: 75px;
 }
 /*Info Section*/
 #info {
@@ -172,6 +162,8 @@ body {
   border-radius: 10px;
   z-index: 3;
   margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .RYO_Container {
@@ -179,8 +171,7 @@ body {
   border-radius: 7px;
   box-sizing: border-box;
   position: absolute;
-  margin-top: -20px;
-  margin-left: 12%;
+  margin-top: -30px;
   box-shadow: 0 4px rgba(0, 0, 0, 0.2), inset 0 -4px rgba(0, 0, 0, 0.2);
   z-index: 4;
 }
@@ -210,6 +201,8 @@ body {
   width: 35%;
   text-align: center;
   margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .SYO_Container {
@@ -217,8 +210,7 @@ body {
   border-radius: 7px;
   box-sizing: border-box;
   position: absolute;
-  margin-top: -20px;
-  margin-left: 100px;
+  margin-top: -30px;
   box-shadow: 0 4px rgba(0, 0, 0, 0.2), inset 0 -4px rgba(0, 0, 0, 0.2);
   z-index: 4;
 }
