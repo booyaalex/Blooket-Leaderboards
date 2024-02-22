@@ -36,7 +36,7 @@
   background-image: url("https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png");
   opacity: 0.1;
   transform: rotate(15deg);
-  z-index: -1;
+  z-index: 0;
 }
 body {
   background-color: #0bc2cf;
