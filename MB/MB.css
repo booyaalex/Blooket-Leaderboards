@@ -35,6 +35,7 @@
   background-size: 550px;
   background-image: url("https://i.ibb.co/TtRDdJt/Screenshot-2024-02-21-4-38-11-PM.png");
   z-index: -1;
+  margin-left: -10px;
 }
 
 #clockBG {
@@ -44,6 +45,7 @@
   background-size: 550px;
   background-image: url("https://i.ibb.co/Zg6dNGK/Clock.png");
   z-index: -1;
+  margin-left: -10px;
 }
 
 body {
