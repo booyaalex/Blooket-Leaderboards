@@ -40,6 +40,7 @@
 }
 body {
   background-color: #0bc2cf;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 #main {
