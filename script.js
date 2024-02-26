@@ -4,3 +4,6 @@ function coc2023() {
 function pop() {
   window.location.href = "Event/pop.html";
 }
+function lunch() {
+  window.location.href = "Event/lunch.html";
+}
