@@ -7,3 +7,6 @@ function pop() {
 function lunch() {
   window.location.href = "Event/lunch.html";
 }
+function coc2020() {
+  window.location.href = "Event/coc2020.html";
+}
