@@ -35,6 +35,7 @@
   background-size: 550px;
   background-image: url("https://i.ibb.co/0tB9X7D/Screenshot-2024-02-28-10-25-24-AM.png");
   z-index: -1;
+  margin-left: -10px;
 }
 
 body {
