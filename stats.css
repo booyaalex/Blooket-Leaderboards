@@ -61,7 +61,8 @@ body {
 
 #statsBoards {
   background-color: #40115f;
-  float: left;
+  margin-left: left;
+  margin-right: right;
   width: 60%;
   padding-left: 10px;
   border-radius: 10px;
