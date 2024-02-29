@@ -12,4 +12,5 @@ console.log(screenMode);
 //Side Navagation
 function openUp() {
   document.getElementById("sidenav").style.width = "30%";
+  document.getElementById("sidenav").style.border = "solid 10px";
 }
