@@ -4,7 +4,7 @@ let screenMode = 0;
 
 if (width <= 644) {
   let screenMode = 1;
-  document.getElementById("navBar").innerHTML = "<img src='https://toppng.com/uploads/preview/menu-icon-png-3-lines-11552739317jfnbfzzmez.png' alt='Open Side Nav' width='25px' style='float: left; padding-left: 25px; padding-top: 25px;'>";
+  document.getElementById("navBar").innerHTML = "<img src='https://toppng.com/uploads/preview/menu-icon-png-3-lines-11552739317jfnbfzzmez.png' alt='Open Side Nav' width='25px' style='float: left; padding-left: 25px; onclick='openUp()' padding-top: 25px;'>";
 }
 console.log(width);
 console.log(screenMode);
