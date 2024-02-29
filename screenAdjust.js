@@ -10,6 +10,6 @@ console.log(width);
 console.log(screenMode);
 
 //Side Navagation
-function open() {
+function openUp() {
   document.getElementById("sidenav").style.width = "30%";
 }
