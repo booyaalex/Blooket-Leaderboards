@@ -1,12 +1,12 @@
 let width = screen.availWidth;
 let screenMode = 0;
-let bgWidth = width + 400;
+let bgHeight = screen.availHeight + 400;
 //0 Is Comp; 1 is Phone; 2 is Big Comp
 
 if (width <= 644) {
   let screenMode = 1;
   document.getElementById("navBar").innerHTML = "<img src='https://lh3.googleusercontent.com/proxy/nuaDFn2Ojkdp06IyDsndr3sHAzouIin_G7JDnjpwyJ96pnGhS3v_uP-swmbhU4TNZC5pyGYWOrzOsxhVO2beaqPhfsRtPAsK9no' alt='Open Side Nav' width='25px' style='float: left; padding-left: 25px; padding-top: 20px;' onclick='openUp()'>";
-  document.getElementById("bg").style.maxHeight = bgWidth + "%";
+  document.getElementById("bg").style.maxHeight = bgHeight + "%";
 }
 console.log(width);
 console.log(screenMode);
