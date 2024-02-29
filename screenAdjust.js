@@ -8,3 +8,8 @@ if (width <= 644) {
 }
 console.log(width);
 console.log(screenMode);
+
+//Side Navagation
+function open() {
+  document.getElementById("sidenav").style.width = "30%";
+}
