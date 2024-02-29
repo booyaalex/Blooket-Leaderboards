@@ -9,6 +9,9 @@
   width: 0%;
   height: 2000px;
   background-color: #9a49aa;
+  border: solid 4px;
+  border-color: rgba(128, 60, 140, 1);
   /*Transition*/
   transition-duration: 0.5s;
+  
 }
