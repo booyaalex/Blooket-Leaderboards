@@ -9,8 +9,7 @@
   width: 0%;
   height: 2000px;
   background-color: #9a49aa;
-  border: solid 0px;
-  border-color: rgba(128, 60, 140, 1);
+  box-shadow: inset -10px 0 rgba(0,0,0,.2);
   /*Transition*/
   transition-duration: 0.5s;
   
