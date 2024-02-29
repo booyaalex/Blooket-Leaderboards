@@ -1,1 +1,10 @@
-
+#sidenav {
+  position: absolute;
+  z-index: 10;
+  width: 30%;
+  height: 2000px;
+  background-color: black;
+  float: left;
+  margin-left: -10px;
+  margin-top: -10px;
+}
