@@ -12,4 +12,5 @@ console.log(screenMode);
 //Side Navagation
 function openUp() {
   document.getElementById("sidenav").style.width = "30%";
+  document.body.style.backgroundColor = "rgba(11, 194, 207, 0.4)";
 }
