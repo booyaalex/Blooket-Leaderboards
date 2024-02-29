@@ -13,4 +13,9 @@ console.log(screenMode);
 function openUp() {
   document.getElementById("sidenav").style.width = "30%";
   document.body.style.backgroundColor = "rgb(9, 86, 92)";
+  
+  const link = document.querySelectorAll('.sideLink');
+  link.forEach(sideLink => {
+  sideLink.style.fontSize = '30px';
+});
 }
