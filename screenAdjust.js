@@ -22,7 +22,7 @@ function openUp() {
 
 function closeUp() {
   document.getElementById("sidenav").style.width = "0%";
-  document.body.style.backgroundColor = "rgb(9, 86, 92)";
+  document.body.style.backgroundColor = "rgb(11, 194, 207)";
   
   const link = document.querySelectorAll('.sideLink');
   link.forEach(sideLink => {
