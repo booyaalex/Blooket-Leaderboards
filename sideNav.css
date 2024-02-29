@@ -25,6 +25,11 @@
   color: white;
 }
 
+#closeBtn {
+  /*Position*/
+  float: right;
+}
+
 body {
   /*Transition*/
   transition-duration: 0.5s;
