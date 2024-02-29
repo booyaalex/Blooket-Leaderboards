@@ -1,10 +1,14 @@
 #sidenav {
+/*Position*/
   position: absolute;
   z-index: 10;
-  width: 0%;
-  height: 2000px;
-  background-color: black;
   float: left;
   margin-left: -10px;
   margin-top: -10px;
+  /*Looks*/
+  width: 0%;
+  height: 2000px;
+  background-color: black;
+  /*Transition*/
+  transition-duration: 0.5s;
 }
