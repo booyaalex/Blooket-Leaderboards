@@ -14,3 +14,8 @@
   transition-duration: 0.5s;
   
 }
+
+body {
+  /*Transition*/
+  transition-duration: 0.5s;
+}
