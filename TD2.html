@@ -5,8 +5,26 @@
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
     <link rel='stylesheet' href='TD2.css'>
+    <link rel='stylesheet' href='sideNav.css'>
   </head>
   <body>
+<!--Side Navagation Code-->
+    <div id='sidenav'>
+      <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
+      <a href='index.html' class='sideLink'> Home </a>
+      <br>
+      <a href='gamemode.html' class='sideLink'> Gamemodes </a>
+      <br>
+      <a href='suggestions.html' class='sideLink'> Suggestions </a>
+      <br>
+      <a href='submissions.html' class='sideLink'> Submissions </a>
+      <br>
+      <a href='settings.html' class='sideLink'> Settings </a>
+      <br>
+    <a href='https://discord.gg/5nYGQtqyBZ' class='sideLink' style='padding-right: 160px;'> Discord </a>
+  </div>
+
+  <!--Everything Else-->
     <div id='navBar'>
       <a href='https://discord.gg/5nYGQtqyBZ' class='navLink' style='padding-right: 160px;'> Discord </a>
       <a href='settings.html' class='navLink'> Settings </a>
@@ -15,12 +33,9 @@
       <a href='gamemode.html' class='navLink'> Gamemodes </a>
       <a href='index.html' class='navLink'> Home </a>
     </div>
-  
     <br>
     <br>
-    <div id='bg'>
-  
-    </div>
+    <div id='bg'> </div>
     <div id='main'>
       <h1 id='mainHeader'> Tower Defense 2 Leaderboards </h1>
       <br>
@@ -165,5 +180,6 @@
       </div>
     </div>
     <script src='TD2.js'></script>
+    <script src='screenAdjust.js'></script>
   </body>
 </html>
