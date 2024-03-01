@@ -18,7 +18,7 @@ function openUp() {
   
   const link = document.querySelectorAll('.sideLink');
   link.forEach(sideLink => {
-  sideLink.style.fontSize = '30px';
+  sideLink.style.fontSize = '45px';
 });
 }
 
