@@ -1,136 +1,155 @@
 <html>
-
-<head>
-  <title> Blooket Leaderboards </title>
-  <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-  <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
-  <link rel='stylesheet' href='cafe.css'>
-</head>
-
-<body>
-  <div id='navBar'>
-    <a href='https://discord.gg/5nYGQtqyBZ' class='navLink' style='padding-right: 160px;'> Discord </a>
-    <a href='settings.html' class='navLink'> Settings </a>
-    <a href='submissions.html' class='navLink'> Submissions </a>
-    <a href='suggestions.html' class='navLink'> Suggestions </a>
-    <a href='gamemode.html' class='navLink'> Gamemodes </a>
-    <a href='index.html' class='navLink'> Home </a>
-  </div>
-  <br>
-  <br>
-  <div id='bg'></div>
-  <div id='main'>
-    <h1 id='mainHeader'> Cafe Leaderboards </h1>
+  <head>
+    <title> Blooket Leaderboards </title>
+    <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
+    <link rel='stylesheet' href='cafe.css'>
+    <link rel='stylesheet' href='https://booyaalex.github.io/Blooket-Leaderboards/sideNav.css'>
+    <link rel='stylesheet' href='https://booyaalex.github.io/Blooket-Leaderboards/bgStyle.css'>
+  </head>
+  <body>
+    <!--Side Navagation Code-->
+      <div id='sidenav'>
+        <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
+        <a href='index.html' class='sideLink'> Home </a>
+        <br>
+        <a href='gamemode.html' class='sideLink'> Gamemodes </a>
+        <br>
+        <a href='suggestions.html' class='sideLink'> Suggestions </a>
+        <br>
+        <a href='submissions.html' class='sideLink'> Submissions </a>
+        <br>
+        <a href='settings.html' class='sideLink'> Settings </a>
+        <br>
+      <a href='https://discord.gg/5nYGQtqyBZ' class='sideLink' style='padding-right: 160px;'> Discord </a>
+    </div>
+  
+      <!--Everything Else-->
+    <div id='navBar'>
+      <a href='https://discord.gg/5nYGQtqyBZ' class='navLink' style='padding-right: 160px;'> Discord </a>
+      <a href='settings.html' class='navLink'> Settings </a>
+      <a href='submissions.html' class='navLink'> Submissions </a>
+      <a href='suggestions.html' class='navLink'> Suggestions </a>
+      <a href='gamemode.html' class='navLink'> Gamemodes </a>
+      <a href='index.html' class='navLink'> Home </a>
+    </div>
     <br>
-    <div>
-      <!--Highest Table-->
-      <div id='statsBoards'>
-        <div class='YO_Container'>
-          <div class='YO_Text'> Highscores </div>
+    <br>
+    <div id='bgContainer'>
+      <div id='bg'></div>
+    </div>
+    <div id='main'>
+      <h1 id='mainHeader'> Cafe Leaderboards </h1>
+      <br>
+      <div>
+        <!--Highest Table-->
+        <div id='statsBoards'>
+          <div class='YO_Container'>
+            <div class='YO_Text'> Highscores </div>
+          </div>
+          <br>
+          <br>
+          <table style='justify-content: space-evenly; display: flex;'>
+            <tr>
+              <td>
+                <div class='statsBox' onclick="cafeDay()">
+                  <div class='statTitle' style='font-size: 24px;'> Highest Cafe Day </div>
+                  <div class='statImg'>
+                    <img src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class='statsBox' onclick="totalCash()">
+                  <div class='statTitle'> Total Cafe Cash </div>
+                  <div class='statImg'>
+                    <img src='https://i.ibb.co/RcXbqHS/download-12.png' alt='Checkmark Image'>
+                  </div>
+                </div>
+            </tr>
+            <tr>
+              <td>
+                <div class='statsBox' onclick="totalFood()">
+                  <div class='statTitle' style='font-size: 24px;'> Total Food Served </div>
+                  <div class='statImg'>
+                    <img src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
         </div>
-        <br>
-        <br>
-        <table style='justify-content: space-evenly; display: flex;'>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="cafeDay()">
-                <div class='statTitle' style='font-size: 24px;'> Highest Cafe Day </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
+  
+        <!--One Blook Table-->
+        <div id='roundsBoards'>
+          <div class='RYO_Container'>
+            <div class='RYO_Text'> Speedruns </div>
+          </div>
+          <br>
+          <br>
+          <table style='justify-content: space-evenly; display: flex;'>
+            <tr>
+              <td>
+                <div class='statsBox' onclick="toast99()">
+                  <div class='statTitle'> 99 Toast </div>
+                  <div class='statImg'>
+                    <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/breakfast/toast.svg' alt='Toast Blook'>
+                  </div>
                 </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="totalCash()">
-                <div class='statTitle'> Total Cafe Cash </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/RcXbqHS/download-12.png' alt='Checkmark Image'>
+              </td>
+              <td>
+                <div class='statsBox' onclick="maxUpgrade()">
+                  <div class='statTitle'> Max Upgrades </div>
+                  <div class='statImg'>
+                    <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/breakfast/milk.svg' alt='Milk Blook'>
+                  </div>
                 </div>
-              </div>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="totalFood()">
-                <div class='statTitle' style='font-size: 24px;'> Total Food Served </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class='statsBox' onclick="day10()">
+                  <div class='statTitle'> Day 10 </div>
+                  <div class='statImg'>
+                    <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/breakfast/breakfastCombo.svg' alt='Breakfast Combo Blook'>
+                  </div>
                 </div>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-
-      <!--One Blook Table-->
-      <div id='roundsBoards'>
-        <div class='RYO_Container'>
-          <div class='RYO_Text'> Speedruns </div>
+              </td>
+              <td>
+                <div class='statsBox' onclick="day50()">
+                  <div class='statTitle'> Day 50 </div>
+                  <div class='statImg'>
+                    <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/breakfast/waffle.svg' alt='Waffle Blook'>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class='statsBox' onclick="allFood()">
+                  <div class='statTitle'> All Food </div>
+                  <div class='statImg'>
+                    <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/breakfast/frenchToast.svg' alt='French Toast Blook'>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class='statsBox' onclick="maxFood()">
+                  <div class='statTitle'> Max Foods </div>
+                  <div class='statImg'>
+                    <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/foods/pizza.svg' alt='Pizza Blook'>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
         </div>
-        <br>
-        <br>
-        <table style='justify-content: space-evenly; display: flex;'>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="toast99()">
-                <div class='statTitle'> 99 Toast </div>
-                <div class='statImg'>
-                  <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/breakfast/toast.svg' alt='Toast Blook'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="maxUpgrade()">
-                <div class='statTitle'> Max Upgrades </div>
-                <div class='statImg'>
-                  <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/breakfast/milk.svg' alt='Milk Blook'>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="day10()">
-                <div class='statTitle'> Day 10 </div>
-                <div class='statImg'>
-                  <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/breakfast/breakfastCombo.svg' alt='Breakfast Combo Blook'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="day50()">
-                <div class='statTitle'> Day 50 </div>
-                <div class='statImg'>
-                  <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/breakfast/waffle.svg' alt='Waffle Blook'>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="allFood()">
-                <div class='statTitle'> All Food </div>
-                <div class='statImg'>
-                  <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/breakfast/frenchToast.svg' alt='French Toast Blook'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="maxFood()">
-                <div class='statTitle'> Max Foods </div>
-                <div class='statImg'>
-                  <img src='https://blooket.s3.us-east-2.amazonaws.com/blooks/foods/pizza.svg' alt='Pizza Blook'>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
       </div>
     </div>
-  </div>
-  <script src='cafe.js'></script>
-</body>
-
+    <script src='cafe.js'></script>
+    <script src='https://booyaalex.github.io/Blooket-Leaderboards/screenAdjust.js'></script>
+  </body>
 </html>
