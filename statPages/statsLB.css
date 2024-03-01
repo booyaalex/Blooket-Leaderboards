@@ -30,13 +30,12 @@
 
 body {
   background-color: #0bc2cf;
-  overflow-y: hidden;
   overflow-x: hidden;
 }
 #main {
   z-index: 2;
   transform: rotate(0deg);
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 #mainHeader {
