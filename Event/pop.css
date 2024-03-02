@@ -151,25 +151,42 @@ body {
 
 .box {
   background-color: #4a363a;
-  border: 3px solid #988672;
+  border: 3.5px solid #988672;
   margin-left: auto;
   width: 70%;
   margin-right: auto;
+  cursor: pointer;
 }
 .boxText {
   color: #f8d474;
   font-family: Pixellari;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
+  margin: 10px;
 }
 .boxImg {
   width: 50px;
   height: 50px;
+  border: 3.5px solid #988672;
+  margin: 5px;
 }
 .boxTextGold {
   color: #f8d474;
   font-family: Pixellari;
-  font-size: 30px;
+  font-size: 23px;
   font-weight: bold;
-  float: right;
+  margin: 10px;
+}
+
+.spacingBoxLeft {
+  width: 45%;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.spacingBoxRight {
+  width: 54%;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
 }
