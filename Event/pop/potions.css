@@ -1,0 +1,140 @@
+/*Navagation Bar*/
+#navBar {
+  margin-left: -10px;
+  margin-top: -15px;
+  width: 110%;
+  height: 60px;
+  background-color: transparent;
+  position: fixed;
+  z-index: 5;
+}
+
+.navLink {
+  /*Position*/
+  float: right;
+  margin-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 5px;
+  /*Looks*/
+  background-color: #4a363a;
+  font-size: 30px;
+  text-decoration: none;
+  color: #f8d474;
+  font-family: Nunito;
+  font-weight: 600;
+  border: 3px solid #988672;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+  /*Transition*/
+  transition-duration: 0.2s;
+}
+
+.navLink:hover {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+/*Main Section*/
+
+body {
+  overflow-x: hidden;
+  background: url("https://gooseterv.github.io/pop/images/background-left.png")
+      left repeat-y,
+    url("https://gooseterv.github.io/pop/images/background-right.png") right
+      repeat-y,
+    #523b40;
+  
+  overflow-y: visible;
+}
+#main {
+  z-index: 2;
+  transform: rotate(0deg);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#mainHeader {
+  font-family: Titan One;
+  font-size: 60px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.box {
+  background-color: #4a363a;
+  border: 3.5px solid #988672;
+  margin-left: auto;
+  width: 30%;
+  margin-right: auto;
+  cursor: pointer;
+}
+.boxText {
+  color: #f8d474;
+  font-family: Pixellari;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 10px;
+}
+.boxImg {
+  width: 50px;
+  height: 50px;
+  border: 3.5px solid #988672;
+  margin: 5px;
+}
+.boxTextGold {
+  color: #f8d474;
+  font-family: Pixellari;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.spacingBoxLeft {
+  width: 70%;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.spacingBoxRight {
+  width: 29%;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#popUp {
+  /*Position*/
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  margin-left: -15%;
+  margin-top: -25px;
+  /*Looks*/
+  background-color: #4a363a;
+  border: 3.5px solid #988672;
+  visibility: hidden;
+  width: 30%;
+  height: 150px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+#ingList {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ingrImg {
+  width: 40px;
+  height: 40px;
+  background-color: #4a363a;
+  border: 3.5px solid #988672;
+  margin: 5px;
+  z-index: 6;
+}
