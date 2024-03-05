@@ -39,12 +39,12 @@
 
 body {
   overflow-x: hidden;
-  background: url("https://gooseterv.github.io/pop/images/background-left.png")
-      left repeat-y,
-    url("https://gooseterv.github.io/pop/images/background-right.png") right
-      repeat-y,
-    #523b40;
-  
+  background: repeat-y;
+  background-image: url("https://i.ibb.co/6JG7Syz/Screenshot-2024-03-04-7-58-19-PM.png");
+  background-color: rgba(255,255,255,0.6);
+  opacity: 1;
+  background-blend-mode: darken;
+  background-size: 100%;
   overflow-y: visible;
 }
 #main {
@@ -52,6 +52,8 @@ body {
   transform: rotate(0deg);
   overflow-y: scroll;
   overflow-x: hidden;
+  opacity: 1;
+  
 }
 #mainHeader {
   font-family: Titan One;
@@ -123,6 +125,7 @@ body {
   height: 150px;
   z-index: 5;
   cursor: pointer;
+  opacity: 1;
 }
 
 #ingList {
