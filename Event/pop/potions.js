@@ -537,6 +537,10 @@ function closeUp() {
   document.body.style.overflowY = "visible";
   //Visibility
   document.getElementById('popUp').style.visibility = "hidden";
+  //Shading
+  document.body.style.backgroundColor = "rgba(255,255,255,0.6)";
+    document.body.style.opacity = "1";
+    document.getElementById('main').style.opacity = "1";
   }
 }
 
@@ -560,6 +564,10 @@ function showPopUp() {
    document.getElementById('goldCount').innerHTML = gold;
    document.getElementById('potionImg').src = img;
     popUp = 1;
+    
+    //Shading
+    document.body.style.backgroundColor = "rgba(0,0,0, 0.6)";
+    document.body.style.opacity = "0.9";
+    document.getElementById('main').style.opacity = "0.7";
   }
 }
-
