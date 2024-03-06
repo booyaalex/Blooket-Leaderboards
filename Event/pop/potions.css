@@ -141,3 +141,13 @@ body {
   margin: 5px;
   z-index: 6;
 }
+#ingName {
+  display: flex;
+  justify-content: space-evenly;
+}
+.ingrText {
+  font-size: 15px;
+  font-family: Pixellari;
+  font-weight: bold;
+  color: #f8d474;
+}
