@@ -5,6 +5,7 @@ var number = "";
 var ingredients = "";
 var gold = "";
 var ingImg = "";
+var ingText = "";
 var img = "";
 let popUp = 0;
 
@@ -549,7 +550,7 @@ function showPopUp() {
     //Stop Scrolling
     document.body.style.overflowY = "hidden";
     //Clear Previous PopUp
-    document.getElementById('popUp').innerHTML = "<div class='spacingBoxLeft'><span></span><img id='potionImg' class='boxImg' src='' alt='Selected Potion'><span class='boxText' id='potionName'>  </span></div><div class='spacingBoxRight'><span class='boxTextGold' id='goldCount'>  </span><img src='https://i.ibb.co/MfTLP2t/gold.png' alt='goldIcon' width='25px' height='25px'></div><div id='ingList'></div>";
+    document.getElementById('popUp').innerHTML = "<div class='spacingBoxLeft'><span></span><img id='potionImg' class='boxImg' src='' alt='Selected Potion'><span class='boxText' id='potionName'>  </span></div><div class='spacingBoxRight'><span class='boxTextGold' id='goldCount'>  </span><img src='https://i.ibb.co/MfTLP2t/gold.png' alt='goldIcon' width='25px' height='25px'></div><div id='ingList'></div><div id='ingName'></div>";
    //Visibility
    document.getElementById('popUp').style.visibility = "visible";
    //Ingridients
@@ -559,10 +560,17 @@ function showPopUp() {
      ingImg.className = "ingrImg";
      document.getElementById('ingList').appendChild(ingImg);
    }
+   //Ing Names 
+    for (let b = 0; b < ingredients.length; b++) {
+      ingText = document.createElement("p");
+      ingText.innerHTML = ingredients[b];
+      ingText.className = "ingrText";
+      document.getElementById('ingName').appendChild(ingText);
+   }
    //Other Stuff
-   document.getElementById('potionName').innerHTML = potion;
-   document.getElementById('goldCount').innerHTML = gold;
-   document.getElementById('potionImg').src = img;
+    document.getElementById('potionName').innerHTML = potion;
+    document.getElementById('goldCount').innerHTML = gold;
+    document.getElementById('potionImg').src = img;
     popUp = 1;
     
     //Shading
