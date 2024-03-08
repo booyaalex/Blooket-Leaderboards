@@ -15,7 +15,7 @@ function place() {
   window.location.href = "https://booyaalex.github.io/Blooket-Leaderboards/Event/pop/place.html";
 }
 
-function ingredients() {
+function workshop() {
   window.location.href = "https://booyaalex.github.io/Blooket-Leaderboards/Event/pop/ingredients.html";
 }
 
