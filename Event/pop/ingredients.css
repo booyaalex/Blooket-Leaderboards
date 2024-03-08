@@ -1,0 +1,159 @@
+/*Navagation Bar*/
+#navBar {
+  margin-left: -10px;
+  margin-top: -15px;
+  width: 110%;
+  height: 60px;
+  background-color: transparent;
+  position: fixed;
+  z-index: 5;
+}
+
+.navLink {
+  /*Position*/
+  float: right;
+  margin-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 5px;
+  /*Looks*/
+  background-color: #4a363a;
+  font-size: 30px;
+  text-decoration: none;
+  color: #f8d474;
+  font-family: Nunito;
+  font-weight: 600;
+  border: 3px solid #988672;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+  /*Transition*/
+  transition-duration: 0.2s;
+}
+
+.navLink:hover {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+/*Main Section*/
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: repeat-y;
+  background-image: url("https://i.ibb.co/6JG7Syz/Screenshot-2024-03-04-7-58-19-PM.png");
+  background-color: rgba(255,255,255,0.6);
+  opacity: 1;
+  background-blend-mode: darken;
+  background-size: 100%;
+  overflow-y: visible;
+}
+#main {
+  z-index: 2;
+  transform: rotate(0deg);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  opacity: 1;
+  
+}
+#mainHeader {
+  font-family: Titan One;
+  font-size: 60px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+}
+.boxText {
+  color: #f8d474;
+  font-family: Pixellari;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -1px;
+  margin-top: 2px;
+}
+.boxImg {
+  width: 45px;
+  height: 45px;
+  border: 3.5px solid #988672;
+  margin-top: 5px;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+/**/
+#ingredientList {
+  float: right;
+  margin: 50px;
+  width: 40%;
+  height: 30%;
+  overflow-y: scroll;
+  background-color: #4a363a;
+  border: 3.5px solid #988672;
+  scrollbar-color: rgba(115,103,86,255);
+  scrollbar-width: thick;
+}
+.ing {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 45px;
+}
+html {
+  overflow-y: hidden;
+}
+
+#potionSec {
+  width: 100%;
+  background-color: #4a363a;
+  border: 3.5px solid #988672;
+}
+#potHolder {
+  float: left;
+  margin: 60px;
+  width: 40%;
+  height: 100%;
+  margin-top: 10%;
+}
+
+.boxImgPot {
+  width: 45px;
+  height: 45px;
+  border: 3.5px solid #988672;
+  margin-top: 5px;
+}
+
+.coolBtn {
+  font-family: pixellari;
+  cursor: pointer;
+  background-color: #f8d474;
+  padding: 5px, 5px, 5px, 5px;
+  font-size: 20px;
+  width: 75px;
+  height: 35px;
+  margin: 10px;
+  border-bottom: solid 3px #936d27;
+  border-top: solid 3px #f5e4b0;
+  color: #895e29;
+  border-left: solid 0px;
+  border-right: solid 0px;
+}
+#lineThing {
+  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#potionBox {
+  width: 60px;
+  height: 60px;
+ 
+}
+#potionText {
+  
+}
