@@ -556,7 +556,7 @@ function showPopUp() {
    //Ingridients
    for (let a = 0; a < ingredients.length; a++) {
     ingImg = document.createElement("img");
-    ingImg.src = "https://ben-stewart.s3.us-east-2.amazonaws.com/ingredients/" + ingredients[a] + ".png";
+    ingImg.src = "https://raw.githubusercontent.com/booyaalex/Blooket-Leaderboards/main/popIng/" + ingredients[a] + ".png";
      ingImg.className = "ingrImg";
      document.getElementById('ingList').appendChild(ingImg);
    }
