@@ -30,6 +30,7 @@ function addIngredient() {
   if(document.getElementById('ing1').src == 'https://i.ibb.co/y0krvHC/Screenshot-2024-03-07-11-10-34-AM.png') {
     console.log('1st');
     document.getElementById('ing1').src = event.target.src;
+    document.getElementById('ing1').alt = event.target.alt;
   
    //Set Ing Value
    nodeList = document.querySelectorAll('.boxImg');
@@ -45,6 +46,7 @@ function addIngredient() {
   } else if(document.getElementById('ing2').src == 'https://i.ibb.co/y0krvHC/Screenshot-2024-03-07-11-10-34-AM.png') {
     console.log('2nd');
     document.getElementById('ing2').src = event.target.src;
+    document.getElementById('ing2').alt = event.target.alt;
   
    //Set Ing Value
    nodeList = document.querySelectorAll('.boxImg');
@@ -60,6 +62,7 @@ function addIngredient() {
   } else if(document.getElementById('ing3').src == 'https://i.ibb.co/y0krvHC/Screenshot-2024-03-07-11-10-34-AM.png') {
     console.log('3rd');
     document.getElementById('ing3').src = event.target.src;
+    document.getElementById('ing3').alt = event.target.alt;
   
    //Set Ing Value
    nodeList = document.querySelectorAll('.boxImg');
@@ -75,6 +78,7 @@ function addIngredient() {
   } else if(document.getElementById('ing4').src == 'https://i.ibb.co/y0krvHC/Screenshot-2024-03-07-11-10-34-AM.png') {
     console.log('4th');
     document.getElementById('ing4').src = event.target.src;
+    document.getElementById('ing4').alt = event.target.alt;
   
    //Set Ing Value
    nodeList = document.querySelectorAll('.boxImg');
@@ -90,6 +94,7 @@ function addIngredient() {
   } else if(document.getElementById('ing5').src == 'https://i.ibb.co/y0krvHC/Screenshot-2024-03-07-11-10-34-AM.png') {
     console.log('5th');
     document.getElementById('ing5').src = event.target.src;
+    document.getElementById('ing5').alt = event.target.alt;
   
    //Set Ing Value
    nodeList = document.querySelectorAll('.boxImg');
@@ -105,6 +110,7 @@ function addIngredient() {
   } else if(document.getElementById('ing6').src == 'https://i.ibb.co/y0krvHC/Screenshot-2024-03-07-11-10-34-AM.png') {
     console.log('6th');
     document.getElementById('ing6').src = event.target.src;
+    document.getElementById('ing6').alt = event.target.alt;
   
    //Set Ing Value
    nodeList = document.querySelectorAll('.boxImg');
@@ -239,8 +245,137 @@ function checkRecipie() {
     document.getElementById("potionBox").src = "https://i.ibb.co/rcHBk9h/Elixir-Of-Darkness.png";
     document.getElementById("potionText").innerHTML = "Elixir Of Darkness";
   }
+  //Elixir Of Illusion
+  if(ingr.includes(68) && ingr.includes(14) && ingr.includes(30) && zeroCount == 3) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/VQW3JgP/Elixir-Of-Illusion.png";
+    document.getElementById("potionText").innerHTML = "Elixir Of Illusion";
+  }
+  //Elixir Of Stupidity
+  if(ingr.includes(5) && ingr.includes(81) && zeroCount == 4) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/c3VZV1t/Elixir-Of-Stupidity.png";
+    document.getElementById("potionText").innerHTML = "Elixir Of Stupidity";
+  }
+  //Elixir Of Taste
+  if(ingr.includes(19) && ingr.includes(1) && ingr.includes(92) && zeroCount == 3) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/ZB0WqHK/Elixir-Of-Taste.png";
+    document.getElementById("potionText").innerHTML = "Elixir Of Taste";
+  }
+  //Elixir Of The Berserker
+  if(ingr.includes(11) && ingr.includes(24) && ingr.includes(56) && ingr.includes(87) && ingr.includes(1) && zeroCount == 1) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/rvN2z7q/Elixir-Of-The-Berserker.png";
+    document.getElementById("potionText").innerHTML = "Elixir Of The Berserker";
+  }
+  //Everfall Brew
+  if(ingr.includes(19) && ingr.includes(1) && zeroCount == 4) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/CWmwhz9/Everfall-Brew.png";
+    document.getElementById("potionText").innerHTML = "Everfall Brew";
 }
- 
+//Eyedrops Of Phantoms
+  if(ingr.includes(52) && ingr.includes(65) && ingr.includes(50) && ingr.includes(21) && zeroCount == 2) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/MPmqyC2/Eyedrops-Of-Phantoms.png";
+    document.getElementById("potionText").innerHTML = "Eyedrops Of Phantoms";
+  }
+  //Fake Health Potion
+  if(ingr.includes(63) && ingr.includes(5) && ingr.includes(93) && zeroCount == 3) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/72vbPXN/Fake-Health-Potion.png";
+    document.getElementById("potionText").innerHTML = "Fake Health Potion";
+  }
+  //Fake Mana Potion
+  if(ingr.includes(67) && ingr.includes(30) && ingr.includes(95) && zeroCount == 3) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/Q9ycs24/Fake-Mana-Potion.png";
+    document.getElementById("potionText").innerHTML = "Fake Mana Potion";
+  }
+  //Flask From Below
+  if(ingr.includes(32) && ingr.includes(75) && ingr.includes(51) && zeroCount == 3) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/N1Smbsk/Flask-From-Below.png";
+    document.getElementById("potionText").innerHTML = "Flask From Below";
+  }
+  //Flask Of Betrayal
+  if(ingr.includes(78) && ingr.includes(57) && ingr.includes(68) && ingr.includes(22) && zeroCount == 2) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/X2fzWD8/Flask-Of-Betrayal.png";
+    document.getElementById("potionText").innerHTML = "Flask Of Betrayal";
+  }
+  //Flask Of Consentration
+  if(ingr.includes(27) && ingr.includes(35) && zeroCount == 4) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/1JcY7RH/Flask-Of-Concentration.png";
+    document.getElementById("potionText").innerHTML = "Flask Of Consentration";
+  }
+  //Flask Of Greed
+  if(ingr.includes(79) && ingr.includes(33) && ingr.includes(56) && zeroCount == 3) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/6B3CVZp/Flask-Of-Greed.png";
+    document.getElementById("potionText").innerHTML = "Flask Of Greed";
+  }
+  //Flask Of Growth
+  if(ingr.includes(53) && ingr.includes(28) && ingr.includes(68) && zeroCount == 3) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/G9jGvQS/Flask-Of-Growth.png";
+    document.getElementById("potionText").innerHTML = "Flask Of Growth";
+  }
+  //Flask Of Rainbows
+  if(ingr.includes(90) && ingr.includes(85) && ingr.includes(64) && ingr.includes(20) && zeroCount == 2) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/NrLBTKb/Flask-Of-Rainbows.png";
+    document.getElementById("potionText").innerHTML = "Flask Of Rainbows";
+  }
+  //Flask Of The Dimensions
+  if(ingr.includes(88) && ingr.includes(41) && ingr.includes(55) && ingr.includes(19) && ingr.includes(69) && zeroCount == 1) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/h8rX7DG/Flask-Of-The-Dimensions.png";
+    document.getElementById("potionText").innerHTML = "Flask Of The Dimensions";
+  }
+  //Flask Of The Fire
+  if(ingr.includes(70) && ingr.includes(16) && ingr.includes(29) && zeroCount == 3) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/MGQbch1/Flask-Of-The-Fire.png";
+    document.getElementById("potionText").innerHTML = "Flask Of The Fire";
+  }
+  //Flask Of The Harvester
+  if(ingr.includes(69) && ingr.includes(34) && zeroCount == 4) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/rp6vVfh/Flask-Of-The-Harvester.png";
+    document.getElementById("potionText").innerHTML = "Flask Of The Harvester";
+  }
+  //Flask Of The Mountain
+  if(ingr.includes(94) && ingr.includes(64) && zeroCount == 4) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/Y7KLFxS/Flask-Of-The-Mountain.png";
+    document.getElementById("potionText").innerHTML = "Flask Of The Mountain";
+  }
+  //Flask Of The Tides
+  if(ingr.includes(60) && ingr.includes(67) && zeroCount == 4) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/XX7tTph/Flask-Of-The-Tides.png";
+    document.getElementById("potionText").innerHTML = "Flask Of The Tides";
+  }
+  //Flask Of Warmth
+  if(ingr.includes(83) && ingr.includes(27) && zeroCount == 4) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/9bFZmQK/Flask-Of-Warmth.png";
+    document.getElementById("potionText").innerHTML = "Flask Of Warmth";
+  }
+  //Gift Of The Phoenix
+  if(ingr.includes(1) && ingr.includes(93) && ingr.includes(26) && ingr.includes(83) && ingr.includes(73) && ingr.includes(49)) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/J29DmrN/Gift-Of-The-Phoenix.png";
+    document.getElementById("potionText").innerHTML = "Gift Of The Phoenix";
+  }
+  //Greater Health Potion
+  if(ingr.includes(72) && ingr.includes(14) && ingr.includes(9) && zeroCount == 3) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/5rTBQtJ/Greater-Health-Potion.png";
+    document.getElementById("potionText").innerHTML = "Greater Health Potion";
+  }
+  //Greater Mana Potion
+  if(ingr.includes(76) && ingr.includes(37) && ingr.includes(36) && zeroCount == 3) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/QKxTbg1/Greater-Mana-Potion.png";
+    document.getElementById("potionText").innerHTML = "Greater Mana Potion";
+  }
+  //Greater Stamina Potion
+  if(ingr.includes(10) && ingr.includes(61) && ingr.includes(33) && zeroCount == 3) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/XxhHxXh/Greater-Stamina-Potion.png";
+    document.getElementById("potionText").innerHTML = "Greater Stamina Potion";
+  }
+  //Health Potion
+  if(ingr.includes(63) && ingr.includes(5) && zeroCount == 4) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/GHxhJ2Y/Health-Potion.png";
+    document.getElementById("potionText").innerHTML = "Health Potion";
+  }
+  //Love Potion
+  if(ingr.includes(45) && ingr.includes(57) && ingr.includes(89) && ingr.includes(4) && ingr.includes(92) && zeroCount == 1) {
+    document.getElementById("potionBox").src = "https://i.ibb.co/XWTN66N/Love-Potion.png";
+    document.getElementById("potionText").innerHTML = "Love Potion";
+  }
+}
 function countZero() {
   zeroCount = 0;
   for (let a = 0; a < ingr.length; a++) {
