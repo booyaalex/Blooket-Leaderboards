@@ -1,31 +1,3 @@
-/*Navagation Bar*/
-#navBar {
-  margin-left: -10px;
-  margin-top: -15px;
-  width: 110%;
-  height: 60px;
-  background-color: #9a49aa;
-  position: fixed;
-  box-shadow: 0px 0px 0px 10px rgba(128, 60, 140, 1);
-  z-index: 5;
-}
-
-.navLink {
-  float: right;
-  font-size: 18px;
-  padding-right: 10px;
-  margin-top: 15px;
-  transition-duration: 0.2s;
-  text-decoration: none;
-  color: white;
-  font-family: Nunito;
-  font-weight: 600;
-}
-
-.navLink:hover {
-  font-size: 23px;
-}
-
 /*Main Section*/
 body {
   background-color: #0bc2cf;
