@@ -1,1 +1,26 @@
+.YO_Container {
+  background-color: #ef7426;
+  border-radius: 7px;
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: -30px;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.2), inset 0 -4px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+}
 
+.YO_Text {
+  background: linear-gradient(#fcd843, #fcd843 50%, #feb31a 50.01%, #feb31a);
+  font-family: Titan One;
+  padding: 0 15px;
+  border-radius: 5px;
+  color: white;
+  align-items: center;
+  font-size: 26px;
+  text-shadow: -1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464,
+    2px 2px 0 #646464;
+  text-align: center;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ef7426;
+}
