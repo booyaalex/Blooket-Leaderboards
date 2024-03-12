@@ -99,29 +99,3 @@ body {
   display: flex;
   justify-content: center;
 }
-
-/*Stat Boxes*/
-.statsBox {
-  background-color: #9a49aa;
-  border-radius: 7px;
-  width: 250px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 5px 5px 11px;
-  margin: 10px;
-  box-shadow: inset 0 -6px rgba(0, 0, 0, 0.2);
-  transition-duration: 0.2s;
-  cursor: pointer;
-}
-.statsBox:hover {
-  box-shadow: none;
-  background-color: rgba(128, 60, 140, 1);
-}
-
-.statTitle {
-  font-family: Titan One;
-  color: white;
-  font-size: 28px;
-}
