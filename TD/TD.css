@@ -1,27 +1,36 @@
 #SMBG {
   position: absolute;
-  height: 1000%;
   width: 200%;
+  height: 200%;
+  top: 50%;
+  left: 50%;
   background-size: 550px;
-  margin-left: -100px;
+  background-position: -100px -100px;
+  z-index: -1; 
   background-image: url("https://i.ibb.co/Tqy7Nsx/Screenshot-2024-02-20-6-24-13-PM.png");
 }
 
 #LDBG {
   position: absolute;
-  height: 1000%;
   width: 200%;
+  height: 200%;
+  top: 50%;
+  left: 50%;
   background-size: 550px;
-  margin-left: -100px;
+  background-position: -100px -100px;
+  z-index: -1; 
   background-image: url("https://i.ibb.co/cCbfVCg/LDBG.png");
 }
 
 #AMBG {
   position: absolute;
-  height: 1000%;
   width: 200%;
+  height: 200%;
+  top: 50%;
+  left: 50%;
   background-size: 550px;
-  margin-left: -100px;
+  background-position: -100px -100px;
+  z-index: -1; 
   background-image: url("https://i.ibb.co/Lk3Xjsn/AMBG.png");
 }
 
