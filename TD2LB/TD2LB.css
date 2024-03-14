@@ -1,13 +1,11 @@
-/*Main Section*/
 body {
   background-color: #0bc2cf;
   overflow-x: hidden;
-  overflow-y: scroll;
 }
 #main {
   z-index: 2;
   transform: rotate(0deg);
-  overflow-y: scroll;
+  overflow-y: visible;
   overflow-x: hidden;
 }
 #mainHeader {
@@ -28,8 +26,11 @@ body {
   width: 75%;
   border-radius: 10px;
   z-index: 3;
+  display: flex;
+  justify-content: center;
 }
 
+/*Info Section*/
 #info {
   float: left;
   background-color: #40115f;
@@ -37,6 +38,8 @@ body {
   border-radius: 10px;
   z-index: 3;
   margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 /*Submission*/
@@ -48,4 +51,6 @@ body {
   width: 35%;
   text-align: center;
   margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
 }
