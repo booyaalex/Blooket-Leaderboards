@@ -3,6 +3,8 @@ let screenMode = 0;
 let bgHeight = screen.availHeight + 400;
 //0 Is Comp; 1 is Phone; 2 is Big Comp
 
+
+//Side Nav Toggle
 if (width <= 644) {
   let screenMode = 1;
   document.getElementById("navBar").innerHTML = "<i class='fa-solid fa-bars' style='float: left; font-size: 35px; color: white; padding-left: 25px; padding-top: 20px;' onclick='openUp()'></i>";
@@ -30,4 +32,13 @@ function closeUp() {
   link.forEach(sideLink => {
   sideLink.style.fontSize = '0px';
 });
+}
+
+
+//blooket.games/gamemodes
+
+if(window.location.href = "https://blooket.games/gamemode.html") {
+  document.getElementById('popBoards').style.width = document.querySelector('table').offsetWidth;
+} else if(window.location.href = "https://blooket.games/index.html") {
+  document.getElementById('popBoards').style.width = "45%";
 }
