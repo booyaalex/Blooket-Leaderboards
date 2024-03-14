@@ -5,10 +5,35 @@
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
     <link rel='stylesheet' href='MB.css'>
+     <link rel='stylesheet' href='https://booyaalex.github.io/Blooket-Leaderboards/sideNav.css'>
+    <link rel='stylesheet' href='https://booyaalex.github.io/Blooket-Leaderboards/bgStyle.css'>
+    <link rel='stylesheet' href='https://booyaalex.github.io/Blooket-Leaderboards/YO_Container.css'>
+    <link rel='stylesheet' href='https://booyaalex.github.io/Blooket-Leaderboards/statBoxes.css'>
+    <link rel='stylesheet' href='https://booyaalex.github.io/Blooket-Leaderboards/navBar.css'>
   </head>
   <body>
+    <!--Side Navagation Code-->
+      <div id='sidenav'>
+        <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
+        <a href='https://booyaalex.github.io/Blooket-Leaderboards/monster.html' class='sideLink'> Back </a>
+        <br>
+        <br>
+        <a href='index.html' class='sideLink'> Home </a>
+        <br>
+        <a href='gamemode.html' class='sideLink'> Gamemodes </a>
+        <br>
+        <a href='suggestions.html' class='sideLink'> Suggestions </a>
+        <br>
+        <a href='submissions.html' class='sideLink'> Submissions </a>
+        <br>
+        <a href='settings.html' class='sideLink'> Settings </a>
+        <br>
+      <a href='https://discord.gg/5nYGQtqyBZ' class='sideLink' style='padding-right: 10%;'> Discord </a>
+    </div>
+  
+      <!--Everything Else-->
     <div id='navBar'>
-      <a href='https://discord.gg/5nYGQtqyBZ' class='navLink' style='padding-right: 160px;'> Discord </a>
+      <a href='https://discord.gg/5nYGQtqyBZ' class='navLink' style='padding-right: 10%;'> Discord </a>
       <a href='https://booyaalex.github.io/Blooket-Leaderboards/settings.html' class='navLink'> Settings </a>
       <a href='https://booyaalex.github.io/Blooket-Leaderboards/submissions.html' class='navLink'> Submissions </a>
       <a href='https://booyaalex.github.io/Blooket-Leaderboards/suggestions.html' class='navLink'> Suggestions </a>
@@ -18,19 +43,21 @@
     </div>
     <br>
     <br>
-    <div id='snowBG'></div>
+    <div id='bgContain'>
+      <div id='snowBG'></div>
+    </div>
     <div id='main'>
       <h1 id='mainHeader'> Snowy Fields No Items Challenge Speedrun </h1>
       <br>
       <div id='info'>
-        <div class='RYO_Container'>
-          <div class='RYO_Text'> Info </div>
+        <div class='YO_Container'>
+          <div class='YO_Text'> Info </div>
         </div>
         <h3 style='font-family: Nunito; color: white; padding-left: 10px;'> This leaderboard lists the people who have beaten monster brawl on the snowy fields map the fastest while on challenge mode and without using items. </h3>
       </div>
       <div id='submission'>
-        <div class='SYO_Container'>
-          <div class='SYO_Text'> How to Submit </div>
+        <div class='YO_Container'>
+          <div class='YO_Text'> How to Submit </div>
         </div>
         <h3 style='font-family: Nunito; color: white;'> You can submit your score by clicking on the submssions button on the navagation bar above.</h3>
       </div>
@@ -51,36 +78,36 @@
         <table style='justify-content: space-evenly;  margin-left: auto; margin-right: auto;'>
           <tr>
             <td>
-              <div class='statsBox'>
-                <div class='statTitle'>
+              <div class='statsBoxLB'>
+                <div class='statTitleLB'>
                   Ranking
                 </div>
               </div>
             </td>
             <td>
-              <div class='statsBox'>
-                <div class='statTitle'>
+              <div class='statsBoxLB'>
+                <div class='statTitleLB'>
                   Blook
                 </div>
               </div>
             </td>
             <td>
-              <div class='statsBox'>
-                <div class='statTitle'>
+              <div class='statsBoxLB'>
+                <div class='statTitleLB'>
                   Person
                 </div>
               </div>
             </td>
             <td>
-              <div class='statsBox'>
-                <div class='statTitle'>
+              <div class='statsBoxLB'>
+                <div class='statTitleLB'>
                   Time
                 </div>
               </div>
             </td>
             <td>
-              <div class='statsBox'>
-                <div class='statTitle'>
+              <div class='statsBoxLB'>
+                <div class='statTitleLB'>
                   Blooket Username
                 </div>
               </div>
@@ -90,27 +117,27 @@
           <!--1st Place-->
           <tr>
             <td>
-              <div class='statTitle'>
+              <div class='statTitleLB'>
                 #1.
               </div>
             </td>
             <td>
-              <div class='statImg'>
-                <img class='statImg' src='https://ac.blooket.com/id/static/media/lightBlueBlook.96314dd376e45a3857e662309b72996f.svg' alt='Light Blue Blook' width='75'>
+              <div class='statImgLB'>
+                <img class='statImgLB' src='https://ac.blooket.com/id/static/media/lightBlueBlook.96314dd376e45a3857e662309b72996f.svg' alt='Light Blue Blook' width='75'>
               </div>
             </td>
             <td>
-              <div class='statTitle'>
+              <div class='statTitleLB'>
                 NONE
               </div>
             </td>
             <td>
-              <div class='statTitle'>
+              <div class='statTitleLB'>
                 NONE
               </div>
             </td>
             <td>
-              <div class='statTitle'>
+              <div class='statTitleLB'>
                 NONE
               </div>
             </td>
@@ -127,5 +154,6 @@
         </table>
       </div>
     </div>
+    <script src='https://booyaalex.github.io/Blooket-Leaderboards/screenAdjust.js'></script>
   </body>
 </html>
