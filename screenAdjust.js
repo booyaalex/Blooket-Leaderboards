@@ -5,7 +5,7 @@ let bgHeight = screen.availHeight + 400;
 
 if (width <= 644) {
   let screenMode = 1;
-  document.getElementById("navBar").innerHTML = "<img src='https://lh3.googleusercontent.com/proxy/nuaDFn2Ojkdp06IyDsndr3sHAzouIin_G7JDnjpwyJ96pnGhS3v_uP-swmbhU4TNZC5pyGYWOrzOsxhVO2beaqPhfsRtPAsK9no' alt='Open Side Nav' width='25px' style='float: left; padding-left: 25px; padding-top: 20px;' onclick='openUp()'>";
+  document.getElementById("navBar").innerHTML = "<i class='fa-solid fa-bars' style='float: left; font-size: 25px; padding-left: 25px; padding-top: 20px;' onclick='openUp()'></i>";
   document.getElementById("bg").style.maxHeight = bgHeight + "%";
 }
 console.log(width);
