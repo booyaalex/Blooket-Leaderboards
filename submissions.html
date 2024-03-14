@@ -1,14 +1,41 @@
 <html>
   <head>
     <title> Blooket Leaderboards </title>
+    <meta name="keywords" content="Blooket, Blooket Leaderboard">
+    <meta name="author" content="Blooket Elite">
+    <meta name="description" content="A Website for Blooket Leaderboards and Archives">
+    
     <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
-    <link rel='stylesheet' href='submissions.css'>
+    <link rel='stylesheet' href='https://booyaalex.github.io/Blooket-Leaderboards/submissions.css'>
+    <link rel='stylesheet' href='https://booyaalex.github.io/Blooket-Leaderboards/sideNav.css'>
+    <link rel='stylesheet' href='https://booyaalex.github.io/Blooket-Leaderboards/bgStyle.css'>
+    <link rel='stylesheet' href='https://booyaalex.github.io/Blooket-Leaderboards/YO_Container.css'>
+    <link rel='stylesheet' href='https://booyaalex.github.io/Blooket-Leaderboards/statBoxes.css'>
+    <link rel='stylesheet' href='https://booyaalex.github.io/Blooket-Leaderboards/navBar.css'>
   </head>
   <body>
+    
+    <!--Side Navagation Code-->
+    <div id='sidenav'>
+      <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
+      <a href='index.html' class='sideLink'> Home </a>
+      <br>
+      <a href='gamemode.html' class='sideLink'> Gamemodes </a>
+      <br>
+      <a href='suggestions.html' class='sideLink'> Suggestions </a>
+      <br>
+      <a href='submissions.html' class='sideLink'> Submissions </a>
+      <br>
+      <a href='settings.html' class='sideLink'> Settings </a>
+      <br>
+    <a href='https://discord.gg/5nYGQtqyBZ' class='sideLink' style='padding-right: 10%'> Discord </a>
+  </div>
+
+    <!--Literally Everything Else-->
     <div id='navBar'>
-      <a href='https://discord.gg/5nYGQtqyBZ' class='navLink' style='padding-right: 160px;'> Discord </a>
+      <a href='https://discord.gg/5nYGQtqyBZ' class='navLink' style='padding-right: 10%;'> Discord </a>
       <a href='settings.html' class='navLink'> Settings </a>
       <a href='submissions.html' class='navLink'> Submissions </a>
       <a href='suggestions.html' class='navLink'> Suggestions </a>
@@ -17,66 +44,63 @@
     </div>
     <br>
     <br>
-    <div id='bg'></div>
+    <div id='bgContain'>
+      <div id='bg'></div>
+    </div>
     <div id='main'>
-      <h1 id='mainHeader'> Submissions Page </h1>
+      <h1 id='mainHeader'> Submissions </h1>
       <br>
-      <div id='popBoards'>
+      <div class='centerBoard'>
         <div class='YO_Container'>
-          <div class='YO_Text'> How to Submit </div>
+          <div class='YO_Text'> 1. Submit Here </div>
         </div>
         <br>
-        <table>
-          <tr>
-            <td>
-              <div class='statsBox'>
-                <div class='statTitle'>
-                  1.
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox'>
-                <div class='statTitle'>
-                  2.
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox'>
-                <img class='statImg' src='https://shared.prolewiki.org/uploads/a/af/Discord_Logo.png' alt='Discord Logo'>
-                <div class='statTitle' style='font-size: 24px;'>
-                  Join the Discord!
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox'>
-                <div class='statTitle' style='font-size: 24px;'>
-                  <input id='input' type='text' placeholder='blooket username here'>
-                  <input id='submit' type="submit" value="Submit" onclick='HeHe()'>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
+        <br>
+        <div>
+          <div class='row' style='margin-top: 15px;'>
+            <div class='valueContainer' style='width: 85%; height: 80px;'>
+              <h3 style='font-family: Nunito; color: white; font-size: 16px; padding-left: 5px; padding-bottom: 5px;'> Fill in the name and blook you would like displayed. You may choose any blook that is in the game. Custom blooks from the stats page require you to submit on discord. Any display names that contain bad language will be automatically rejected. Enjoy! :D </h3>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='valueContainer'>
+              <input type='text' placeholder='Display Name' class='valueInput'> </input>
+            </div>
+            <div class='valueContainer'>
+              <input type='text' placeholder='Display Blook' class='valueInput'> </input>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='valueContainer'>
+              <input type='text' style='font-size: 21px;' placeholder='Email or Discord' class='valueInput'> </input>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='valueContainer' style='width: 85%; height: 110px;'>
+              <h3 style='font-family: Nunito; color: white; font-size: 16px; padding-left: 5px; padding-bottom: 5px;'> When submitting, you <b style='color: red; font-weight: bolder; font-size: 25px;'> MUST </b> be signed into the blooket account you want to have on this leaderboard. If you don't sign in, we can't put anything on here. Being signed in will not give me access your password or email, as this only uses blooket's API. I will only see stats and some settings. </h3>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='valueContainer'>
+              <button style='font-size: 30px; cursor: pointer; width: 70%; height: 70%;' class='valueInput'> Submit </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class='centerBoard'>
+        <div class='YO_Container'>
+          <div class='YO_Text'> 2. Join The Discord </div>
+        </div>
+        <div class='row' style='margin-top: 15px;'>
+          <div class='valueContainer' style='width: 85%; height: 60px;'>
+              <h3 style='font-family: Nunito; color: white; font-size: 16px; padding-left: 5px; padding-bottom: 5px;'> You can join the Discord and can simply send footage of your submission. The link is in the side menu or or on the top nav. </h3>
+            </div>
+        </div>
       </div>
     </div>
-    <script>
-      var count = 0;
-  
-      function HeHe() {
-        count++;
-        if (count == 1) {
-          alert("You thought you could escape the discord. Nice try! >:P");
-        }
-        if (count >= 2) {
-          alert("I told you, there's no escape! >;D");
-        }
-        document.getElementById("mainHeader").innerHTML = "You Can't Escape!";
-      }
-    </script>
+    <script src='https://booyaalex.github.io/Blooket-Leaderboards/script.js'></script>
+    <script src='https://booyaalex.github.io/Blooket-Leaderboards/screenAdjust.js'></script>
   </body>
 </html>
