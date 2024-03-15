@@ -41,8 +41,6 @@ function closeUp() {
 if(URL == "/gamemode.html") {
   document.getElementById('popBoards').style.width = document.querySelector('table').offsetWidth;
   console.log('test');
-} else if(URL == "/index.html") {
-  document.getElementById('popBoards').style.width = "45%";
 }
 
 //blooket.games/index 
@@ -52,5 +50,7 @@ if(URL == "/index.html") {
   console.log(link);
   link.forEach(rightBoards => {
     $(this).style.marginRight = "auto";
+    $(this).style.marginLeft = "auto";
+    $(this).style.float = "";
   });
 }
