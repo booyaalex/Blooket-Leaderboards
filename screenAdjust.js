@@ -45,14 +45,16 @@ if(URL == "/gamemode.html") {
 
 //blooket.games/index.html
 
-if(URL == "/index.html") {
-  const link = document.querySelectorAll('.rightBoards');
-  let i = 0;
-  console.log(link);
-  link.forEach(rightBoards => {
-    link[i].style.marginRight = "auto";
-    link[i].style.marginLeft = "auto";
-    link[i].style.float = "";
-    i++;
-  });
+if (width <= 644) {
+  if(URL == "/index.html") {
+    const link = document.querySelectorAll('.rightBoards');
+    let i = 0;
+    console.log(link);
+    link.forEach(rightBoards => {
+      link[i].style.marginRight = "auto";
+      link[i].style.marginLeft = "auto";
+      link[i].style.removeProperty('float');
+      i++;
+    });
+  }
 }
