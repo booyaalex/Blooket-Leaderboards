@@ -47,10 +47,12 @@ if(URL == "/gamemode.html") {
 
 if(URL == "/index.html") {
   const link = document.querySelectorAll('.rightBoards');
+  let i = 0;
   console.log(link);
   link.forEach(rightBoards => {
-    $(this).style.marginRight = "auto";
-    $(this).style.marginLeft = "auto";
-    $(this).style.float = "";
+    link[i].style.marginRight = "auto";
+    link[i].style.marginLeft = "auto";
+    link[i].style.float = "";
+    i++;
   });
 }
