@@ -38,9 +38,9 @@ function closeUp() {
 
 //blooket.games/gamemodes
 
-if(URL = "gamemode.html") {
+if(URL == "gamemode.html") {
   document.getElementById('popBoards').style.width = document.querySelector('table').offsetWidth;
   console.log('test');
-} else if(URL = "index.html") {
+} else if(URL == "index.html") {
   document.getElementById('popBoards').style.width = "45%";
 }
