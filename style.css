@@ -20,17 +20,6 @@ body {
 
 /*Popular Leaderboards Section*/
 
-#popBoards {
-  background-color: #40115f;
-  float: right;
-  width: 45%;
-  padding-left: 10px;
-  border-radius: 10px;
-  z-index: 4;
-  display: flex;
-  justify-content: center;
-}
-
 .popLinks {
   font-family: Nunito;
   font-size: 18px;
@@ -47,7 +36,7 @@ body {
 
 /*Info Section*/
 
-#infoBoard {
+.centerBoards {
   background-color: #40115f;
   margin-right: auto;
   margin-left: auto;
@@ -59,26 +48,21 @@ body {
   justify-content: center;
 }
 
-/*Event Section*/
+.rightBoards {
+  background-color: #40115f;
+  float: right;
+  width: 45%;
+  padding-left: 10px;
+  border-radius: 10px;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+}
 
-#eventBoard {
+.leftBoards {
   background-color: #40115f;
   float: left;
   width: 45%;
-  border-radius: 10px;
-  z-index: 4;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: center;
-}
-
-/*Info Section*/
-
-#infoBoardTwo {
-  background-color: #40115f;
-  margin-right: auto;
-  margin-left: auto;
-  width: 50%;
   border-radius: 10px;
   z-index: 4;
   margin-bottom: 100px;
