@@ -8,7 +8,8 @@ const URL = window.location.pathname;
 //Side Nav Toggle
 if (width <= 644) {
   let screenMode = 1;
-  document.getElementById("navBar").innerHTML = "<i class='fa-solid fa-bars' style='float: left; font-size: 35px; color: white; padding-left: 25px; padding-top: 20px;' onclick='openUp()'></i>";
+  document.getElementById("navBar").innerHTML = "<i class='fa-solid fa-bars' style='float: left; font-size: 45px; color: white; padding-left: 25px; padding-top: 20px;' onclick='openUp()'></i>";
+  document.getElementById("navBar").style.height = "80px";
   document.getElementById("bg").style.maxHeight = bgHeight + "%";
 }
 console.log(width);
@@ -21,8 +22,8 @@ function openUp() {
   
   const link = document.querySelectorAll('.sideLink');
   link.forEach(sideLink => {
-  sideLink.style.fontSize = '45px';
-});
+    sideLink.style.fontSize = '45px';
+  });
 }
 
 function closeUp() {
