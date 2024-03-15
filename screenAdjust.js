@@ -79,12 +79,12 @@ if (width <= 644) {
     });
     i = 0;
     right.forEach(rightBoards => {
-      left[i].style.width = "80%";
+      right[i].style.width = "80%";
       i++;
     });
     i = 0;
     center.forEach(centerBoards => {
-      left[i].style.width = "80%";
+      center[i].style.width = "80%";
       i++;
     });
     document.getElementById("mainHeader").style.fontSize = "70px";
