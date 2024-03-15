@@ -46,7 +46,7 @@ if(URL == "/gamemode.html") {
 //blooket.games/index.html
 
 if (width <= 644) {
-  if(URL == "/index.html") {
+  if(URL == "/index.html" || URL == "/") {
     //Right Side
     const right = document.querySelectorAll('.rightBoards');
     let i = 0;
@@ -68,5 +68,23 @@ if (width <= 644) {
       left[i].style.float = "none";
       i++;
     });
+
+    //Scale
+    const center = document.querySelectorAll("centerBoards");
+    i = 0;
+    console.log(center);
+    left.forEach(leftBoards => {
+      left[i].style.width = "80%";
+      i++;
+    });
+    right.forEach(rightBoards => {
+      left[i].style.width = "80%";
+      i++;
+    });
+    center.forEach(centerBoards => {
+      left[i].style.width = "80%";
+      i++;
+    });
+    document.getElementById("mainHeader").style.fontSize = "70px";
   }
 }
