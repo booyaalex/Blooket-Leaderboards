@@ -40,6 +40,7 @@ function closeUp() {
 
 if(URL = "https://blooket.games/gamemode.html") {
   document.getElementById('popBoards').style.width = document.querySelector('table').offsetWidth;
+  console.log('test');
 } else if(URL = "https://blooket.games/index.html") {
   document.getElementById('popBoards').style.width = "45%";
 }
