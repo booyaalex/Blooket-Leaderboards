@@ -2,7 +2,6 @@
 .statsBox {
   background-color: #9a49aa;
   border-radius: 7px;
-  width: 250px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -22,6 +21,7 @@
   font-family: Titan One;
   color: white;
   font-size: 28px;
+  margin: 6px;
 }
 
 .statImg {
