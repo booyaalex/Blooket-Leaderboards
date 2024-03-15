@@ -1,6 +1,7 @@
 let width = screen.availWidth;
 let screenMode = 0;
 let bgHeight = screen.availHeight + 400;
+var URL = "window.location.href";
 //0 Is Comp; 1 is Phone; 2 is Big Comp
 
 
@@ -37,8 +38,8 @@ function closeUp() {
 
 //blooket.games/gamemodes
 
-if(window.location.href = "https://blooket.games/gamemode.html") {
+if(URL = "https://blooket.games/gamemode.html") {
   document.getElementById('popBoards').style.width = document.querySelector('table').offsetWidth;
-} else if(window.location.href = "https://blooket.games/index.html") {
+} else if(URL = "https://blooket.games/index.html") {
   document.getElementById('popBoards').style.width = "45%";
 }
