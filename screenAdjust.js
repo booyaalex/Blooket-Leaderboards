@@ -69,8 +69,37 @@ if (width <= 644) {
       i++;
     });
 
+    
+    //Header Font Size
+    document.getElementById("mainHeader").style.fontSize = "70px";
+    //Stat Boxes Size
+    const statBox = document.querySelectorAll(".statTitle");
+    i = 0;
+    console.log(statBox);
+    statBox.forEach(statTitle => {
+      statBox[i].style.fontSize = "40px";
+      i++
+    });
+
+
+    //Pop Links Size
+    const popLink = document.querySelectorAll(".popLinks");
+    i = 0;
+    console.log(popLink);
+    popLink.forEach(popLinks => {
+      popLink[i].style.fontSize = "40px";
+      i++
+    });
+
+
+    //Info Text Size
+    const H3 = document.querySelector("h3");
+    console.log(H3);
+    H3.style.fontSize = "30px";
+    
+
     //Scale
-    const center = document.querySelectorAll("centerBoards");
+    const center = document.querySelectorAll(".centerBoards");
     i = 0;
     console.log(center);
     left.forEach(leftBoards => {
@@ -79,29 +108,13 @@ if (width <= 644) {
     });
     i = 0;
     right.forEach(rightBoards => {
-      right[i].style.width = "80%";
+      right[i].style.width = document.querySelector('table').offsetWidth;
       i++;
     });
     i = 0;
     center.forEach(centerBoards => {
       center[i].style.width = "80%";
       i++;
-    });
-    document.getElementById("mainHeader").style.fontSize = "70px";
-    
-    const statBox = document.querySelectorAll(".statTitle");
-    i = 0;
-    console.log(statBox);
-    statBox.forEach(statTitle => {
-      statBox[i].style.fontSize = "40px";
-      i++
-    });
-    const popLink = document.querySelectorAll(".popLinks");
-    i = 0;
-    console.log(popLink);
-    popLink.forEach(popLinks => {
-      popLink[i].style.fontSize = "40px";
-      i++
     });
   }
 }
