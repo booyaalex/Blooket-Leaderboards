@@ -47,13 +47,25 @@ if(URL == "/gamemode.html") {
 
 if (width <= 644) {
   if(URL == "/index.html") {
-    const link = document.querySelectorAll('.rightBoards');
+    //Right Side
+    const right = document.querySelectorAll('.rightBoards');
     let i = 0;
-    console.log(link);
-    link.forEach(rightBoards => {
-      link[i].style.marginRight = "auto";
-      link[i].style.marginLeft = "auto";
-      link[i].style.removeProperty('float');
+    console.log(right);
+    right.forEach(rightBoards => {
+      right[i].style.marginRight = "auto";
+      right[i].style.marginLeft = "auto";
+      right[i].style.float = "none";
+      i++;
+    });
+
+    //Left Side
+    const left = document.querySelectorAll('.leftBoards');
+    i = 0;
+    console.log(left);
+    left.forEach(leftBoards => {
+      left[i].style.marginRight = "auto";
+      left[i].style.marginLeft = "auto";
+      left[i].style.float = "none";
       i++;
     });
   }
