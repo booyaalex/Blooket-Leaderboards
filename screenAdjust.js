@@ -43,7 +43,7 @@ if(URL == "/gamemode.html") {
   console.log('test');
 }
 
-//blooket.games/index 
+//blooket.games/index.html
 
 if(URL == "/index.html") {
   const link = document.querySelectorAll('.rightBoards');
