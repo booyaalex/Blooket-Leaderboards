@@ -116,5 +116,13 @@ if (width <= 644) {
       center[i].style.width = "80%";
       i++;
     });
+
+    //YO Size 
+    const YO = document.querySelectorAll('.YO_Text');
+    i = 0;
+    YO.forEach(YO_Text => {
+      YO[i].style.fontSize = "35px";
+      i++;
+    });
   }
 }
