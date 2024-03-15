@@ -1,7 +1,7 @@
 let width = screen.availWidth;
 let screenMode = 0;
 let bgHeight = screen.availHeight + 400;
-var URL = "window.location.href";
+var URL = window.location.href;
 //0 Is Comp; 1 is Phone; 2 is Big Comp
 
 
