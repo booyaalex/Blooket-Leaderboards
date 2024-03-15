@@ -41,6 +41,6 @@ function closeUp() {
 if(URL == "/gamemode.html") {
   document.getElementById('popBoards').style.width = document.querySelector('table').offsetWidth;
   console.log('test');
-} else if(URL == "/index.html") {
+} else if(URL === "/index.html") {
   document.getElementById('popBoards').style.width = "45%";
 }
