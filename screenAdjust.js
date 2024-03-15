@@ -42,7 +42,21 @@ function closeUp() {
 if(URL == "/gamemode.html") {
   document.getElementById('popBoards').style.width = document.querySelector('table').offsetWidth;
   console.log('test');
+
+  //YO Size 
+  const YO = document.querySelectorAll('.YO_Text');
+  i = 0;
+  YO.forEach(YO_Text => {
+  YO[i].style.fontSize = "35px";
+  i++;
+});
+  //Header Font Size
+document.getElementById("mainHeader").style.fontSize = "70px";
 }
+
+
+
+
 
 //blooket.games/index.html
 
