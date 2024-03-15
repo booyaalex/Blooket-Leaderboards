@@ -77,14 +77,31 @@ if (width <= 644) {
       left[i].style.width = "80%";
       i++;
     });
+    i = 0;
     right.forEach(rightBoards => {
       left[i].style.width = "80%";
       i++;
     });
+    i = 0;
     center.forEach(centerBoards => {
       left[i].style.width = "80%";
       i++;
     });
     document.getElementById("mainHeader").style.fontSize = "70px";
+    
+    const statBox = document.querySelectorAll(".statTitle");
+    i = 0;
+    console.log(statBox);
+    statBox.forEach(statTitle => {
+      statBox[i].style.fontSize = "40px";
+      i++
+    });
+    const popLink = document.querySelectorAll(".popLinks");
+    i = 0;
+    console.log(popLink);
+    popLink.forEach(popLinks => {
+      popLink[i].style.fontSize = "40px";
+      i++
+    });
   }
 }
