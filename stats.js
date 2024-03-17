@@ -33,3 +33,14 @@ function factoryPage() {
 function tokensPage() {
   window.location.href = "statPages/tokensLB.html";
 }
+function fishPage() {
+  window.location.href = "statPages/fishLB.html";
+}
+
+function boxPage() {
+  window.location.href = "statPages/boxLB.html";
+}
+
+function oldPage() {
+  window.location.href = "statPages/oldLB.html";
+}

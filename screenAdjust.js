@@ -60,19 +60,20 @@ if(URL == "/gamemode.html") {
 //blooket.games/stats.html
 
 if(URL == "/stats.html") {
-  
-  //Header Font Size
-  document.getElementById("mainHeader").style.fontSize = "70px";
-  //Stat Boxes Size
-  const statBox = document.querySelectorAll(".statTitle");
-  i = 0;
-  console.log(statBox);
-  statBox.forEach(statTitle => {
-    statBox[i].style.fontSize = "40px";
-    i++
-  });
+  if (width <= 644) {
+    //Header Font Size
+    document.getElementById("mainHeader").style.fontSize = "70px";
+    //Stat Boxes Size
+    const statBox = document.querySelectorAll(".statTitle");
+    i = 0;
+    console.log(statBox);
+    statBox.forEach(statTitle => {
+      statBox[i].style.fontSize = "40px";
+      i++
+    });
 
-  document.getElementById('statsBoards').style.width = document.querySelector('table').offsetWidth;
+    document.getElementById('statsBoards').style.width = document.querySelector('table').offsetWidth;
+  }
 }
 
 //blooket.games/index.html
