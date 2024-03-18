@@ -1,9 +1,10 @@
 #bgWave {
     position: absolute;
     bottom: 0;
+    height: 118px;
     width: calc(100% + 100px);
     z-index: 0; 
-    background-image: url("https://i.ibb.co/ZmP3LZ3/Screenshot-2024-03-18-10-28-48-AM.png");
+    background-image: url("https://i.ibb.co/fNCkq0d/Waves.png");
     opacity: 0.9;
   }
   #bgF {
