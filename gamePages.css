@@ -2,18 +2,18 @@ body {
     background-color: #0bc2cf;
     overflow-x: hidden;
   }
-  #main {
+#main {
     z-index: 2;
     transform: rotate(0deg);
   }
-  #mainHeader {
+#mainHeader {
     font-family: Titan One;
     font-size: 60px;
     color: white;
     font-weight: 400;
     text-align: center;
     text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
-  }
+}
   
   /*Popular Leaderboards Section*/
   
