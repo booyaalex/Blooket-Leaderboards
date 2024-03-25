@@ -44,6 +44,6 @@ function TODPage() {
   window.location.href = "TOD.html";
 }
 
-function dinoPage() {
-  window.location.href = "dino.html";
+function flappyPage() {
+  window.location.href = "flappyLB.html";
 }
