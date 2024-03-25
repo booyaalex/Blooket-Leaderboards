@@ -10,3 +10,6 @@ function lunch() {
 function coc2020() {
   window.location.href = "Event/coc2020.html";
 }
+function coc2022() {
+  window.location.href = "Event/coc2022.html";
+}
