@@ -29,14 +29,14 @@ body {
   .boxText {
     color: white;
     font-family: Merriweather Sans;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 600;
   }
   .boxTextGold {
     color: white;
     font-family: Merriweather Sans;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 200;
     float: right;
   }
   .boxImg {
