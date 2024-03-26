@@ -43,3 +43,12 @@ body {
     width: 40px;
     float: right;
   }
+
+  #homeBTN {
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+    float: right;
+    padding-right: 10px;
+    margin-top: 15px;
+  }
