@@ -22,3 +22,8 @@ function workshop() {
 function potions() {
   window.location.href = "https://blooket.games/Event/pop/potions.html";
 }
+
+
+function guild8332() {
+  window.location.href = "https://blooket.games/Event/popGuilds/guild8332.html";
+}
