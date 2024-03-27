@@ -28,6 +28,7 @@
 
 .statImg {
   width: 50px;
+  height: 50px;
   transform: translateY(-50%) rotate(-15deg);
   position: absolute;
   top: 60%;
