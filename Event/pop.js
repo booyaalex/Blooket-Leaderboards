@@ -27,3 +27,6 @@ function potions() {
 function guild8332() {
   window.location.href = "https://blooket.games/Event/popGuilds/guild8332.html";
 }
+function dreamGuild() {
+  window.location.href = "https://blooket.games/Event/popGuilds/Dream_Guild.html";
+}
