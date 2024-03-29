@@ -30,3 +30,6 @@ function guild8332() {
 function dreamGuild() {
   window.location.href = "https://blooket.games/Event/popGuilds/Dream_Guild.html";
 }
+function preeminence() {
+  window.location.href = "https://blooket.games/Event/popGuilds/Preeminence.html";
+}
