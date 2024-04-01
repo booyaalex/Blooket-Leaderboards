@@ -24,7 +24,7 @@ body {
   background-color: #40115f;
   margin-left: auto;
   margin-right: auto;
-  width: 55%;
+  width: calc(270 * 3px);
   padding-left: 10px;
   border-radius: 10px;
   z-index: 3;
