@@ -62,3 +62,7 @@
   margin-left: auto;
   display: flex;
 }
+
+#mainBoard table {
+  width: 95%;
+}
