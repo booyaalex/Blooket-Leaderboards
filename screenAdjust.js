@@ -40,8 +40,6 @@ function closeUp() {
 //blooket.games/gamemodes
 
 if(URL == "/gamemode.html") {
-  document.getElementById('popBoards').style.width = document.querySelector('table').offsetWidth;
-  console.log('test');
   if(width <= 644) {
 
   //YO Size 
