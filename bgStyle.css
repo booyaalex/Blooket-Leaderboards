@@ -7,7 +7,7 @@
     background-color: #0bc2cf;
     overflow: hidden;
     transition-duration: 0.5s;
-}
+} 
 
 #bg {
   position: absolute;
@@ -21,4 +21,37 @@
     transform: translate(-50%,-50%) rotate(15deg);
     z-index: -1;
     background-image: url('https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png');
+}
+
+
+/*Tower Defense*/
+
+#SMBG {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-size: 550px;
+  background-position: -100px -100px;
+  z-index: -1; 
+  background-image: url("https://i.ibb.co/Tqy7Nsx/Screenshot-2024-02-20-6-24-13-PM.png");
+}
+
+#LDBG {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-size: 550px;
+  background-position: -100px -100px;
+  z-index: -1; 
+  background-image: url("https://i.ibb.co/cCbfVCg/LDBG.png");
+}
+
+#AMBG {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-size: 550px;
+  background-position: -100px -100px;
+  z-index: -1; 
+  background-image: url("https://i.ibb.co/Lk3Xjsn/AMBG.png");
 }

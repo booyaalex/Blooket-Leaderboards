@@ -33,7 +33,7 @@ body {
   .rightBoards {
     background-color: #40115f;
     float: right;
-    width: 45%;
+    width: calc(70% - 340px);
     padding-left: 10px;
     border-radius: 10px;
     z-index: 3;

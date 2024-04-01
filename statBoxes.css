@@ -1,7 +1,7 @@
 
 .statsBox {
     background-color: #9a49aa;
-    border-radius: 7px;
+    border-radius: 7px; 
     align-items: center;
     display: flex;
     flex-direction: column;
