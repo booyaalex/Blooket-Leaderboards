@@ -1,16 +1,15 @@
 
 .statsBox {
-  background-color: #9a49aa;
-  border-radius: 7px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 5px 5px 11px;
-  margin: 15px;
-  box-shadow: inset 0 -6px rgba(0, 0, 0, 0.2);
-  transition-duration: 0.2s;
-  cursor: pointer;
+    background-color: #9a49aa;
+    border-radius: 7px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 15px;
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.2s;
+    cursor: pointer;
 }
 .statsBox:hover {
   box-shadow: none;
@@ -20,10 +19,10 @@
 .statTitle {
   font-family: Titan One;
   color: white;
-  font-size: 28px;
+  font-size: 200%;
   margin: 6px;
   text-align: center;
-  padding: 0px 10px;
+  padding: 5px 10px 10px;
 }
 
 .statImg {
