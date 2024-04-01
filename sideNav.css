@@ -29,8 +29,3 @@
   /*Position*/
   float: right;
 }
-
-#bgContain {
-  /*Transition*/
-  transition-duration: 0.5s;
-}

@@ -6,6 +6,7 @@
     top: 0;
     background-color: #0bc2cf;
     overflow: hidden;
+    transition-duration: 0.5s;
 }
 
 #bg {
@@ -18,6 +19,6 @@
     background-position: -100px -100px;
     opacity: .1;
     transform: translate(-50%,-50%) rotate(15deg);
-  z-index: -1;
-  background-image: url('https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png');
+    z-index: -1;
+    background-image: url('https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png');
 }
