@@ -20,7 +20,7 @@ body {
   .leftBoards {
     background-color: #40115f;
     float: left;
-    width: 45%;
+    width: auto;
     padding-left: 10px;
     border-radius: 10px;
     z-index: 3;
