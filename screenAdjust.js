@@ -1,19 +1,16 @@
 let width = screen.availWidth;
-let screenMode = 0;
 let bgHeight = screen.availHeight + 400;
 const URL = window.location.pathname;
-//0 Is Comp; 1 is Phone; 2 is Big Comp
+
 
 
 //Side Nav Toggle
 if (width <= 644) {
-  let screenMode = 1;
   document.getElementById("navBar").innerHTML = "<i class='fa-solid fa-bars' style='float: left; font-size: 45px; color: white; padding-left: 25px; padding-top: 20px;' onclick='openUp()'></i>";
   document.getElementById("navBar").style.height = "80px";
   document.getElementById("bg").style.maxHeight = bgHeight + "%";
 }
 console.log(width);
-console.log(screenMode);
 
 //Side Navagation
 function openUp() {
@@ -34,24 +31,6 @@ function closeUp() {
   link.forEach(sideLink => {
   sideLink.style.fontSize = '0px';
 });
-}
-
-
-//blooket.games/gamemodes
-
-if(URL == "/gamemode.html") {
-  if(width <= 644) {
-
-  //YO Size 
-    const YO = document.querySelectorAll('.YO_Text');
-    i = 0;
-    YO.forEach(YO_Text => {
-      YO[i].style.fontSize = "35px";
-      i++;
-    });
-    //Header Font Size
-    document.getElementById("mainHeader").style.fontSize = "70px";
-  }
 }
 
 
