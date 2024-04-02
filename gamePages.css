@@ -72,7 +72,7 @@ body {
   .tinyRightBoards {
     background-color: #40115f;
     float: right;
-    width: 30%;
+    width: calc(270 * 2px);
     padding-left: 10px;
     border-radius: 10px;
     z-index: 3;
