@@ -119,3 +119,14 @@ body {
     justify-content: center;
   }
   
+
+  /*Img Links*/
+
+  .imgLink {
+    transition-duration: 0.2s;
+    cursor: pointer;
+  }
+  
+  .imgLink:hover {
+    transform: scale(1.1);
+  }
