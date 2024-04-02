@@ -56,6 +56,7 @@ if(URL == "/stats.html") {
 //blooket.games/index.html
 
 if (width <= 644) {
+  if(URL == "/index.html" || URL == "/") {
     //Right Side
     const right = document.querySelectorAll('.rightBoards');
     let i = 0;
@@ -105,7 +106,7 @@ if (width <= 644) {
     const H3 = document.querySelector("h3");
     console.log(H3);
     H3.style.fontSize = "30px";
-    
+  
 
     //Scale
     const center = document.querySelectorAll(".centerBoards");
@@ -133,5 +134,5 @@ if (width <= 644) {
       YO[i].style.fontSize = "35px";
       i++;
     });
-  
+  }
 }
