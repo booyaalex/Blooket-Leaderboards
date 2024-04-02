@@ -59,7 +59,7 @@ body {
   .tinyLeftBoards {
     background-color: #40115f;
     float: left;
-    width: 30%;
+    width: auto;
     padding-left: 10px;
     border-radius: 10px;
     z-index: 3;
