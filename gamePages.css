@@ -105,6 +105,8 @@ body {
     margin-bottom: 100px;
     display: flex;
     justify-content: center;
+    padding: 0px 5px;
+    margin-left: 10px;
   }
   
   #submissionBoard {
@@ -117,6 +119,8 @@ body {
     margin-bottom: 100px;
     display: flex;
     justify-content: center;
+    padding: 0px 5px;
+    margin-right: 10px;
   }
   
 
