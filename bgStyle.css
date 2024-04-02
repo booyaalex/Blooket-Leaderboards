@@ -92,3 +92,23 @@
   z-index: -1; 
   background-image: url("https://i.ibb.co/Zg6dNGK/Clock.png");
 }
+
+
+/*Fishing BG*/
+
+#bgWave {
+  position: absolute;
+  bottom: 0;
+  height: 118px;
+  width: calc(100% + 100px);
+  z-index: 0; 
+  background-image: url("https://i.ibb.co/fNCkq0d/Waves.png");
+  opacity: 0.9;
+}
+#bgF {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  background: linear-gradient(180deg,#9be2fe 0,#67d1fb);
+}
