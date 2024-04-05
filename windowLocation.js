@@ -15,3 +15,10 @@ function maxHappiness() {
 function maxGold() {
     window.location.href = "kingdom/maxGold_LB.html";
 }
+
+function mostPeople() {
+    window.location.href = "kingdom/mostPeople_LB.html";
+}
+function fastestDeath() {
+    window.location.href = "kingdom/fastestDeath_LB.html";
+}
