@@ -73,3 +73,5 @@ function totalDamage() {
 function totalRounds() {
   window.location.href = "TD/totalRoundsLB.html";
 }
+
+
