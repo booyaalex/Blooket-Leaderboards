@@ -25,5 +25,8 @@
   justify-content: center;
 }
 .selectBox {
-  background-color: linear-gradient(red 50%, blue 50%);
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
+  border: solid 3px #9a49aa;
 }
