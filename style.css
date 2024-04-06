@@ -24,3 +24,6 @@
   display: flex;
   justify-content: center;
 }
+.selectBox {
+  background-color: linear-gradient(red 50%, blue 50%);
+}
