@@ -29,4 +29,5 @@
   height: 75px;
   border-radius: 5px;
   border: solid 3px #9a49aa;
+  cursor: pointer;
 }
