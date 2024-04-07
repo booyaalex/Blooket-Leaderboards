@@ -15,6 +15,15 @@ function catchet() {
     localStorage.setItem("Theme", "Catchet");
     changeTheme();
 }
+function seaside() {
+    localStorage.setItem("Theme", "Seaside");
+    changeTheme();
+}
+
+function activateTheFoolishDreams() {
+    localStorage.setItem("Theme", "TheFunny");
+    changeTheme();
+}
 
 changeTheme();
 
@@ -82,8 +91,8 @@ function changeTheme() {
     }
     if(theme == "Catchet") {
         navBarBG = "#1f0d5c"; //Done
-        navShadow = "#0e0244";
-        bgImage = "https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png";
+        navShadow = "#0e0244"; //Done
+        bgImage = "https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png"; //Done
         bgColor = "#2e1386"; //Done
         yoBorder = "#0e0244"; //Done
         yoColor1 = "#3e28a2"; //Done
@@ -92,6 +101,32 @@ function changeTheme() {
         statBoxColor = "#9a49aa"; //Done
         statBoxHover = "rgba(128, 60, 140, 1)"; //Done
         sideNavBG = "#0e0244"; //Done
+    }
+    if(theme == "Seaside"){
+        navBarBG = "#a155b6"; //Done
+        navShadow = "rgba(128, 60, 140, 1)"; //Done
+        bgImage = "https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png"; //Done
+        bgColor = "#ffa4b6"; //Done(Gradient)
+        yoBorder = "#0b1354"; //Done
+        yoColor1 = "#1d77de"; //Done
+        yoColor2 = "#165baa"; //Done
+        boardColor = "#61256b"; //Done
+        statBoxColor = "#f765a5"; //Done
+        statBoxHover = "rgba(128, 60, 140, 1)";
+        sideNavBG = "#0b1354"; //Done
+    }
+    if(theme == "TheFunny"){
+        navBarBG = "#1f0d5c"; 
+        navShadow = "#0e0244";
+        bgImage = "https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png";
+        bgColor = "#2e1386"; 
+        yoBorder = "#17308d"; 
+        yoColor1 = "#3e28a2"; 
+        yoColor2 = "#17308d"; 
+        boardColor = "#1f0d5c"; 
+        statBoxColor = "#9a49aa"; 
+        statBoxHover = "rgba(128, 60, 140, 1)"; 
+        sideNavBG = "#0e0244";  
     }
     
     //Change NavBar
@@ -105,24 +140,32 @@ function changeTheme() {
             forLoop11[i].style.backgroundImage = "url('" + bgImage + "')";
         }
         if(forLoop11[i].id == "bgContain") {
-            forLoop11[i].style.backgroundColor = bgColor;
+            if(theme == "Seaside"){
+                forLoop11[i].style.background = "linear-gradient(135deg, #ffa4b6, #f765a5)";
+            } else {
+                forLoop11[i].style.background = "";
+                forLoop11[i].style.backgroundColor = bgColor;
+            }
+            
         }
     }
 
     //Change YO_Container
-    
-
-
-const forLoop1 = document.getElementsByClassName("YO_Text");
+   
+    const forLoop1 = document.getElementsByClassName("YO_Text");
 
     for(let i = 0; i < forLoop1.length; i++) {
-        if(theme == "Blacket") {
+        if(theme == "Blacket" || theme == "Seaside") {
             forLoop1[i].style.borderColor = "transparent";
+            forLoop1[i].style.borderStyle = "none";
+            forLoop1[i].style.padding = "3px 15px";
         } else {
+            forLoop1[i].style.padding = "0px 15px";
             forLoop1[i].style.borderColor = yoBorder;
+            forLoop1[i].style.borderStyle = "solid";
         }
         
-        forLoop1[i].style.background = "linear-gradient(" + yoColor1 + ", " + yoColor1 + " 50%, " + yoColor2 + " 50.01%, " + yoColor2 + ")";
+        forLoop1[i].style.background = "linear-gradient(" + yoColor1 + " 50%, " + yoColor2 + " 50.01%)";
     }
 
     //Change Boards
@@ -183,4 +226,12 @@ const forLoop1 = document.getElementsByClassName("YO_Text");
 
     //Change Side Nav
     document.getElementById("sidenav").style.backgroundColor = sideNavBG;
+
+
+    //The Funny
+    if(theme == "TheFunny"){
+        console.log("HEHE");
+    }
 }
+
+seaside();
