@@ -24,6 +24,7 @@ function changeTheme() {
 
     //Set Colors
     let navBarBG;
+    let navShadow;
 
     let bgImage;
     let bgColor;
@@ -42,6 +43,7 @@ function changeTheme() {
 
     if(theme == "Blooket") {
         navBarBG = "#9a49aa";
+        navShadow = "rgba(128, 60, 140, 1)";
         bgImage = "https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png";
         bgColor = "#0bc2cf";
         yoBorder = "#ef7426";
@@ -54,6 +56,7 @@ function changeTheme() {
     }
     if(theme == "Blacket") {
         navBarBG = "#2f2f2f";
+        navShadow = "#3f3f3f";
         bgImage = "https://blacket.org/content/background.png";
         bgColor = "#4f4f4f";
         yoBorder = "";
@@ -66,6 +69,7 @@ function changeTheme() {
     }
     if(theme == "Triangulet") {
         navBarBG = "#9a49aa";
+        navShadow = "rgba(128, 60, 140, 1)";
         bgImage = "https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png";
         bgColor = "#37a83f"; //Done
         yoBorder = "#ef7426";
@@ -78,6 +82,7 @@ function changeTheme() {
     }
     if(theme == "Catchet") {
         navBarBG = "#1f0d5c"; //Done
+        navShadow = "#0e0244";
         bgImage = "https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png";
         bgColor = "#2e1386"; //Done
         yoBorder = "#0e0244"; //Done
@@ -91,6 +96,7 @@ function changeTheme() {
     
     //Change NavBar
     document.getElementById("navBar").style.backgroundColor = navBarBG;
+    document.getElementById("navBar").style.boxShadow = "0px 0px 0px 10px " + navShadow;
 
     //Change BG
     document.getElementById("bg").style.backgroundImage = "url('" + bgImage + "')";
