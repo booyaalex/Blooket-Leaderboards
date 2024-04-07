@@ -69,12 +69,12 @@ function changeTheme() {
     }
     if(theme == "Triangulet") {
         navBarBG = "#204404"; //Done
-        navShadow = "rgba(128, 60, 140, 1)";
+        navShadow = "#183404"; //Done
         bgImage = "https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png";
         bgColor = "#37a83f"; //Done
         yoBorder = "#204404"; //Done
-        yoColor1 = "#fcd843";
-        yoColor2 = "#feb31a";
+        yoColor1 = "#549c22"; //Done
+        yoColor2 = "#3c7d0f"; //Done
         boardColor = "#30640c"; //Done
         statBoxColor = "#37a83f"; //Done
         statBoxHover = "rgba(57, 168, 63, 1)"; //Done
