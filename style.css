@@ -24,7 +24,7 @@
   display: flex;
   justify-content: center;
 }
-.selectBox {
+.selectorBox {
   width: 75px;
   height: 75px;
   border-radius: 5px;
