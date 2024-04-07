@@ -15,7 +15,6 @@ console.log(width);
 //Side Navagation
 function openUp() {
   document.getElementById("sidenav").style.width = "30%";
-  document.getElementById('bgContain').style.backgroundColor = "rgb(9, 86, 92)";
   
   const link = document.querySelectorAll('.sideLink');
   link.forEach(sideLink => {
@@ -25,7 +24,6 @@ function openUp() {
 
 function closeUp() {
   document.getElementById("sidenav").style.width = "0%";
-  document.getElementById('bgContain').style.backgroundColor = "rgb(11, 194, 207)";
   
   const link = document.querySelectorAll('.sideLink');
   link.forEach(sideLink => {

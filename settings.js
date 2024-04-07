@@ -175,5 +175,5 @@ const forLoop1 = document.getElementsByClassName("YO_Text");
     }
 
     //Change Side Nav
-    document.getElementById("sideNav").style.backgroundColor = sideNavBG;
+    document.getElementById("sidenav").style.backgroundColor = sideNavBG;
 }
