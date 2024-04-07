@@ -20,11 +20,6 @@ function seaside() {
     changeTheme();
 }
 
-function activateTheFoolishDreams() {
-    localStorage.setItem("Theme", "TheFunny");
-    changeTheme();
-}
-
 changeTheme();
 
 //Change Theme
@@ -114,19 +109,6 @@ function changeTheme() {
         statBoxColor = "#f765a5"; //Done
         statBoxHover = "rgba(128, 60, 140, 1)";
         sideNavBG = "#0b1354"; //Done
-    }
-    if(theme == "TheFunny"){
-        navBarBG = "#1f0d5c"; 
-        navShadow = "#0e0244";
-        bgImage = "https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png";
-        bgColor = "#2e1386"; 
-        yoBorder = "#17308d"; 
-        yoColor1 = "#3e28a2"; 
-        yoColor2 = "#17308d"; 
-        boardColor = "#1f0d5c"; 
-        statBoxColor = "#9a49aa"; 
-        statBoxHover = "rgba(128, 60, 140, 1)"; 
-        sideNavBG = "#0e0244";  
     }
     
     //Change NavBar
@@ -227,11 +209,6 @@ function changeTheme() {
     //Change Side Nav
     document.getElementById("sidenav").style.backgroundColor = sideNavBG;
 
-
-    //The Funny
-    if(theme == "TheFunny"){
-        console.log("HEHE");
-    }
 }
 
 seaside();
