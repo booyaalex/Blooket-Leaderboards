@@ -210,5 +210,3 @@ function changeTheme() {
     document.getElementById("sidenav").style.backgroundColor = sideNavBG;
 
 }
-
-seaside();
