@@ -99,8 +99,15 @@ function changeTheme() {
     document.getElementById("navBar").style.boxShadow = "0px 0px 0px 10px " + navShadow;
 
     //Change BG
-    document.getElementById("bg").style.backgroundImage = "url('" + bgImage + "')";
-    document.getElementById("bgContain").style.backgroundColor = bgColor;
+    const forLoop11 = document.getElementsByTagName("div");
+    for(let i = 0; i < forLoop11.length; i++){
+        if(forLoop11[i].id == "bg") {
+            forLoop11[i].style.backgroundImage = "url('" + bgImage + "')";
+        }
+        if(forLoop11[i].id == "bgContain") {
+            forLoop11[i].style.backgroundColor = bgColor;
+        }
+    }
 
     //Change YO_Container
     
@@ -141,16 +148,16 @@ const forLoop1 = document.getElementsByClassName("YO_Text");
         forLoop6[i].style.backgroundColor = boardColor;
     }
 
-    const forLoop9 = document.getElementsByName("div");
+    const forLoop9 = document.getElementsByTagName("div");
     for(let i = 0; i < forLoop9.length; i++){
         if(forLoop9[i].id == "mainBoard") {
-            forLoop[i].style.backgroundColor = boardColor;
+            forLoop9[i].style.backgroundColor = boardColor;
         }
         if(forLoop9[i].id == "infoBoard") {
-            forLoop[i].style.backgroundColor = boardColor;
+            forLoop9[i].style.backgroundColor = boardColor;
         }
         if(forLoop9[i].id == "submissionBoard") {
-            forLoop[i].style.backgroundColor = boardColor;
+            forLoop9[i].style.backgroundColor = boardColor;
         }
     }
 
