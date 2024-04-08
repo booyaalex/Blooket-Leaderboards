@@ -60,3 +60,23 @@ function guildOfBlooketSweats() {
   localStorage.setItem("guild", 9);
   window.location.href = "popGuilds/guildOfBlooketSweats.html";
 }
+function originalBlooketBois() {
+  localStorage.setItem("guild", 10);
+  window.location.href = "popGuilds/originalBlooketBois.html";
+}
+function guildOfTsar() {
+  localStorage.setItem("guild", 11);
+  window.location.href = "popGuilds/guildOfTsar.html";
+}
+function underDogs() {
+  localStorage.setItem("guild", 12);
+  window.location.href = "popGuilds/underDogs.html";
+}
+function tritans() {
+  localStorage.setItem("guild", 13);
+  window.location.href = "popGuilds/tritans.html";
+}
+function frozenFrost() {
+  localStorage.setItem("guild", 14);
+  window.location.href = "popGuilds/frozenFrost.html";
+}
