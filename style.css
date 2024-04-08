@@ -31,3 +31,12 @@
   border: solid 3px #9a49aa;
   cursor: pointer;
 }
+
+.TXT {
+  font-family: Titan One;
+  font-size: 32px;
+}
+.TXT p {
+  font-family: Nunito;
+  font-size: 20px;
+}
