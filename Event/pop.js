@@ -25,14 +25,18 @@ function potions() {
 
 
 function guild8332() {
+  localStorage.setItem("guild", 1);
   window.location.href = "popGuilds/guild8332.html";
 }
 function dreamGuild() {
+  localStorage.setItem("guild", 2);
   window.location.href = "popGuilds/Dream_Guild.html";
 }
 function preeminence() {
+  localStorage.setItem("guild", 3);
   window.location.href = "popGuilds/Preeminence.html";
 }
 function BALLIN() {
+  localStorage.setItem("guild", 4);
   window.location.href = "popGuilds/BALLIN.html";
 }
