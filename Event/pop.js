@@ -52,3 +52,11 @@ function blooketGrinders() {
   localStorage.setItem("guild", 7);
   window.location.href = "popGuilds/BlooketGrinders.html";
 }
+function blooketWiki() {
+  localStorage.setItem("guild", 8);
+  window.location.href = "popGuilds/blooketWiki.html";
+}
+function guildOfBlooketSweats() {
+  localStorage.setItem("guild", 9);
+  window.location.href = "popGuilds/guildOfBlooketSweats.html";
+}
