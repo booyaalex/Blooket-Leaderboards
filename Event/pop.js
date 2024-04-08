@@ -40,15 +40,15 @@ function BALLIN() {
   localStorage.setItem("guild", 4);
   window.location.href = "popGuilds/BALLIN.html";
 }
-function dreamGuild() {
+function blooketMafia() {
   localStorage.setItem("guild", 5);
   window.location.href = "popGuilds/Blooket_Mafia.html";
 }
-function preeminence() {
+function WINNERPOV() {
   localStorage.setItem("guild", 6);
   window.location.href = "popGuilds/WINNER_POV.html";
 }
-function BALLIN() {
+function blooketGrinders() {
   localStorage.setItem("guild", 7);
   window.location.href = "popGuilds/BlooketGrinders.html";
 }
