@@ -104,3 +104,23 @@ function doge() {
   localStorage.setItem("guild", 20);
   window.location.href = "popGuilds/doge.html";
 }
+function masterMinds() {
+  localStorage.setItem("guild", 21);
+  window.location.href = "popGuilds/masterMinds.html";
+}
+function THESALTYBOIS() {
+  localStorage.setItem("guild", 22);
+  window.location.href = "popGuilds/THESALTYBOIS.html";
+}
+function doggoGuild() {
+  localStorage.setItem("guild", 23);
+  window.location.href = "popGuilds/doggoGuild.html";
+}
+function blooketGrinding() {
+  localStorage.setItem("guild", 24);
+  window.location.href = "popGuilds/blooketGrinding.html";
+}
+function flashGuild() {
+  localStorage.setItem("guild", 25);
+  window.location.href = "popGuilds/flashGuild.html";
+}
