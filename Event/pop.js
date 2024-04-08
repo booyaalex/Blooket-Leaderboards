@@ -80,3 +80,27 @@ function frozenFrost() {
   localStorage.setItem("guild", 14);
   window.location.href = "popGuilds/frozenFrost.html";
 }
+function dream() {
+  localStorage.setItem("guild", 15);
+  window.location.href = "popGuilds/dream.html";
+}
+function blooketLegends() {
+  localStorage.setItem("guild", 16);
+  window.location.href = "popGuilds/blooketLegends.html";
+}
+function BCC() {
+  localStorage.setItem("guild", 17);
+  window.location.href = "popGuilds/BCC.html";
+}
+function winningGuild() {
+  localStorage.setItem("guild", 18);
+  window.location.href = "popGuilds/winningGuild.html";
+}
+function dreamTeam2() {
+  localStorage.setItem("guild", 19);
+  window.location.href = "popGuilds/dreamTeam2.html";
+}
+function doge() {
+  localStorage.setItem("guild", 20);
+  window.location.href = "popGuilds/doge.html";
+}
