@@ -25,11 +25,14 @@ function potions() {
 
 
 function guild8332() {
-  window.location.href = "https://blooket.games/Event/popGuilds/guild8332.html";
+  window.location.href = "popGuilds/guild8332.html";
 }
 function dreamGuild() {
-  window.location.href = "https://blooket.games/Event/popGuilds/Dream_Guild.html";
+  window.location.href = "popGuilds/Dream_Guild.html";
 }
 function preeminence() {
-  window.location.href = "https://blooket.games/Event/popGuilds/Preeminence.html";
+  window.location.href = "popGuilds/Preeminence.html";
+}
+function BALLIN() {
+  window.location.href = "popGuilds/BALLIN.html";
 }
