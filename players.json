@@ -16,21 +16,13 @@
         "playersDefeated":24035,
         "gamesPlayed":3411,
         "totalTokens":258884,
-        "dateCreated":26012021
-      }
-    ],
-    "factory": [
-      {
+        "dateCreated":26012021,
         "mostCash1":null,
         "mostCash7":null,
         "mostCash60":null,
         "millionCash":null,
         "billionCash":null,
-        "trillionCash":null
-      }
-    ],
-    "monster": [
-      {
+        "trillionCash":null,
         "snowNormal":"7:36:41",
         "snowNormalItem":null,
         "snowNormalHit":null,
@@ -42,21 +34,13 @@
         "snowChallengeHit":null,
         "clockChallenge":null,
         "clockChallengeItem":null,
-        "clockChallengeHit":null
-      }
-    ],
-    "fishing": [
-      {
+        "clockChallengeHit":null,
         "mostWeight7":null,
         "mostWeight15":null,
         "mostWeight30":null,
         "oneMillion":null,
         "tenMillion":null,
-        "hundredThousand":null
-      }
-    ],
-    "towerDefenseOne": [
-      {
+        "hundredThousand":null,
         "onlyChick":null,
         "onlySquirrel":null,
         "onlyOwl":null,
@@ -74,11 +58,7 @@
         "abandonedMineSpeed":null,
         "mostDamage":null,
         "totalDamage":392615052,
-        "totalRounds":13360
-      }
-    ],
-    "towerDefenseTwo": [
-      {
+        "totalRounds":13360,
         "sunnyMeadowEasy":154,
         "lostDesertEasy":103,
         "abandonedMineEasy":null,
@@ -93,11 +73,7 @@
         "lostDesertHard":null,
         "abandonedMineHard":null,
         "crossroadsHard":null,
-        "fracturedFactoryHard":null
-      }
-    ],
-    "cafe": [
-      {
+        "fracturedFactoryHard":null,
         "highestDay":122,
         "totalCafeCash":13032445426,
         "totalFoodServed":73155,
@@ -106,19 +82,15 @@
         "day10":null,
         "day50":null,
         "allFood":null,
-        "maxFood":null
-      }
-    ],
-    "kingdom": [
-      {
+        "maxFood":null,
         "maxPeople":null,
         "maxHappiness":null,
         "maxMaterials":null,
         "maxGold":null,
         "mostPeople":null,
-        "fastestDeath":null
+        "fastestDeath":null,
+        "flappyBlook":125
       }
-    ],
-    "flappyBlook":125
+    ]
   }
 ]
