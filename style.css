@@ -42,3 +42,8 @@
   font-family: Nunito;
   font-size: 20px;
 }
+
+.IMG {
+  border-radius: 50px;
+  border: solid 4px white;
+}
