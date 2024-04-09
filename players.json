@@ -5,18 +5,18 @@
     "blook":"elite",
     "stats": [
       {
-        "totalWins":"1876",
-        "totalAnswers":"290393",
-        "totalBlooks":"151",
-        "fishingWeight":"1029418106",
-        "totalPoints":"1394051",
-        "showdownWins":"364",
-        "factoryUpgrades":"29005",
-        "boxesOpened":"46422",
-        "playersDefeated":"24035",
-        "gamesPlayed":"3411",
-        "totalTokens":"258884",
-        "dateCreated":"26012021"
+        "totalWins":1876,
+        "totalAnswers":"290393,
+        "totalBlooks":151,
+        "fishingWeight":1029418106,
+        "totalPoints":1394051,
+        "showdownWins":364,
+        "factoryUpgrades":29005,
+        "boxesOpened":46422,
+        "playersDefeated":24035,
+        "gamesPlayed":3411,
+        "totalTokens":258884,
+        "dateCreated":26012021
       }
     ],
     "factory": [
@@ -66,23 +66,23 @@
         "onlyDragon":"44",
         "onlyUnicorn":null,
         "onlyWizard":null,
-        "sunnyMeadowHighest":"558",
-        "lostDesertHighest":"274",
-        "abandonedMineHighest":"251",
+        "sunnyMeadowHighest":558,
+        "lostDesertHighest":274,
+        "abandonedMineHighest":251,
         "sunnyMeadowSpeed":null,
         "lostDesertSpeed":null,
         "abandonedMineSpeed":null,
         "mostDamage":null,
-        "totalDamage":"392615052",
-        "totalRounds":"13360"
+        "totalDamage":392615052,
+        "totalRounds":13360
       }
     ],
     "towerDefenseTwo": [
       {
-        "sunnyMeadowEasy":"154",
-        "lostDesertEasy":"103",
+        "sunnyMeadowEasy":154,
+        "lostDesertEasy":103,
         "abandonedMineEasy":null,
-        "crossroadsEasy":"139",
+        "crossroadsEasy":139,
         "fracturedFactoryEasy":null,
         "sunnyMeadowNormal":null,
         "lostDesertNormal":null,
@@ -98,9 +98,9 @@
     ],
     "cafe": [
       {
-        "highestDay":"122",
-        "totalCafeCash":"13032445426",
-        "totalFoodServed":"73155",
+        "highestDay":122,
+        "totalCafeCash":13032445426,
+        "totalFoodServed":73155,
         "maxToast":"00:53:81",
         "maxUpgrades":null,
         "day10":null,
@@ -119,6 +119,6 @@
         "fastestDeath":null
       }
     ],
-    "flappyBlook":"125"
+    "flappyBlook":125
   }
 ]
