@@ -1,7 +1,7 @@
 let LEADERBOARD;
 
 async function createLeaderboard() {
-    localStorage.setItem("leaderboard", 0);
+    localStorage.setItem("leaderboard", 1);
 
     LEADERBOARD = localStorage.getItem("leaderboard");
 
@@ -15,17 +15,25 @@ async function createLeaderboard() {
 
     for (let i = 0; i < LENGTH; i++) {
         //Get Data
+        console.log(i);
         SCORES[i] = JSON[i].stats[LEADERBOARD * 2 - 1];
         console.log(SCORES[i]);
-        playerMap.set(SCORES[i], {name: JSON[i].name, user: JSON[i].userName, blook: JSON[i].blook});
-        LOG = playerMap.get(SCORES[i]);
-        console.log(LOG.name);
+        if (SCORES[i] == null) { 
+           SCORES.splice(i, 1);
+        } else {
+            console.log(SCORES[i]);
+            playerMap.set(SCORES[i], {name: JSON[i].name, user: JSON[i].userName, blook: JSON[i].blook});
+            LOG = playerMap.get(SCORES[i]);
+            console.log(LOG.name);
+        }
     }
-    console.log(SCORES);
-    const SORTED_SCORE = SCORES.sort(function (a, b) {  return a - b;  });
-    console.log(SORTED_SCORE);
+    console.log("SCORES: " + SCORES);
+    console.log("SCORES.length: " + SCORES.length);
+    let SORTED_SCORE = SCORES.sort( function(a, b) {return b-a} );
+    SORTED_SCORE = SORTED_SCORE.filter(elm => elm);
+    console.log("SORTED_SCORE: " + SORTED_SCORE);
 
-    for(let i = 0; i < SCORES.length; i++){
+    for(let i = 0; i < SORTED_SCORE.length; i++){
         console.log(SORTED_SCORE);
         console.log(i);
         let MAP = playerMap.get(SORTED_SCORE[i]);
@@ -39,7 +47,7 @@ async function createLeaderboard() {
             //Make Div
             let DIV = document.createElement("div");
             if(a == 1) {
-                DIV.className = "statImgLB"
+                DIV.className = "statImgLB";
             } else {
                 DIV.className = "statTitleLB";
             }
