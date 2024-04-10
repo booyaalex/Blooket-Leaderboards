@@ -15,7 +15,7 @@ async function createLeaderboard() {
 
     for (let i = 0; i < LENGTH; i++) {
         //Get Data
-        SCORES[i] = JSON[i].stats[LEADERBOARD * 2];
+        SCORES[i] = JSON[i].stats[LEADERBOARD * 2 - 1];
         console.log(SCORES[i]);
         playerMap.set(SCORES[i], {name: JSON[i].name, user: JSON[i].userName, blook: JSON[i].blook});
         LOG = playerMap.get(SCORES[i]);
