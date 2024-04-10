@@ -15,11 +15,7 @@ async function createLeaderboard() {
 
     for (let i = 0; i < LENGTH; i++) {
         //Get Data
-        const temp1 = Object.keys(JSON[i].stats[LEADERBOARD]);
-        console.log(temp1[0]);
-        const temp = "JSON[i].stats[LEADERBOARD]." + temp1[0];
-        console.log(temp);
-        SCORES[i] = JSON[i].stats[LEADERBOARD].array[temp1[0]];
+        SCORES[i] = JSON[i].stats[LEADERBOARD * 2];
         console.log(SCORES[i]);
         playerMap.set(SCORES[i], {name: JSON[i].name, user: JSON[i].userName, blook: JSON[i].blook});
         LOG = playerMap.get(SCORES[i]);
@@ -93,6 +89,8 @@ async function createLeaderboard() {
 
         
         console.log(tr);
+        const temp = document.getElementsByTagName("table");
+        temp[0].appendChild(tr);
     }
 }
 
