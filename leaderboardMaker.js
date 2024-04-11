@@ -17,7 +17,11 @@ async function createLeaderboard() {
         //Get Data
         console.log(i);
         SCORES[i] = JSON[i].stats[LEADERBOARD * 2 - 1];
-        console.log(SCORES[i]);
+        let temp = SCORES[i];
+        temp = temp + (0.0001 * i);
+        SCORES[i] = temp;
+        console.log("SCORES: " + SCORES[i]);
+        console.log("temp: " + temp);
         if (SCORES[i] == null) { 
            SCORES.splice(i, 1);
         } else {
@@ -29,6 +33,8 @@ async function createLeaderboard() {
     }
     console.log("SCORES: " + SCORES);
     console.log("SCORES.length: " + SCORES.length);
+    let FILTER_SCORE = [...new Set(SCORES)];
+    console.log(FILTER_SCORE);
     let SORTED_SCORE = SCORES.sort( function(a, b) {return b-a} );
     SORTED_SCORE = SORTED_SCORE.filter(elm => elm);
     console.log("SORTED_SCORE: " + SORTED_SCORE);
