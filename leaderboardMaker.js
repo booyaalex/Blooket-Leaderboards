@@ -80,7 +80,7 @@ async function createLeaderboard() {
                 DIV.appendChild(NAME);
             }
             if(a == 3) {
-                let SCORE = document.createTextNode(SORTED_SCORE[i]);
+                let SCORE = document.createTextNode(SORTED_SCORE[i].toLocaleString());
                 console.log(SCORE);
 
                 DIV.appendChild(SCORE);
