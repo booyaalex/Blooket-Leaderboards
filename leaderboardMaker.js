@@ -36,7 +36,13 @@ async function createLeaderboard() {
     //let FILTER_SCORE = [...new Set(SCORES)];
     //console.log(FILTER_SCORE);
     let SORTED_SCORE = SCORES.sort( function(a, b) {return b-a} );
+    
+    //Filter out scores that arent cool
     SORTED_SCORE = SORTED_SCORE.filter(elm => elm);
+    SORTED_SCORE = SORTED_SCORE.filter(function(x) {
+        return x >= 1;
+    });
+
     console.log("SORTED_SCORE: " + SORTED_SCORE);
 
     for(let i = 0; i < SORTED_SCORE.length; i++){
@@ -86,10 +92,11 @@ async function createLeaderboard() {
                 DIV.appendChild(NAME);
             }
             if(a == 3) {
-                let SCORE = document.createTextNode(SORTED_SCORE[i].toLocaleString());
-                console.log(SCORE);
+                let SCORE1 = Math.trunc(SORTED_SCORE[i]);
+                let SCORE2 = document.createTextNode(SCORE1.toLocaleString());
+                console.log(SCORE2);
 
-                DIV.appendChild(SCORE);
+                DIV.appendChild(SCORE2);
             }
             if(a == 4) {
                 let USER = document.createTextNode(MAP.user);
