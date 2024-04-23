@@ -9,11 +9,13 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 
+const playerMap = new Map();
 
 function getData() { 
     firebase.database().ref("/").on('value', function(snapshot) { 
-    document.getElementById("mainBoard").innerHTML = "<div class='YO_Container'><div class='YO_Text'> Rankings </div></div><br><br>";
-    document.getElementById("output").innerHTML = ""; snapshot.forEach(function(childSnapshot) { 
+    document.getElementById("mainBoard").innerHTML = "<div class='YO_Container'><div class='YO_Text'> Rankings </div></div><br><br><table id='TABLE' style='justify-content: space-evenly;  margin-left: auto; margin-right: auto;'><tr><td><div class='statsBoxLB'><div class='statTitleLB'>Ranking</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blook</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Person</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Time</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blooket Username</div></div></td></tr></table>";
+    let i = 0;
+    snapshot.forEach(function(childSnapshot) { 
         //Declare const's to ame getting data easier.
         let displayName,
         userName,
@@ -24,6 +26,15 @@ function getData() {
           console.log("User - " + childKey);
 
           displayName = childSnapshot.val().name;
+          console.log("displayName - " + displayName);
+          userName = childSnapshot.val().username;
+          console.log("userName - " + userName);
+          displayBlook = childSnapshot.val().blook;
+          console.log("displayBlook - " + displayBlook);
+          stats[i] = childSnapshot.val().test[(i + 1) * 2];
+            console.log(stats);
+
+          i++;
         });
     });
 }
