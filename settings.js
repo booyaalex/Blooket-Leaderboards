@@ -1,29 +1,29 @@
 //Set Theme
 function blooket() {
     localStorage.setItem("Theme", "Blooket");
-    await changeTheme();
+    changeTheme();
 }
 function blacket() {
     localStorage.setItem("Theme", "Blacket");
-    await changeTheme();
+    changeTheme();
 }
 function triangulet() {
     localStorage.setItem("Theme", "Triangulet");
-    await changeTheme();
+    changeTheme();
 }
 function catchet() {
     localStorage.setItem("Theme", "Catchet");
-    await changeTheme();
+    changeTheme();
 }
 function seaside() {
     localStorage.setItem("Theme", "Seaside");
-    await changeTheme();
+    changeTheme();
 }
 
-await changeTheme();
+changeTheme();
 
 //Change Theme
-async function changeTheme() {
+function changeTheme() {
     let theme = localStorage.getItem("Theme");
 
     //Set Colors
