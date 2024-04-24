@@ -135,6 +135,7 @@ function getData() {
                         SCORE2 = document.createTextNode(SCORE1.slice(0, 4) + "-" + SCORE1.slice(4, 6) + "-" + SCORE1.slice(6));
                     } else {
                         SCORE2 = document.createTextNode(SCORE1.toLocaleString());
+                        console.log(SCORE1.toLocaleString());
                     }
                     console.log(SCORE2);
 
