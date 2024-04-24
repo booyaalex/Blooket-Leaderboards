@@ -13,41 +13,41 @@ const playerMap = new Map();
 const nameMap = [];
 let SCORES = [];
 function getStuff() {
-firebase.database().ref("/").on('value', function(snapshot) {
-    let a = 0;
-    snapshot.forEach(function(childSnapshot) { 
-        //Declare const's to make getting data easier.
-        let displayName,
-        userName,
-        displayBlook,
-        ID;
+    firebase.database().ref("/").on('value', function (snapshot) {
+        let a = 0;
+        snapshot.forEach(function (childSnapshot) {
+            //Declare const's to make getting data easier.
+            let displayName,
+                userName,
+                displayBlook,
+                ID;
 
-        let LOG;
-        
+            let LOG;
 
-        //Get Dem Data
-        childKey = childSnapshot.key;
 
-        displayName = childSnapshot.val().name;
-        userName = childSnapshot.val().username;
-        displayBlook = childSnapshot.val().blook;
-        ID = childSnapshot.val().userID;
+            //Get Dem Data
+            childKey = childSnapshot.key;
 
-        SCORES[a] = childSnapshot.val().test[1 * 2 - 1];
-        let temp = SCORES[a];
-        temp = temp + (0.0001 * a);
-        SCORES[a] = temp;
-        if (SCORES[a] == null) { 
-          SCORES.splice(a, 1);
-        } else {
-          playerMap.set(SCORES[a], {name: displayName, user: userName, blook: displayBlook, Id: ID});
-          LOG = playerMap.get(SCORES[a]);
-          nameMap[a] = (LOG.name);
-        }
+            displayName = childSnapshot.val().name;
+            userName = childSnapshot.val().username;
+            displayBlook = childSnapshot.val().blook;
+            ID = childSnapshot.val().userID;
 
-        a++;
+            SCORES[a] = childSnapshot.val().test[1 * 2 - 1];
+            let temp = SCORES[a];
+            temp = temp + (0.0001 * a);
+            SCORES[a] = temp;
+            if (SCORES[a] == null) {
+                SCORES.splice(a, 1);
+            } else {
+                playerMap.set(SCORES[a], { name: displayName, user: userName, blook: displayBlook, Id: ID });
+                LOG = playerMap.get(SCORES[a]);
+                nameMap[a] = (LOG.name);
+            }
+
+            a++;
         });
-});
+    });
 }
 
 getStuff();
@@ -74,85 +74,89 @@ function getDemStats() {
 
     const test = OI[0].unlocks;
     const totalBlooks = Object.keys(test).length;
-    
+
     const contactInfo = document.getElementById("contact_info").value;
 
     const ID = OI[0]._id;
-    if(nameMap.includes(displayName) == true){
-        console.log("You may be doing a hack, that's not okie-dokie!");
-        const NUMBER = nameMap.indexOf(displayName);
-        const CHECK_ID = playerMap.get(SCORES[NUMBER]);
-    if(OI[0]._id == CHECK_ID.Id) {
-    console.log("Okie everything is good");
-    firebase.database().ref("/").child(displayName).update({
-        "blook" : displayBlook,
-        "name" : displayName,
-        "username" : OI[0].name,
-        "userID" : ID,
-        "test" : [
-            "totalWins",
-            totalWins,
-            "totalAnswers",
-            totalAnswers,
-            "totalBlooks",
-            totalBlooks,
-            "fishingWeight",
-            fishingWeight,
-            "totalPoints",
-            totalPoints,
-            "showdownWins",
-            showdownWins,
-            "factoryUpgrades",
-            factoryUpgrades,
-            "boxesOpened",
-            boxesOpened,
-            "playersDefeated",
-            playersDefeated,
-            "gamesPlayed",
-            gamesPlayed,
-            "totalTokens",
-            totalTokens,
-            "dateCreated",
-            dateCreated
-        ],
-        "contact" : contactInfo
-    });
-}
-} else if(nameMap.includes(displayName) == false){
-    firebase.database().ref("/").child(displayName).update({
-        "blook" : displayBlook,
-        "name" : displayName,
-        "username" : OI[0].name,
-        "userID" : ID,
-        "test" : [
-            "totalWins",
-            totalWins,
-            "totalAnswers",
-            totalAnswers,
-            "totalBlooks",
-            totalBlooks,
-            "fishingWeight",
-            fishingWeight,
-            "totalPoints",
-            totalPoints,
-            "showdownWins",
-            showdownWins,
-            "factoryUpgrades",
-            factoryUpgrades,
-            "boxesOpened",
-            boxesOpened,
-            "playersDefeated",
-            playersDefeated,
-            "gamesPlayed",
-            gamesPlayed,
-            "totalTokens",
-            totalTokens,
-            "dateCreated",
-            dateCreated
-        ],
-        "contact" : contactInfo
-    });
-}
+    if (contactInfo == null) {
+        alert("Fill in the contact info bozo!");
+    } else {
+        if (nameMap.includes(displayName) == true) {
+            console.log("You may be doing a hack, that's not okie-dokie!");
+            const NUMBER = nameMap.indexOf(displayName);
+            const CHECK_ID = playerMap.get(SCORES[NUMBER]);
+            if (OI[0]._id == CHECK_ID.Id) {
+                console.log("Okie everything is good");
+                firebase.database().ref("/").child(displayName).update({
+                    "blook": displayBlook,
+                    "name": displayName,
+                    "username": OI[0].name,
+                    "userID": ID,
+                    "test": [
+                        "totalWins",
+                        totalWins,
+                        "totalAnswers",
+                        totalAnswers,
+                        "totalBlooks",
+                        totalBlooks,
+                        "fishingWeight",
+                        fishingWeight,
+                        "totalPoints",
+                        totalPoints,
+                        "showdownWins",
+                        showdownWins,
+                        "factoryUpgrades",
+                        factoryUpgrades,
+                        "boxesOpened",
+                        boxesOpened,
+                        "playersDefeated",
+                        playersDefeated,
+                        "gamesPlayed",
+                        gamesPlayed,
+                        "totalTokens",
+                        totalTokens,
+                        "dateCreated",
+                        dateCreated
+                    ],
+                    "contact": contactInfo
+                });
+            }
+        } else if (nameMap.includes(displayName) == false) {
+            firebase.database().ref("/").child(displayName).update({
+                "blook": displayBlook,
+                "name": displayName,
+                "username": OI[0].name,
+                "userID": ID,
+                "test": [
+                    "totalWins",
+                    totalWins,
+                    "totalAnswers",
+                    totalAnswers,
+                    "totalBlooks",
+                    totalBlooks,
+                    "fishingWeight",
+                    fishingWeight,
+                    "totalPoints",
+                    totalPoints,
+                    "showdownWins",
+                    showdownWins,
+                    "factoryUpgrades",
+                    factoryUpgrades,
+                    "boxesOpened",
+                    boxesOpened,
+                    "playersDefeated",
+                    playersDefeated,
+                    "gamesPlayed",
+                    gamesPlayed,
+                    "totalTokens",
+                    totalTokens,
+                    "dateCreated",
+                    dateCreated
+                ],
+                "contact": contactInfo
+            });
+        }
+    }
 }
 
 getDemStats();
