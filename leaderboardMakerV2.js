@@ -12,10 +12,11 @@
     const playerMap = new Map();
     let SCORES = [];
 
-   
-    LEADERBOARD = localStorage.getItem("leaderboard");
+    let LEADERBOARD;
+    
 
-    function getData() { 
+    function getData() {
+        LEADERBOARD = localStorage.getItem("leaderboard"); 
         firebase.database().ref("/").on('value', function(snapshot) {
         document.getElementById("TABLE").innerHTML = "<tr><td><div class='statsBoxLB'><div class='statTitleLB'>Ranking</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blook</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Person</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Score</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blooket Username</div></div></td></tr>";
         let a = 0;
