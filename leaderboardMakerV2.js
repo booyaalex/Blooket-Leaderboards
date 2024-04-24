@@ -40,11 +40,13 @@
           displayBlook = childSnapshot.val().blook;
           console.log("displayBlook - " + displayBlook);
           SCORES[a] = childSnapshot.val().test[LEADERBOARD * 2 - 1];
+          if(LEADERBOARD != 12) {
           let temp = SCORES[a];
           temp = temp + (0.0001 * a);
           SCORES[a] = temp;
           console.log("SCORES[a] - " + SCORES[a]);
           console.log("temp - " + temp);
+          }
           if (SCORES[a] == null) { 
             SCORES.splice(a, 1);
           } else {
