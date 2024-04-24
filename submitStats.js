@@ -19,7 +19,8 @@ function getDemStats() {
     const displayName = document.getElementById("display_name").value;
     console.log(displayName);
     let temp = OI[0].blook;
-    const displayBlook = temp.toLowerCase();
+    const temp2 = temp.toLowerCase();
+    const displayBlook = temp2.replace(/\s/g, '');
 
     const totalWins = OI[0].wins;
     const totalAnswers = OI[0].correctAnswers;
