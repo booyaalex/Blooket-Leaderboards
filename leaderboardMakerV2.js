@@ -46,6 +46,11 @@
           SCORES[a] = temp;
           console.log("SCORES[a] - " + SCORES[a]);
           console.log("temp - " + temp);
+          } else if(LEADERBOARD == 12) {
+            let temp = SCORES[a].substring(0,10);
+            SCORES[a] = temp;
+            console.log("SCORES[a] - " + SCORES[a]);
+            console.log("temp - " + temp);
           }
           if (SCORES[a] == null) { 
             SCORES.splice(a, 1);
