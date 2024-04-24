@@ -81,7 +81,7 @@
         </div>
         <br>
         <br>
-        <table style='justify-content: space-evenly; margin-left: auto; margin-right: auto;'>
+        <table id='TABLE' style='justify-content: space-evenly; margin-left: auto; margin-right: auto;'>
           <tr>
             <td>
               <div class='statsBoxLB'>
@@ -119,93 +119,17 @@
               </div>
             </td>
           </tr>
-
-          <!--1st Place-->
-           <tr>
-            <td>
-              <div class='statTitleLB'>
-                #1.
-              </div>
-            </td>
-            <td>
-              <div class='statImgLB'>
-                <img class='statImgLB' src='https://i.ibb.co/vP0WW4B/Y-Elite.png' alt='Elite Blook' width='75'>
-              </div>
-            </td>
-            <td>
-              <div class='statTitleLB'>
-                Blooket Elite
-              </div>
-            </td>
-            <td>
-              <div class='statTitleLB'>
-                26/1/2021
-              </div>
-            </td>
-            <td>
-              <div class='statTitleLB'>
-                BlooketEliteYT
-              </div>
-            </td>
-          </tr>
-
-          <!--2nd Place-->
-          <tr>
-            <td>
-              <div class='statTitleLB'>
-                #2.
-              </div>
-            </td>
-            <td>
-              <div class='statImgLB'>
-                <img class='statImgLB' src='https://ac.blooket.com/marketassets/blooks/poisondartfrog.svg' alt='Dart Frog Blook' width='75'>
-              </div>
-            </td>
-            <td>
-              <div class='statTitleLB'>
-                E-Man
-              </div>
-            </td>
-            <td>
-              <div class='statTitleLB'>
-                12/5/2021
-              </div>
-            </td>
-            <td>
-              <div class='statTitleLB'>
-                E-man727
-              </div>
-            </td>
-          </tr>
-
-          <!--3rd Place-->
-          
-
-          <!--4th Place-->
-          
-
-          <!--5th Place-->
-         
-
-          <!--6th Place-->
-           
-
-          <!--7th Place-->
-          
-
-          <!--8th Place-->
-          
-
-          <!--9th Place-->
-          
-
-          <!--10th Place-->
-          
         </table>
       </div>
       <br>
     </div>
     <script src='../settings.js'></script>
     <script src='../screenAdjust.js'></script>
+    <script src='../leaderboardMakerV2.js'></script>
+    <script>
+      localStorage.setItem("leaderboard", 9);
+      setTimeout(() => getData(), 100);
+      setTimeout(() => changeTheme(), 500);
+    </script>
   </body>
 </html>
