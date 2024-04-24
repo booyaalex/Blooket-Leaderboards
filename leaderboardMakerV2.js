@@ -48,7 +48,7 @@
           console.log("temp - " + temp);
           } else if(LEADERBOARD == 12) {
             let temp = SCORES[a].substring(0,10);
-            temp = temp.replace(/-/gi," ");
+            temp = temp.replace(/-/gi,"");
             SCORES[a] = temp;
             console.log("SCORES[a] - " + SCORES[a]);
             console.log("temp - " + temp);
