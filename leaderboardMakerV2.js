@@ -12,8 +12,8 @@
     const playerMap = new Map();
     let SCORES = [];
 
-    localStorage.setItem("leaderboard", 1);
-    
+   
+    LEADERBOARD = localStorage.getItem("leaderboard");
 
     function getData() { 
         firebase.database().ref("/").on('value', function(snapshot) { 
