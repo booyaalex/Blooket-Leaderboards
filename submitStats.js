@@ -120,6 +120,7 @@ function getDemStats() {
                     ],
                     "contact": contactInfo
                 });
+                alert("Your stats have been submitted. YIPPEE!!");
             }
         } else if (nameMap.includes(displayName) == false) {
             firebase.database().ref("/").child(displayName).update({
@@ -155,6 +156,7 @@ function getDemStats() {
                 ],
                 "contact": contactInfo
             });
+            alert("Your stats have been submitted. YIPPEE!!");
         }
     }
 }
