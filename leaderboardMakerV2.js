@@ -68,10 +68,11 @@ function getData() {
         console.log("SCORES.length - " + SCORES.length);
 
         //Sort Dat Shi-
+        let SORTED_SCORE;
         if (LEADERBOARD == 12) { 
-            let SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
+            SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
         } else {
-            let SORTED_SCORE = SCORES.sort(function (a, b) { return b - a });
+            SORTED_SCORE = SCORES.sort(function (a, b) { return b - a });
         }
         //Filter out scores that arent cool
         SORTED_SCORE = SORTED_SCORE.filter(elm => elm);
@@ -129,10 +130,11 @@ function getData() {
                 }
                 if (a == 3) {
                     let SCORE1 = Math.trunc(SORTED_SCORE[i]);
+                    let SCORE2;
                     if(LEADERBOARD == 12){
-                        let SCORE2 = document.createTextNode(SCORE1.slice(0, 4) + "-" + SCORE1.slice(4));
+                        SCORE2 = document.createTextNode(SCORE1.slice(0, 4) + "-" + SCORE1.slice(4));
                     } else {
-                        let SCORE2 = document.createTextNode(SCORE1.toLocaleString());
+                        SCORE2 = document.createTextNode(SCORE1.toLocaleString());
                     }
                     console.log(SCORE2);
 
