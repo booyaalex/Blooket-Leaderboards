@@ -63,7 +63,7 @@ function getDemStats() {
     const totalWins = OI[0].wins;
     const totalAnswers = OI[0].correctAnswers;
     const fishingWeight = OI[0].totalFishWeight;
-    const totalPoints = OI[0].totalPoints;
+    const totalPoints = OI[0].classicPoints;
     const showdownWins = OI[0].showdownWins;
     const factoryUpgrades = OI[0].upgrades;
     const boxesOpened = OI[0].boxesOpened;
