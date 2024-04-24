@@ -1,4 +1,3 @@
-
 const firebaseConfig = {
     apiKey: "AIzaSyAE9gU2G-fE6LKikDDIz8s2Jf6M_FEs7A8",
     authDomain: "blooketleaderboardserver.firebaseapp.com",
@@ -23,8 +22,21 @@ OI = [{"_id":"609eb290e9df5c001b1fc1c6","isUnsubscribed":false,"numUnlocks":112,
 
   const totalWins = OI[0].wins;
   const totalAnswers = OI[0].correctAnswers;
-  const totalBlooks = OI[0].totalBlooks;
-  const fishingWeight = OI[0].fishingWeight;
+  const fishingWeight = OI[0].totalFishWeight;
+  const totalPoints = OI[0].totalPoints;
+  const showdownWins = OI[0].showdownWins;
+  const factoryUpgrades = OI[0].upgrades;
+  const boxesOpened = OI[0].boxesOpened;
+  const playersDefeated = OI[0].playersDefeated;
+  const gamesPlayed = OI[0].gamesPlayed;
+  const totalTokens = OI[0].totalTokens;
+  const dateCreated = OI[0].dateCreated;
+
+  const test = OI[0].unlocks;
+  console.log(test);
+  const totalBlooks = Object.keys(test).length;
+  
+  const contactInfo = "test";
 
   firebase.database().ref("/").child(displayName).update({
     "blook" : displayBlook,
@@ -36,6 +48,25 @@ OI = [{"_id":"609eb290e9df5c001b1fc1c6","isUnsubscribed":false,"numUnlocks":112,
         "totalAnswers",
         totalAnswers,
         "totalBlooks",
-        totalBlooks
-    ]
+        totalBlooks,
+        "fishingWeight",
+        fishingWeight,
+        "totalPoints",
+        totalPoints,
+        "showdownWins",
+        showdownWins,
+        "factoryUpgrades",
+        factoryUpgrades,
+        "boxesOpened",
+        boxesOpened,
+        "playersDefeated",
+        playersDefeated,
+        "gamesPlayed",
+        gamesPlayed,
+        "totalTokens",
+        totalTokens,
+        "dateCreated",
+        dateCreated
+    ],
+    "contact" : contactInfo
   });
