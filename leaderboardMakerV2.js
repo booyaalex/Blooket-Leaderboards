@@ -17,7 +17,7 @@
 
     function getData() { 
         firebase.database().ref("/").on('value', function(snapshot) { 
-        document.getElementById("mainBoard").innerHTML = "<div class='YO_Container'><div class='YO_Text'> Rankings </div></div><br><br><table id='TABLE' style='justify-content: space-evenly;  margin-left: auto; margin-right: auto;'><tr><td><div class='statsBoxLB'><div class='statTitleLB'>Ranking</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blook</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Person</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Score</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blooket Username</div></div></td></tr></table>";
+        document.getElementById("TABLE").innerHTML = "<tr><td><div class='statsBoxLB'><div class='statTitleLB'>Ranking</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blook</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Person</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Score</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blooket Username</div></div></td></tr>";
         let a = 0;
         snapshot.forEach(function(childSnapshot) { 
           //Declare const's to make getting data easier.
