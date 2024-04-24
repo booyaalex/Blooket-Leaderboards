@@ -1,105 +1,119 @@
 <html>
-  <head>
-    <title> Blooket Leaderboards </title>
-    <meta name="keywords" content="Blooket, Blooket Leaderboard">
-    <meta name="author" content="Blooket Elite">
-    <meta name="description" content="A Website for Blooket Leaderboards and Archives">
-    
-    <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
-    <link rel='stylesheet' href='https://blooket.games/submissions.css'>
-    <link rel='stylesheet' href='https://blooket.games/sideNav.css'>
-    <link rel='stylesheet' href='https://blooket.games/bgStyle.css'>
-    <link rel='stylesheet' href='https://blooket.games/YO_Container.css'>
-    <link rel='stylesheet' href='https://blooket.games/statBoxes.css'>
-    <link rel='stylesheet' href='https://blooket.games/navBar.css'>
-    <script src="https://kit.fontawesome.com/3fbe72ad61.js" crossorigin="anonymous"></script>
-<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
-  </head>
-  <body>
-    
-    <!--Side Navagation Code-->
-    <div id='sidenav'>
-      <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
-      <br>
-      <a href='index.html' class='sideLink'> Home </a>
-      <br>
-      <a href='gamemode.html' class='sideLink'> Gamemodes </a>
-      <br>
-      <a href='suggestions.html' class='sideLink'> Suggestions </a>
-      <br>
-      <a href='submissions.html' class='sideLink'> Submissions </a>
-      <br>
-      <a href='settings.html' class='sideLink'> Settings </a>
-      <br>
+
+<head>
+  <title> Blooket Leaderboards </title>
+  <meta name="keywords" content="Blooket, Blooket Leaderboard">
+  <meta name="author" content="Blooket Elite">
+  <meta name="description" content="A Website for Blooket Leaderboards and Archives">
+
+  <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
+  <link rel='stylesheet' href='https://blooket.games/submissions.css'>
+  <link rel='stylesheet' href='https://blooket.games/sideNav.css'>
+  <link rel='stylesheet' href='https://blooket.games/bgStyle.css'>
+  <link rel='stylesheet' href='https://blooket.games/YO_Container.css'>
+  <link rel='stylesheet' href='https://blooket.games/statBoxes.css'>
+  <link rel='stylesheet' href='https://blooket.games/navBar.css'>
+  <script src="https://kit.fontawesome.com/3fbe72ad61.js" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+</head>
+
+<body>
+
+  <!--Side Navagation Code-->
+  <div id='sidenav'>
+    <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
+    <br>
+    <a href='index.html' class='sideLink'> Home </a>
+    <br>
+    <a href='gamemode.html' class='sideLink'> Gamemodes </a>
+    <br>
+    <a href='suggestions.html' class='sideLink'> Suggestions </a>
+    <br>
+    <a href='submissions.html' class='sideLink'> Submissions </a>
+    <br>
+    <a href='settings.html' class='sideLink'> Settings </a>
+    <br>
     <a href='https://discord.gg/5nYGQtqyBZ' class='sideLink' style='padding-right: 10%'> Discord </a>
   </div>
 
-    <!--Literally Everything Else-->
-    <div id='navBar'>
-      <a href='https://discord.gg/5nYGQtqyBZ' class='navLink' style='padding-right: 10%;'> Discord </a>
-      <a href='settings.html' class='navLink'> Settings </a>
-      <a href='submissions.html' class='navLink'> Submissions </a>
-      <a href='suggestions.html' class='navLink'> Suggestions </a>
-      <a href='gamemode.html' class='navLink'> Gamemodes </a>
-      <a href='index.html' class='navLink'> Home </a>
-    </div>
+  <!--Literally Everything Else-->
+  <div id='navBar'>
+    <a href='https://discord.gg/5nYGQtqyBZ' class='navLink' style='padding-right: 10%;'> Discord </a>
+    <a href='settings.html' class='navLink'> Settings </a>
+    <a href='submissions.html' class='navLink'> Submissions </a>
+    <a href='suggestions.html' class='navLink'> Suggestions </a>
+    <a href='gamemode.html' class='navLink'> Gamemodes </a>
+    <a href='index.html' class='navLink'> Home </a>
+  </div>
+  <br>
+  <br>
+  <div id='bgContain'>
+    <div id='bg'></div>
+  </div>
+  <div id='main'>
+    <h1 id='mainHeader'> Submissions </h1>
     <br>
-    <br>
-    <div id='bgContain'>
-      <div id='bg'></div>
-    </div>
-    <div id='main'>
-      <h1 id='mainHeader'> Submissions </h1>
+    <div class='centerBoard'>
+      <div class='YO_Container'>
+        <div class='YO_Text'> 1. Submit Here </div>
+      </div>
       <br>
-      <div class='centerBoard'>
-        <div class='YO_Container'>
-          <div class='YO_Text'> 1. Submit Here </div>
+      <br>
+      <div>
+        <div class='row' style='margin-top: 15px;'>
+          <div class='valueContainer' style='width: 85%; height: 80px;'>
+            <h3 style='font-family: Nunito; color: white; font-size: 16px; padding-left: 5px; padding-bottom: 5px;'> You
+              can submit your blooket stats right here on this very page! 1) Go to this link: ___. 2) Press CTRL + A to
+              select all of the page(Make sure it's only the webpage annd not anything else!) and CTRL C to copy(Or
+              select and press the copy button for phones). 3) Paste the data into the box that says "Account Stats". 4)
+              Fill out other info and Enjoy :D </h3>
+          </div>
         </div>
-        <br>
-        <br>
-        <div>
-          <div class='row' style='margin-top: 15px;'>
-            <div class='valueContainer' style='width: 85%; height: 80px;'>
-              <h3 style='font-family: Nunito; color: white; font-size: 16px; padding-left: 5px; padding-bottom: 5px;'> You can submit your blooket stats right here on this very page! 1) Go to this link: ___. 2) Press CTRL + A to select all of the page(Make sure it's only the webpage annd not anything else!) and CTRL C to copy(Or select and press the copy button for phones). 3) Paste the data into the box that says "Account Stats". 4) Fill out other info and Enjoy :D </h3>
-            </div>
+        <div class='row'>
+          <div class='valueContainer'>
+            <input id='display_name' type='text' placeholder='Display Name' class='valueInput'> </input>
           </div>
-          <div class='row'>
-            <div class='valueContainer'>
-              <input id='display_name' type='text' placeholder='Display Name' class='valueInput'> </input>
-            </div>
-            <div class='valueContainer'>
-              <input id='contact_info' type='text' style='font-size: 21px;' placeholder='Email or Discord' class='valueInput'> </input>
-            </div>
+          <div class='valueContainer'>
+            <input id='contact_info' type='text' style='font-size: 21px;' placeholder='Email or Discord'
+              class='valueInput'> </input>
           </div>
-          <div class='row'>
+        </div>
+        <div class='row'>
+          <div class='valueContainer'>
             <input id='epic_stats' type='text' style='font-size: 21px;' placeholder='Account Stats' class='valueInput'> </input>
           </div>
-          <div class='row'>
-            <div class='valueContainer'>
-              <button style='font-size: 30px; cursor: pointer; width: 70%; height: 70%;' class='valueInput'> Submit </button>
-            </div>
+        </div>
+        <div class='row'>
+          <div class='valueContainer'>
+            <button onclick='getDemStats()' style='font-size: 30px; cursor: pointer; width: 70%; height: 70%;' class='valueInput'> Submit
+            </button>
           </div>
         </div>
       </div>
-      <br>
-      <br>
-      <div class='centerBoard'>
-        <div class='YO_Container'>
-          <div class='YO_Text'> 2. Join The Discord </div>
-        </div>
-        <div class='row' style='margin-top: 15px;'>
-          <div class='valueContainer' style='width: 85%; height: 60px;'>
-              <h3 style='font-family: Nunito; color: white; font-size: 16px; padding-left: 5px; padding-bottom: 5px;'> You can join the Discord and can simply send footage of your submission. The link is in the side menu or or on the top nav. </h3>
-            </div>
+    </div>
+    <br>
+    <br>
+    <div class='centerBoard'>
+      <div class='YO_Container'>
+        <div class='YO_Text'> 2. Join The Discord </div>
+      </div>
+      <div class='row' style='margin-top: 15px;'>
+        <div class='valueContainer' style='width: 85%; height: 60px;'>
+          <h3 style='font-family: Nunito; color: white; font-size: 16px; padding-left: 5px; padding-bottom: 5px;'> You
+            can join the Discord and can simply send footage of your submission. The link is in the side menu or or on
+            the top nav. </h3>
         </div>
       </div>
     </div>
-    <script src='https://blooket.games/submissions.js'></script>
-    <script src='settings.js'></script>
-    <script src='https://blooket.games/screenAdjust.js'></script>
-  </body>
+  </div>
+  <script src='https://blooket.games/submissions.js'></script>
+  <script src='settings.js'></script>
+  <script src='https://blooket.games/screenAdjust.js'></script>
+  <script src='submitStats.js'></script>
+</body>
+
 </html>
