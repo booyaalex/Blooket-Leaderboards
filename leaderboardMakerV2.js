@@ -126,7 +126,7 @@ function getData() {
                 if (a == 2) {
                     let NAME = document.createTextNode(MAP.name);
 
-                    DIV.appendChild(NAME);
+                    DIV.appendChild(NAME); 
                 }
                 if (a == 3) {
                     let SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
