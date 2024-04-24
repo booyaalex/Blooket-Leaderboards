@@ -418,7 +418,7 @@
     <script src='../leaderboardMakerV2.js'></script>
     <script>
       localStorage.setItem("leaderboard", 2);
-      getData();
+      setTimeout(() => getData(), 10);
       setTimeout(() => changeTheme(), 500);
     </script>
   </body>
