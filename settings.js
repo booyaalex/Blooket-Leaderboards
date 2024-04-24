@@ -20,7 +20,7 @@ function seaside() {
     changeTheme();
 }
 
-await changeTheme();
+changeTheme();
 
 //Change Theme
 async function changeTheme() {
