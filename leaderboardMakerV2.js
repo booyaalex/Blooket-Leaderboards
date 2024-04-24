@@ -13,7 +13,7 @@ const playerMap = new Map();
 let SCORES = [];
 
 let LEADERBOARD;
-
+let SORTED_SCORE;
 
 function getData() {
     LEADERBOARD = localStorage.getItem("leaderboard");
@@ -69,9 +69,9 @@ function getData() {
 
         //Sort Dat Shi-
         if (LEADERBOARD == 12) { 
-            let SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
+            SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
         } else {
-            let SORTED_SCORE = SCORES.sort(function (a, b) { return b - a });
+            SORTED_SCORE = SCORES.sort(function (a, b) { return b - a });
         }
         //Filter out scores that arent cool
         SORTED_SCORE = SORTED_SCORE.filter(elm => elm);
