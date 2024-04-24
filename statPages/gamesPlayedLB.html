@@ -64,7 +64,7 @@
         <div class='YO_Container'>
           <div class='YO_Text'> How to Submit </div>
         </div>
-        <h3 style='font-family: Nunito; color: white;'> You can submit your score by clicking on the submssions button on the navagation bar above.</h3>
+        <h3 id='TABLE' style='font-family: Nunito; color: white;'> You can submit your score by clicking on the submssions button on the navagation bar above.</h3>
       </div>
       <br>
       <br>
@@ -414,5 +414,11 @@
     </div>
     <script src='../settings.js'></script>
     <script src='../screenAdjust.js'></script>
+    <script src='../leaderboardMakerV2.js'></script>
+    <script>
+      localStorage.setItem("leaderboard", 10);
+      setTimeout(() => getData(), 100);
+      setTimeout(() => changeTheme(), 500);
+    </script>
   </body>
 </html>
