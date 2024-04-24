@@ -129,10 +129,10 @@ function getData() {
                     DIV.appendChild(NAME);
                 }
                 if (a == 3) {
-                    let SCORE1 = Math.trunc(SORTED_SCORE[i]);
+                    let SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
                     let SCORE2;
                     if(LEADERBOARD == 12){
-                        SCORE2 = document.createTextNode(SCORE1.slice(0, 4) + "-" + SCORE1.slice(4));
+                        SCORE2 = document.createTextNode(SCORE1.slice(0, 4) + "-" + SCORE1.slice(4, 6) + "-" + SCORE1.slice(6));
                     } else {
                         SCORE2 = document.createTextNode(SCORE1.toLocaleString());
                     }
