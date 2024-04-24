@@ -20,10 +20,10 @@ function seaside() {
     changeTheme();
 }
 
-changeTheme();
+await changeTheme();
 
 //Change Theme
-function changeTheme() {
+async function changeTheme() {
     let theme = localStorage.getItem("Theme");
 
     //Set Colors
