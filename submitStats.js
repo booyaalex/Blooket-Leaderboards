@@ -118,6 +118,40 @@ function getDemStats() {
         "contact" : contactInfo
     });
 }
+} else if(nameMap.includes(displayName) == false){
+    firebase.database().ref("/").child(displayName).update({
+        "blook" : displayBlook,
+        "name" : displayName,
+        "username" : OI[0].name,
+        "userID" : ID,
+        "test" : [
+            "totalWins",
+            totalWins,
+            "totalAnswers",
+            totalAnswers,
+            "totalBlooks",
+            totalBlooks,
+            "fishingWeight",
+            fishingWeight,
+            "totalPoints",
+            totalPoints,
+            "showdownWins",
+            showdownWins,
+            "factoryUpgrades",
+            factoryUpgrades,
+            "boxesOpened",
+            boxesOpened,
+            "playersDefeated",
+            playersDefeated,
+            "gamesPlayed",
+            gamesPlayed,
+            "totalTokens",
+            totalTokens,
+            "dateCreated",
+            dateCreated
+        ],
+        "contact" : contactInfo
+    });
 }
 }
 
