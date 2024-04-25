@@ -1,3 +1,4 @@
+
 const DIV = document.getElementsByTagName("div");
 const DIV_LENGTH = DIV.length;
 console.log(DIV);
