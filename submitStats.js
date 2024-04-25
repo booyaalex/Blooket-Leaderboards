@@ -128,7 +128,7 @@ function getDemStats() {
                         "dateCreated",
                         dateCreated,
                         "mostCash1",
-                        playerScore.scores[25],
+                        0,
                         "mostCash7",
                         0,
                         "mostCash60",
