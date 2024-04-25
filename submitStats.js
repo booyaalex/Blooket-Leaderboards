@@ -12,6 +12,10 @@ firebase.initializeApp(firebaseConfig);
 const playerMap = new Map();
 const nameMap = [];
 let SCORES = [];
+
+scoreMap = new Map();
+let playerScores;
+
 function getStuff() {
     firebase.database().ref("/").on('value', function (snapshot) {
         let a = 0;
@@ -20,7 +24,8 @@ function getStuff() {
             let displayName,
                 userName,
                 displayBlook,
-                ID;
+                ID,
+                scores;
 
             let LOG;
 
@@ -32,6 +37,10 @@ function getStuff() {
             userName = childSnapshot.val().username;
             displayBlook = childSnapshot.val().blook;
             ID = childSnapshot.val().userID;
+
+            scores = childSnapshot.val().test;
+            scoreMap.set(displayName, { scores: scores });
+            playerScores = scoreMap.get(displayName);
 
             SCORES[a] = childSnapshot.val().test[1 * 2 - 1];
             let temp = SCORES[a];
@@ -86,6 +95,8 @@ function getDemStats() {
             const CHECK_ID = playerMap.get(SCORES[NUMBER]);
             if (OI[0]._id == CHECK_ID.Id) {
                 console.log("Okie everything is good");
+                playerScore = scoreMap.get(displayName);
+                console.log(playerScore.scores[25]);
                 firebase.database().ref("/").child(displayName).update({
                     "blook": displayBlook,
                     "name": displayName,
@@ -115,7 +126,9 @@ function getDemStats() {
                         "totalTokens",
                         totalTokens,
                         "dateCreated",
-                        dateCreated
+                        dateCreated,
+                        "mostCash1",
+                        playerScore.scores[25]
                     ],
                     "contact": contactInfo
                 });
@@ -151,7 +164,153 @@ function getDemStats() {
                     "totalTokens",
                     totalTokens,
                     "dateCreated",
-                    dateCreated
+                    dateCreated,
+                    "mostCash1",
+                    null,
+                    "mostCash7",
+                    null,
+                    "mostCash60",
+                    null,
+                    "millionCash",
+                    null,
+                    "billionCash",
+                    null,
+                    "trillionCash",
+                    null,
+                    "snowNormal",
+                    null,
+                    "snowNormalItem",
+                    null,
+                    "snowNormalHit",
+                    null,
+                    "clockNormal",
+                    null,
+                    "clockNormalItem",
+                    null,
+                    "clockNormalHit",
+                    null,
+                    "snowChallenge",
+                    null,
+                    "snowChallengeItem",
+                    null,
+                    "snowChallengeHit",
+                    null,
+                    "clockChallenge",
+                    null,
+                    "clockChallengeItem",
+                    null,
+                    "clockChallengeHit",
+                    null,
+                    "mostWeight7",
+                    null,
+                    "mostWeight15",
+                    null,
+                    "mostWeight30",
+                    null,
+                    "oneMillion",
+                    null,
+                    "tenMillion",
+                    null,
+                    "hundredThousand",
+                    null,
+                    "onlyChick",
+                    null,
+                    "onlySquirrel",
+                    null,
+                    "onlyOwl",
+                    null,
+                    "onlyFish",
+                    null,
+                    "onlyElf",
+                    null,
+                    "onlyPig",
+                    null,
+                    "onlyDragon",
+                    null,
+                    "onlyUnicorn",
+                    null,
+                    "onlyWizard",
+                    null,
+                    "sunnyMeadowHighest",
+                    null,
+                    "lostDesertHighest",
+                    null,
+                    "abandonedMineHighest",
+                    null,
+                    "sunnyMeadowSpeed",
+                    null,
+                    "lostDesertSpeed",
+                    null,
+                    "abandonedMineSpeed",
+                    null,
+                    "mostDamage",
+                    null,
+                    "totalDamage",
+                    null,
+                    "totalRounds",
+                    null,
+                    "sunnyMeadowEasy",
+                    null,
+                    "lostDesertEasy",
+                    null,
+                    "abandonedMineEasy",
+                    null,
+                    "crossroadsEasy",
+                    null,
+                    "fracturedFactoryEasy",
+                    null,
+                    "sunnyMeadowNormal",
+                    null,
+                    "lostDesertNormal",
+                    null,
+                    "abandonedMineNormal",
+                    null,
+                    "crossroadsNormal",
+                    null,
+                    "fracturedFactoryNormal",
+                    null,
+                    "sunnyMeadowHard",
+                    null,
+                    "lostDesertHard",
+                    null,
+                    "abandonedMineHard",
+                    null,
+                    "crossroadsHard",
+                    null,
+                    "fracturedFactoryHard",
+                    null,
+                    "highestDay",
+                    null,
+                    "totalCafeCash",
+                    null,
+                    "totalFoodServed",
+                    null,
+                    "maxToast",
+                    null,
+                    "maxUpgrades",
+                    null,
+                    "day10",
+                    null,
+                    "day50",
+                    null,
+                    "allFood",
+                    null,
+                    "maxFood",
+                    null,
+                    "maxPeople",
+                    null,
+                    "maxHappiness",
+                    null,
+                    "maxMaterials",
+                    null,
+                    "maxGold",
+                    null,
+                    "mostPeople",
+                    null,
+                    "fastestDeath",
+                    null,
+                    "flappyBlook",
+                    null
                 ],
                 "contact": contactInfo
             });
