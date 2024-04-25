@@ -72,8 +72,7 @@ function getDemStats() {
     const totalTokens = OI[0].totalTokens;
     const dateCreated = OI[0].dateCreated;
 
-    const test = OI[0].unlocks;
-    const totalBlooks = Object.keys(test).length;
+    const totalBlooks = OI[0].numUnlocks;
 
     const contactInfo = document.getElementById("contact_info").value;
 
