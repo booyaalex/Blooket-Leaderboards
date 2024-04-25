@@ -1,0 +1,52 @@
+<html>
+<head>
+  <meta name="google-signin-client_id" content="726163726731-n06gt82elu18un1darj34d8pd8lsub2f.apps.googleusercontent.com">
+  <style>
+    .abcRioButtonBlue {
+      border-radius: 500px;
+      background-color:white;
+    }
+    .abcRioButton {
+      border-radius: 5px;
+    }
+    .abcRioButton:hover {
+      background-color:white;
+      box-shadow: 0 0 3px 3px rgba(00,00,00,.3);
+    }
+    .abcRioButtonIcon {
+      border-radius: 500px;
+    }
+    .abcRioButtonContents {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div id="my-signin2"></div>
+  <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName
+());
+			if(googleUser.getBasicProfile.getName() == "Austin Isidoro-Rossini"){
+      	console.log("We're in the matrix now boys");
+      }
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
+
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+</body>
+</html>
