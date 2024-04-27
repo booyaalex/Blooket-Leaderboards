@@ -1,6 +1,6 @@
 //Nav Functions
 function home() {
-  window.location.href = "https://blooket.games/index";
+  window.location.href = "https://blooket.games/../";
 }
 
 function LB() {
