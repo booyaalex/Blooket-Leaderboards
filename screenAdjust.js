@@ -14,11 +14,12 @@ console.log(width);
 
 //Side Navagation
 function openUp() {
-  document.getElementById("sidenav").style.width = "30%";
+  document.getElementById("sidenav").style.width = "40%";
   
   const link = document.querySelectorAll('.sideLink');
   link.forEach(sideLink => {
-    sideLink.style.fontSize = '45px';
+    sideLink.style.fontSize = '60px';
+    sideLink.style.visibility = 'visible';
   });
 }
 
@@ -28,6 +29,7 @@ function closeUp() {
   const link = document.querySelectorAll('.sideLink');
   link.forEach(sideLink => {
   sideLink.style.fontSize = '0px';
+  sideLink.style.visibility = 'hidden';
 });
 }
 
