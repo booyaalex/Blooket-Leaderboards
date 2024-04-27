@@ -34,9 +34,9 @@ function closeUp() {
 }
 
 
-//blooket.games/stats.html
+//blooket.games/stats
 
-if(URL == "/stats.html") {
+if(URL == "/stats") {
   if (width <= 644) {
     //Header Font Size
     document.getElementById("mainHeader").style.fontSize = "70px";
@@ -53,10 +53,10 @@ if(URL == "/stats.html") {
   }
 }
 
-//blooket.games/index.html
+//blooket.games/index
 
 if (width <= 644) {
-  if(URL == "/index.html" || URL == "/") {
+  if(URL == "/index" || URL == "/") {
     //Right Side
     const right = document.querySelectorAll('.rightBoards');
     let i = 0;

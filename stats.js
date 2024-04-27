@@ -1,46 +1,46 @@
 function winsPage() {
-  window.location.href = "statPages/winsLB.html";
+  window.location.href = "statPages/winsLB";
 }
 
 function classicPage() {
-  window.location.href = "statPages/pointsLB.html";
+  window.location.href = "statPages/pointsLB";
 }
 
 function defeatedPage() {
-  window.location.href = "statPages/playersDefeatedLB.html";
+  window.location.href = "statPages/playersDefeatedLB";
 }
 
 function answersPage() {
-  window.location.href = "statPages/answersLB.html";
+  window.location.href = "statPages/answersLB";
 }
 
 function brPage() {
-  window.location.href = "statPages/showdownLB.html";
+  window.location.href = "statPages/showdownLB";
 }
 
 function gamesPage() {
-  window.location.href = "statPages/gamesPlayedLB.html";
+  window.location.href = "statPages/gamesPlayedLB";
 }
 
 function blooksPage() {
-  window.location.href = "statPages/blooksLB.html";
+  window.location.href = "statPages/blooksLB";
 }
 
 function factoryPage() {
-  window.location.href = "statPages/factoryUpgradesLB.html";
+  window.location.href = "statPages/factoryUpgradesLB";
 }
 
 function tokensPage() {
-  window.location.href = "statPages/tokensLB.html";
+  window.location.href = "statPages/tokensLB";
 }
 function fishPage() {
-  window.location.href = "statPages/fishLB.html";
+  window.location.href = "statPages/fishLB";
 }
 
 function boxPage() {
-  window.location.href = "statPages/boxLB.html";
+  window.location.href = "statPages/boxLB";
 }
 
 function oldPage() {
-  window.location.href = "statPages/oldLB.html";
+  window.location.href = "statPages/oldLB";
 }
