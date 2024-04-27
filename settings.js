@@ -25,6 +25,9 @@ changeTheme();
 //Change Theme
 function changeTheme() {
     let theme = localStorage.getItem("Theme");
+    if(theme == null) {
+        theme = "Blooket";
+    }
 
     //Set Colors
     let navBarBG;
