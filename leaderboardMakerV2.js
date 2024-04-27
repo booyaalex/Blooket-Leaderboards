@@ -1,5 +1,5 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyAE9gU2G-fE6LKikDDIz8s2Jf6M_FEs7A8",
+    apiKey: "AIzaSyBepZFDy6U3GQaJyTib-uItZOqLuW_Cv_o",
     authDomain: "blooketleaderboardserver.firebaseapp.com",
     databaseURL: "https://blooketleaderboardserver-default-rtdb.firebaseio.com",
     projectId: "blooketleaderboardserver",
