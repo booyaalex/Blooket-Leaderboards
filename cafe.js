@@ -1,7 +1,7 @@
 //Highscores
 
 function cafeDay() {
-  window.location.href = "cafe/highDay_LB.html";
+  window.location.href = "cafe/highDay_LB";
 }
 
 function totalFood() {
