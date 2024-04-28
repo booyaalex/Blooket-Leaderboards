@@ -109,9 +109,9 @@ if (width <= 644) {
   
 
     //Scale
-    const center = document.querySelectorAll(".centerBoards");
+    const Center = document.querySelectorAll(".center");
     i = 0;
-    console.log(center);
+    console.log(Center);
     left.forEach(leftBoards => {
       left[i].style.width = "80%";
       i++;
@@ -122,8 +122,8 @@ if (width <= 644) {
       i++;
     });
     i = 0;
-    center.forEach(centerBoards => {
-      center[i].style.width = "80%";
+    center.forEach(center => {
+      Center[i].style.width = "80%";
       i++;
     });
 
