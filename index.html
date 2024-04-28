@@ -1,161 +1,169 @@
 <html>
-  <head>
-    <title> Blooket Leaderboards </title>
-    <meta name="keywords" content="Blooket, Blooket Leaderboard, blooket.games, blooket elite, blooket world record, blooket highscore">
-    <meta name="author" content="Blooket Elite">
-    <meta name="description" content="A Website for Blooket Leaderboards and Archives">
 
-    
-    <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
-    <link rel='stylesheet' href='style.css'> <!--Rows & Boxes; Pop Links-->
-    <link rel='stylesheet' href='sideNav.css'> <!--Side Navigation-->
-    <link rel='stylesheet' href='bgStyle.css'> <!--Background-->
-    <link rel='stylesheet' href='YO_Container.css'> <!--Those Funny Headers On The Boards-->
-    <link rel='stylesheet' href='statBoxes.css'> <!--The Boxes On The Boards-->
-    <link rel='stylesheet' href='navBar.css'> <!--Top Navagation-->
-    <link rel='stylesheet' href='gamePages.css'> <!--General CSS & Boards-->
-    <script src="https://kit.fontawesome.com/3fbe72ad61.js" crossorigin="anonymous"></script>
-<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
-  </head>
-  <body>
-    
-    <!--Side Navagation Code-->
-    <div id='sidenav'>
-      <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
-      <br>
-      <a href='../' class='sideLink'> Home </a>
-      <br>
-      <a href='gamemode' class='sideLink'> Gamemodes </a>
-      <br>
-      <a href='suggestions' class='sideLink'> Suggestions </a>
-      <br>
-      <a href='submissions' class='sideLink'> Submissions </a>
-      <br>
-      <a href='settings' class='sideLink'> Settings </a>
-      <br>
+<head>
+  <title> Blooket Leaderboards </title>
+  <meta name="keywords"
+    content="Blooket, Blooket Leaderboard, blooket.games, blooket elite, blooket world record, blooket highscore">
+  <meta name="author" content="Blooket Elite">
+  <meta name="description" content="A Website for Blooket Leaderboards and Archives">
+
+
+  <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
+  <link rel='stylesheet' href='style.css'> <!--Rows & Boxes; Pop Links-->
+  <link rel='stylesheet' href='sideNav.css'> <!--Side Navigation-->
+  <link rel='stylesheet' href='bgStyle.css'> <!--Background-->
+  <link rel='stylesheet' href='YO_Container.css'> <!--Those Funny Headers On The Boards-->
+  <link rel='stylesheet' href='statBoxes.css'> <!--The Boxes On The Boards-->
+  <link rel='stylesheet' href='navBar.css'> <!--Top Navagation-->
+  <link rel='stylesheet' href='gamePages.css'> <!--General CSS & Boards-->
+  <script src="https://kit.fontawesome.com/3fbe72ad61.js" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+</head>
+
+<body>
+
+  <!--Side Navagation Code-->
+  <div id='sidenav'>
+    <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
+    <br>
+    <a href='../' class='sideLink'> Home </a>
+    <br>
+    <a href='gamemode' class='sideLink'> Gamemodes </a>
+    <br>
+    <a href='suggestions' class='sideLink'> Suggestions </a>
+    <br>
+    <a href='submissions' class='sideLink'> Submissions </a>
+    <br>
+    <a href='settings' class='sideLink'> Settings </a>
+    <br>
     <a href='https://discord.gg/5nYGQtqyBZ' class='sideLink' style='padding-right: 160px;'> Discord </a>
   </div>
 
-    <!--Literally Everything Else-->
-    <div id='navBar'>
-      <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
-      <a href='settings' class='navLink'> Settings </a>
-      <a href='submissions' class='navLink'> Submissions </a>
-      <a href='suggestions' class='navLink'> Suggestions </a>
-      <a href='gamemode' class='navLink'> Gamemodes </a>
-      <a href='../' class='navLink'> Home </a>
-    </div>
-    <br>
-    <br>
-    <div id='bgContain'>
-      <div id='bg'></div>
-    </div>
-    <div id='main'>
-      
-      <h1 id='mainHeader'> Blooket Leaderboards </h1>
-      <br>
-      <div class='board center'>
-        <div class='YO_Container'>
-          <div class='YO_Text'> What is This? </div>
-        </div>
-        <br>
-        <br>
-        <h3 style='font-family: Nunito; font-size: 18px; color: white; padding-left: 5px; padding-right: 5px;'> Blooket Leaderboards is a website that showcases leaderboards ranking the achievements of many different blooket players. You can see leaderboards from a wide variety of different categories, from gamemodes, to stats, even to the leaderboards from blooket events. This website is here to showcase the skill of any and all blooket players.</h3>
-      </div>
-      <br>
-      <br>
-      <br>
-      <div class='left board'>
-        <div class='YO_Container'>
-          <div class='YO_Text'> Event Leaderboards </div>
-        </div>
-        <br>
-        <div style="display: flex; flex-direction: column;">
-          <div class="row">
-            <div class="box">
-              <div class='statsBox' onclick='coc2023()'>
-                <div class='statTitle'>
-                  CoC 2023
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <div class='statsBox' onclick='coc2022()'>
-                <div class='statTitle'>
-                  CoC 2022
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <div class='statsBox' onclick="lunch()">
-                <div class='statTitle'>
-                  L.U.N.C.H
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="box">
-              <div class='statsBox'>
-                <div class='statTitle'>
-                  CoC 2021
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <div class='statsBox' onclick='coc2020()'>
-                <div class='statTitle'>
-                  CoC 2020
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <div class='statsBox'>
-                <div class='statTitle'>
-                  CoC 2019
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="box">
-              <div class='statsBox' onclick='pop()'>
-                <div class='statTitle'>
-                  PoP
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='board right'>
-        <div class='YO_Container'>
-          <div class='YO_Text'> Popular Leaderboards </div>
-        </div>
-        <br>
-        <br>
-        <div style='padding-top: 15px; text-align: center;'>
-          <a href='TD/LD_LB' class='popLinks'> [3] Lost Desert LB(TD1) </a>
-          <br>
-          <a href='flappyLB' class='popLinks'> [3] Flappy Blook </a>
-          <br>
-          <a href='TD2LB/easyC_LB' class='popLinks'> [2] Sunny Meadow Easy LB(TD2) </a>
-          <br>
-          <a href='cafe/highDay_LB' class='popLinks'> [2] Highest Cafe Day </a>
-          <br>
-          <a href='google.com' class='popLinks'> Placeholder </a>
-          <br>
-          <a href='gamemodes' class='popLinks'> Placeholder </a>
-        </div>
-      </div>
-    </div>
-    <script src='script.js'></script>
-    <script src='settings.js'></script>
+  <!--Literally Everything Else-->
+  <div id='navBar'>
+    <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
+    <a href='settings' class='navLink'> Settings </a>
+    <a href='submissions' class='navLink'> Submissions </a>
+    <a href='suggestions' class='navLink'> Suggestions </a>
+    <a href='gamemode' class='navLink'> Gamemodes </a>
+    <a href='../' class='navLink'> Home </a>
+  </div>
+  <br>
+  <br>
+  <div id='bgContain'>
+    <div id='bg'></div>
+  </div>
+  <div id='main'>
 
-    <script src='screenAdjust.js'></script>
-  </body>
+    <h1 id='mainHeader'> Blooket Leaderboards </h1>
+    <br>
+    <div class='board center'>
+      <div class='YO_Container'>
+        <div class='YO_Text'> What is This? </div>
+      </div>
+      <br>
+      <br>
+      <h3 style='font-family: Nunito; font-size: 18px; color: white; padding-left: 5px; padding-right: 5px;'> Blooket
+        Leaderboards is a website that showcases leaderboards ranking the achievements of many different blooket
+        players. You can see leaderboards from a wide variety of different categories, from gamemodes, to stats, even to
+        the leaderboards from blooket events. This website is here to showcase the skill of any and all blooket players.
+      </h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class='left board'>
+      <div class='YO_Container'>
+        <div class='YO_Text'> Event Leaderboards </div>
+      </div>
+      <br>
+      <div style="display: flex; flex-direction: column;">
+        <div class="row">
+          <div class="box">
+            <div class='statsBox' onclick='coc2023()'>
+              <div class='statTitle'>
+                CoC 2023
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class='statsBox' onclick='coc2022()'>
+              <div class='statTitle'>
+                CoC 2022
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class='statsBox' onclick="lunch()">
+              <div class='statTitle'>
+                L.U.N.C.H
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <div class='statsBox'>
+              <div class='statTitle'>
+                CoC 2021
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class='statsBox' onclick='coc2020()'>
+              <div class='statTitle'>
+                CoC 2020
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class='statsBox'>
+              <div class='statTitle'>
+                CoC 2019
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <div class='statsBox' onclick='pop()'>
+              <div class='statTitle'>
+                PoP
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='board right'>
+      <div class='YO_Container'>
+        <div class='YO_Text'> Popular Leaderboards </div>
+      </div>
+      <br>
+      <br>
+      <div style='padding-top: 15px; text-align: center;'>
+        <a href='TD/LD_LB' class='popLinks'> [3] Lost Desert LB(TD1) </a>
+        <br>
+        <a href='flappyLB' class='popLinks'> [3] Flappy Blook </a>
+        <br>
+        <a href='TD2LB/easyC_LB' class='popLinks'> [2] Sunny Meadow Easy LB(TD2) </a>
+        <br>
+        <a href='cafe/highDay_LB' class='popLinks'> [2] Highest Cafe Day </a>
+        <br>
+        <a href='google.com' class='popLinks'> Placeholder </a>
+        <br>
+        <a href='gamemodes' class='popLinks'> Placeholder </a>
+      </div>
+    </div>
+  </div>
+  <script src='script.js'></script>
+  <script src='settings.js'></script>
+
+  <script src='screenAdjust.js'></script>
+</body>
+
 </html>
