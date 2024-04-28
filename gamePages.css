@@ -16,6 +16,31 @@ body {
 }
   
   /*Boards Section*/
+
+  .board {
+    background-color: #40115f;
+    padding-left: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    transition-duration: 0.5s;
+    z-index: 3;
+  }
+  .board.left {
+    float: left;
+    width: auto;
+    margin-bottom: 75px;
+  }
+  .board.right {
+    float: right;
+    width: calc(70% - 340px);
+    margin-bottom: 75px;
+  }
+  .board.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(270 * 3px);
+  }
   
   .leftBoards {
     background-color: #40115f;
@@ -49,7 +74,7 @@ body {
     background-color: #40115f;
     margin-left: auto;
     margin-right: auto;
-    width: calc(270 * 3px);;
+    width: calc(270 * 3px);
     padding-left: 10px;
     border-radius: 10px;
     z-index: 3;
