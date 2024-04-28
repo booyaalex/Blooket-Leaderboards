@@ -1,0 +1,118 @@
+:root {
+  font-family: "Nunito", sans-serif;
+  padding-top: 40px;
+
+  --link-color: #fadeff;
+}
+
+#bgContain {
+  position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #0bc2cf;
+    overflow: hidden;
+    z-index: -1;
+    transition-duration: 0.5s;
+} 
+
+#bg {
+  position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 50%;
+    left: 50%;
+    background-size: 550px;
+    background-position: -100px -100px;
+    opacity: .1;
+    transform: translate(-50%,-50%) rotate(15deg);
+    z-index: -1;
+    background-image: url('./assets/bg/bg-main.png');
+}
+
+.board {
+  background-color: #40115f;
+  display: flex;
+  justify-content: center;
+  /*z-index: 3;*/
+  transition-duration: 0.5s;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.board.left {
+  float: left;
+  width: auto;
+  margin-bottom: 75px;
+}
+
+.board.right {
+  float: right;
+  width: calc(70% - 340px);
+  margin-bottom: 75px;
+}
+
+.board.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(270 * 3px);
+}
+
+.board.tinyLeft {
+  float: left;
+  width: 300px;
+  margin-bottom: 75px;
+}
+
+.board.tinyRight {
+  float: right;
+  width: 300px;
+  margin-bottom: 75px;
+}
+
+@media (max-width: 644px) {
+  .board {
+    width: fit-content !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: none;
+    float: none;
+  }
+}
+
+a {
+  color: var(--link-color);
+}
+
+.sp-header {
+  background-color: transparent;
+  height: fit-content;
+  border-radius: 7px;
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: -30px;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.2), inset 0 -4px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+  transition-duration: 0.5s;
+  background: linear-gradient(#fcd843, #fcd843 50%, #feb31a 50.01%, #feb31a);
+  font-family: Titan One;
+  padding: 0 15px;
+  border-radius: 5px;
+  color: white;
+  align-items: center;
+  font-size: 26px;
+  text-shadow: -1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464,
+    2px 2px 0 #646464;
+  text-align: center;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ef7426;
+  transition-duration: 0.5s;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,45 @@
+.statsBox {
+  background-color: #9a49aa;
+  border-radius: 7px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 15px;
+  box-shadow: inset 0 -6px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.2s;
+  cursor: pointer;
+  justify-content: center;
+}
+.statsBox:hover {
+  box-shadow: none;
+  background-color: rgba(128, 60, 140, 1);
+}
+
+.statTitle {
+  font-family: Titan One;
+  color: white;
+  font-size: calc(70% + 15px);
+  margin: 6px;
+  text-align: center;
+  padding: 5px 10px 10px;
+}
+
+.mainHeader {
+  font-family: Titan One;
+  font-size: 60px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.popLinks {
+  font-size: 18px;
+  transition-duration: 0.2s;
+  padding-bottom: 35px;
+  padding-left: 10px;
+}
+.popLinks:hover {
+  font-size: 23px;
+}
