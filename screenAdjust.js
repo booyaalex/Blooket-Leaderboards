@@ -58,13 +58,13 @@ if(URL == "/stats") {
 if (width <= 644) {
   if(URL == "/index" || URL == "/") {
     //Right Side
-    const right = document.querySelectorAll('.rightBoards');
+    const Right = document.querySelectorAll('.right');
     let i = 0;
-    console.log(right);
-    right.forEach(rightBoards => {
-      right[i].style.marginRight = "auto";
-      right[i].style.marginLeft = "auto";
-      right[i].style.float = "none";
+    console.log(Right);
+    Right.forEach(right => {
+      Right[i].style.marginRight = "auto";
+      Right[i].style.marginLeft = "auto";
+      Right[i].style.float = "none";
       i++;
     });
 
@@ -117,8 +117,8 @@ if (width <= 644) {
       i++;
     });
     i = 0;
-    right.forEach(rightBoards => {
-      right[i].style.width = document.querySelector('table').offsetWidth;
+    Right.forEach(right => {
+      Right[i].style.width = document.querySelector('table').offsetWidth;
       i++;
     });
     i = 0;
