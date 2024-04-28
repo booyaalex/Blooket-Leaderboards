@@ -19,7 +19,7 @@ function Index() {
               fontSize: "18px",
               color: "white",
               paddingLeft: "5px",
-              paddingRight: "5px"
+              paddingRight: "5px",
             }}
           >
             Blooket Leaderboards is a website that showcases leaderboards
@@ -38,30 +38,30 @@ function Index() {
           <br />
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div className="row">
-                <div className="statsBox" /*onclick='coc2023()'*/>
-                  <div className="statTitle">CoC 2023</div>
+              <div className="statsBox" /*onclick='coc2023()'*/>
+                <div className="statTitle">CoC 2023</div>
               </div>
-                <div className="statsBox" /*onclick='coc2022()'*/>
-                  <div className="statTitle">CoC 2022</div>
+              <div className="statsBox" /*onclick='coc2022()'*/>
+                <div className="statTitle">CoC 2022</div>
               </div>
-                <div className="statsBox" /*onclick='lunch()'*/>
-                  <div className="statTitle">L.U.N.C.H</div>
-              </div>
-            </div>
-            <div className="row">
-                <div className="statsBox">
-                  <div className="statTitle">CoC 2021</div>
-              </div>
-                <div className="statsBox" /*onclick='coc2020()'*/>
-                  <div className="statTitle">CoC 2020</div>
-              </div>
-                <div className="statsBox">
-                  <div className="statTitle">CoC 2019</div>
+              <div className="statsBox" /*onclick='lunch()'*/>
+                <div className="statTitle">L.U.N.C.H</div>
               </div>
             </div>
             <div className="row">
-                <div className="statsBox" /*onclick='pop()'*/>
-                  <div className="statTitle">PoP</div>
+              <div className="statsBox">
+                <div className="statTitle">CoC 2021</div>
+              </div>
+              <div className="statsBox" /*onclick='coc2020()'*/>
+                <div className="statTitle">CoC 2020</div>
+              </div>
+              <div className="statsBox">
+                <div className="statTitle">CoC 2019</div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="statsBox" /*onclick='pop()'*/>
+                <div className="statTitle">PoP</div>
               </div>
             </div>
           </div>
@@ -70,31 +70,38 @@ function Index() {
           <div className="sp-header">Popular Leaderboards</div>
           <br />
           <br />
-          <div style={{ paddingTop: "15px", textAlign: "center" }}>
-            <a href="TD/LD_LB" className="popLinks">
-              [3] Lost Desert LB(TD1)
-            </a>
-            <br />
-            <a href="flappyLB" className="popLinks">
-              [3] Flappy Blook
-            </a>
-            <br />
-            <a href="TD2LB/easyC_LB" className="popLinks">
-              [2] Sunny Meadow Easy LB(TD2)
-            </a>
-            <br />
-            <a href="cafe/highDay_LB" className="popLinks">
-              [2] Highest Cafe Day
-            </a>
-            <br />
-            <a href="google.com" className="popLinks">
-              Placeholder
-            </a>
-            <br />
-            <a href="gamemodes" className="popLinks">
-              Placeholder
-            </a>
-          </div>
+          <ul style={{ paddingTop: "15px", textAlign: "center" }}>
+            <li>
+              <a href="TD/LD_LB" className="popLinks">
+                [3] Lost Desert LB(TD1)
+              </a>
+            </li>
+            <li>
+              <a href="flappyLB" className="popLinks">
+                [3] Flappy Blook
+              </a>
+            </li>
+            <li>
+              <a href="TD2LB/easyC_LB" className="popLinks">
+                [2] Sunny Meadow Easy LB(TD2)
+              </a>
+            </li>
+            <li>
+              <a href="cafe/highDay_LB" className="popLinks">
+                [2] Highest Cafe Day
+              </a>
+            </li>
+            <li>
+              <a href="google.com" className="popLinks">
+                Placeholder
+              </a>
+            </li>
+            <li>
+              <a href="gamemodes" className="popLinks">
+                Placeholder
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </>
