@@ -20,6 +20,8 @@ function getData() {
     let headerDisplay;
     if(LEADERBOARD == 12){
         headerDisplay = "YYYY/MM/DD";
+    } else if (LEADERBOARD == 16 || LEADERBOARD == 17 || LEADERBOARD == 18) {
+        headerDisplay = "Time";
     } else {
         headerDisplay = "Score";
     }
