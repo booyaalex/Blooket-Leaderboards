@@ -17,8 +17,14 @@ let LEADERBOARD;
 
 function getData() {
     LEADERBOARD = localStorage.getItem("leaderboard");
+    let headerDisplay;
+    if(LEADERBOARD == 12){
+        headerDisplay = "YYYY/MM/DD";
+    } else {
+        headerDisplay = "Score";
+    }
     firebase.database().ref("/").on('value', function (snapshot) {
-        document.getElementById("TABLE").innerHTML = "<tr><td><div class='statsBoxLB'><div class='statTitleLB'>Ranking</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blook</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Person</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Score</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blooket Username</div></div></td></tr>";
+        document.getElementById("TABLE").innerHTML = "<tr><td><div class='statsBoxLB'><div class='statTitleLB'>Ranking</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blook</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Person</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>" + headerDisplay + "</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blooket Username</div></div></td></tr>";
         let a = 0;
         snapshot.forEach(function (childSnapshot) {
             //Declare const's to make getting data easier.
