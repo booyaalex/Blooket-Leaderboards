@@ -69,13 +69,13 @@ if (width <= 644) {
     });
 
     //Left Side
-    const left = document.querySelectorAll('.leftBoards');
+    const Left = document.querySelectorAll('.left');
     i = 0;
-    console.log(left);
-    left.forEach(leftBoards => {
-      left[i].style.marginRight = "auto";
-      left[i].style.marginLeft = "auto";
-      left[i].style.float = "none";
+    console.log(Left);
+    Left.forEach(left => {
+      Left[i].style.marginRight = "auto";
+      Left[i].style.marginLeft = "auto";
+      Left[i].style.float = "none";
       i++;
     });
 
@@ -112,8 +112,8 @@ if (width <= 644) {
     const Center = document.querySelectorAll(".center");
     i = 0;
     console.log(Center);
-    left.forEach(leftBoards => {
-      left[i].style.width = "80%";
+    Left.forEach(left => {
+      Left[i].style.width = "80%";
       i++;
     });
     i = 0;
@@ -122,7 +122,7 @@ if (width <= 644) {
       i++;
     });
     i = 0;
-    center.forEach(center => {
+    Center.forEach(center => {
       Center[i].style.width = "80%";
       i++;
     });

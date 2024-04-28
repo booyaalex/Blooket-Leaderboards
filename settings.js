@@ -155,7 +155,7 @@ function changeTheme() {
 
     //Change Boards
     const forLoop2 = document.getElementsByClassName("center");
-    const forLoop3 = document.getElementsByClassName("leftBoards");
+    const forLoop3 = document.getElementsByClassName("left");
     const forLoop4 = document.getElementsByClassName("rightBoards");
     const forLoop5 = document.getElementsByClassName("tinyLeftBoards");
     const forLoop6 = document.getElementsByClassName("tinyRightBoards");
