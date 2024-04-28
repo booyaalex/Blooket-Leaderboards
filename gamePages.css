@@ -41,48 +41,6 @@ body {
     margin-right: auto;
     width: calc(270 * 3px);
   }
-  
-  .leftBoards {
-    background-color: #40115f;
-    float: left;
-    width: auto;
-    padding-left: 10px;
-    border-radius: 10px;
-    z-index: 3;
-    margin-bottom: 75px;
-    display: flex;
-    justify-content: center;
-    transition-duration: 0.5s;
-  }
-  
-  
-  .rightBoards {
-    background-color: #40115f;
-    float: right;
-    width: calc(70% - 340px);
-    padding-left: 10px;
-    border-radius: 10px;
-    z-index: 3;
-    margin-bottom: 75px;
-    display: flex;
-    justify-content: center;
-    transition-duration: 0.5s;
-  }
-
-
-  .centerBoards {
-    background-color: #40115f;
-    margin-left: auto;
-    margin-right: auto;
-    width: calc(270 * 3px);
-    padding-left: 10px;
-    border-radius: 10px;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    transition-duration: 0.5s;
-  }
-  
 
   .tinyLeftBoards {
     background-color: #40115f;
