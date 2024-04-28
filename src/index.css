@@ -56,7 +56,7 @@
 .board.center {
   margin-left: auto;
   margin-right: auto;
-  width: calc(270 * 3px);
+  width: 60%;
 }
 
 .board.tinyLeft {
