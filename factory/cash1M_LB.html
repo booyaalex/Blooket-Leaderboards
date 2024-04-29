@@ -84,7 +84,7 @@
       </div>
       <br>
       <br>
-      <table style='justify-content: space-evenly;  margin-left: auto; margin-right: auto;'>
+      <table id="TABLE" style='justify-content: space-evenly;  margin-left: auto; margin-right: auto;'>
         <tr>
           <td>
             <div class='statsBoxLB'>
@@ -110,7 +110,7 @@
           <td>
             <div class='statsBoxLB'>
               <div class='statTitleLB'>
-                Round
+                Time
               </div>
             </div>
           </td>
@@ -122,52 +122,18 @@
             </div>
           </td>
         </tr>
-
-        <!--1st Place-->
-        <tr>
-          <td>
-            <div class='statTitleLB'>
-              #1.
-            </div>
-          </td>
-          <td>
-            <div class='statImgLB'>
-              <img class='statImgLB'
-                src='https://ac.blooket.com/id/static/media/lightBlueBlook.96314dd376e45a3857e662309b72996f.svg'
-                alt='Light Blue Blook' width='75'>
-            </div>
-          </td>
-          <td>
-            <div class='statTitleLB'>
-              NONE
-            </div>
-          </td>
-          <td>
-            <div class='statTitleLB'>
-              NONE
-            </div>
-          </td>
-          <td>
-            <div class='statTitleLB'>
-              NONE
-            </div>
-          </td>
-        </tr>
-
-        <!--2nd Place-->
-
-
-        <!--3rd Place-->
-
-
-        <!--4th Place-->
-
       </table>
     </div>
   </div>
   <script src='../settings.js'></script>
-
   <script src='../screenAdjust.js'></script>
+  
+  <script src='../leaderboardMakerV2.js'></script>
+  <script>
+    localStorage.setItem("leaderboard", 15);
+    setTimeout(() => getData(), 100);
+    setTimeout(() => changeTheme(), 500);
+  </script>
 </body>
 
 </html>
