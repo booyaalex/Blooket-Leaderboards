@@ -3,8 +3,8 @@
 .popLinks {
   font-family: Nunito;
   font-size: 18px;
-  text-decoration: none;
-  color: white;
+  text-decoration: underline;
+  color: rgb(247, 183, 255);
   z-index: 4;
   transition-duration: 0.2s;
   padding-bottom: 35px;
