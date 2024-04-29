@@ -186,3 +186,90 @@ function coc2020() {
 function coc2022() {
     window.location.href = "Event/coc2022";
 }
+
+
+/*Stats*/
+function winsPage() {
+    window.location.href = "statPages/winsLB";
+}
+function classicPage() {
+    window.location.href = "statPages/pointsLB";
+}
+function defeatedPage() {
+    window.location.href = "statPages/playersDefeatedLB";
+}
+function answersPage() {
+    window.location.href = "statPages/answersLB";
+}
+function brPage() {
+    window.location.href = "statPages/showdownLB";
+}
+function gamesPage() {
+    window.location.href = "statPages/gamesPlayedLB";
+}
+function blooksPage() {
+    window.location.href = "statPages/blooksLB";
+}
+function factoryPage() {
+    window.location.href = "statPages/factoryUpgradesLB";
+}
+function tokensPage() {
+    window.location.href = "statPages/tokensLB";
+}
+function fishPage() {
+    window.location.href = "statPages/fishLB";
+}
+function boxPage() {
+    window.location.href = "statPages/boxLB";
+}
+function oldPage() {
+    window.location.href = "statPages/oldLB";
+}
+
+
+/*TD2*/
+function easySM() {
+    window.location.href = "TD2LB/easySM_LB";
+}
+function normalSM() {
+    window.location.href = "TD2LB/normalSM_LB";
+}
+function hardSM() {
+    window.location.href = "TD2LB/hardSM_LB";
+}
+function easyLD() {
+    window.location.href = "TD2LB/easyLD_LB";
+}
+function normalLD() {
+    window.location.href = "TD2LB/normalLD_LB";
+}
+function hardLD() {
+    window.location.href = "TD2LB/hardLD_LB";
+}
+function easyAM() {
+    window.location.href = "TD2LB/easyAM_LB";
+}
+function normalAM() {
+    window.location.href = "TD2LB/normalAM_LB";
+}
+function hardAM() {
+    window.location.href = "TD2LB/hardAM_LB";
+}
+function easyC() {
+    window.location.href = "TD2LB/easyC_LB";
+}
+function normalC() {
+    window.location.href = "TD2LB/normalC_LB";
+}
+function hardC() {
+    window.location.href = "TD2LB/hardC_LB";
+}
+function easyFF() {
+    window.location.href = "TD2LB/easyFF_LB";
+}
+function normalFF() {
+    window.location.href = "TD2LB/normalFF_LB";
+}
+function hardFF() {
+    window.location.href = "TD2LB/hardFF_LB";
+}

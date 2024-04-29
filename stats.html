@@ -1,173 +1,176 @@
 <html>
-  <head>
-    <title> Blooket Leaderboards </title>
-    <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
-    <link rel='stylesheet' href='gamePages.css'>
-    <link rel='stylesheet' href='bgStyle.css'>
-    <link rel='stylesheet' href='sideNav.css'>
-    <link rel='stylesheet' href='YO_Container.css'>
-    <link rel='stylesheet' href='statBoxes.css'>
-    <link rel='stylesheet' href='navBar.css'>
-    <script src="https://kit.fontawesome.com/3fbe72ad61.js" crossorigin="anonymous"></script>
-<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
-  </head>
-  <body>
-    <!--Side Navagation Code-->
-    <div id='sidenav'>
-      <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
-      <br>
-      <a href='../' class='sideLink'> Home </a>
-      <br>
-      <a href='gamemode' class='sideLink'> Gamemodes </a>
-      <br>
-      <a href='suggestions' class='sideLink'> Suggestions </a>
-      <br>
-      <a href='submissions' class='sideLink'> Submissions </a>
-      <br>
-      <a href='settings' class='sideLink'> Settings </a>
-      <br>
+
+<head>
+  <title> Blooket Leaderboards </title>
+  <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
+  <link rel='stylesheet' href='gamePages.css'>
+  <link rel='stylesheet' href='bgStyle.css'>
+  <link rel='stylesheet' href='sideNav.css'>
+  <link rel='stylesheet' href='YO_Container.css'>
+  <link rel='stylesheet' href='statBoxes.css'>
+  <link rel='stylesheet' href='navBar.css'>
+  <script src="https://kit.fontawesome.com/3fbe72ad61.js" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+</head>
+
+<body>
+  <!--Side Navagation Code-->
+  <div id='sidenav'>
+    <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
+    <br>
+    <a href='../' class='sideLink'> Home </a>
+    <br>
+    <a href='gamemode' class='sideLink'> Gamemodes </a>
+    <br>
+    <a href='suggestions' class='sideLink'> Suggestions </a>
+    <br>
+    <a href='submissions' class='sideLink'> Submissions </a>
+    <br>
+    <a href='settings' class='sideLink'> Settings </a>
+    <br>
     <a href='https://discord.gg/5nYGQtqyBZ' class='sideLink' style='padding-right: 10%;'> Discord </a>
   </div>
 
-    <!--Everything Else-->
-    <div id='navBar'>
-      <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
-      <a href='settings' class='navLink'> Settings </a>
-      <a href='submissions' class='navLink'> Submissions </a>
-      <a href='suggestions' class='navLink'> Suggestions </a>
-      <a href='gamemode' class='navLink'> Gamemodes </a>
-      <a href='../' class='navLink'> Home </a>
-    </div>
+  <!--Everything Else-->
+  <div id='navBar'>
+    <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
+    <a href='settings' class='navLink'> Settings </a>
+    <a href='submissions' class='navLink'> Submissions </a>
+    <a href='suggestions' class='navLink'> Suggestions </a>
+    <a href='gamemode' class='navLink'> Gamemodes </a>
+    <a href='../' class='navLink'> Home </a>
+  </div>
+  <br>
+  <br>
+  <div id='bgContain'>
+    <div id='bg'></div>
+  </div>
+  <div id='main'>
+    <h1 id='mainHeader'> Stat Leaderboards </h1>
     <br>
-    <br>
-    <div id='bgContain'>
-      <div id='bg'></div>
-    </div>
-    <div id='main'>
-      <h1 id='mainHeader'> Stat Leaderboards </h1>
-      <br>
-      <div class="board center">
-        <div class='YO_Container'>
-          <div class='YO_Text'> Leaderboards </div>
-        </div>
-        <br>
-        <br>
-        <table style='justify-content: space-evenly; display: flex;'>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="winsPage()">
-                <div class='statTitle'> Total Wins </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="classicPage()">
-                <div class='statTitle'> Total Points </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/Ycjvjh4/download-11.png' alt='Classic Image'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="defeatedPage()">
-                <div class='statTitle' style='font-size: 23px;'> Players Defeated </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/Bs3CKCX/download-8.png' alt='Image of Red X'>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="answersPage()">
-                <div class='statTitle'> Total Answers </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/RcXbqHS/download-12.png' alt='Checkmark Image'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="brPage()">
-                <div class='statTitle' style='font-size: 23px;'> Showdown Wins </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/dJQgM6Q/download-10.png' alt='BR Image'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="gamesPage()">
-                <div class='statTitle' style='font-size: 26px;'> Games Played </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/QmPmbtC/download-13.png' alt='Games Image'>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="blooksPage()">
-                <div class='statTitle'> Total Blooks </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="factoryPage()">
-                <div class='statTitle' style='font-size: 21px;'> Factory Upgrades </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/m0bzdfj/download-9.png' alt='Factory Image'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="tokensPage()">
-                <div class='statTitle'> Total Tokens </div>
-                <div class='statImg' style='transform: translateY(-50%)  rotate(-30deg);'>
-                  <img src='https://i.ibb.co/Yj04vs9/download-7.png' alt='Image of Red X'>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="fishPage()">
-                <div class='statTitle'> Fishing Weight </div>
-                <div class='statImg'>
-                  <img src='https://ac.blooket.com/dashboard/assets/FishWeight-DxmrKsPp.svg' alt='Fishing Image'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="boxPage()">
-                <div class='statTitle'> Boxes Opened </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/m0bzdfj/download-9.png' alt='Factory Image'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="oldPage()">
-                <div class='statTitle'> Oldest Account </div>
-                <div class='statImg'>
-                  <img src='https://ac.blooket.com/dashboard/assets/Days-DFrhXKWm.svg' alt='Calender Image'>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
+    <div class="board center">
+      <div class='YO_Container'>
+        <div class='YO_Text'> Leaderboards </div>
       </div>
+      <br>
+      <br>
+      <table style='justify-content: space-evenly; display: flex;'>
+        <tr>
+          <td>
+            <div class='statsBox' onclick="winsPage()">
+              <div class='statTitle'> Total Wins </div>
+              <div class='statImg'>
+                <img src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class='statsBox' onclick="classicPage()">
+              <div class='statTitle'> Total Points </div>
+              <div class='statImg'>
+                <img src='https://i.ibb.co/Ycjvjh4/download-11.png' alt='Classic Image'>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class='statsBox' onclick="defeatedPage()">
+              <div class='statTitle' style='font-size: 23px;'> Players Defeated </div>
+              <div class='statImg'>
+                <img src='https://i.ibb.co/Bs3CKCX/download-8.png' alt='Image of Red X'>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class='statsBox' onclick="answersPage()">
+              <div class='statTitle'> Total Answers </div>
+              <div class='statImg'>
+                <img src='https://i.ibb.co/RcXbqHS/download-12.png' alt='Checkmark Image'>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class='statsBox' onclick="brPage()">
+              <div class='statTitle' style='font-size: 23px;'> Showdown Wins </div>
+              <div class='statImg'>
+                <img src='https://i.ibb.co/dJQgM6Q/download-10.png' alt='BR Image'>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class='statsBox' onclick="gamesPage()">
+              <div class='statTitle' style='font-size: 26px;'> Games Played </div>
+              <div class='statImg'>
+                <img src='https://i.ibb.co/QmPmbtC/download-13.png' alt='Games Image'>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class='statsBox' onclick="blooksPage()">
+              <div class='statTitle'> Total Blooks </div>
+              <div class='statImg'>
+                <img src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class='statsBox' onclick="factoryPage()">
+              <div class='statTitle' style='font-size: 21px;'> Factory Upgrades </div>
+              <div class='statImg'>
+                <img src='https://i.ibb.co/m0bzdfj/download-9.png' alt='Factory Image'>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class='statsBox' onclick="tokensPage()">
+              <div class='statTitle'> Total Tokens </div>
+              <div class='statImg' style='transform: translateY(-50%)  rotate(-30deg);'>
+                <img src='https://i.ibb.co/Yj04vs9/download-7.png' alt='Image of Red X'>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class='statsBox' onclick="fishPage()">
+              <div class='statTitle'> Fishing Weight </div>
+              <div class='statImg'>
+                <img src='https://ac.blooket.com/dashboard/assets/FishWeight-DxmrKsPp.svg' alt='Fishing Image'>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class='statsBox' onclick="boxPage()">
+              <div class='statTitle'> Boxes Opened </div>
+              <div class='statImg'>
+                <img src='https://i.ibb.co/m0bzdfj/download-9.png' alt='Factory Image'>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class='statsBox' onclick="oldPage()">
+              <div class='statTitle'> Oldest Account </div>
+              <div class='statImg'>
+                <img src='https://ac.blooket.com/dashboard/assets/Days-DFrhXKWm.svg' alt='Calender Image'>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
     </div>
-    <!--Page won't update this is BS-->
-    <script src='stats.js'></script>
-    <script src='settings.js'></script>
+  </div>
+  <!--Page won't update this is BS-->
+  <script src='windowLocation.js'></script>
+  <script src='settings.js'></script>
 
-    <script src='screenAdjust.js'></script>
-  </body>
+  <script src='screenAdjust.js'></script>
+</body>
+
 </html>
