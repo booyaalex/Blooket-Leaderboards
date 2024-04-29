@@ -556,7 +556,7 @@ function showPopUp() {
    //Ingridients
    for (let a = 0; a < ingredients.length; a++) {
     ingImg = document.createElement("img");
-    ingImg.src = "https://raw.githubusercontent.com/booyaalex/Blooket-Leaderboards/main/popIng/" + ingredients[a] + ".png";
+    ingImg.src = "../../Images/popIng/" + ingredients[a] + ".png";
      ingImg.className = "ingrImg";
      document.getElementById('ingList').appendChild(ingImg);
    }
