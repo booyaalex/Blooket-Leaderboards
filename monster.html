@@ -1,226 +1,229 @@
 <html>
-  <head>
-    <title> Blooket Leaderboards </title>
-    <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
-    <link rel='stylesheet' href='gamePages.css'>
-    <link rel='stylesheet' href='sideNav.css'>
-    <link rel='stylesheet' href='bgStyle.css'>
-    <link rel='stylesheet' href='YO_Container.css'>
-    <link rel='stylesheet' href='statBoxes.css'>
-    <link rel='stylesheet' href='navBar.css'>
-    <script src="https://kit.fontawesome.com/3fbe72ad61.js" crossorigin="anonymous"></script>
-<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
-  </head>
-  <body>
-    <!--Side Navagation Code-->
-    <div id='sidenav'>
-      <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
-      <br>
-      <a href='../' class='sideLink'> Home </a>
-      <br>
-      <a href='gamemode' class='sideLink'> Gamemodes </a>
-      <br>
-      <a href='suggestions' class='sideLink'> Suggestions </a>
-      <br>
-      <a href='submissions' class='sideLink'> Submissions </a>
-      <br>
-      <a href='settings' class='sideLink'> Settings </a>
-      <br>
+
+<head>
+  <title> Blooket Leaderboards </title>
+  <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
+  <link rel='stylesheet' href='gamePages.css'>
+  <link rel='stylesheet' href='sideNav.css'>
+  <link rel='stylesheet' href='bgStyle.css'>
+  <link rel='stylesheet' href='YO_Container.css'>
+  <link rel='stylesheet' href='statBoxes.css'>
+  <link rel='stylesheet' href='navBar.css'>
+  <script src="https://kit.fontawesome.com/3fbe72ad61.js" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+</head>
+
+<body>
+  <!--Side Navagation Code-->
+  <div id='sidenav'>
+    <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
+    <br>
+    <a href='../' class='sideLink'> Home </a>
+    <br>
+    <a href='gamemode' class='sideLink'> Gamemodes </a>
+    <br>
+    <a href='suggestions' class='sideLink'> Suggestions </a>
+    <br>
+    <a href='submissions' class='sideLink'> Submissions </a>
+    <br>
+    <a href='settings' class='sideLink'> Settings </a>
+    <br>
     <a href='https://discord.gg/5nYGQtqyBZ' class='sideLink' style='padding-right: 10%;'> Discord </a>
   </div>
 
-    <!--Everything Else-->
-    <div id='navBar'>
-      <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
-      <a href='settings' class='navLink'> Settings </a>
-      <a href='submissions' class='navLink'> Submissions </a>
-      <a href='suggestions' class='navLink'> Suggestions </a>
-      <a href='gamemode' class='navLink'> Gamemodes </a>
-      <a href='../' class='navLink'> Home </a>
-    </div>
+  <!--Everything Else-->
+  <div id='navBar'>
+    <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
+    <a href='settings' class='navLink'> Settings </a>
+    <a href='submissions' class='navLink'> Submissions </a>
+    <a href='suggestions' class='navLink'> Suggestions </a>
+    <a href='gamemode' class='navLink'> Gamemodes </a>
+    <a href='../' class='navLink'> Home </a>
+  </div>
+  <br>
+  <br>
+  <div id='bgContain'>
+    <div id='bg'></div>
+  </div>
+  <div id='main'>
+    <h1 id='mainHeader'> Monster Brawl Leaderboards </h1>
     <br>
-    <br>
-    <div id='bgContain'>
-      <div id='bg'></div>
-    </div>
-    <div id='main'>
-      <h1 id='mainHeader'> Monster Brawl Leaderboards </h1>
-      <br>
-      <div style="height: 400px">
-        <!--Snowy Table-->
-        <div class='tinyLeftBoards'>
-          <div class='YO_Container'>
-            <div class='YO_Text'> Snowy Fields </div>
-          </div>
-          <br>
-          <br>
-          <table style='justify-content: space-evenly; display: flex;'>
-            <tr>
-              <td>
-                <div class='statsBox' onclick="snow()">
-                  <div class='statTitle'> Normal </div>
-                  <div>
-                    <img class='statImg' src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class='statsBox' onclick="snowItem()">
-                  <div class='statTitle'> No Items </div>
-                  <div>
-                    <img class='statImg' src='https://i.ibb.co/4dRL8p6/Magnet.png' alt='Magnet Image'>
-                  </div>
-                </div>
-            </tr>
-            <tr>
-              <td>
-                <div class='statsBox' onclick="snowHit()">
-                  <div class='statTitle'> No Hit </div>
-                  <div>
-                    <img class='statImg' src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </table>
+    <div style="height: 400px">
+      <!--Snowy Table-->
+      <div class='tinyLeftBoards'>
+        <div class='YO_Container'>
+          <div class='YO_Text'> Snowy Fields </div>
         </div>
-      
-        <!--Snowy Challenge Table-->
-          
-        <div class='tinyRightBoards'>
-          <div class='YO_Container'>
-            <div class='YO_Text'> Snowy Fields (Challenge) </div>
-          </div>
-          <br>
-          <br>
-          <table style='justify-content: space-evenly; display: flex;'>
-            <tr>
-              <td>
-                <div class='statsBox' onclick="snowC()">
-                  <div class='statTitle'> Normal </div>
-                  <div class='statImg'>
-                    <img src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
-                  </div>
+        <br>
+        <br>
+        <table style='justify-content: space-evenly; display: flex;'>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="snow()">
+                <div class='statTitle'> Normal </div>
+                <div>
+                  <img class='statImg' src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
                 </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class='statsBox' onclick="snowItemC()">
-                  <div class='statTitle'> No Items </div>
-                  <div>
-                    <img class='statImg' src='https://i.ibb.co/4dRL8p6/Magnet.png' alt='Magnet Image'>
-                  </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="snowItem()">
+                <div class='statTitle'> No Items </div>
+                <div>
+                  <img class='statImg' src='https://i.ibb.co/4dRL8p6/Magnet.png' alt='Magnet Image'>
                 </div>
-            </tr>
-            <tr>
-              <td>
-                <div class='statsBox' onclick="snowHitC()">
-                  <div class='statTitle'> No Hit </div>
-                  <div class='statImg'>
-                    <img src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
-                  </div>
+              </div>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="snowHit()">
+                <div class='statTitle'> No Hit </div>
+                <div>
+                  <img class='statImg' src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
                 </div>
-              </td>
-            </tr>
-          </table>
-        </div>
+              </div>
+            </td>
+          </tr>
+        </table>
       </div>
-      <!------------------------->
-      
-      <div>
-        <!--Clocktower Table-->
-        <div class='tinyLeftBoards'>
-          <div class='YO_Container'>
-            <div class='YO_Text'> Clocktower </div>
-          </div>
-          <br>
-          <br>
-          <table style='justify-content: space-evenly; display: flex;'>
-            <tr>
-              <td>
-                <div class='statsBox' onclick="clock()">
-                  <div class='statTitle'> Normal </div>
-                  <div class='statImg'>
-                    <img src='https://i.ibb.co/V33wwDx/Gear.webp' width="50px" alt='Gear Icon'>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class='statsBox' onclick="clockItem()">
-                  <div class='statTitle'> No Items </div>
-                  <div class='statImg'>
-                    <img src='https://i.ibb.co/V33wwDx/Gear.webp' width="50px" alt='Gear Icon'>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class='statsBox' onclick="clockHit()">
-                  <div class='statTitle'> No Hit </div>
-                  <div>
-                    <img class='statImg' src='https://i.ibb.co/WtB1bDg/Bat.png' width="50px" alt='Clock Bat Blook'>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-            
-        <!--Clocktower Challenge Table-->
-        <div class='tinyRightBoards'>
-          <div class='YO_Container'>
-            <div class='YO_Text'> Clocktower (Challenge) </div>
-          </div>
-          <br>
-          <br>
-          <table style='justify-content: space-evenly; display: flex;'>
-            <tr>
-              <td>
-                <div class='statsBox' onclick="clockC()">
-                  <div class='statTitle'> Normal </div>
-                  <div class='statImg'>
-                    <img src='https://i.ibb.co/V33wwDx/Gear.webp' width="50px" alt='Gear Icon'>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class='statsBox' onclick="clockItemC()">
-                  <div class='statTitle'> No Items </div>
-                  <div>
-                    <img class='statImg' src='https://i.ibb.co/V33wwDx/Gear.webp' width="50px" alt='Gear Icon'>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class='statsBox' onclick="clockHitC()">
-                  <div class='statTitle'> No Hit </div>
-                  <div>
-                    <img class='statImg' src='https://i.ibb.co/WtB1bDg/Bat.png' width="50px" alt='Clock Bat Blook'>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-    <script src='monster.js'></script>
-    <script src='settings.js'></script>
 
-    <script src='screenAdjust.js'></script>
-  </body>
+      <!--Snowy Challenge Table-->
+
+      <div class='tinyRightBoards'>
+        <div class='YO_Container'>
+          <div class='YO_Text'> Snowy Fields (Challenge) </div>
+        </div>
+        <br>
+        <br>
+        <table style='justify-content: space-evenly; display: flex;'>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="snowC()">
+                <div class='statTitle'> Normal </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="snowItemC()">
+                <div class='statTitle'> No Items </div>
+                <div>
+                  <img class='statImg' src='https://i.ibb.co/4dRL8p6/Magnet.png' alt='Magnet Image'>
+                </div>
+              </div>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="snowHitC()">
+                <div class='statTitle'> No Hit </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!------------------------->
+
+    <div>
+      <!--Clocktower Table-->
+      <div class='tinyLeftBoards'>
+        <div class='YO_Container'>
+          <div class='YO_Text'> Clocktower </div>
+        </div>
+        <br>
+        <br>
+        <table style='justify-content: space-evenly; display: flex;'>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="clock()">
+                <div class='statTitle'> Normal </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/V33wwDx/Gear.webp' width="50px" alt='Gear Icon'>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="clockItem()">
+                <div class='statTitle'> No Items </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/V33wwDx/Gear.webp' width="50px" alt='Gear Icon'>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="clockHit()">
+                <div class='statTitle'> No Hit </div>
+                <div>
+                  <img class='statImg' src='https://i.ibb.co/WtB1bDg/Bat.png' width="50px" alt='Clock Bat Blook'>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!--Clocktower Challenge Table-->
+      <div class='tinyRightBoards'>
+        <div class='YO_Container'>
+          <div class='YO_Text'> Clocktower (Challenge) </div>
+        </div>
+        <br>
+        <br>
+        <table style='justify-content: space-evenly; display: flex;'>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="clockC()">
+                <div class='statTitle'> Normal </div>
+                <div class='statImg'>
+                  <img src='https://i.ibb.co/V33wwDx/Gear.webp' width="50px" alt='Gear Icon'>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="clockItemC()">
+                <div class='statTitle'> No Items </div>
+                <div>
+                  <img class='statImg' src='https://i.ibb.co/V33wwDx/Gear.webp' width="50px" alt='Gear Icon'>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class='statsBox' onclick="clockHitC()">
+                <div class='statTitle'> No Hit </div>
+                <div>
+                  <img class='statImg' src='https://i.ibb.co/WtB1bDg/Bat.png' width="50px" alt='Clock Bat Blook'>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src='windowLocation.js'></script>
+  <script src='settings.js'></script>
+
+  <script src='screenAdjust.js'></script>
+</body>
+
 </html>

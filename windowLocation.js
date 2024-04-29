@@ -129,3 +129,60 @@ function TODPage() {
 function flappyPage() {
     window.location.href = "flappyLB";
 }
+
+
+/*Monster*/
+function snow() {
+    window.location.href = "MB/snow_LB";
+}
+function snowItem() {
+    window.location.href = "MB/snowItem_LB";
+}
+function snowHit() {
+    window.location.href = "MB/snowHit_LB";
+}
+function clock() {
+    window.location.href = "MB/clock_LB";
+}
+function clockItem() {
+    window.location.href = "MB/clockItem_LB";
+}
+function clockHit() {
+    window.location.href = "MB/clockHit_LB";
+}
+function snowC() {
+    window.location.href = "MB/snowC_LB";
+}
+function snowItemC() {
+    window.location.href = "MB/snowItemC_LB";
+}
+function snowHitC() {
+    window.location.href = "MB/snowHitC_LB";
+}
+function clockC() {
+    window.location.href = "MB/clockC_LB";
+}
+function clockItemC() {
+    window.location.href = "MB/clockItemC_LB";
+}
+function clockHitC() {
+    window.location.href = "MB/clockHitC_LB";
+}
+
+
+/*Event*/
+function coc2023() {
+    window.location.href = "Event/coc2023";
+}
+function pop() {
+    window.location.href = "Event/pop";
+}
+function lunch() {
+    window.location.href = "Event/lunch";
+}
+function coc2020() {
+    window.location.href = "Event/coc2020";
+}
+function coc2022() {
+    window.location.href = "Event/coc2022";
+}
