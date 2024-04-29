@@ -136,7 +136,7 @@ function getData() {
                 if (a == 2) {
                     let NAME = document.createTextNode(MAP.name);
                     if(MAP.name == "Blooket Elite") {
-                        DIV.classList.add() = "rainbow";
+                        DIV.classList.add("rainbow");
                     }
                     DIV.appendChild(NAME); 
                 }
