@@ -80,8 +80,15 @@ function getDemStats() {
     const gamesPlayed = OI[0].gamesPlayed;
     const totalTokens = OI[0].totalTokens;
     const dateCreated = OI[0].dateCreated;
-
     const totalBlooks = OI[0].numUnlocks;
+
+    const cafeCash = OI[0].cafeCash;
+    const foodServed = OI[0].foodServed;
+
+    const defenseDmg = OI[0].defenseDmg;
+    const defenseRounds = OI[0].defenseRounds;
+
+    const mostTowers = OI[0].towerClears;
 
     const contactInfo = document.getElementById("contact_info").value;
 
@@ -208,9 +215,9 @@ function getDemStats() {
                         "mostDamage",
                         0,
                         "totalDamage",
-                        0,
+                        defenseDmg,
                         "totalRounds",
-                        0,
+                        defenseRounds,
                         "sunnyMeadowEasy",
                         0,
                         "lostDesertEasy",
@@ -244,9 +251,9 @@ function getDemStats() {
                         "highestDay",
                         0,
                         "totalCafeCash",
-                        0,
+                        cafeCash,
                         "totalFoodServed",
-                        0,
+                        foodServed,
                         "maxToast",
                         0,
                         "maxUpgrades",
@@ -310,7 +317,9 @@ function getDemStats() {
                         "floorOne",
                         0,
                         "floorTwo",
-                        0
+                        0,
+                        "mostTowers",
+                        mostTowers
                     ],
                     "contact": contactInfo
                 });
@@ -428,9 +437,9 @@ function getDemStats() {
                     "mostDamage",
                     0,
                     "totalDamage",
-                    0,
+                    defenseDmg,
                     "totalRounds",
-                    0,
+                    defenseRounds,
                     "sunnyMeadowEasy",
                     0,
                     "lostDesertEasy",
@@ -464,9 +473,9 @@ function getDemStats() {
                     "highestDay",
                     0,
                     "totalCafeCash",
-                    0,
+                    cafeCash,
                     "totalFoodServed",
-                    0,
+                    foodServed,
                     "maxToast",
                     0,
                     "maxUpgrades",
@@ -530,7 +539,9 @@ function getDemStats() {
                     "floorOne",
                     0,
                     "floorTwo",
-                    0
+                    0,
+                    "mostTowers",
+                    mostTowers
                 ],
                 "contact": contactInfo
             });
