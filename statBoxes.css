@@ -69,7 +69,7 @@
 }
 
 .rainbow {
-  font-size: 1.5rem;
+  font-size: 20px;
   display: inline-block;
   margin-top: 1rem;
   text-shadow: 2px 2px 4px #000000;
@@ -81,24 +81,48 @@
     color: orange;
   }
 
+  5% {
+    color: red
+  }
+
   10% {
     color: purple;
+  }
+
+  15% {
+    color: magenta;
   }
 
   20% {
     color: red;
   }
 
+  25% {
+    color: purple;
+  }
+
   30% {
     color: CadetBlue;
+  }
+
+  35% {
+    color: lightgreen;
   }
 
   40% {
     color: yellow;
   }
 
+  45% {
+    color: lightsalmon;
+  }
+
   50% {
     color: coral;
+  }
+
+  55% {
+    color: yellowgreen
   }
 
   60% {
