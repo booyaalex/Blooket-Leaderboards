@@ -141,11 +141,13 @@ function getData() {
                     DIV.appendChild(NAME); 
                 }
                 if (a == 3) {
-                    let SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
+                    let SCORE1; 
                     let SCORE2;
                     if(LEADERBOARD == 12){
+                        SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
                         SCORE2 = document.createTextNode(SCORE1.slice(0, 4) + "-" + SCORE1.slice(4, 6) + "-" + SCORE1.slice(6));
                     } else {
+                        SCORE1 = Math.trunc(SORTED_SCORE[i]);
                         SCORE1 = SCORE1.toLocaleString();
                         SCORE2 = document.createTextNode(SCORE1);
                         console.log(SCORE1);
