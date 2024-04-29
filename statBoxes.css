@@ -122,23 +122,39 @@
   }
 
   55% {
-    color: yellowgreen
+    color:yellowgreen;
   }
 
   60% {
     color: green;
   }
 
+  65% {
+    color: aquamarine;
+  }
+
   70% {
     color: cyan;
+  }
+
+  75% {
+    color: purple;
   }
 
   80% {
     color: DeepPink;
   }
 
+  85% {
+    color: darkslateblue'
+  }
+
   90% {
     color: DodgerBlue;
+  }
+
+  95% {
+    color: yellow;
   }
 
   100% {
