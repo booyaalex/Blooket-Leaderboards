@@ -20,7 +20,7 @@
     opacity: .1;
     transform: translate(-50%,-50%) rotate(15deg);
     z-index: -1;
-    background-image: url('https://ac.blooket.com/dashboard/65a43218fd1cabe52bdf1cda34613e9e.png');
+    background-image: url('Images/Backgrounds/blook_bg.png');
 }
 
 
@@ -33,7 +33,7 @@
   background-size: 550px;
   background-position: -100px -100px;
   z-index: -1; 
-  background-image: url("https://i.ibb.co/Tqy7Nsx/Screenshot-2024-02-20-6-24-13-PM.png");
+  background-image: url("Images/Backgrounds/sm_bg.png");
 }
 
 #LDBG {
@@ -43,7 +43,7 @@
   background-size: 550px;
   background-position: -100px -100px;
   z-index: -1; 
-  background-image: url("https://i.ibb.co/cCbfVCg/LDBG.png");
+  background-image: url("Images/Backgrounds/ld_bg.png");
 }
 
 #AMBG {
@@ -53,7 +53,7 @@
   background-size: 550px;
   background-position: -100px -100px;
   z-index: -1; 
-  background-image: url("https://i.ibb.co/Lk3Xjsn/AMBG.png");
+  background-image: url("Images/Backgrounds/am_bg.png");
 }
 
 
@@ -66,7 +66,7 @@
   background-size: 550px;
   background-position: -100px -100px;
   z-index: -1; 
-  background-image: url("https://i.ibb.co/0tB9X7D/Screenshot-2024-02-28-10-25-24-AM.png");
+  background-image: url("Images/Backgrounds/cafe_bg.png");
   opacity: 0.9;
 }
 
@@ -80,7 +80,7 @@
   background-size: 550px;
   background-position: -100px -100px;
   z-index: -1; 
-  background-image: url("https://i.ibb.co/TtRDdJt/Screenshot-2024-02-21-4-38-11-PM.png");
+  background-image: url("Images/Backgrounds/snow_bg.png");
 }
 
 #clockBG {
@@ -90,7 +90,7 @@
   background-size: 550px;
   background-position: -100px -100px;
   z-index: -1; 
-  background-image: url("https://i.ibb.co/Zg6dNGK/Clock.png");
+  background-image: url("Images/Backgrounds/clock_bg.png");
 }
 
 
@@ -102,7 +102,7 @@
   height: 118px;
   width: calc(100% + 100px);
   z-index: 0; 
-  background-image: url("https://i.ibb.co/fNCkq0d/Waves.png");
+  background-image: url("Images/Backgrounds/fishing_bg.png");
   opacity: 0.9;
 }
 #bgF {
