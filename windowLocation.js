@@ -210,7 +210,7 @@ function gamesPage() {
 function blooksPage() {
     window.location.href = "statPages/blooksLB";
 }
-function factoryPage() {
+function factory() {
     window.location.href = "statPages/factoryUpgradesLB";
 }
 function tokensPage() {
