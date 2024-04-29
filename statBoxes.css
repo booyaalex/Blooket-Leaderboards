@@ -68,11 +68,56 @@
   width: 95%;
 }
 
-
 .rainbow {
-  background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
-    background-size: 800% 800%;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbow 8s ease infinite;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: 1rem;
+  text-shadow: 2px 2px 4px #000000;
+  -webkit-animation: rainbow 5s infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    color: orange;
+  }
+
+  10% {
+    color: purple;
+  }
+
+  20% {
+    color: red;
+  }
+
+  30% {
+    color: CadetBlue;
+  }
+
+  40% {
+    color: yellow;
+  }
+
+  50% {
+    color: coral;
+  }
+
+  60% {
+    color: green;
+  }
+
+  70% {
+    color: cyan;
+  }
+
+  80% {
+    color: DeepPink;
+  }
+
+  90% {
+    color: DodgerBlue;
+  }
+
+  100% {
+    color: orange;
+  }
 }
