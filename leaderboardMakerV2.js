@@ -109,9 +109,7 @@ function getData() {
                 } else {
                     DIV.className = "statTitleLB";
                 }
-                if(MAP.name == "Blooket Elite") {
-                    DIV.style.color = "blue";
-                }
+                
 
                 //Make Content
                 if (a == 0) {
@@ -137,7 +135,9 @@ function getData() {
                 }
                 if (a == 2) {
                     let NAME = document.createTextNode(MAP.name);
-
+                    if(MAP.name == "Blooket Elite") {
+                        DIV.style.color = "blue";
+                    }
                     DIV.appendChild(NAME); 
                 }
                 if (a == 3) {
