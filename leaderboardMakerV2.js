@@ -110,7 +110,7 @@ function getData() {
                     DIV.className = "statTitleLB";
                 }
                 if(MAP.name == "Blooket Elite") {
-                    DIV.color = "blue";
+                    DIV.style.color = "blue";
                 }
 
                 //Make Content
