@@ -69,3 +69,63 @@ function cash1B() {
 function cash1T() {
     window.location.href = "factory/cash1T_LB";
 }
+
+
+/*Fishing*/
+function mostWeight7() {
+    window.location.href = "fishing/mostWeight7_LB";
+}
+function mostWeight15() {
+    window.location.href = "fishing/mostWeight15_LB";
+}
+function mostWeight30() {
+    window.location.href = "fishing/mostWeight30_LB";
+}
+function weight100K() {
+    window.location.href = "fishing/weight100K_LB";
+}
+function weight1M() {
+    window.location.href = "fishing/weight1M_LB";
+}
+function weight10M() {
+    window.location.href = "fishing/weight10M_LB";
+}
+
+
+/*Gamemodes*/
+function factoryPage() {
+    window.location.href = "factory";
+}
+function monsterPage() {
+    window.location.href = "monster";
+}
+function fishingPage() {
+    window.location.href = "fishing";
+}
+function towerOnePage() {
+    window.location.href = "towerOne";
+}
+function towerTwoPage() {
+    window.location.href = "TD2";
+}
+function cafePage() {
+    window.location.href = "cafe";
+}
+function cryptoPage() {
+    window.location.href = "crypto";
+}
+function goldPage() {
+    window.location.href = "gold";
+}
+function statsPage() {
+    window.location.href = "stats";
+}
+function kingdomPage() {
+    window.location.href = "kingdom";
+}
+function TODPage() {
+    window.location.href = "TOD";
+}
+function flappyPage() {
+    window.location.href = "flappyLB";
+}
