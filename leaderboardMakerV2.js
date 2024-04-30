@@ -25,7 +25,7 @@ function getData() {
     } else if (LEADERBOARD == 16 || LEADERBOARD == 17 || LEADERBOARD == 18) { //Factory
         headerDisplay = "Time";
     } else if(LEADERBOARD > 72 && LEADERBOARD < 79) {
-
+        headerDisplay = "Time";
     } else if(LEADERBOARD > 36 && LEADERBOARD < 49) { //TD
         headerDisplay = "Round";
     } else {
