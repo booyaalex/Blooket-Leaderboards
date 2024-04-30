@@ -55,7 +55,7 @@ function getData() {
             console.log("displayBlook - " + displayBlook);
             SCORES[a] = childSnapshot.val().test[LEADERBOARD * 2 - 1];
             if (LEADERBOARD > 72 && LEADERBOARD < 79) { //Cafe
-                if (SCORES[a] != null) {
+                if (SCORES[a] != "0") {
                     let temp = SCORES[a];
                     temp = temp.replace(/:/gi, "");
                     SCORES[a] = temp;
