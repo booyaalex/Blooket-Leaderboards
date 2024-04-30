@@ -26,7 +26,7 @@ function getData() {
         headerDisplay = "Time";
     } else if (LEADERBOARD > 72 && LEADERBOARD < 79) { //Cafe
         headerDisplay = "Time";
-    } else if (LEADERBOARD > 18 && LEADERBOARD < 31) {
+    } else if (LEADERBOARD > 18 && LEADERBOARD < 31) { //MB
         headerDisplay = "Time";
     }else if (LEADERBOARD > 36 && LEADERBOARD < 49) { //TD
         headerDisplay = "Round";
