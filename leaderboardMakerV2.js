@@ -85,7 +85,10 @@ function getData() {
         let SORTED_SCORE;
         if (LEADERBOARD == 12) { 
             SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
-        } else {
+        } else if(LEADERBOARD > 72 && LEADERBOARD < 79) { //Cafe
+            SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
+        }
+        else {
             SORTED_SCORE = SCORES.sort(function (a, b) { return b - a });
         }
         //Filter out scores that arent cool
@@ -152,7 +155,10 @@ function getData() {
                     if(LEADERBOARD == 12){
                         SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
                         SCORE2 = document.createTextNode(SCORE1.slice(0, 4) + "-" + SCORE1.slice(4, 6) + "-" + SCORE1.slice(6));
-                    } else {
+                    } else if(LEADERBOARD > 72 && LEADERBOARD < 79) {
+                        SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
+                        SCORE2 = document.createTextNode(SCORE1.slice(0, 2) + ":" + SCORE1.slice(2, 4) + ":" + SCORE1.slice(4));
+                    }else {
                         SCORE1 = Math.trunc(SORTED_SCORE[i]);
                         SCORE1 = SCORE1.toLocaleString();
                         SCORE2 = document.createTextNode(SCORE1);
