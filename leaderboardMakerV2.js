@@ -164,8 +164,9 @@ function getData() {
                         SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
                         SCORE2 = document.createTextNode(SCORE1.slice(0, 4) + "-" + SCORE1.slice(4, 6) + "-" + SCORE1.slice(6));
                     } else if (LEADERBOARD > 72 && LEADERBOARD < 79) {
+                        const zeroPad = (num, places) => String(num).padStart(places, '0');
                         SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
-                        let temp = 6 - Math.trunc(SORTED_SCORE[i]);
+                        let temp = zeroPad(SCORE1, 6);
                         console.log(temp);
                         SCORE2 = document.createTextNode(SCORE1.slice(0, 2) + ":" + SCORE1.slice(2, 4) + ":" + SCORE1.slice(4));
                     } else {
