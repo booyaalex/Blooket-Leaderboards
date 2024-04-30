@@ -60,9 +60,15 @@ function getData() {
                 SCORES[a] = temp;
                 console.log("SCORES[a] - " + SCORES[a]);
                 console.log("temp - " + temp);
-            } else if (LEADERBOARD == 12) {
+            } else if (LEADERBOARD == 12) { //Date LB
                 let temp = SCORES[a].substring(0, 10);
                 temp = temp.replace(/-/gi, "");
+                SCORES[a] = temp;
+                console.log("SCORES[a] - " + SCORES[a]);
+                console.log("temp - " + temp);
+            } else if(LEADERBOARD > 72 && LEADERBOARD < 79) {
+                let temp = SCORES[a];
+                temp = temp.replace(/:/gi, "");
                 SCORES[a] = temp;
                 console.log("SCORES[a] - " + SCORES[a]);
                 console.log("temp - " + temp);
