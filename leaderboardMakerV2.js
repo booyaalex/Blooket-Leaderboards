@@ -22,6 +22,8 @@ function getData() {
         headerDisplay = "YYYY/MM/DD";
     } else if (LEADERBOARD == 16 || LEADERBOARD == 17 || LEADERBOARD == 18) {
         headerDisplay = "Time";
+    } else if(LEADERBOARD > 36 && LEADERBOARD < 49) {
+        headerDisplay = "Round";
     } else {
         headerDisplay = "Score";
     }
