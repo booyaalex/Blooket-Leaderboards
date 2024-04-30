@@ -20,11 +20,13 @@ function getData() {
     let headerDisplay;
     if(LEADERBOARD == 12){
         headerDisplay = "YYYY/MM/DD";
-    } else if (LEADERBOARD == 49 || LEADERBOARD == 50 || LEADERBOARD == 51) {
+    } else if (LEADERBOARD == 49 || LEADERBOARD == 50 || LEADERBOARD == 51) { //TDw
         headerDisplay = "Time";
-    } else if (LEADERBOARD == 16 || LEADERBOARD == 17 || LEADERBOARD == 18) {
+    } else if (LEADERBOARD == 16 || LEADERBOARD == 17 || LEADERBOARD == 18) { //Factory
         headerDisplay = "Time";
-    } else if(LEADERBOARD > 36 && LEADERBOARD < 49) {
+    } else if(LEADERBOARD > 72 && LEADERBOARD < 79) {
+
+    } else if(LEADERBOARD > 36 && LEADERBOARD < 49) { //TD
         headerDisplay = "Round";
     } else {
         headerDisplay = "Score";
