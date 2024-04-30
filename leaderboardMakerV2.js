@@ -62,6 +62,14 @@ function getData() {
                     console.log("SCORES[a] - " + SCORES[a]);
                     console.log("temp - " + temp);
                 }
+            } else if (LEADERBOARD > 18 && LEADERBOARD < 31) { //MB
+                if (SCORES[a] != "0") {
+                    let temp = SCORES[a];
+                    temp = temp.replace(/:/gi, "");
+                    SCORES[a] = temp;
+                    console.log("SCORES[a] - " + SCORES[a]);
+                    console.log("temp - " + temp);
+                }
             } else if (LEADERBOARD != 12) {
                 let temp = SCORES[a];
                 temp = temp + (0.0001 * a);
@@ -166,9 +174,9 @@ function getData() {
                     } else if (headerDisplay == "Time") {
                         const zeroPad = (num, places) => String(num).padStart(places, '0');
                         SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
-                        let temp = zeroPad(SCORE1, 6);
+                        let temp = zeroPad(SCORE1, 8);
                         console.log(temp);
-                        SCORE2 = document.createTextNode(temp.slice(0, 2) + ":" + temp.slice(2, 4) + ":" + temp.slice(4));
+                        SCORE2 = document.createTextNode(temp.slice(0, 2) + ":" + temp.slice(2, 4) + ":" + temp.slice(4, 6) + ":" + temp.slice(6));
                     } else {
                         SCORE1 = Math.trunc(SORTED_SCORE[i]);
                         SCORE1 = SCORE1.toLocaleString();
