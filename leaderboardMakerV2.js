@@ -20,13 +20,15 @@ function getData() {
     let headerDisplay;
     if (LEADERBOARD == 12) {
         headerDisplay = "YYYY/MM/DD";
-    } else if (LEADERBOARD == 49 || LEADERBOARD == 50 || LEADERBOARD == 51) { //TDw
+    } else if (LEADERBOARD == 49 || LEADERBOARD == 50 || LEADERBOARD == 51) { //TD
         headerDisplay = "Time";
     } else if (LEADERBOARD == 16 || LEADERBOARD == 17 || LEADERBOARD == 18) { //Factory
         headerDisplay = "Time";
-    } else if (LEADERBOARD > 72 && LEADERBOARD < 79) {
+    } else if (LEADERBOARD > 72 && LEADERBOARD < 79) { //Cafe
         headerDisplay = "Time";
-    } else if (LEADERBOARD > 36 && LEADERBOARD < 49) { //TD
+    } else if (LEADERBOARD > 18 && LEADERBOARD < 31) {
+        headerDisplay = "Time";
+    }else if (LEADERBOARD > 36 && LEADERBOARD < 49) { //TD
         headerDisplay = "Round";
     } else {
         headerDisplay = "Score";
@@ -102,6 +104,8 @@ function getData() {
         if (LEADERBOARD == 12) {
             SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
         } else if (LEADERBOARD > 72 && LEADERBOARD < 79) { //Cafe
+            SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
+        } else if (LEADERBOARD > 18 && LEADERBOARD < 31) { //MB
             SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
         }
         else {
