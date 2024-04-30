@@ -54,7 +54,13 @@ function getData() {
             displayBlook = childSnapshot.val().blook;
             console.log("displayBlook - " + displayBlook);
             SCORES[a] = childSnapshot.val().test[LEADERBOARD * 2 - 1];
-            if (LEADERBOARD != 12) {
+            if (LEADERBOARD > 72 && LEADERBOARD < 79) { //Cafe
+                let temp = SCORES[a];
+                temp = temp.replace(/:/gi, "");
+                SCORES[a] = temp;
+                console.log("SCORES[a] - " + SCORES[a]);
+                console.log("temp - " + temp);
+            } else if (LEADERBOARD != 12) {
                 let temp = SCORES[a];
                 temp = temp + (0.0001 * a);
                 SCORES[a] = temp;
@@ -63,12 +69,6 @@ function getData() {
             } else if (LEADERBOARD == 12) { //Date LB
                 let temp = SCORES[a].substring(0, 10);
                 temp = temp.replace(/-/gi, "");
-                SCORES[a] = temp;
-                console.log("SCORES[a] - " + SCORES[a]);
-                console.log("temp - " + temp);
-            } else if(LEADERBOARD > 72 && LEADERBOARD < 79) {
-                let temp = SCORES[a];
-                temp = temp.replace(":", "");
                 SCORES[a] = temp;
                 console.log("SCORES[a] - " + SCORES[a]);
                 console.log("temp - " + temp);
