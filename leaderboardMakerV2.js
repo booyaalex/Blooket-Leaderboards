@@ -18,15 +18,15 @@ let LEADERBOARD;
 function getData() {
     LEADERBOARD = localStorage.getItem("leaderboard");
     let headerDisplay;
-    if(LEADERBOARD == 12){
+    if (LEADERBOARD == 12) {
         headerDisplay = "YYYY/MM/DD";
     } else if (LEADERBOARD == 49 || LEADERBOARD == 50 || LEADERBOARD == 51) { //TDw
         headerDisplay = "Time";
     } else if (LEADERBOARD == 16 || LEADERBOARD == 17 || LEADERBOARD == 18) { //Factory
         headerDisplay = "Time";
-    } else if(LEADERBOARD > 72 && LEADERBOARD < 79) {
+    } else if (LEADERBOARD > 72 && LEADERBOARD < 79) {
         headerDisplay = "Time";
-    } else if(LEADERBOARD > 36 && LEADERBOARD < 49) { //TD
+    } else if (LEADERBOARD > 36 && LEADERBOARD < 49) { //TD
         headerDisplay = "Round";
     } else {
         headerDisplay = "Score";
@@ -55,11 +55,13 @@ function getData() {
             console.log("displayBlook - " + displayBlook);
             SCORES[a] = childSnapshot.val().test[LEADERBOARD * 2 - 1];
             if (LEADERBOARD > 72 && LEADERBOARD < 79) { //Cafe
-                let temp = SCORES[a];
-                temp = temp.replace(/:/gi, "");
-                SCORES[a] = temp;
-                console.log("SCORES[a] - " + SCORES[a]);
-                console.log("temp - " + temp);
+                if (SCORES[a] != null) {
+                    let temp = SCORES[a];
+                    temp = temp.replace(/:/gi, "");
+                    SCORES[a] = temp;
+                    console.log("SCORES[a] - " + SCORES[a]);
+                    console.log("temp - " + temp);
+                }
             } else if (LEADERBOARD != 12) {
                 let temp = SCORES[a];
                 temp = temp + (0.0001 * a);
@@ -89,9 +91,9 @@ function getData() {
 
         //Sort Dat Shi-
         let SORTED_SCORE;
-        if (LEADERBOARD == 12) { 
+        if (LEADERBOARD == 12) {
             SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
-        } else if(LEADERBOARD > 72 && LEADERBOARD < 79) { //Cafe
+        } else if (LEADERBOARD > 72 && LEADERBOARD < 79) { //Cafe
             SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
         }
         else {
@@ -113,7 +115,7 @@ function getData() {
 
             //Make Table Stuff
             let tr = document.createElement("tr");
-            
+
             for (let a = 0; a < 5; a++) {
                 let td = document.createElement("td");
 
@@ -124,12 +126,12 @@ function getData() {
                 } else {
                     DIV.className = "statTitleLB";
                 }
-                
+
 
                 //Make Content
                 if (a == 0) {
                     let textnode = document.createTextNode("#" + (i + 1) + ".");
-                    
+
                     DIV.appendChild(textnode);
                 }
                 if (a == 1) {
@@ -150,21 +152,21 @@ function getData() {
                 }
                 if (a == 2) {
                     let NAME = document.createTextNode(MAP.name);
-                    if(MAP.name == "Blooket Elite") {
+                    if (MAP.name == "Blooket Elite") {
                         DIV.classList.add("rainbow");
                     }
-                    DIV.appendChild(NAME); 
+                    DIV.appendChild(NAME);
                 }
                 if (a == 3) {
-                    let SCORE1; 
+                    let SCORE1;
                     let SCORE2;
-                    if(LEADERBOARD == 12){
+                    if (LEADERBOARD == 12) {
                         SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
                         SCORE2 = document.createTextNode(SCORE1.slice(0, 4) + "-" + SCORE1.slice(4, 6) + "-" + SCORE1.slice(6));
-                    } else if(LEADERBOARD > 72 && LEADERBOARD < 79) {
+                    } else if (LEADERBOARD > 72 && LEADERBOARD < 79) {
                         SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
                         SCORE2 = document.createTextNode(SCORE1.slice(0, 2) + ":" + SCORE1.slice(2, 4) + ":" + SCORE1.slice(4));
-                    }else {
+                    } else {
                         SCORE1 = Math.trunc(SORTED_SCORE[i]);
                         SCORE1 = SCORE1.toLocaleString();
                         SCORE2 = document.createTextNode(SCORE1);
