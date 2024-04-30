@@ -163,7 +163,7 @@ function getData() {
                     if (LEADERBOARD == 12) {
                         SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
                         SCORE2 = document.createTextNode(SCORE1.slice(0, 4) + "-" + SCORE1.slice(4, 6) + "-" + SCORE1.slice(6));
-                    } else if (LEADERBOARD > 72 && LEADERBOARD < 79) {
+                    } else if (headerDisplay == "Time") {
                         const zeroPad = (num, places) => String(num).padStart(places, '0');
                         SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
                         let temp = zeroPad(SCORE1, 6);
