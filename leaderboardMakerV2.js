@@ -168,7 +168,7 @@ function getData() {
                         SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
                         let temp = zeroPad(SCORE1, 6);
                         console.log(temp);
-                        SCORE2 = document.createTextNode(SCORE1.slice(0, 2) + ":" + SCORE1.slice(2, 4) + ":" + SCORE1.slice(4));
+                        SCORE2 = document.createTextNode(temp.slice(0, 2) + ":" + temp.slice(2, 4) + ":" + temp.slice(4));
                     } else {
                         SCORE1 = Math.trunc(SORTED_SCORE[i]);
                         SCORE1 = SCORE1.toLocaleString();
