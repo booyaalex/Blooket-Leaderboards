@@ -81,6 +81,7 @@ function getData() {
             } else if (LEADERBOARD == 12) { //Date LB
                 let temp = SCORES[a].substring(0, 10);
                 temp = temp.replace(/-/gi, "");
+                temp = temp + (0.0001 * a);
                 SCORES[a] = temp;
                 console.log("SCORES[a] - " + SCORES[a]);
                 console.log("temp - " + temp);
