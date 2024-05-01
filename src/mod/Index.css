@@ -33,3 +33,21 @@
   text-align: center;
   text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
 }
+
+#main {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.popularLeaderboardsList {
+  list-style-type: none;
+  padding-top: 15px;
+  text-align: center;
+  padding-left: 0;
+}
+
+@media (max-width: 644px) {
+}

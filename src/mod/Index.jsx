@@ -7,9 +7,9 @@ function Index() {
         <div id="bg"></div>
       </div>
 
+      <h1 className="mainHeader">Blooket Leaderboards</h1>
+
       <div id="main">
-        <h1 className="mainHeader">Blooket Leaderboards</h1>
-        <br />
         <div className="board center">
           <div className="sp-header">What is This?</div>
           <br />
@@ -70,7 +70,7 @@ function Index() {
           <div className="sp-header">Popular Leaderboards</div>
           <br />
           <br />
-          <ul style={{ paddingTop: "15px", textAlign: "center" }}>
+          <ul className="popularLeaderboardsList">
             <li>
               <a href="TD/LD_LB" className="popLinks">
                 [3] Lost Desert LB(TD1)

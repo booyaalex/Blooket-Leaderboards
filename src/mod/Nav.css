@@ -1,6 +1,8 @@
 #navBar {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   width: 100%;
   height: 40px;
   background-color: #9a49aa;
@@ -31,6 +33,7 @@
 @media (max-width: 644px) {
   #navBar {
     flex-direction: column;
+    align-items: unset;
     height: 40px;
     padding-left: 10px;
     transition: height 1.5s ease-in-out;
