@@ -127,8 +127,8 @@ function getData() {
 
             //Make Table Stuff
             let tr = document.createElement("tr");
-            const temp = MAP.name;
-            tr.id = temp.replace(/\s/g, '');
+            const MAPNAME = MAP.name;
+            tr.id = MAPNAME.replace(/\s/g, '');
 
             for (let a = 0; a < 5; a++) {
                 let td = document.createElement("td");
