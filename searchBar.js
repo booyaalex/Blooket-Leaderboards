@@ -14,7 +14,7 @@ function search() {
     for (let i = 0; i < tr.length; i++) {
         tr[i].style.backgroundColor = "#40115f";
     }
-    
+
     let temp = document.getElementById("searchBar_Input_Bar").value
     let searchTerm = temp.replace(/\s/g, '');
     const search = document.getElementById(searchTerm);
@@ -24,7 +24,7 @@ function search() {
     let headerHeight = $("#navBar").height();
     let margins = parseInt($("#" + searchTerm).css('margin-top'));
     const screenHeight = screen.height / 2;
-    let totalScroll = (yBlockOffset - headerHeight - margins) + screenHeight;
+    let totalScroll = (yBlockOffset - headerHeight - margins) - screenHeight;
 
     document.getElementById(searchTerm).style.backgroundColor = "#9a49aa";
 
