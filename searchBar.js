@@ -19,7 +19,7 @@ function search() {
     let margins = parseInt($("#" + searchTerm).css('margin-top'));
     let totalScroll = yBlockOffset - headerHeight - margins;
 
-    body.animate({
+    $('html, body').animate({
         scrollTop: totalScroll
     }, 1000);
 
