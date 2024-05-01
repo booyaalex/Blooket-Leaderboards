@@ -80,6 +80,7 @@ body {
     justify-content: center;
     transition-duration: 0.5s;
     padding: 0px 5px;
+    text-align: center;
   }
   .lbBoard.mainBoard {
     margin-left: auto;
