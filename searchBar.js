@@ -15,8 +15,8 @@ function search() {
     const navBar = document.getElementById("navBar");
 
     let yBlockOffset = $("#" + searchTerm).offset().top;
-    let headerHeight = navBar.height();
-    let margins = parseInt(search.css('margin-top'));
+    let headerHeight = ("#navBar").height();
+    let margins = parseInt($("#" + searchTerm).css('margin-top'));
     let totalScroll = yBlockOffset - headerHeight - margins;
 
     body.animate({
