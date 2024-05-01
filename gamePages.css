@@ -94,30 +94,10 @@ body {
     width: 35%;
     margin-right: 10px;
   }
-  
-  #infoBoard {
-    float: left;
-    background-color: #40115f;
-    width: 30%;
-    border-radius: 10px;
+
+  .boardBlock {
     display: flex;
-    justify-content: center;
-    padding: 0px 5px;
-    margin-left: 10px;
-    transition-duration: 0.5s;
-  }
-  
-  #submissionBoard {
-    background-color: #40115f;
-    float: right;
-    border-radius: 10px;
-    width: 35%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding: 0px 5px;
-    margin-right: 10px;
-    transition-duration: 0.5s;
+    justify-content: space-between;
   }
   
   #TABLE {
