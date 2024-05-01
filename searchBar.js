@@ -14,7 +14,7 @@ function search() {
     const search = document.getElementById(searchTerm);
     const navBar = document.getElementById("navBar");
 
-    let yBlockOffset = search.offset().top;
+    let yBlockOffset = $("#" + searchTerm).offset().top;
     let headerHeight = navBar.height();
     let margins = parseInt(search.css('margin-top'));
     let totalScroll = yBlockOffset - headerHeight - margins;
@@ -24,4 +24,8 @@ function search() {
     }, 1000);
 
     e.preventDefault();
+}
+
+function test() {
+    $(".statTitleLB").hide();
 }
