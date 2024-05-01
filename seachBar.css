@@ -1,3 +1,6 @@
+.searchBar_Block {
+    margin-bottom: 20vh;
+}
 #searchBar {
     background-color: #9a49aa;
     display: inline-flex;
