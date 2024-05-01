@@ -1,6 +1,7 @@
 - [ ] convert full page to react
     - [ ] convert index to react
-        - [ ] fix mobile view
+        - [x] fix mobile view
+        - [ ] convert links to react (with real accessability)
     - [ ] convert all leaderboards to react
 
 edit me to add tasks, please!

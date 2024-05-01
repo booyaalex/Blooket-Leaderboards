@@ -30,9 +30,6 @@ function Index() {
             players.
           </h3>
         </div>
-        <br />
-        <br />
-        <br />
         <div className="board left">
           <div className="sp-header">Event Leaderboards</div>
           <br />

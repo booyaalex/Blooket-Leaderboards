@@ -56,13 +56,13 @@
 }
 
 .board.tinyLeft {
-  
+  align-self: flex-start;
   width: 300px;
   margin-bottom: 75px;
 }
 
 .board.tinyRight {
-  float: right;
+  align-self: flex-end;
   width: 300px;
   margin-bottom: 75px;
 }
