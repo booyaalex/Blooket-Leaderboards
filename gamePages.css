@@ -119,6 +119,9 @@ body {
     transition-duration: 0.5s;
   }
   
+  #TABLE {
+    width: -webkit-fill-available;
+  }
 
   /*Img Links*/
 
