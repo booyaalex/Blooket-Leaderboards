@@ -1,5 +1,6 @@
 function search() {
     const tr = document.getElementsByTagName("tr");
+    console.log(tr);
     for (let i = 0; i < tr.length; i++) {
         tr[i].backgroundColor = "#40115f";
     }
