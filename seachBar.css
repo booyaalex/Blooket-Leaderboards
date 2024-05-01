@@ -1,8 +1,8 @@
 #searchBar {
-    background-color: #40115f;
+    background-color: #9a49aa;
     display: inline-flex;
-    margin-bottom: 40px;
     flex-direction: row;
+    margin-bottom: 40px;
     padding: 10px;
     border-radius: 10px;
 }
