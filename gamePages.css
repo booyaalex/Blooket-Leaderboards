@@ -79,19 +79,20 @@ body {
     display: flex;
     justify-content: center;
     transition-duration: 0.5s;
+    padding: 0px 5px;
   }
   .lbBoard.mainBoard {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
   }
-
-  #mainBoard {
-    background-color: #40115f;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    transition-duration: 0.5s;
+  .lbBoard.infoBoard {
+    width: 30%;
+    margin-left: 10px;
+  }
+  .lbBoard.submissionsBoard {
+    width: 35%;
+    margin-right: 10px;
   }
   
   #infoBoard {

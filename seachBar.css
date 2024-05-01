@@ -1,11 +1,7 @@
-.searchBar_Block {
-    margin-top: 10%;
-}
 #searchBar {
     background-color: #9a49aa;
     display: inline-flex;
     flex-direction: row;
-    margin-bottom: 40px;
     border-radius: 10px;
     padding: 5px;
     float: right;
