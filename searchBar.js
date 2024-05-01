@@ -10,7 +10,8 @@ function search() {
 }
 */
 function search() {
-    let searchTerm = document.getElementById("searchBar_Input_Bar").value;
+    let temp = document.getElementById("searchBar_Input_Bar").value
+    let searchTerm = temp.replace(/\s/g, '');
     const search = document.getElementById(searchTerm);
     const navBar = document.getElementById("navBar");
 
