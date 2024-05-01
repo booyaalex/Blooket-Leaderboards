@@ -7,3 +7,19 @@ function search() {
     window.location.href = "#" + searchTerm;
     document.getElementById(searchTerm).style.backgroundColor = "#9a49aa";
 }
+
+$(function() {
+    let searchTerm = document.getElementById("searchBar_Input_Bar").value;
+    $("#searchBar_Button").on("click", (e) => {
+      let yBlockOffset = $("#" + searchTerm).offset().top;
+      let headerHeight = $("#navBar").height();
+      let margins = parseInt($("#" + searchTerm).css('margin-top'));
+      let totalScroll = yBlockOffset - headerHeight - margins;
+  
+      $('html, body').animate({
+          scrollTop: totalScroll
+      }, 1000);
+  
+      e.preventDefault();
+    });
+   });
