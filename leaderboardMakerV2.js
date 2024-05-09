@@ -32,6 +32,8 @@ function getData() {
         headerDisplay = "Round";
     } else if (LEADERBOARD > 54 && LEADERBOARD < 70) { //TD2
         headerDisplay = "Round";
+    } else if (LEADERBOARD > 78 && LEADERBOARD < 83 || LEADERBOARD == 84) { //Kingdom
+        headerDisplay = "Time";
     } else {
         headerDisplay = "Score";
     }
