@@ -1,72 +1,76 @@
 <html>
-  <head>
-    <title> Blooket Leaderboards </title>
-    <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
-    <link rel='stylesheet' href='../gamePages.css'>
-    <link rel='stylesheet' href='../sideNav.css'>
-    <link rel='stylesheet' href='../bgStyle.css'>
-    <link rel='stylesheet' href='../YO_Container.css'>
-    <link rel='stylesheet' href='../statBoxes.css'>
-    <link rel='stylesheet' href='../navBar.css'>
+
+<head>
+  <title> Blooket Leaderboards </title>
+  <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
+  <link rel='stylesheet' href='../gamePages.css'>
+  <link rel='stylesheet' href='../sideNav.css'>
+  <link rel='stylesheet' href='../bgStyle.css'>
+  <link rel='stylesheet' href='../YO_Container.css'>
+  <link rel='stylesheet' href='../statBoxes.css'>
+  <link rel='stylesheet' href='../navBar.css'>
   <link rel='stylesheet' href='../seachBar.css'>
-    <script src="https://kit.fontawesome.com/3fbe72ad61.js" crossorigin="anonymous"></script>
-<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <!--Side Navagation Code-->
-    <div id='sidenav'>
-      <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
-      <a href='../TD2' class='sideLink'> Back </a>
-      <br>
-      <br>
-      <a href='../../' class='sideLink'> Home </a>
-      <br>
-      <a href='../gamemode' class='sideLink'> Gamemodes </a>
-      <br>
-      <a href='../suggestions' class='sideLink'> Suggestions </a>
-      <br>
-      <a href='../submissions' class='sideLink'> Submissions </a>
-      <br>
-      <a href='../settings' class='sideLink'> Settings </a>
-      <br>
+  <script src="https://kit.fontawesome.com/3fbe72ad61.js" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!--Side Navagation Code-->
+  <div id='sidenav'>
+    <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
+    <a href='../TD2' class='sideLink'> Back </a>
+    <br>
+    <br>
+    <a href='../../' class='sideLink'> Home </a>
+    <br>
+    <a href='../gamemode' class='sideLink'> Gamemodes </a>
+    <br>
+    <a href='../suggestions' class='sideLink'> Suggestions </a>
+    <br>
+    <a href='../submissions' class='sideLink'> Submissions </a>
+    <br>
+    <a href='../settings' class='sideLink'> Settings </a>
+    <br>
     <a href='https://discord.gg/5nYGQtqyBZ' class='sideLink' style='padding-right: 10%;'> Discord </a>
   </div>
 
-    <!--Everything Else-->
-    <div id='navBar'>
-      <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
-      <a href='../settings' class='navLink'> Settings </a>
-      <a href='../submissions' class='navLink'> Submissions </a>
-      <a href='../suggestions' class='navLink'> Suggestions </a>
-      <a href='../gamemode' class='navLink'> Gamemodes </a>
-      <a href='../../' class='navLink'> Home </a>
-      <a href='../TD2' class='navLink' style='float: left; padding-left: 10px'> Back </a>
-    </div>
+  <!--Everything Else-->
+  <div id='navBar'>
+    <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
+    <a href='../settings' class='navLink'> Settings </a>
+    <a href='../submissions' class='navLink'> Submissions </a>
+    <a href='../suggestions' class='navLink'> Suggestions </a>
+    <a href='../gamemode' class='navLink'> Gamemodes </a>
+    <a href='../../' class='navLink'> Home </a>
+    <a href='../TD2' class='navLink' style='float: left; padding-left: 10px'> Back </a>
+  </div>
+  <br>
+  <br>
+  <div id='bgContain'>
+    <div id='bg'></div>
+  </div>
+  <div id='main'>
+    <h1 id='mainHeader'> Highest Sunny Meadows Round (Hard) </h1>
     <br>
-    <br>
-    <div id='bgContain'>
-      <div id='bg'></div>
-    </div>
-    <div id='main'>
-      <h1 id='mainHeader'> Highest Sunny Meadows Round (Hard) </h1>
-      <br>
-      <div class="boardBlock">
+    <div class="boardBlock">
       <div class='lbBoard infoBoard'>
         <div class='YO_Container'>
           <div class='YO_Text'> Info </div>
         </div>
-        <h3 style='font-family: Nunito; color: white; padding-left: 10px;'> This leaderboard lists the players who have the highest rounds on the sunny meadows map on hard mode. </h3>
+        <h3 style='font-family: Nunito; color: white; padding-left: 10px;'> This leaderboard lists the players who have
+          the highest rounds on the sunny meadows map on hard mode. </h3>
       </div>
       <div class='lbBoard submissionsBoard'>
         <div class='YO_Container'>
           <div class='YO_Text'> How to Submit </div>
         </div>
-        <h3 style='font-family: Nunito; color: white;'> You can submit your score by clicking on the submssions button on the navagation bar above.</h3>
+        <h3 style='font-family: Nunito; color: white;'> You can submit your score by clicking on the submssions button
+          on the navagation bar above.</h3>
       </div>
       <br>
       <div class="searchBar_Block">
@@ -130,50 +134,19 @@
               </div>
             </td>
           </tr>
-
-          <!--1st Place-->
-          <tr>
-            <td>
-              <div class='statTitleLB'>
-                #1.
-              </div>
-            </td>
-            <td>
-              <div class='statImgLB'>
-                <img class='statImgLB' src='https://i.ibb.co/9TdzQVS/scuba.webp' alt='YLM Blook' width='75'>
-              </div>
-            </td>
-            <td>
-              <div class='statTitleLB'>
-                YouLostMan
-              </div>
-            </td>
-            <td>
-              <div class='statTitleLB'>
-                9
-              </div>
-            </td>
-            <td>
-              <div class='statTitleLB'>
-                !YLM!
-              </div>
-            </td>
-          </tr>
-
-          <!--2nd Place-->
-          
-
-          <!--3rd Place-->
-          
-
-          <!--4th Place-->
-          
         </table>
       </div>
     </div>
     <script src='../settings.js'></script>
-
     <script src='../screenAdjust.js'></script>
     <script src='../searchBar.js'></script>
-  </body>
+
+    <script src='../leaderboardMakerV2.js'></script>
+    <script>
+      localStorage.setItem("leaderboard", 65);
+      setTimeout(() => getData(), 100);
+      setTimeout(() => changeTheme(), 500);
+    </script>
+</body>
+
 </html>

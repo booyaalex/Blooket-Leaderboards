@@ -16,7 +16,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -59,20 +59,21 @@
     <br>
     <div class="boardBlock">
       <div class='lbBoard infoBoard'>
-      <div class='YO_Container'>
-        <div class='YO_Text'> Info </div>
+        <div class='YO_Container'>
+          <div class='YO_Text'> Info </div>
+        </div>
+        <h3 style='font-family: Nunito; color: white; padding-left: 10px;'> This leaderboard lists the players who have
+          the highest rounds on the sunny meadows map on easy mode. </h3>
       </div>
-      <h3 style='font-family: Nunito; color: white; padding-left: 10px;'> This leaderboard lists the players who have
-        the highest rounds on the sunny meadows map on easy mode. </h3>
-    </div>
-    <div class='lbBoard submissionsBoard'>
-      <div class='YO_Container'>
-        <div class='YO_Text'> How to Submit </div>
+      <div class='lbBoard submissionsBoard'>
+        <div class='YO_Container'>
+          <div class='YO_Text'> How to Submit </div>
+        </div>
+        <h3 style='font-family: Nunito; color: white;'> You can submit your score by clicking on the submssions button
+          on
+          the navagation bar above.</h3>
       </div>
-      <h3 style='font-family: Nunito; color: white;'> You can submit your score by clicking on the submssions button on
-        the navagation bar above.</h3>
     </div>
-</div>
     <br>
     <div class="searchBar_Block">
       <div id="searchBar">
@@ -165,48 +166,19 @@
             </div>
           </td>
         </tr>
-
-        <!--2nd Place-->
-        <tr>
-          <td>
-            <div class='statTitleLB'>
-              #2.
-            </div>
-          </td>
-          <td>
-            <div class='statImgLB'>
-              <img class='statImgLB' src='https://i.ibb.co/vP0WW4B/Y-Elite.png' alt='Elite Blook' width='75'>
-            </div>
-          </td>
-          <td>
-            <div class='statTitleLB'>
-              Blooket Elite
-            </div>
-          </td>
-          <td>
-            <div class='statTitleLB'>
-              154
-            </div>
-          </td>
-          <td>
-            <div class='statTitleLB'>
-              BlooketEliteYT
-            </div>
-          </td>
-        </tr>
-
-        <!--3rd Place-->
-
-
-        <!--4th Place-->
-
       </table>
     </div>
   </div>
   <script src='../settings.js'></script>
-
   <script src='../screenAdjust.js'></script>
   <script src='../searchBar.js'></script>
+
+  <script src='../leaderboardMakerV2.js'></script>
+  <script>
+    localStorage.setItem("leaderboard", 55);
+    setTimeout(() => getData(), 100);
+    setTimeout(() => changeTheme(), 500);
+  </script>
 </body>
 
 </html>

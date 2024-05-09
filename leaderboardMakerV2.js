@@ -28,7 +28,9 @@ function getData() {
         headerDisplay = "Time";
     } else if (LEADERBOARD > 18 && LEADERBOARD < 31) { //MB
         headerDisplay = "Time";
-    }else if (LEADERBOARD > 36 && LEADERBOARD < 49) { //TD
+    } else if (LEADERBOARD > 36 && LEADERBOARD < 49) { //TD
+        headerDisplay = "Round";
+    } else if (LEADERBOARD > 54 && LEADERBOARD < 70) { //TD2
         headerDisplay = "Round";
     } else {
         headerDisplay = "Score";
