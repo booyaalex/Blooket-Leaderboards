@@ -71,6 +71,7 @@ input::file-selector-button {
 fieldset {
   border: none;
   overflow-y: scroll;
+  height: auto;
 }
 
 fieldset>div {
