@@ -33,15 +33,3 @@
   display: flex;
   justify-content: space-evenly;
 }
-
-.centerBoard {
-  background-color: #40115f;
-  margin-right: auto;
-  margin-left: auto;
-  width: 50%;
-  border-radius: 10px;
-  z-index: 4;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: center;
-}
