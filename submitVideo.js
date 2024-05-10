@@ -27,7 +27,8 @@ let storageRef;
 async function uploadImage() {
     OI = [JSON.parse(document.getElementById("statsInput").value)];
     console.log(OI[0]);
-    let displayName = document.getElementById("displayNameInput").value;
+    let temp = document.getElementById("displayNameInput").value;
+    let displayName = profanityCleaner.clean(temp);
     let leaderboard = document.getElementById("lbSubmit").value;
     const fileInput = document.getElementById("fileInput");
     const file = fileInput.files[0];
@@ -55,17 +56,6 @@ async function uploadImage() {
 }
 const submitButton = document.getElementById("videoSubmit");
 submitButton.addEventListener('click', uploadImage);
-
-/*const firebaseConfigThree = {
-    apiKey: "AIzaSyBepZFDy6U3GQaJyTib-uItZOqLuW_Cv_o",
-    authDomain: "blooketleaderboardserver.firebaseapp.com",
-    databaseURL: "https://blooketleaderboardserver-default-rtdb.firebaseio.com",
-    projectId: "blooketleaderboardserver",
-    storageBucket: "blooketleaderboardserver.appspot.com",
-    messagingSenderId: "145605729271",
-    appId: "1:145605729271:web:f02924e11bfb1472256cf2"
-};
-firebase.initializeApp(firebaseConfigThree);*/
 
 function getData() {
     firebase.database().ref("/").on('value', function (snapshot) {

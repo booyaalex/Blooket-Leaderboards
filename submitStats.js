@@ -64,7 +64,8 @@ function getDemStats() {
     let OI = [];
     OI = [JSON.parse(document.getElementById("epic_stats").value)];
 
-    const displayName = document.getElementById("display_name").value;
+    const temp1 = document.getElementById("display_name").value;
+    const displayName = profanityCleaner.clean(temp1);
     let temp = OI[0].blook;
     const temp2 = temp.toLowerCase();
     const displayBlook = temp2.replace(/\s/g, '');
