@@ -34,3 +34,11 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+.TXT {
+  font-family: Nunito; 
+  color: white; 
+  padding-left: 5px; 
+  padding-bottom: 5px; 
+  text-align: center;
+}
