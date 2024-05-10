@@ -34,15 +34,19 @@ async function uploadImage() {
     const NUMBER = namesArray.indexOf(displayName);
     if (OI[0]._id == idArray[NUMBER]) {
         if (leaderboard == null) {
-            alert("You need to pick a cattegory for your run!");
+            alert("You need to pick a category for your run!");
         } else {
-            console.log("wowie!!");
-            if (file) {
-                alert("Stay on this page until you are instructed to do so. Press ok to confirm.");
-                storageRef = ref(storage, `${displayName}/${leaderboard}`); //I assume something to get the file and set its name
-                await uploadBytes(storageRef, file); //Uploads File
-                console.log("In the database!");
-                alert("You may now leave the webpage!");
+            if (displayName == null) {
+                alert('Please enter your display name in the "Display Name" box.');
+            } else {
+                console.log("wowie!!");
+                if (file) {
+                    alert("Stay on this page until you are instructed to do so. Press ok to confirm.");
+                    storageRef = ref(storage, `${displayName}/${leaderboard}`); //I assume something to get the file and set its name
+                    await uploadBytes(storageRef, file); //Uploads File
+                    console.log("In the database!");
+                    alert("You may now leave the webpage!");
+                }
             }
         }
     } else {
