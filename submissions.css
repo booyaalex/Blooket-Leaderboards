@@ -33,6 +33,7 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .TXT {
@@ -66,15 +67,4 @@ input::file-selector-button {
   text-shadow: -1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464,
     2px 2px 0 #646464;
   cursor: pointer;
-}
-
-fieldset {
-  border: none;
-  overflow-y: scroll;
-  height: auto;
-}
-
-fieldset>div {
-  display: flex;
-  flex-direction: row;
 }
