@@ -54,11 +54,9 @@ h3.TXT {
   height: 70%;
 }
 
-#fileInput {
-  display: none;
-}
+.fileUpload {}
 
-.fileUpload {
+input::file-selector-button {
   font-size: 25px;
   border-radius: 7px;
   border: solid 5px #ef7426;
