@@ -17,14 +17,14 @@
 }
 
 .valueContainer {
-  width: 85%;
+  width: 35%;
+  height: 40px;
   background-color: #9a49aa;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: auto;
   box-shadow: inset 0 -8px rgba(0, 0, 0, 0.2);
   margin: 10px;
 }
@@ -41,4 +41,7 @@
   padding-left: 5px; 
   padding-bottom: 5px; 
   text-align: center;
+}
+.TXT h3 {
+  font-size: 20px;
 }
