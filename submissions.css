@@ -45,6 +45,7 @@
 
 h3.TXT {
   font-size: 20px;
+  font-weight: bold;
 }
 
 .submitButton {
@@ -73,5 +74,6 @@ fieldset {
 }
 
 fieldset>div {
+  display: flex;
   flex-direction: row;
 }
