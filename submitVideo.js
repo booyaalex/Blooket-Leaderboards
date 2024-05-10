@@ -28,16 +28,23 @@ async function uploadImage() {
     OI = [JSON.parse(document.getElementById("statsInput").value)];
     console.log(OI[0]);
     let displayName = document.getElementById("displayNameInput").value;
+    let leaderboard = document.getElementById("lbSubmit").value;
     const fileInput = document.getElementById("fileInput");
     const file = fileInput.files[0];
     const NUMBER = namesArray.indexOf(displayName);
     if (OI[0]._id == idArray[NUMBER]) {
-        console.log("wowie!!");
-        if (file) {
-            storageRef = ref(storage, `${displayName}/${file.name}`); //I assume something to get the file and set its name
-            await uploadBytes(storageRef, file); //Uploads File
-            console.log("test");
+        if (leaderboard == null) {
+            alert("You need to pick a cattegory for your run!");
+        } else {
+            console.log("wowie!!");
+            if (file) {
+                storageRef = ref(storage, `${displayName}/${leaderboard}`); //I assume something to get the file and set its name
+                await uploadBytes(storageRef, file); //Uploads File
+                console.log("In the database!");
+            }
         }
+    } else {
+        alert("It looks like no one in the database has your ID. Try using a different account for your stats or repaste your account stats!");
     }
 }
 const submitButton = document.getElementById("videoSubmit");
