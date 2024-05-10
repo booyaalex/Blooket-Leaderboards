@@ -20,6 +20,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.11.1/firebase-storage.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
@@ -129,12 +130,14 @@
       </div>
       <br>
       <br>
-      <h3 class="TXT"> Give me a bit if you see this, it's gonna take a bit. </h3>
-      <input type="file" id="fileInput" accept="video/.*">
-      <br>
-      <input id="displayNameInput" type="text" placeholder="Display Name">
-      <input id="statsInput" type="text" placeholder="Account Stats">
-      <button id="videoSubmit" class="submitButton valueInput"> Submit </button>
+      <div>
+        <h3 class="TXT"> Give me a bit if you see this, it's gonna take a bit. </h3>
+        <input type="file" id="fileInput" accept="video/.*">
+        <br>
+        <input id="displayNameInput" type="text" placeholder="Display Name" class='valueInput'>
+        <input id="statsInput" type="text" placeholder="Account Stats" class='valueInput'>
+        <button id="videoSubmit" class="submitButton valueInput"> Submit </button>
+      </div>
     </div>
   </div>
   <script src='submissions.js'></script>
