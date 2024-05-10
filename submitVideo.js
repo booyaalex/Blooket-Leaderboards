@@ -38,9 +38,11 @@ async function uploadImage() {
         } else {
             console.log("wowie!!");
             if (file) {
+                alert("Stay on this page until you are instructed to do so. Press ok to confirm.");
                 storageRef = ref(storage, `${displayName}/${leaderboard}`); //I assume something to get the file and set its name
                 await uploadBytes(storageRef, file); //Uploads File
                 console.log("In the database!");
+                alert("You may now leave the webpage!");
             }
         }
     } else {
