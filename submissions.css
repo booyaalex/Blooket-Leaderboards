@@ -36,19 +36,37 @@
 }
 
 .TXT {
-  font-family: Nunito; 
-  color: white; 
-  padding-left: 5px; 
-  padding-bottom: 5px; 
+  font-family: Nunito;
+  color: white;
+  padding-left: 5px;
+  padding-bottom: 5px;
   text-align: center;
 }
+
 h3.TXT {
   font-size: 20px;
 }
 
 .submitButton {
-  font-size: 30px; 
-  cursor: pointer; 
-  width: 70%; 
+  font-size: 30px;
+  cursor: pointer;
+  width: 70%;
   height: 70%;
+}
+
+#fileInput {
+  display: none;
+}
+
+.fileUpload {
+  font-size: 25px;
+  border-radius: 7px;
+  border: solid 5px #ef7426;
+  background: linear-gradient(#fcd843, #fcd843 50%, #feb31a 50.01%, #feb31a);
+  text-align: center;
+  color: white;
+  font-family: Titan One;
+  text-shadow: -1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464,
+    2px 2px 0 #646464;
+  cursor: pointer;
 }
