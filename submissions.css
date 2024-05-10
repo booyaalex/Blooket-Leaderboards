@@ -18,7 +18,7 @@
 
 .valueContainer {
   width: 35%;
-  height: 40px;
+  height: 70px;
   background-color: #9a49aa;
   border-radius: 5px;
   display: flex;
@@ -42,6 +42,6 @@
   padding-bottom: 5px; 
   text-align: center;
 }
-.TXT h3 {
+h3.TXT {
   font-size: 20px;
 }
