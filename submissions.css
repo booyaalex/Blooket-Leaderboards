@@ -45,3 +45,10 @@
 h3.TXT {
   font-size: 20px;
 }
+
+.submitButton {
+  font-size: 30px; 
+  cursor: pointer; 
+  width: 70%; 
+  height: 70%;
+}

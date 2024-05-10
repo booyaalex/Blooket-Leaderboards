@@ -105,8 +105,7 @@
             <input id='display_name' type='text' placeholder='Display Name' class='valueInput'> </input>
           </div>
           <div class='valueContainer'>
-            <input id='contact_info' type='text' placeholder='Email or Discord'
-              class='valueInput'> </input>
+            <input id='contact_info' type='text' placeholder='Email or Discord' class='valueInput'> </input>
           </div>
         </div>
         <div class='row'>
@@ -117,9 +116,7 @@
         </div>
         <div class='row'>
           <div class='valueContainer'>
-            <button onclick='getDemStats()' style='font-size: 30px; cursor: pointer; width: 70%; height: 70%;'
-              class='valueInput'> Submit
-            </button>
+            <button onclick='getDemStats()' class="submitButton valueInput"> Submit </button>
           </div>
         </div>
       </div>
@@ -133,6 +130,11 @@
       <br>
       <br>
       <h3 class="TXT"> Give me a bit if you see this, it's gonna take a bit. </h3>
+      <input type="file" id="fileInput" accept="video/.*">
+      <br>
+      <input id="displayNameInput" type="text" placeholder="Display Name">
+      <input id="statsInput" type="text" placeholder="Account Stats">
+      <button id="videoSubmit" class="submitButton valueInput"> Submit </button>
     </div>
   </div>
   <script src='submissions.js'></script>
@@ -140,6 +142,7 @@
 
   <script src='screenAdjust.js'></script>
   <script src='submitStats.js'></script>
+  <script type="module" src="submitVideo.js"></script>
 </body>
 
 </html>
