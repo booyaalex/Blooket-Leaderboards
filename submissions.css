@@ -69,4 +69,9 @@ input::file-selector-button {
 
 fieldset {
   border: none;
+  overflow-y: scroll;
+}
+
+fieldset>div {
+  flex-direction: row;
 }
