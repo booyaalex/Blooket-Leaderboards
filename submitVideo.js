@@ -43,7 +43,7 @@ async function uploadImage() {
 const submitButton = document.getElementById("videoSubmit");
 submitButton.addEventListener('click', uploadImage);
 
-const firebaseConfigThree = {
+/*const firebaseConfigThree = {
     apiKey: "AIzaSyBepZFDy6U3GQaJyTib-uItZOqLuW_Cv_o",
     authDomain: "blooketleaderboardserver.firebaseapp.com",
     databaseURL: "https://blooketleaderboardserver-default-rtdb.firebaseio.com",
@@ -52,7 +52,7 @@ const firebaseConfigThree = {
     messagingSenderId: "145605729271",
     appId: "1:145605729271:web:f02924e11bfb1472256cf2"
 };
-firebase.initializeApp(firebaseConfigThree);
+firebase.initializeApp(firebaseConfigThree);*/
 
 function getData() {
     firebase.database().ref("/").on('value', function (snapshot) {
