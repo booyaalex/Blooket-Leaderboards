@@ -7,18 +7,19 @@
   background-color: #9a49aa;
   position: fixed;
   box-shadow: 0px 0px 0px 10px rgba(128, 60, 140, 1);
-  z-index: 5;
+  z-index: 3;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
 }
 
 .navLink {
-  float: right;
-  font-size: 18px;
+  display: inline-block;
   padding-right: 10px;
   margin-top: 15px;
   transition-duration: 0.2s;
   text-decoration: none;
   color: white;
-  font-family: Nunito;
   font-weight: 600;
 }
 
@@ -31,6 +32,7 @@
 body {
   overflow-x: hidden;
   background-color: #ebebeb;
+  font-family: Nunito;
 }
 
 #main {
@@ -49,121 +51,49 @@ body {
   text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
 }
 
-/*Info Section*/
-
-#infoBoard {
-  background-color: #40115f;
-  margin-right: auto;
-  margin-left: auto;
-  width: 50%;
-  border-radius: 10px;
-  z-index: 3;
-  margin-bottom: 100px;
+#leaderboard {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
-
-.RYO_Container {
-  background-color: #ef7426;
-  border-radius: 7px;
-  box-sizing: border-box;
-  position: absolute;
-  margin-top: -30px;
-  box-shadow: 0 4px rgba(0, 0, 0, 0.2), inset 0 -4px rgba(0, 0, 0, 0.2);
-  z-index: 4;
-}
-
-.RYO_Text {
-  background: linear-gradient(#fcd843, #fcd843 50%, #feb31a 50.01%, #feb31a);
-  font-family: Titan One;
-  padding: 0 15px;
-  border-radius: 5px;
-  color: white;
-  align-items: center;
-  font-size: 26px;
-  text-shadow: -1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464,
-    2px 2px 0 #646464;
-  text-align: center;
-  box-sizing: border-box;
-  border-style: solid;
-  border-width: 5px;
-  border-color: #ef7426;
-}
-
-/*Event Section*/
-
-#eventBoard {
-  background-color: #40115f;
-  float: left;
-  width: 45%;
-  border-radius: 10px;
-  z-index: 3;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: center;
-}
-
-.EYO_Container {
-  background-color: #ef7426;
-  border-radius: 7px;
-  box-sizing: border-box;
-  position: absolute;
-  margin-top: -30px;
-  box-shadow: 0 4px rgba(0, 0, 0, 0.2), inset 0 -4px rgba(0, 0, 0, 0.2);
-  z-index: 4;
-}
-
-.EYO_Text {
-  background: linear-gradient(#fcd843, #fcd843 50%, #feb31a 50.01%, #feb31a);
-  font-family: Titan One;
-  padding: 0 15px;
-  border-radius: 5px;
-  color: white;
-  align-items: center;
-  font-size: 26px;
-  text-shadow: -1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464,
-    2px 2px 0 #646464;
-  text-align: center;
-  box-sizing: border-box;
-  border-style: solid;
-  border-width: 5px;
-  border-color: #ef7426;
-}
-
-/*Stat Boxes*/
-
-.statTitle {
-  font-family: Titan One;
-  color: white;
-  font-size: 28px;
-}
-
-.statText {
-  font-family: Nunito;
-  color: white;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-/**/
 
 .box {
   background-color: #ffffff;
   border-radius: 10px;
-  width: 450px;
+  width: 30vw;
   margin: 10px;
   border-bottom: solid 5px;
   border-bottom-color: rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+}
+
+.boxCase {
+  width: 45%;
+}
+.boxCase.imgCase {
+  display: inline;
+}
+.boxCase.txtCase {
+  display: inline-block;
 }
 
 .boxText {
-  color: black;
-  font-family: Nunito;
-  font-size: 18px;
+  color: grey;
+  font-size: 14px;
   font-weight: 900;
-  width: 125%;
+}
+
+.boxText.title {
+  color: black;
   display: inline-block;
+  width: 300%;
   margin-top: 10px;
+  font-size: 100%;
+}
+
+.boxText.place {
+  margin-bottom: 10px;
+  display: block;
 }
 
 .boxImg {
@@ -177,28 +107,33 @@ body {
   margin-bottom: 10px;
 }
 
-.boxTextGold {
-  color: gray;
-  font-family: Nunito;
-  font-size: 14px;
-  font-weight: 900;
-}
-
-.boxTextPlace {
-  color: gray;
-  font-family: Nunito;
-  font-size: 14px;
-  font-weight: 900;
-  margin-bottom: 10px;
-  display: block;
-}
-
 #corsica {
   width: 100px;
 }
 
-table {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+@media only screen and (max-width: 1140px) {
+  .box {
+    width: 45vw;
+  }
+}
+@media only screen and (max-width: 680px) {
+  #navBar {
+    height: 65px;
+    display: block;
+    text-align: center;
+    padding-top: 32.5px;
+  }
+  .navLink {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  #leaderboard {
+    grid-template-areas: "a";
+  }
+  .box {
+    width: 90vw;
+  }
+  .boxText.title {
+    font-size: 16px;
+  }
 }
