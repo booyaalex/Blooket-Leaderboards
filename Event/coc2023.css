@@ -111,6 +111,11 @@ body {
 .greenMan {
   background-color: #0cb04a;
 }
+@media only screen and (max-width: 1185px) {
+  .statsBox {
+    width: calc(250px * 0.5vw);
+  }
+}
 @media only screen and (max-width: 680px) {
   #navBar {
     height: 65px;
