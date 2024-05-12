@@ -34,7 +34,7 @@ body {
   background-image: url("../Images/Backgrounds/COC-2023.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 104%;
+  background-size: cover;
   font-family: Nunito;
 }
 
