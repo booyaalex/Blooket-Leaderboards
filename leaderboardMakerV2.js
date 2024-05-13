@@ -34,6 +34,8 @@ function getData() {
         headerDisplay = "Round";
     } else if (LEADERBOARD > 78 && LEADERBOARD < 83 || LEADERBOARD == 84) { //Kingdom
         headerDisplay = "Time";
+    } else if (LEADERBOARD == 34 || LEADERBOARD == 35 || LEADERBOARD == 36) { //Fishing
+        headerDisplay = "Time";
     } else {
         headerDisplay = "Score";
     }
