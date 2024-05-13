@@ -16,7 +16,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
     <br>
     <a href='../gamemode' class='sideLink'> Gamemodes </a>
     <br>
-    
+
     <a href='../submissions' class='sideLink'> Submissions </a>
     <br>
     <a href='../settings' class='sideLink'> Settings </a>
@@ -43,7 +43,7 @@
     <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
     <a href='../settings' class='navLink'> Settings </a>
     <a href='../submissions' class='navLink'> Submissions </a>
-    
+
     <a href='../gamemode' class='navLink'> Gamemodes </a>
     <a href='../../' class='navLink'> Home </a>
     <a href='../monster' class='navLink' style='float: left; padding-left: 10px'> Back </a>
@@ -58,21 +58,32 @@
     <br>
     <div class="boardBlock">
       <div class='lbBoard infoBoard'>
-      <div class='YO_Container'>
-        <div class='YO_Text'> Info </div>
+        <div class='YO_Container'>
+          <div class='YO_Text'> Info </div>
+        </div>
+        <h3 style='font-family: Nunito; color: white; padding-left: 10px;'> This leaderboard lists the people who have
+          beaten monster brawl on the snowy fields map the fastest while on challenge mode without getting hit. </h3>
       </div>
-      <h3 style='font-family: Nunito; color: white; padding-left: 10px;'> This leaderboard lists the people who have
-        beaten monster brawl on the snowy fields map the fastest while on challenge mode without getting hit. </h3>
-    </div>
-    <div class='lbBoard submissionsBoard'>
-      <div class='YO_Container'>
-        <div class='YO_Text'> How to Submit </div>
+      <div class='lbBoard submissionsBoard'>
+        <div class='YO_Container'>
+          <div class='YO_Text'> How to Submit </div>
+        </div>
+        <h3 style='font-family: Nunito; color: white;'> You can submit your score by clicking on the submssions button
+          on
+          the navagation bar above.</h3>
       </div>
-      <h3 style='font-family: Nunito; color: white;'> You can submit your score by clicking on the submssions button on
-        the navagation bar above.</h3>
     </div>
-</div>
     <br>
+    <div class="searchBar_Block">
+      <div id="searchBar">
+        <div id="searchBar_Input">
+          <input id="searchBar_Input_Bar" type="text" placeholder="Find Dem Players">
+        </div>
+        <div id="searchBar_Button">
+          <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+        </div>
+      </div>
+    </div>
     <br>
     <br>
     <br>
@@ -130,7 +141,7 @@
   <script src='../settings.js'></script>
   <script src='../screenAdjust.js'></script>
 
- <script src='../searchBar.js'></script>
+  <script src='../searchBar.js'></script>
 
   <script src='../leaderboardMakerV2.js'></script>
   <script>
