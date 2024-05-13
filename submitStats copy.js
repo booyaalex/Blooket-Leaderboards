@@ -551,4 +551,6 @@ function getDemStats() {
     }
 }
 
-getDemStats();
+const statsSubmit = document.getElementById("statsSubmit");
+
+statsSubmit.addEventListener('click', getDemStats);
