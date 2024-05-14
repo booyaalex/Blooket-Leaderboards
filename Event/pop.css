@@ -50,6 +50,12 @@ body {
   overflow-x: hidden;
 }
 
+#popLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .box {
   background-color: #4a363a;
   border: 3.5px solid #988672;
@@ -106,5 +112,8 @@ body {
   }
   #navBar {
     justify-content: center;
+  }
+  #popLogo {
+    width: 90%;
   }
 }
