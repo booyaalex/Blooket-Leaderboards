@@ -47,8 +47,8 @@ async function makeLB() {
 
         let goldSpan = document.createElement("span");
         goldSpan.className = "boxTextGold";
-        let temp = document.createTextNode(JSON[GUILD].members[i].gold);
-        let textnode3 = temp.toLocaleString();
+        let temp = JSON[GUILD].members[i].gold;
+        let textnode3 = document.createTextNode(temp.toLocaleString());
         goldSpan.appendChild(textnode3);
         DIV.appendChild(goldSpan);
 
