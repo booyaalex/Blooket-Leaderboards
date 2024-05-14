@@ -73,3 +73,9 @@ label {
   font-family: Nunito;
   color: white;
 }
+
+input[type="checkbox"] {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
