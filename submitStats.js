@@ -1,1 +1,562 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('9 c=p;(f(1s,1q){9 b=p,n=1s();5o(!![]){5p{9 1v=-h(b(5m))/q*(h(b(5l))/1p)+-h(b(5i))/5j*(h(b(5k))/5q)+-h(b(5r))/5x+-h(b(5y))/5z+-h(b(5w))/5v+-h(b(5s))/5t+h(b(5h))/5g;J(1v===1q)54;G n[\'1H\'](n[\'1y\']())}55(52){n[\'1H\'](n[\'1y\']())}}}(m,4X));9 1C={\'4Y\':c(4Z),\'50\':\'B.56.1g\',\'57\':\'5d://B-5e-5f.5c.1g\',\'5b\':c(58),\'59\':\'B.5a.1g\',\'5A\':\'1E\',\'5B\':c(62)};f m(){9 1r=[\'39\',\'63\',\'11\',\'64\',\'61\',\'60\',\'28\',\'1Y\',\'T\',\'5X\',\'w\',\'5Y\',\'5Z\',\'1U\',\'65\',\'66\',\'2W\',\'6c\',\'1X\',\'6d\',\'6e\',\'2u\',\'2x\',\'6b\',\'6a\',\'67\',\'68\',\'2e\',\'69\',\'25\',\'5W\',\'5V\',\'5I\',\'5J\',\'5K\',\'2d\',\'5H\',\'5G\',\'2H\',\'5C\',\'5D\',\'5E\',\'23\',\'5F\',\'5L\',\'1G\',\'5M\',\'1A\',\'1u\',\'5S\',\'5T\',\'5U\',\'5R\',\'3E\',\'Q\',\'5Q\',\'5N\',\'4W\',\'5O\',\'5P\',\'2q\',\'3y\',\'6f\',\'4G\',\'44\',\'24\',\'45\',\'46\',\'2h\',\'43\',\'42\',\'3Z\',\'40\',\'41\',\'2r\',\'47\',\'48\',\'4e\',\'4f\',\'4d\',\'4c\',\'2F\',\'3Y\',\'4a\',\'4b\',\'1:1E:4g:3U\',\'1J\',\'3J\\3I\\3M\\3L\\3K.\\3X!!\',\'3N\',\'3V\',\'3W\',\'3T\',\'3S\',\'3O\',\'3P\',\'3Q\',\'3n\',\'3R\',\'49\',\'4V\\4I\\4J\\4K\\4H\\4h,\\4D\\4E\\4F\\4L-4M!\',\'1t\',\'4S\',\'4T\',\'22\',\'4U\',\'1z\',\'3a\',\'4R\',\'4Q\',\'3f\',\'4N\',\'4O\',\'2v\',\'4P\',\'4C\',\'29\',\'26\',\'1R\',\'4B\',\'4o\',\'4p\',\'2f\',\'4q\',\'2g\',\'4n\',\'4m\',\'u\',\'B\',\'Z\',\'2B\',\'2n\',\'4i\',\'4j\',\'4k\',\'4l\',\'2j\',\'1S\',\'4r\',\'2m\',\'4s\',\'2a\',\'4y\',\'3D\',\'4z\',\'4A\',\'4x\',\'4w-4t\',\'4u\',\'7\',\'4v\'];m=f(){C 1r};C m()}A[c(8h)](1C);9 v=1I 1B(),k=[];i e=[];D=1I 1B();i 1x;f 27(){9 1a=c;A[\'1A\']()[\'1z\'](\'/\')[\'7Y\'](1a(F),f(1D){9 18=1a;i a=4;1D[18(80)](f(j){9 8=18;i l,1c,1f,1e,1b,1d;81=j[8(87)],l=j[8(o)]()[8(z)],1c=j[8(o)]()[8(88)],1f=j[8(o)]()[8(1T)],1e=j[\'1G\']()[8(8f)],1b=j[8(o)]()[8(1w)],D[8(1o)](l,{\'7\':1b}),1x=D[8(H)](l),e[a]=j[8(o)]()[8(1w)][q*1p-q];i r=e[a];r=r+0.8b*a,e[a]=r,e[a]==1Z?e[8(7W)](a,q):(v[8(1o)](e[a],{\'u\':l,\'7I\':1c,\'w\':1f,\'1Q\':1e}),1d=v[\'1u\'](e[a]),k[a]=1d[8(z)]),a++})})}27();f p(1L,1M){9 20=m();C p=f(t,7T){t=t-16;i 1P=20[t];C 1P},p(1L,1M)}f 2b(){9 2=c;i 6=[];6=[8P[\'8K\'](y[2(1i)](2(8L))[2(F)])];9 1W=y[\'1Y\'](\'8J\')[\'1X\'],d=8E[2(8F)](1W);i 2i=6[4][2(1T)];9 1V=2i[2(8T)](),P=1V[\'8Q\'](/\\s/g,\'\'),U=6[4][\'8S\'],R=6[4][2(8D)],N=6[4][2(8C)],O=6[4][2(8p)],V=6[4][2(3B)],W=6[4][2(8q)],14=6[4][2(13)],12=6[4][2(15)],L=6[4][\'1U\'],Y=6[4][2(X)],10=6[4][\'Z\'],M=6[4][2(8o)],1h=6[4][2(8n)],19=6[4][2(8j)],I=6[4][2(8k)],17=6[4][2(8l)],1j=6[4][\'8m\'],x=y[2(1i)](2(8s))[2(F)],S=6[4][2(1N)];J(x==1Z)1k(\'8A\\8B\\8y\\8x\\8u\\8v!\');G{J(k[\'1S\'](d)==!![]){K[\'1R\'](2(7B));9 1K=k[2(6I)](d),1O=v[2(H)](e[1K]);6[4][2(1N)]==1O[\'1Q\']&&(K[2(21)](\'6D\\6E\\6F\\6L\'),3=D[2(H)](d),K[2(21)](3[2(5)][2c]),A[2(1m)]()[2(1l)](\'/\')[2(1n)](d)[2(1F)]({\'w\':P,\'u\':d,\'Q\':6[4][2(z)],\'11\':S,\'T\':[2(3i),U,2(6U),R,2(3t),M,2(3G),N,2(3C),O,\'2d\',V,2(6Q),W,2(13),14,2(15),12,2(3z),L,2(X),Y,2(6N),10,\'3F\',3[\'7\'][2c],\'2j\',3[2(5)][6B],\'2e\',3[2(5)][6n],2(16),3[2(5)][6o],\'2f\',3[2(5)][6m],2(3H),3[2(5)][6l],\'2h\',3[2(5)][6i],2(3v),3[2(5)][6j],2(3w),3[2(5)][6k],\'2g\',3[2(5)][6r],\'2a\',3[\'7\'][6y],\'3x\',3[2(5)][6z],2(6w),3[\'7\'][6v],2(3u),3[2(5)][6s],2(3A),3[\'7\'][6t],\'29\',3[2(5)][6V],2(3r),3[2(5)][6W],2(7o),3[2(5)][7p],2(2I),3[2(5)][7q],2(2G),3[2(5)][7n],2(7m),3[\'7\'][7i],\'2C\',3[2(5)][7j],2(2D),3[\'7\'][7k],2(2E),3[\'7\'][7l],2(2J),3[2(5)][7r],2(2K),3[2(5)][7s],\'24\',3[\'7\'][7z],2(2Q),3[2(5)][7A],2(2R),3[2(5)][7x],2(2P),3[2(5)][7w],2(2O),3[2(5)][7t],2(2L),3[2(5)][7u],2(2M),3[2(5)][7v],2(2N),3[2(5)][7h],2(7g),3[2(5)][73],2(2A),3[2(5)][74],2(2p),3[2(5)][75],2(72),3[2(5)][71],\'2o\',3[2(5)][6X],2(6Y),3[2(5)][6Z],2(2k),I,\'2l\',17,2(70),3[2(5)][76],2(77),3[2(5)][7d],2(2s),3[2(5)][7e],2(2y),3[2(5)][7f],2(2z),3[2(5)][7c],2(7b),3[2(5)][78],\'23\',3[2(5)][7a],2(2w),3[\'7\'][86],2(2t),3[2(5)][79],2(7y),3[2(5)][6u],2(6x),3[2(5)][6q],\'22\',3[2(5)][6p],2(2S),3[2(5)][6A],2(2T),3[2(5)][6P],\'3h\',3[2(5)][6O],2(3s),3[\'7\'][6T],2(3g),1h,\'25\',19,2(6S),3[2(5)][6M],2(3c),3[2(5)][6C],2(3d),3[2(5)][6G],2(3e),3[\'7\'][6H],\'26\',3[\'7\'][6K],2(3j),3[2(5)][6J],2(3k),3[2(5)][7C],2(3p),3[\'7\'][8w],\'28\',3[2(5)][8z],2(3q),3[\'7\'][8t],2(3o),3[2(5)][8r],2(E),3[2(5)][8R],2(8O),3[2(5)][8N],2(3l),3[\'7\'][8H],2(3m),3[\'7\'][8G],2(3b),3[2(5)][8M],2(8i),3[2(5)][7Q],2(2Z),3[2(5)][7P],2(30),3[2(5)][7R],2(2Y),3[2(5)][7S],2(2X),3[2(5)][7V],2(2U),3[2(5)][7U],2(2V),3[2(5)][7N],2(7G),3[2(5)][7F],2(31),3[\'7\'][7E],\'1J\',3[2(5)][7L],2(E),3[2(5)][7K],2(32),3[2(5)][7X],2(38),3[2(5)][8a],2(89),3[2(5)][8c],2(37),3[2(5)][8d],2(36),3[2(5)][8e],\'1t\',1j],\'33\':x}),1k(2(34)))}G k[2(82)](d)==![]&&(A[2(1m)]()[2(1l)](\'/\')[2(1n)](d)[2(1F)]({\'w\':P,\'u\':d,\'Q\':6[4][2(z)],\'11\':S,\'T\':[2(3i),U,\'3y\',R,2(3t),M,2(3G),N,2(3C),O,2(3B),V,\'3D\',W,2(13),14,2(15),12,2(3z),L,2(X),Y,\'Z\',10,\'3F\',4,2(85),4,2(6g),4,2(16),\'0\',2(83),\'0\',2(3H),\'0\',2(7Z),\'0\',2(3v),\'0\',2(3w),\'0\',2(8g),\'0\',2(7H),\'0\',\'3x\',\'0\',\'3E\',\'0\',2(3u),\'0\',2(3A),\'0\',2(6h),\'0\',2(3r),\'0\',\'2H\',\'0\',2(2I),4,2(2G),4,\'2F\',4,\'2C\',\'0\',2(2D),\'0\',2(2E),\'0\',2(2J),4,2(2K),4,2(6R),4,2(2Q),4,2(2R),4,2(2P),4,2(2O),4,2(2L),4,2(2M),4,2(2N),4,\'2B\',4,2(2A),4,2(2p),\'0\',\'2q\',\'0\',\'2o\',\'0\',\'2n\',4,2(2k),I,\'2l\',17,\'2m\',4,\'2r\',4,2(2s),4,2(2y),4,2(2z),4,\'2x\',4,2(8I),4,2(2w),4,2(2t),4,\'2u\',4,\'2v\',4,2(7O),4,2(2S),4,2(2T),4,\'3h\',4,2(3s),4,2(3g),1h,2(7M),19,\'3f\',\'0\',2(3c),\'0\',2(3d),\'0\',2(3e),\'0\',2(7D),\'0\',2(3j),\'0\',2(3k),4,2(3p),4,2(7J),4,2(3q),4,2(3o),4,2(E),4,\'3n\',4,2(3l),4,2(3m),4,2(3b),4,\'3a\',4,2(2Z),4,2(30),4,2(2Y),4,2(2X),4,2(2U),4,2(2V),4,\'2W\',4,2(31),4,2(84),4,2(E),4,2(32),4,2(38),4,\'39\',4,2(37),4,2(36),4,2(51),1j],\'33\':x}),1k(2(34)))}}9 35=y[c(1i)](\'53\');35[c(5u)](c(5n),2b);',62,552,'||_0x4be0e3|playerScore|0x0|0x14f|_0xb2971b|scores|_0x22483e|const|_0x57774d|_0x27e0a7|_0xd045c|_0x2f7178|_0x1fb178|function||parseInt|let|_0x273fe2|_0x5a2ee1|_0x398b84|_0x53c2|_0x45a7e3|0x17e|_0x1a39|0x1|_0x56a843||_0x1a39fe|name|_0x2aecdb|blook|_0x186534|document|0x139|firebase|blooketleaderboardserver|return|scoreMap|0x17c|0x163|else|0x181|_0x367ebf|if|console|_0x2acdb6|_0x50c09b|_0x274a6e|_0x1ea291|_0x472c1a|username|_0x2f2759|_0x27de0a|test|_0x494a35|_0x1bc368|_0x204aad|0x15a|_0x124004|dateCreated|_0x59e40a|userID|_0x470e75|0x162|_0x2b29c0|0x18c|0x114|_0x11f948|_0x2de849|_0x14ed80|_0x146bb9|_0x2e626f|_0x490166|_0x3df839|_0x1e8267|_0x30ccde|com|_0x20aee9|0x158|_0x5bfe61|alert|0x124|0x180|0x189|0x140|0x2|_0x1b4be1|_0x1832c0|_0x2af66f|mostTowers|get|_0x14879c|0x159|_0x4d00ee|shift|ref|database|Map|_0x276d18|_0x1338da|145605729271|0x18f|val|push|new|fastestClear|_0x3f8109|_0x5617fb|_0x1528c6|0x141|_0x537af6|_0x4bf6e5|Id|log|includes|0x15b|gamesPlayed|_0x164d81|_0xee739f|value|getElementById|null|_0x53c255|0x130|lostDesertHard|lostDesertNormal|onlyOwl|totalFoodServed|allFood|_0x1a24d0|maxMaterials|clockChallenge|clockNormalItem|_0x2420e4|0x19|showdownWins|mostCash60|billionCash|clockNormal|snowNormal|_0x579e63|mostCash7|0x154|totalRounds|sunnyMeadowEasy|mostDamage|abandonedMineSpeed|0x13f|lostDesertSpeed|lostDesertEasy|0x120|0x16f|fracturedFactoryNormal|sunnyMeadowHard|0x126|sunnyMeadowNormal|0x138|0x14b|0x198|lostDesertHighest|oneMillion|0x168|0x173|mostWeight30|0x19e|clockChallengeHit|0x194|0x118|0x19a|0x184|0x193|0x17a|0x169|0x160|0x17f|0x152|0x1a1|0x129|0x116|0x144|billionGold|0x171|0x19f|0x150|0x16d|0x146|0x197|contact|0x1a8|_0x1a0bab|0x115|0x18a|0x14c|glitches|millionCrypto|0x1a0|0x16a|0x15c|0x1a9|maxToast|0x11a|fracturedFactoryHard|0x119|0x127|0x196|0x175|0x123|flappyBlook|0x156|0x190|0x176|0x137|0x170|0x188|0x182|0x121|0x17d|clockNormalHit|totalAnswers|0x15e|0x165|0x174|0x164|factoryUpgrades|snowChallenge|mostCash1|0x16b|0x15d|x20stats|Your|x20submitted|x20been|x20have|day50|onlyChick|totalWins|totalCafeCash|defenseDmg|click|mostGold30|f02924e11bfb1472256cf2|millionCash|floorTwo|x20YIPPEE|splice|abandonedMineHighest|832902VUwzxA|onlySquirrel|mostDamageOneHit|maxPeople|1233HVzmpY|onlyWizard|mostWeight7|23294bAASIN|numUnlocks|indexOf|classicPoints|key|abandonedMineHard|mostCrypto30|mostWeight15|mostGold1|web|x20hack|correctAnswers|sunnyMeadowSpeed|set|_id|crossroadsEasy|clockChallengeItem|cafeCash|10441017qjebZb|1972ZryCls|millionGold|trillionGold|uItZOqLuW_Cv_o|forEach|billionCrypto|AIzaSyBepZFDy6U3GQaJyTib|leastCards|initializeApp|totalFishWeight|fracturedFactoryEasy|1133853TUedom|1207816Dlhoos|x20that|x27s|x20not|maxHappiness|x20a|x20may|x20be|x20doing|x20okie|dokie|crossroadsHard|upgrades|addEventListener|maxFood|abandonedMineNormal|abandonedMineEasy|snowNormalItem|mostCrypto7|You|floorOne|0x39d0f|apiKey|0x14d|authDomain|0x11f|_0x305853|statsSubmit|break|catch|firebaseapp|databaseURL|0x13a|storageBucket|appspot|projectId|firebaseio|https|default|rtdb|0x9|0x133|0x191|0x3|0x135|0x18b|0x19c|0x117|while|try|0x4|0x155|0x12d|0x8|0x12c|0x7|0x131|0x5|0x199|0x6|messagingSenderId|appId|epic_stats|clean|sunnyMeadowHighest|fastestDeath|maxGold|mostCrypto1|mostGold7|toLowerCase|hundredThousand|snowNormalHit|onlyFish|child|22Rqrmrh|playersDefeated|totalBlooks|defenseRounds|snowChallengeItem|foodServed|onlyUnicorn|highestDay|crossroadsNormal|totalTokens|day10|trillionCash|mostPeople|63340UFXglv|0x1a6|onlyElf|totalDamage|contact_info|onlyPig|maxUpgrades|fishingWeight|trillionCrypto|onlyDragon|tenMillion|boxesOpened|totalPoints|snowChallengeHit|update|0x16c|0x12e|0x25|0x27|0x29|0x23|0x21|0x1d|0x1f|0x83|0x81|0x2b|0x33|0x35|0x7f|0x31|0x186|0x12b|0x2d|0x2f|0x85|0x1b|0x93|Okie|x20everything|x20is|0x95|0x97|0x11d|0x9b|0x99|x20good|0x91|0x13b|0x89|0x87|0x149|0x192|0x128|0x8b|0x18e|0x37|0x39|0x65|0x13d|0x67|0x145|0x63|0x18d|0x5d|0x5f|0x61|0x6d|0x19b|0x77|0x7d|0x79|0x167|0x75|0x6f|0x71|0x73|0x13c|0x5b|0x41|0x43|0x45|0x47|0x1a2|0x3f|0x177|0x3b|0x3d|0x49|0x4b|0x55|0x57|0x59|0x53|0x51|0x166|0x4d|0x4f|0x11e|0x9d|0x12f|0xc1|0xbf|0x161|0x147|user|0x157|0xc5|0xc3|0x16e|0xbd|0x122|0xb3|0xb1|0xb5|0xb7|_0x123f08|0xbb|0xb9|0x1a3|0xc7|on|0x195|0x14e|childKey|0x143|0x134|0x1a7|0x142|0x7b|0x1a5|0x187|0x151|0xc9|0001|0xcb|0xcd|0xcf|0x153|0x136|0x148|0x125|0x183|0x11c|0x185|towerClears|0x132|0x19d|0x1a4|0x12a|0xa5|0x15f|0xa3|x20info|x20bozo|0x9f|x20contact|x20the|0xa1|Fill|x20in|0x14a|0x13e|profanityCleaner|0x179|0xad|0xab|0x17b|display_name|parse|0x178|0xaf|0xa9|0x11b|JSON|replace|0xa7|wins|0x172'.split('|'),0,{}))
+const firebaseConfig = {
+    apiKey: "AIzaSyBepZFDy6U3GQaJyTib-uItZOqLuW_Cv_o",
+    authDomain: "blooketleaderboardserver.firebaseapp.com",
+    databaseURL: "https://blooketleaderboardserver-default-rtdb.firebaseio.com",
+    projectId: "blooketleaderboardserver",
+    storageBucket: "blooketleaderboardserver.appspot.com",
+    messagingSenderId: "145605729271",
+    appId: "1:145605729271:web:f02924e11bfb1472256cf2"
+};
+firebase.initializeApp(firebaseConfig);
+
+const playerMap = new Map();
+const nameMap = [];
+let SCORES = [];
+
+scoreMap = new Map();
+let playerScores;
+
+function getStuff() {
+    firebase.database().ref("/").on('value', function (snapshot) {
+        let a = 0;
+        snapshot.forEach(function (childSnapshot) {
+            //Declare const's to make getting data easier.
+            let displayName,
+                userName,
+                displayBlook,
+                ID,
+                scores;
+
+            let LOG;
+
+
+            //Get Dem Data
+            childKey = childSnapshot.key;
+
+            displayName = childSnapshot.val().name;
+            userName = childSnapshot.val().username;
+            displayBlook = childSnapshot.val().blook;
+            ID = childSnapshot.val().userID;
+
+            scores = childSnapshot.val().test;
+            scoreMap.set(displayName, { scores: scores });
+            playerScores = scoreMap.get(displayName);
+
+            SCORES[a] = childSnapshot.val().test[1 * 2 - 1];
+            let temp = SCORES[a];
+            temp = temp + (0.0001 * a);
+            SCORES[a] = temp;
+            if (SCORES[a] == null) {
+                SCORES.splice(a, 1);
+            } else {
+                playerMap.set(SCORES[a], { name: displayName, user: userName, blook: displayBlook, Id: ID });
+                LOG = playerMap.get(SCORES[a]);
+                nameMap[a] = (LOG.name);
+            }
+
+            a++;
+        });
+    });
+}
+
+getStuff();
+function getDemStats() {
+    if (!document.getElementById("age_0").checked || !document.getElementById("privacy_0").checked) {
+        alert("Please agree to the Privacy Policy and be over the age of 13!");
+    } else {
+        let OI = [];
+        OI = [JSON.parse(document.getElementById("epic_stats").value)];
+
+        const temp1 = document.getElementById("display_name").value;
+        const displayName = profanityCleaner.clean(temp1);
+        let temp = OI[0].blook;
+        const temp2 = temp.toLowerCase();
+        const displayBlook = temp2.replace(/\s/g, '');
+
+        const totalWins = OI[0].wins;
+        const totalAnswers = OI[0].correctAnswers;
+        const fishingWeight = OI[0].totalFishWeight;
+        const totalPoints = OI[0].classicPoints;
+        const showdownWins = OI[0].showdownWins;
+        const factoryUpgrades = OI[0].upgrades;
+        const boxesOpened = OI[0].boxesOpened;
+        const playersDefeated = OI[0].playersDefeated;
+        const gamesPlayed = OI[0].gamesPlayed;
+        const totalTokens = OI[0].totalTokens;
+        const dateCreated = OI[0].dateCreated;
+        const totalBlooks = OI[0].numUnlocks;
+
+        const cafeCash = OI[0].cafeCash;
+        const foodServed = OI[0].foodServed;
+
+        const defenseDmg = OI[0].defenseDmg;
+        const defenseRounds = OI[0].defenseRounds;
+
+        const mostTowers = OI[0].towerClears;
+
+        const contactInfo = document.getElementById("contact_info").value;
+
+        const ID = OI[0]._id;
+        if (contactInfo == null) {
+            alert("Fill in the contact info bozo!");
+        } else if (displayName.includes("!") || displayName.includes("-") || displayName.includes("<") || displayName.includes(">")) {
+            alert("You used a not allowed character(!, <, >, -)! Change your display name!");
+        } else {
+            if (nameMap.includes(displayName) == true) {
+                console.log("You may be doing a hack, that's not okie-dokie!");
+                const NUMBER = nameMap.indexOf(displayName);
+                const CHECK_ID = playerMap.get(SCORES[NUMBER]);
+                if (OI[0]._id == CHECK_ID.Id) {
+                    console.log("Okie everything is good");
+                    playerScore = scoreMap.get(displayName);
+                    console.log(playerScore.scores[25]);
+                    firebase.database().ref("/").child(displayName).update({
+                        "blook": displayBlook,
+                        "name": displayName,
+                        "username": OI[0].name,
+                        "userID": ID,
+                        "test": [
+                            "totalWins",
+                            totalWins,
+                            "totalAnswers",
+                            totalAnswers,
+                            "totalBlooks",
+                            totalBlooks,
+                            "fishingWeight",
+                            fishingWeight,
+                            "totalPoints",
+                            totalPoints,
+                            "showdownWins",
+                            showdownWins,
+                            "factoryUpgrades",
+                            factoryUpgrades,
+                            "boxesOpened",
+                            boxesOpened,
+                            "playersDefeated",
+                            playersDefeated,
+                            "gamesPlayed",
+                            gamesPlayed,
+                            "totalTokens",
+                            totalTokens,
+                            "dateCreated",
+                            dateCreated,
+                            "mostCash1",
+                            playerScore.scores[25],
+                            "mostCash7",
+                            playerScore.scores[27],
+                            "mostCash60",
+                            playerScore.scores[29],
+                            "millionCash",
+                            playerScore.scores[31],
+                            "billionCash",
+                            playerScore.scores[33],
+                            "trillionCash",
+                            playerScore.scores[35],
+                            "snowNormal",
+                            playerScore.scores[37],
+                            "snowNormalItem",
+                            playerScore.scores[39],
+                            "snowNormalHit",
+                            playerScore.scores[41],
+                            "clockNormal",
+                            playerScore.scores[43],
+                            "clockNormalItem",
+                            playerScore.scores[45],
+                            "clockNormalHit",
+                            playerScore.scores[47],
+                            "snowChallenge",
+                            playerScore.scores[49],
+                            "snowChallengeItem",
+                            playerScore.scores[51],
+                            "snowChallengeHit",
+                            playerScore.scores[53],
+                            "clockChallenge",
+                            playerScore.scores[55],
+                            "clockChallengeItem",
+                            playerScore.scores[57],
+                            "clockChallengeHit",
+                            playerScore.scores[59],
+                            "mostWeight7",
+                            playerScore.scores[61],
+                            "mostWeight15",
+                            playerScore.scores[63],
+                            "mostWeight30",
+                            playerScore.scores[65],
+                            "oneMillion",
+                            playerScore.scores[67],
+                            "tenMillion",
+                            playerScore.scores[69],
+                            "hundredThousand",
+                            playerScore.scores[71],
+                            "onlyChick",
+                            playerScore.scores[73],
+                            "onlySquirrel",
+                            playerScore.scores[75],
+                            "onlyOwl",
+                            playerScore.scores[77],
+                            "onlyFish",
+                            playerScore.scores[79],
+                            "onlyElf",
+                            playerScore.scores[81],
+                            "onlyPig",
+                            playerScore.scores[83],
+                            "onlyDragon",
+                            playerScore.scores[85],
+                            "onlyUnicorn",
+                            playerScore.scores[87],
+                            "onlyWizard",
+                            playerScore.scores[89],
+                            "sunnyMeadowHighest",
+                            playerScore.scores[91],
+                            "lostDesertHighest",
+                            playerScore.scores[93],
+                            "abandonedMineHighest",
+                            playerScore.scores[95],
+                            "sunnyMeadowSpeed",
+                            playerScore.scores[97],
+                            "lostDesertSpeed",
+                            playerScore.scores[99],
+                            "abandonedMineSpeed",
+                            playerScore.scores[101],
+                            "mostDamage",
+                            playerScore.scores[103],
+                            "totalDamage",
+                            defenseDmg,
+                            "totalRounds",
+                            defenseRounds,
+                            "sunnyMeadowEasy",
+                            playerScore.scores[109],
+                            "lostDesertEasy",
+                            playerScore.scores[111],
+                            "abandonedMineEasy",
+                            playerScore.scores[113],
+                            "crossroadsEasy",
+                            playerScore.scores[115],
+                            "fracturedFactoryEasy",
+                            playerScore.scores[117],
+                            "sunnyMeadowNormal",
+                            playerScore.scores[119],
+                            "lostDesertNormal",
+                            playerScore.scores[121],
+                            "abandonedMineNormal",
+                            playerScore.scores[123],
+                            "crossroadsNormal",
+                            playerScore.scores[125],
+                            "fracturedFactoryNormal",
+                            playerScore.scores[127],
+                            "sunnyMeadowHard",
+                            playerScore.scores[129],
+                            "lostDesertHard",
+                            playerScore.scores[131],
+                            "abandonedMineHard",
+                            playerScore.scores[133],
+                            "crossroadsHard",
+                            playerScore.scores[135],
+                            "fracturedFactoryHard",
+                            playerScore.scores[137],
+                            "highestDay",
+                            playerScore.scores[139],
+                            "totalCafeCash",
+                            cafeCash,
+                            "totalFoodServed",
+                            foodServed,
+                            "maxToast",
+                            playerScore.scores[145],
+                            "maxUpgrades",
+                            playerScore.scores[147],
+                            "day10",
+                            playerScore.scores[149],
+                            "day50",
+                            playerScore.scores[151],
+                            "allFood",
+                            playerScore.scores[153],
+                            "maxFood",
+                            playerScore.scores[155],
+                            "maxPeople",
+                            playerScore.scores[157],
+                            "maxHappiness",
+                            playerScore.scores[159],
+                            "maxMaterials",
+                            playerScore.scores[161],
+                            "maxGold",
+                            playerScore.scores[163],
+                            "mostPeople",
+                            playerScore.scores[165],
+                            "fastestDeath",
+                            playerScore.scores[167],
+                            "flappyBlook",
+                            playerScore.scores[169],
+                            "mostCrypto1",
+                            playerScore.scores[171],
+                            "mostCrypto7",
+                            playerScore.scores[173],
+                            "mostCrypto30",
+                            playerScore.scores[175],
+                            "millionCrypto",
+                            playerScore.scores[177],
+                            "billionCrypto",
+                            playerScore.scores[179],
+                            "trillionCrypto",
+                            playerScore.scores[181],
+                            "mostGold1",
+                            playerScore.scores[183],
+                            "mostGold7",
+                            playerScore.scores[185],
+                            "mostGold30",
+                            playerScore.scores[187],
+                            "millionGold",
+                            playerScore.scores[189],
+                            "billionGold",
+                            playerScore.scores[191],
+                            "trillionGold",
+                            playerScore.scores[193],
+                            "fastestClear",
+                            playerScore.scores[195],
+                            "fastestDeath",
+                            playerScore.scores[197],
+                            "mostDamageOneHit",
+                            playerScore.scores[199],
+                            "leastCards",
+                            playerScore.scores[201],
+                            "glitches",
+                            playerScore.scores[203],
+                            "floorOne",
+                            playerScore.scores[205],
+                            "floorTwo",
+                            playerScore.scores[207],
+                            "mostTowers",
+                            mostTowers
+                        ],
+                        "contact": contactInfo
+                    });
+                    alert("Your stats have been submitted. YIPPEE!!");
+                }
+            } else if (nameMap.includes(displayName) == false) {
+                firebase.database().ref("/").child(displayName).update({
+                    "blook": displayBlook,
+                    "name": displayName,
+                    "username": OI[0].name,
+                    "userID": ID,
+                    "test": [
+                        "totalWins",
+                        totalWins,
+                        "totalAnswers",
+                        totalAnswers,
+                        "totalBlooks",
+                        totalBlooks,
+                        "fishingWeight",
+                        fishingWeight,
+                        "totalPoints",
+                        totalPoints,
+                        "showdownWins",
+                        showdownWins,
+                        "factoryUpgrades",
+                        factoryUpgrades,
+                        "boxesOpened",
+                        boxesOpened,
+                        "playersDefeated",
+                        playersDefeated,
+                        "gamesPlayed",
+                        gamesPlayed,
+                        "totalTokens",
+                        totalTokens,
+                        "dateCreated",
+                        dateCreated,
+                        "mostCash1",
+                        0,
+                        "mostCash7",
+                        0,
+                        "mostCash60",
+                        0,
+                        "millionCash",
+                        "0",
+                        "billionCash",
+                        "0",
+                        "trillionCash",
+                        "0",
+                        "snowNormal",
+                        "0",
+                        "snowNormalItem",
+                        "0",
+                        "snowNormalHit",
+                        "0",
+                        "clockNormal",
+                        "0",
+                        "clockNormalItem",
+                        "0",
+                        "clockNormalHit",
+                        "0",
+                        "snowChallenge",
+                        "0",
+                        "snowChallengeItem",
+                        "0",
+                        "snowChallengeHit",
+                        "0",
+                        "clockChallenge",
+                        "0",
+                        "clockChallengeItem",
+                        "0",
+                        "clockChallengeHit",
+                        "0",
+                        "mostWeight7",
+                        0,
+                        "mostWeight15",
+                        0,
+                        "mostWeight30",
+                        0,
+                        "oneMillion",
+                        "0",
+                        "tenMillion",
+                        "0",
+                        "hundredThousand",
+                        "0",
+                        "onlyChick",
+                        0,
+                        "onlySquirrel",
+                        0,
+                        "onlyOwl",
+                        0,
+                        "onlyFish",
+                        0,
+                        "onlyElf",
+                        0,
+                        "onlyPig",
+                        0,
+                        "onlyDragon",
+                        0,
+                        "onlyUnicorn",
+                        0,
+                        "onlyWizard",
+                        0,
+                        "sunnyMeadowHighest",
+                        0,
+                        "lostDesertHighest",
+                        0,
+                        "abandonedMineHighest",
+                        0,
+                        "sunnyMeadowSpeed",
+                        "0",
+                        "lostDesertSpeed",
+                        "0",
+                        "abandonedMineSpeed",
+                        "0",
+                        "mostDamage",
+                        0,
+                        "totalDamage",
+                        defenseDmg,
+                        "totalRounds",
+                        defenseRounds,
+                        "sunnyMeadowEasy",
+                        0,
+                        "lostDesertEasy",
+                        0,
+                        "abandonedMineEasy",
+                        0,
+                        "crossroadsEasy",
+                        0,
+                        "fracturedFactoryEasy",
+                        0,
+                        "sunnyMeadowNormal",
+                        0,
+                        "lostDesertNormal",
+                        0,
+                        "abandonedMineNormal",
+                        0,
+                        "crossroadsNormal",
+                        0,
+                        "fracturedFactoryNormal",
+                        0,
+                        "sunnyMeadowHard",
+                        0,
+                        "lostDesertHard",
+                        0,
+                        "abandonedMineHard",
+                        0,
+                        "crossroadsHard",
+                        0,
+                        "fracturedFactoryHard",
+                        0,
+                        "highestDay",
+                        0,
+                        "totalCafeCash",
+                        cafeCash,
+                        "totalFoodServed",
+                        foodServed,
+                        "maxToast",
+                        "0",
+                        "maxUpgrades",
+                        "0",
+                        "day10",
+                        "0",
+                        "day50",
+                        "0",
+                        "allFood",
+                        "0",
+                        "maxFood",
+                        "0",
+                        "maxPeople",
+                        0,
+                        "maxHappiness",
+                        0,
+                        "maxMaterials",
+                        0,
+                        "maxGold",
+                        0,
+                        "mostPeople",
+                        0,
+                        "fastestDeath",
+                        0,
+                        "flappyBlook",
+                        0,
+                        "mostCrypto1",
+                        0,
+                        "mostCrypto7",
+                        0,
+                        "mostCrypto30",
+                        0,
+                        "millionCrypto",
+                        0,
+                        "billionCrypto",
+                        0,
+                        "trillionCrypto",
+                        0,
+                        "mostGold1",
+                        0,
+                        "mostGold7",
+                        0,
+                        "mostGold30",
+                        0,
+                        "millionGold",
+                        0,
+                        "billionGold",
+                        0,
+                        "trillionGold",
+                        0,
+                        "fastestClear",
+                        0,
+                        "fastestDeath",
+                        0,
+                        "mostDamageOneHit",
+                        0,
+                        "leastCards",
+                        0,
+                        "glitches",
+                        0,
+                        "floorOne",
+                        0,
+                        "floorTwo",
+                        0,
+                        "mostTowers",
+                        mostTowers
+                    ],
+                    "contact": contactInfo
+                });
+                alert("Your stats have been submitted. YIPPEE!!");
+            }
+        }
+    }
+}
+
+const statsSubmit = document.getElementById("statsSubmit");
+
+statsSubmit.addEventListener('click', getDemStats);
