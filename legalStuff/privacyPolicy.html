@@ -11,13 +11,13 @@
     <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
-    <link rel='stylesheet' href='style.css'> <!--Rows & Boxes; Pop Links-->
-    <link rel='stylesheet' href='sideNav.css'> <!--Side Navigation-->
-    <link rel='stylesheet' href='bgStyle.css'> <!--Background-->
-    <link rel='stylesheet' href='YO_Container.css'> <!--Those Funny Headers On The Boards-->
-    <link rel='stylesheet' href='statBoxes.css'> <!--The Boxes On The Boards-->
-    <link rel='stylesheet' href='navBar.css'> <!--Top Navagation-->
-    <link rel='stylesheet' href='gamePages.css'> <!--General CSS & Boards-->
+    <link rel='stylesheet' href='../style.css'> <!--Rows & Boxes; Pop Links-->
+    <link rel='stylesheet' href='../sideNav.css'> <!--Side Navigation-->
+    <link rel='stylesheet' href='../bgStyle.css'> <!--Background-->
+    <link rel='stylesheet' href='../YO_Container.css'> <!--Those Funny Headers On The Boards-->
+    <link rel='stylesheet' href='../statBoxes.css'> <!--The Boxes On The Boards-->
+    <link rel='stylesheet' href='../navBar.css'> <!--Top Navagation-->
+    <link rel='stylesheet' href='../gamePages.css'> <!--General CSS & Boards-->
     <script src="https://kit.fontawesome.com/3fbe72ad61.js" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
@@ -30,14 +30,13 @@
     <div id='sidenav'>
         <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
         <br>
-        <a href='../' class='sideLink'> Home </a>
+        <a href='../../' class='sideLink'> Home </a>
         <br>
-        <a href='gamemode' class='sideLink'> Gamemodes </a>
+        <a href='../gamemode' class='sideLink'> Gamemodes </a>
         <br>
-
-        <a href='submissions' class='sideLink'> Submissions </a>
+        <a href='../submissions' class='sideLink'> Submissions </a>
         <br>
-        <a href='settings' class='sideLink'> Settings </a>
+        <a href='../settings' class='sideLink'> Settings </a>
         <br>
         <a href='https://discord.gg/5nYGQtqyBZ' class='sideLink' style='padding-right: 10%;'> Discord </a>
     </div>
@@ -45,10 +44,9 @@
     <!--Literally Everything Else-->
     <div id='navBar'>
         <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
-        <a href='settings' class='navLink'> Settings </a>
-        <a href='submissions' class='navLink'> Submissions </a>
-
-        <a href='gamemode' class='navLink'> Gamemodes </a>
+        <a href='../settings' class='navLink'> Settings </a>
+        <a href='../submissions' class='navLink'> Submissions </a>
+        <a href='../gamemode' class='navLink'> Gamemodes </a>
         <a href='../' class='navLink'> Home </a>
     </div>
     <br>
@@ -171,10 +169,9 @@
             data saved under <b>Your Account</b>. </p>
         <br>
         <h2> Children's Policy </h2>
-        <p> Although <b>We</b> ask if <b>You</b> are over the age of 13, children are capable of lying.
+        <p> Although <b>We</b> ask if <b>You</b> are over the age of 13, children are capable of giving <b>Us</b> false information.
             <b>We</b> never intentionally gather the data of anyone under the age of 13. If at any point it comes to
-            <b>Our</b> attention that the <b>Personal Data</b> of someone under the age of 13 is in <b>Our</b> possesion
-            without the consent of a Parent of Guardian, it becomes a priority to remove the data from our database.
+            <b>Our</b> attention that the <b>Personal Data</b> of someone under the age of 13 is in <b>Our</b> possesion, it becomes a priority to remove the data from our database.
         </p>
         <br>
         <h2> Contact Us </h2>
@@ -187,6 +184,8 @@
         </ul>
         </p>
     </div>
+    <script src='settings.js'></script>
+    <script src='screenAdjust.js'></script>
 </body>
 
 </html>
