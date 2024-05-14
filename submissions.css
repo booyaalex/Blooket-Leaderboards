@@ -68,3 +68,8 @@ input::file-selector-button {
     2px 2px 0 #646464;
   cursor: pointer;
 }
+
+label {
+  font-family: Nunito;
+  color: white;
+}
