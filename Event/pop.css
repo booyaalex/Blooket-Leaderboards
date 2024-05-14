@@ -1,107 +1,110 @@
 /*Navagation Bar*/
 #navBar {
-  margin-left: -10px;
-  margin-top: -15px;
+  margin-top: -2px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 100%;
-  height: 60px;
   background-color: transparent;
   position: fixed;
-  z-index: 5;
+  z-index: 2;
+  top: 0;
 }
 
 .navLink {
   /*Position*/
-  float: right;
   margin-right: 12px;
-  padding-top: 12px;
+  padding-top: 8px;
   padding-bottom: 5px;
   /*Looks*/
   background-color: #4a363a;
   font-size: 30px;
-  text-decoration: none;
   color: #f8d474;
-  font-family: Nunito;
-  font-weight: 600;
   border: 3px solid #988672;
-  width: 40px;
   text-align: center;
   /*Transition*/
   transition-duration: 0.2s;
   cursor: pointer;
+  width: 40px;
 }
-
 .navLink:hover {
-  padding-top: 20px;
-  padding-bottom: 15px;
+  margin-bottom: -17px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 }
 
 /*Main Section*/
 
 body {
   overflow-x: hidden;
-  background: url("https://gooseterv.github.io/pop/images/background-left.png") left repeat-y,
-    url("https://gooseterv.github.io/pop/images/background-right.png") right repeat-y,
+  background: url("https://gooseterv.github.io/pop/images/background-left.png")
+      left repeat-y,
+    url("https://gooseterv.github.io/pop/images/background-right.png") right
+      repeat-y,
     #523b40;
+  font-family: Pixellari;
 }
 
 #main {
-  z-index: 2;
-  transform: rotate(0deg);
   overflow-y: scroll;
   overflow-x: hidden;
-}
-
-#mainHeader {
-  font-family: Titan One;
-  font-size: 60px;
-  color: white;
-  font-weight: 400;
-  text-align: center;
-  text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 .box {
   background-color: #4a363a;
   border: 3.5px solid #988672;
   margin-left: auto;
-  width: 70%;
   margin-right: auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
 }
 
 .boxText {
   color: #f8d474;
-  font-family: Pixellari;
   font-size: 23px;
   font-weight: bold;
   margin: 10px;
 }
 
 .boxImg {
-  width: 50px;
-  height: 50px;
+  min-height: 50px;
+  max-height: 50px;
   border: 3.5px solid #988672;
-  margin: 5px;
+  margin: 5px 0px;
+  min-width: 50px;
+  max-width: 50px;
 }
 
 .boxTextGold {
   color: #f8d474;
-  font-family: Pixellari;
   font-size: 23px;
   font-weight: bold;
   margin: 10px;
 }
+.goldIcon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 5px;
+  right: 7px;
+}
 
 .spacingBoxLeft {
-  width: 45%;
-  display: inline-flex;
-  justify-content: flex-start;
+  display: flex;
   align-items: center;
 }
 
-.spacingBoxRight {
-  width: 54%;
-  display: inline-flex;
-  justify-content: flex-end;
-  align-items: center;
+@media only screen and (max-width: 877px) {
+  .box {
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navBar {
+    justify-content: center;
+  }
 }
