@@ -42,7 +42,7 @@ async function makeLB() {
         gold.classList.add("gold");
 
         let goldText = document.createElement("p");
-        gold.classList.add("boxTxt");
+        goldText.classList.add("boxTxt");
         let temp = JSON[GUILD].members[i].gold;
         let textnode3 = document.createTextNode(temp.toLocaleString());
         goldText.appendChild(textnode3);
