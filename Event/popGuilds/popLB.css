@@ -124,6 +124,7 @@ body {
     flex-direction: column;
   }
   .boxSec.gold {
+    justify-content: center;
     margin-right: 0px;
   }
 }
