@@ -1,142 +1,142 @@
 /*Navagation Bar*/
 #navBar {
-    margin-left: -10px;
-    margin-top: -15px;
-    width: 110%;
-    height: 60px;
-    background-color: transparent;
-    position: fixed;
-    z-index: 5;
-  }
-  
-  .navLink {
-    /*Position*/
-    float: right;
-    margin-right: 12px;
-    padding-top: 12px;
-    padding-bottom: 5px;
-    /*Looks*/
-    background-color: #4a363a;
-    font-size: 30px;
-    text-decoration: none;
-    color: #f8d474;
-    font-family: Nunito;
-    font-weight: 600;
-    border: 3px solid #988672;
-    width: 40px;
-    text-align: center;
-    /*Transition*/
-    transition-duration: 0.2s;
-    cursor: pointer;
-  }
-  
-  .navLink:hover {
-    padding-top: 20px;
-    padding-bottom: 15px;
-  }
-  
-  /*Main Section*/
-  
-  body {
-    overflow-x: hidden;
-    background: url("https://gooseterv.github.io/pop/images/background-left.png")
-        left repeat-y,
-      url("https://gooseterv.github.io/pop/images/background-right.png") right
-        repeat-y,
-      #523b40;
-  }
-  #main {
-    z-index: 2;
-    transform: rotate(0deg);
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  #mainHeader {
-    font-family: Titan One;
-    font-size: 60px;
-    color: white;
-    font-weight: 400;
-    text-align: center;
-    text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
-  }
-  
-  .box {
-    display: flex;
-    justify-content: space-between;
-    background-color: #4a363a;
-    border: 3.5px solid #988672;
-    margin-left: auto;
-    width: 70%;
-    margin-right: auto;
-    cursor: pointer;
-    height: initial;
-    align-items: center;
-  }
-  .boxText {
-    color: #f8d474;
-    font-family: Pixellari;
-    font-size: 23px;
-    font-weight: bold;
-    margin: 10px;
-  }
-  .boxTextUser {
-    color: #f8d474;
-    font-family: Pixellari;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .boxTextDesc {
-    color: #f8d474;
-    font-family: Pixellari;
-    font-size: 17px;
-    font-weight: bold;
-    margin: 10px;
-  }
-  .boxImg {
-    width: 50px;
-    height: 50px;
-    border: 3.5px solid #988672;
-    margin: 10px;
-  }
-  .boxTextGold {
-    color: #f8d474;
-    font-family: Pixellari;
-    font-size: 23px;
-    font-weight: bold;
-    margin: 10px;
-  }
-  
-  .spacingBoxLeft {
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .spacingBoxRight {
-    display: inline-flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: inherit;
-  }
-  
-  tbody {
-    width: 100%;
-  }
-  tr {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  td {
-    width: 200px;
-  }
-  .tdUser {
-    display: flex;
+  margin-top: -2px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+
+.navLink {
+  /*Position*/
+  margin-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  /*Looks*/
+  background-color: #4a363a;
+  font-size: 30px;
+  color: #f8d474;
+  border: 3px solid #988672;
+  text-align: center;
+  /*Transition*/
+  transition-duration: 0.2s;
+  cursor: pointer;
+  width: 40px;
+}
+
+.navLink:hover {
+  margin-bottom: -17px;
+  padding-top: 14px;
+  padding-bottom: 16px;
+}
+
+/*Main Section*/
+
+body {
+  overflow-x: hidden;
+  background: url("https://gooseterv.github.io/pop/images/background-left.png") left repeat-y,
+    url("https://gooseterv.github.io/pop/images/background-right.png") right repeat-y,
+    #523b40;
+  font-family: Pixellari;
+}
+
+#main {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4a363a;
+  border: 3.5px solid #988672;
+  margin-left: auto;
+  width: 70%;
+  margin-right: auto;
+  cursor: pointer;
+  height: initial;
+  align-items: center;
+}
+
+.boxText {
+  color: #f8d474;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.boxTextUser {
+  color: #f8d474;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.boxTextDesc {
+  color: #f8d474;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.boxImg {
+  width: 50px;
+  height: 50px;
+  border: 3.5px solid #988672;
+  margin: 10px;
+}
+
+.boxTextGold {
+  color: #f8d474;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.spacingBoxLeft {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.spacingBoxRight {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: inherit;
+}
+
+tbody {
+  width: 100%;
+}
+
+tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+td {
+  width: 200px;
+}
+
+.tdUser {
+  display: flex;
+  justify-content: center;
+}
+
+.tdGold {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 877px) {
+  #navBar {
     justify-content: center;
   }
-  .tdGold {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 10px;
-  }
-  
+}
