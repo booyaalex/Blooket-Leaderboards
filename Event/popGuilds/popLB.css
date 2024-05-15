@@ -102,6 +102,10 @@ body {
   justify-content: flex-end;
   margin-right: 10px;
 }
+.boxSec > img {
+  width: 25px;
+  height: 25px;
+}
 
 .boxTxt {
   color: #f8d474;
