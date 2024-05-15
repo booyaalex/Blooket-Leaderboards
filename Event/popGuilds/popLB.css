@@ -123,6 +123,9 @@ body {
     justify-content: center;
     flex-direction: column;
   }
+  .boxSec {
+    justify-content: center;
+  }
   .boxSec.gold {
     justify-content: center;
     margin-right: 0px;
