@@ -27,7 +27,6 @@
   cursor: pointer;
   width: 40px;
 }
-
 .navLink:hover {
   margin-bottom: -17px;
   padding-top: 14px;
@@ -38,12 +37,13 @@
 
 body {
   overflow-x: hidden;
-  background: url("https://gooseterv.github.io/pop/images/background-left.png") left repeat-y,
-    url("https://gooseterv.github.io/pop/images/background-right.png") right repeat-y,
+  background: url("https://gooseterv.github.io/pop/images/background-left.png")
+      left repeat-y,
+    url("https://gooseterv.github.io/pop/images/background-right.png") right
+      repeat-y,
     #523b40;
   font-family: Pixellari;
 }
-
 #main {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -61,34 +61,6 @@ body {
   height: initial;
   align-items: center;
 }
-
-.boxText {
-  color: #f8d474;
-  font-size: 23px;
-  font-weight: bold;
-  margin: 10px;
-}
-
-.boxTextUser {
-  color: #f8d474;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.boxTextDesc {
-  color: #f8d474;
-  font-size: 17px;
-  font-weight: bold;
-  margin: 10px;
-}
-
-.boxTextGold {
-  color: #f8d474;
-  font-size: 23px;
-  font-weight: bold;
-  margin: 10px;
-}
-
 .boxImg {
   width: 50px;
   height: 50px;
@@ -101,7 +73,6 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
-
 .spacingBoxRight {
   display: inline-flex;
   justify-content: flex-end;
@@ -109,34 +80,39 @@ body {
   height: inherit;
 }
 
-tbody {
-  width: 100%;
-}
-
-tr {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-td {
-  width: 200px;
-}
-
-.tdUser {
-  display: flex;
-  justify-content: center;
-}
-
-.tdGold {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 10px;
-}
-
 @media only screen and (max-width: 877px) {
   #navBar {
     justify-content: center;
   }
+}
+@media only screen and (max-width: 677px) {
+}
+
+/**/
+
+.boxSec {
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+.boxSec.user {
+  justify-content: center;
+}
+.boxSec.gold {
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.boxTxt {
+  color: #f8d474;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 10px;
+}
+.boxTxt.user {
+  margin: 0px;
+  font-size: 16px;
+}
+.boxTxt.desc {
+  font-size: 17px;
 }
