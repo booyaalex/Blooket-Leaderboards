@@ -11,7 +11,7 @@ async function makeLB() {
 
         //Name
         let name = document.createElement("div");
-        name.classlist.add("boxSec");
+        name.classList.add("boxSec");
 
         let nameSpan = document.createElement("p");
         nameSpan.className = "boxTxt";
