@@ -117,8 +117,6 @@ body {
   #navBar {
     justify-content: center;
   }
-}
-@media only screen and (max-width: 700px) {
   .box {
     justify-content: center;
     flex-direction: column;
