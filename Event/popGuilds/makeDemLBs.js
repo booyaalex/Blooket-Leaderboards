@@ -46,7 +46,7 @@ async function makeLB() {
         DIV.className = "spacingBoxRight";
 
         let goldSpan = document.createElement("span");
-        goldSpan.className = "boxTextGold";
+        goldSpan.className = "boxText";
         let temp = JSON[GUILD].members[i].gold;
         let textnode3 = document.createTextNode(temp.toLocaleString());
         goldSpan.appendChild(textnode3);
