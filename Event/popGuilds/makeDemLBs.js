@@ -5,19 +5,16 @@ async function makeLB() {
     const JSON = await response.json();
     for(let i = 0; i < JSON[GUILD].numMembers; i++) {
         //Table
-        let table = document.createElement("table");
-        table.className = "box";
-
-
-        //TR
-        let tr = document.createElement("tr");
+        let BOX = document.createElement("div");
+        BOX.className = "box";
 
 
         //Name
-        let name = document.createElement("td");
+        let name = document.createElement("div");
+        name.classlist.add("boxSec");
 
-        let nameSpan = document.createElement("span");
-        nameSpan.className = "boxText";
+        let nameSpan = document.createElement("p");
+        nameSpan.className = "boxTxt";
         let textnode1 = document.createTextNode(JSON[GUILD].members[i].name);
         nameSpan.appendChild(textnode1);
         
@@ -62,14 +59,11 @@ async function makeLB() {
         gold.appendChild(DIV);
 
 
-        tr.appendChild(name);
-        tr.appendChild(user);
-        tr.appendChild(gold);
+        BOX.appendChild(name);
+        BOX.appendChild(user);
+        BOX.appendChild(gold);
 
-
-        table.appendChild(tr);
-
-        document.getElementById("main").append(table);
+        document.getElementById("main").append(BOX);
         let BR = document.createElement("br");
         document.getElementById("main").append(BR);
     }   
