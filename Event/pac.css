@@ -1,0 +1,151 @@
+/*Navagation Bar*/
+#navBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    background-color: white;
+    height: 60px;
+    z-index: 2;
+    box-shadow: #cbcbcb 0px 0px 0px 3px;
+  }
+  
+  .navLink {
+    /*Looks*/
+    background-color: #588cd4;
+    border-radius: 50px;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    /*Transition*/
+    transition-duration: 0.2s;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+  
+  /*Main Section*/
+  
+  body {
+    overflow-x: hidden;
+    background-color: whitesmoke;
+    font-family: Nunito;
+    margin: 0px;
+  }
+  #main {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  #topRow {
+    display: flex;
+  }
+  #topRow > div {
+    display: flex;
+  }
+  .statsBox {
+    background-color: #588cd4;
+    border-radius: 4px;
+    width: 70%;
+    display: inline-block;
+    position: relative;
+    padding: 20px 15px;
+    margin: 10px;
+    transition-duration: 0.2s;
+    min-width: 178px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .statsBox:before {
+    background: none;
+    border-radius: 4px;
+    border: 4px solid #dedeff;
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    pointer-events: none;
+  }
+  
+  .statsBox.top3 {
+    width: 25vw;
+    height: 200px;
+    padding: 20px 15px 20px 5px;
+  }
+  .contain {
+    display: flex;
+    width: 50%;
+    height: 100%;
+  }
+  .contain.img {
+    align-items: center;
+    justify-content: center;
+  }
+  .contain.text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .top3 img {
+    width: 135px;
+    min-height: 95%;
+    border-radius: 5px;
+    border: 4px solid #dedeff;
+  }
+  .textBox {
+    background-color: #b4d4ec;
+    border-radius: 7px;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+    width: 205px;
+  }
+  .textBox p {
+    margin: 0px 5px;
+  }
+  .text .textBox {
+    width: 100%;
+  }
+  @media only screen and (max-width: 1254px) {
+    #topRow {
+      flex-direction: column;
+      align-items: center;
+    }
+    .statsBox.top3 {
+      width: 36vw;
+    }
+  }
+  @media only screen and (max-width: 877px) {
+    #navBar {
+      justify-content: center;
+    }
+    #topRow > div {
+      flex-direction: column;
+    }
+    .statsBox.top3 {
+      width: 60vw;
+    }
+    .statsBox {
+      width: 85%;
+    }
+  }
+  @media only screen and (max-width: 510px) {
+    .statsBox.top3 {
+      height: auto;
+    }
+    .statsBox {
+      flex-direction: column;
+      align-items: center;
+    }
+    .contain {
+      width: auto;
+    }
+    .statsBox > .textBox {
+      margin-bottom: 10px;
+    }
+  }
+  
