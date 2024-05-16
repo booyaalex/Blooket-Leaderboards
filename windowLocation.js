@@ -186,6 +186,9 @@ function coc2020() {
 function coc2022() {
     window.location.href = "Event/coc2022";
 }
+function pac() {
+    window.location.href = "Event/pac";
+}
 
 
 /*Stats*/
