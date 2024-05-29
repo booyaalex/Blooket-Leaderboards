@@ -600,7 +600,8 @@ async function makePotions() {
 
 
     function makeBox(potionName) {
-        console.log([ `${potionName}` ]);
+        const potion = JSON[ `${potionName}` ];
+        console.log(potion.ingredients);
     }
 }
 
