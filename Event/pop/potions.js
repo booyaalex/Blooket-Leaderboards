@@ -581,9 +581,26 @@ function showPopUp() {
 }
 
 async function makePotions() {
-    let potions = ["Bottle Of Expectation"];
-
+    let potionList = [];
     const response = await fetch("potionRecipes.json");
     const JSON = await response.json();
-    console.log(JSON[ `${test[0]}` ]);
+    
+
+    //Get a List of Potion Names
+    let i = 0;
+    Object.keys(JSON).forEach(function(key){
+        potionList[i] = key;
+        i++;
+    });
+    console.log(potionList.length);
+
+    for(let i = 0; i < potionList.length; i++) {
+        makeBox(potionList[i]);
+    }
+
+
+    function makeBox(potionName) {
+        console.log([ `${potionName}` ]);
+    }
 }
+
