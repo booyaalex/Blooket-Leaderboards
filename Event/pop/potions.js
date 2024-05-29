@@ -579,3 +579,11 @@ function showPopUp() {
     document.getElementById('main').style.opacity = "0.7";
   }
 }
+
+async function makePotions() {
+    const response = await fetch("potionRecipes.json");
+    const JSON = await response.json();
+    JSON[0].forEach(function (Potion){
+        console.log(Potion);
+    });
+}

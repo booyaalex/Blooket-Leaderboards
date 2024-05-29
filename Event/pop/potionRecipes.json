@@ -1,0 +1,386 @@
+{
+  "Bottle Of Expectation": {
+    "ingredients": ["Fetty", "Theddium", "Krelgac"],
+    "price": 450
+  },
+  "Bottle Of Insanity": {
+    "ingredients": ["Milkweed", "Sleet", "Plubead", "Nocries", "Slorn"],
+    "price": 1500
+  },
+  "Brew Of Ignorance": {
+    "ingredients": ["Slorn", "Iafloss", "Evlosmoot"],
+    "price": 150
+  },
+  "Brew Of Lies": {
+    "ingredients": ["Chorkorn", "Bianna", "Smine"],
+    "price": 300
+  },
+  "Brew Of The Ancients": {
+    "ingredients": ["Vletta", "Zeflia", "Ishina", "Iriwood", "Fleplore", "Epruthoo"],
+    "price": 2000
+  },
+  "Clutch Of Justice": {
+    "ingredients": ["Ovliros", "Fyoom", "Crislolla", "Aatrender", "Iriwood"],
+    "price": 1400
+  },
+  "Crawler's Grasp": {
+    "ingredients": ["Uslard", "Ikros", "Clampire", "Drunow", "Edrip"],
+    "price": 1300
+  },
+  "Death's Wish": {
+    "ingredients": ["Shade Pepper", "Vigip", "Uzemmium", "Plubead", "Milfoil", "Lover's Leaf"],
+    "price": 2400
+  },
+  "Draught Of Bloodlust": {
+    "ingredients": ["Todgotus", "Ooslade", "Krelgac"],
+    "price": 450
+  },
+  "Draught Of Deliriousness": {
+    "ingredients": ["Epruthoo", "Tremmort"],
+    "price": 80
+  },
+  "Draught Of Focus": {
+    "ingredients": ["Snowdrop", "Waire"],
+    "price": 50
+  },
+  "Draught Of Petrification": {
+    "ingredients": ["Aayizet", "Kless", "Drament", "Clampire"],
+    "price": 700
+  },
+  "Draught Of Spellpower": {
+    "ingredients": ["Eiklorn", "Vlolla", "Iteek"],
+    "price": 350
+  },
+  "Draught Of The Titans": {
+    "ingredients": ["Woundwort", "Vebore", "Plomegon", "Prow", "Clakdush", "Azoom"],
+    "price": 1800
+  },
+  "Elixir Of Darkness": {
+    "ingredients": ["Shade Pepper", "Shilnum", "Nocries", "Odosie"],
+    "price": 900
+  },
+  "Elixir Of Illusion": {
+    "ingredients": ["Shore", "Garget", "Crille"],
+    "price": 200
+  },
+  "Elixir Of Stupidity": {
+    "ingredients": ["Axow", "Todgotus"],
+    "price": 50
+  },
+  "Elixir Of Taste": {
+    "ingredients": ["Aatrender", "Waire", "Edrip"],
+    "price": 150
+  },
+  "Elixir Of The Berserker": {
+    "ingredients": ["Ostrush", "Evlosmoot", "Chroil", "Veet", "Aatrender"],
+    "price": 1200
+  },
+  "Everfall Brew": {
+    "ingredients": ["Edrip", "Aatrender"],
+    "price": 50
+  },
+  "Eyedrops Of Phantoms": {
+    "ingredients": ["Nocries", "Odosie", "Eiklorn", "Scanor"],
+    "price": 1000
+  },
+  "Fake Health Potion": {
+    "ingredients": ["Prow", "Axow", "Wivitte"],
+    "price": 200
+  },
+  "Fake Mana Potion": {
+    "ingredients": ["Garget", "Shilnum", "Zedil"],
+    "price": 200
+  },
+  "Flask From Below": {
+    "ingredients": ["Smine", "Oblax", "Glusmard"],
+    "price": 500
+  },
+  "Flask Of Betrayal": {
+    "ingredients": ["Otrolla", "Shore", "Tansy", "Ekretta"],
+    "price": 800
+  },
+  "Flask Of Concentration": {
+    "ingredients": ["Iafloss", "Friyow"],
+    "price": 40
+  },
+  "Flask Of Greed": {
+    "ingredients": ["Theddium", "Heaf", "Ostrush"],
+    "price": 150
+  },
+  "Flask Of Growth": {
+    "ingredients": ["Shore", "Ooknove", "Fyoom"],
+    "price": 200
+  },
+  "Flask Of Rainbows": {
+    "ingredients": ["Roo", "Vlolla", "Efanium", "Uzemmium"],
+    "price": 850
+  },
+  "Flask Of The Dimensions": {
+    "ingredients": ["Vigip", "Itrozlel", "Osloblover", "Shredfoil", "Edrip"],
+    "price": 1500
+  },
+  "Flask Of The Fire": {
+    "ingredients": ["Shret", "Gallberry", "Drament"],
+    "price": 400
+  },
+  "Flask Of The Harvester": {
+    "ingredients": ["Shredfoil", "Hogweed"],
+    "price": 70
+  },
+  "Flask Of The Mountain": {
+    "ingredients": ["Woundwort", "Roo"],
+    "price": 70
+  },
+  "Flask Of The Tides": {
+    "ingredients": ["Pachrite", "Shilnum"],
+    "price": 60
+  },
+  "Flask Of Warmth": {
+    "ingredients": ["Uplard", "Friyow"],
+    "price": 40
+  },
+  "Gift Of The Phoenix": {
+    "ingredients": ["Fleplore", "Aatrender", "Wivitte", "Uplard", "Slorn", "Namire"],
+    "price": 2200
+  },
+  "Greater Health Potion": {
+    "ingredients": ["Blershary", "Sleet", "Crille"],
+    "price": 300
+  },
+  "Greater Mana Potion": {
+    "ingredients": ["Snowdrop", "Ikros", "Iknover"],
+    "price": 300
+  },
+  "Greater Stamina Potion": {
+    "ingredients": ["Heaf", "Chorkorn", "Plomegon"],
+    "price": 300
+  },
+  "Health Potion": {
+    "ingredients": ["Prow", "Axow"],
+    "price": 50
+  },
+  "Love Potion": {
+    "ingredients": ["Lover's Leaf", "Vletta", "Waire", "Akroncower", "Otrolla"],
+    "price": 1500
+  },
+  "Mana Potion": {
+    "ingredients": ["Garget", "Shilnum"],
+    "price": 50
+  },
+  "Oomanoa": {
+    "ingredients": ["Milkweed", "Wailing Nettle", "Todgotus", "Ooknove", "Ishina", "Mogdoot"],
+    "price": 2500
+  },
+  "Phial Of The Archer": {
+    "ingredients": ["Sleet", "Garget"],
+    "price": 60
+  },
+  "Phial Of Trust": {
+    "ingredients": ["Iriwood", "Fleplore"],
+    "price": 70
+  },
+  "Philter Of Camoflage": {
+    "ingredients": ["Zedil", "Shore", "Kless"],
+    "price": 200
+  },
+  "Philter Of Hatred": {
+    "ingredients": ["Osloblover", "Ooslade", "Thriper", "Shrivline"],
+    "price": 600
+  },
+  "Philter Of Influence": {
+    "ingredients": ["Ostrush", "Oblax", "Friyow"],
+    "price": 200
+  },
+  "Philter Of Reversed Time": {
+    "ingredients": ["Zeflia", "Iriwood", "Vebore", "Epruthoo", "Kless", "Fyoom"],
+    "price": 2300
+  },
+  "Philter Of The Paragon": {
+    "ingredients": ["Snowdrop", "Smequin", "Wailing Nettle", "Chroil", "Evlosmoot", "Ikros"],
+    "price": 1800
+  },
+  "Philter Of Thunder": {
+    "ingredients": ["Wivitte", "Gallberry", "Glaisy"],
+    "price": 300
+  },
+  "Philter Of Victory": {
+    "ingredients": ["Stammerwort", "Namire"],
+    "price": 60
+  },
+  "Potion Of Arcane Enhancement": {
+    "ingredients": ["Scanor", "Hogweed", "Clakdush"],
+    "price": 400
+  },
+  "Potion Of Clairvoyance": {
+    "ingredients": ["Chroil", "Azoom"],
+    "price": 80
+  },
+  "Potion Of Damage Enhancement": {
+    "ingredients": ["Uplard", "Shredfoil"],
+    "price": 40
+  },
+  "Potion Of Determination": {
+    "ingredients": ["Glusmard", "Prow", "Shret"],
+    "price": 100
+  },
+  "Potion Of Evasion": {
+    "ingredients": ["Shore", "Knoot"],
+    "price": 60
+  },
+  "Potion Of Everlasting Breath": {
+    "ingredients": ["Shilnum", "Drament", "Dripedil", "Ozeed"],
+    "price": 700
+  },
+  "Potion Of Farsight": {
+    "ingredients": ["Drunow", "Ekretta", "Aayizet"],
+    "price": 300
+  },
+  "Potion Of Fortification": {
+    "ingredients": ["Thriper", "Efanium", "Scanor", "Knoot"],
+    "price": 500
+  },
+  "Potion Of Imbalance": {
+    "ingredients": ["Todgotus", "Prow", "Akroncower"],
+    "price": 400
+  },
+  "Potion Of Imperfection": {
+    "ingredients": ["Fetty", "Drament", "Uslard"],
+    "price": 300
+  },
+  "Potion Of Jealousy": {
+    "ingredients": ["Lover's Leaf", "Chroil", "Dripedil"],
+    "price": 200
+  },
+  "Potion Of Lava Walking": {
+    "ingredients": ["Drunow", "Edrip"],
+    "price": 50
+  },
+  "Potion Of Levitation": {
+    "ingredients": ["Aatrender", "Smine", "Tansy", "Krelgac", "Woundwort"],
+    "price": 1100
+  },
+  "Potion Of Masking": {
+    "ingredients": ["Vlolla", "Smequin"],
+    "price": 70
+  },
+  "Potion Of Professions": {
+    "ingredients": ["Ovliros", "Crislolla"],
+    "price": 40
+  },
+  "Potion Of Purification": {
+    "ingredients": ["Iafloss", "Oblax", "Namire"],
+    "price": 200
+  },
+  "Potion Of Regeneration": {
+    "ingredients": ["Otrolla", "Ekretta"],
+    "price": 70
+  },
+  "Potion Of Resistance": {
+    "ingredients": ["Waire", "Aconite"],
+    "price": 60
+  },
+  "Potion Of Restriction": {
+    "ingredients": ["Aconite", "Milfoil", "Eiklorn"],
+    "price": 100
+  },
+  "Potion Of Stealth": {
+    "ingredients": ["Roo", "Prow", "Tansy"],
+    "price": 130
+  },
+  "Potion Of Summoning": {
+    "ingredients": ["Wailing Nettle", "Plomegon", "Nocries", "Kless"],
+    "price": 600
+  },
+  "Potion Of The Beginning": {
+    "ingredients": ["Itrozlel", "Iteek", "Theddium", "Waire", "Vletta"],
+    "price": 1400
+  },
+  "Potion Of Water Walking": {
+    "ingredients": ["Iknover", "Garget"],
+    "price": 70
+  },
+  "Stamina Potion": {
+    "ingredients": ["Waire", "Axow"],
+    "price": 60
+  },
+  "The Needle": {
+    "ingredients": ["Shade Pepper", "Shrivline", "Vletta", "Crille", "Efanium", "Ostrush"],
+    "price": 2500
+  },
+  "Tonic Of Joy": {
+    "ingredients": ["Blershary", "Itrozlel"],
+    "price": 50
+  },
+  "Tonic Of Poison Resistance": {
+    "ingredients": ["Scanor", "Blakmel", "Sleet"],
+    "price": 200
+  },
+  "Tonic Of Wind": {
+    "ingredients": ["Blakmel", "Shore"],
+    "price": 40
+  },
+  "Urn Of Excitement": {
+    "ingredients": ["Veet", "Plubead"],
+    "price": 60
+  },
+  "Vial Of Clarity": {
+    "ingredients": ["Heaf", "Ishina", "Friyow"],
+    "price": 200
+  },
+  "Vial Of Depressions": {
+    "ingredients": ["Bianna", "Aconite", "Smequin", "Tremmort"],
+    "price": 900
+  },
+  "Vial Of Disabling": {
+    "ingredients": ["Slorn", "Krelgac", "Glaisy"],
+    "price": 200
+  },
+  "Vial Of Experimentation": {
+    "ingredients": ["Ekretta", "Azoom"],
+    "price": 70
+  },
+  "Vial Of Feather Weight": {
+    "ingredients": ["Iteek", "Evlosmoot", "Namire"],
+    "price": 300
+  },
+  "Vial Of Haste": {
+    "ingredients": ["Clampire", "Thriper"],
+    "price": 70
+  },
+  "Vial Of Knowledge": {
+    "ingredients": ["Snowdrop", "Dripedil", "Smequin"],
+    "price": 200
+  },
+  "Vial Of Luck": {
+    "ingredients": ["Iafloss", "Aconite", "Aayizet", "Ozeed"],
+    "price": 600
+  },
+  "Vial Of Neglect": {
+    "ingredients": ["Vigip", "Otrolla", "Fleplore"],
+    "price": 200
+  },
+  "Vial Of Shielding": {
+    "ingredients": ["Mogdoot", "Woundwort", "Drament"],
+    "price": 300
+  },
+  "Vial Of Sleep": {
+    "ingredients": ["Zedil", "Chorkorn"],
+    "price": 60
+  },
+  "Vial Of Speed": {
+    "ingredients": ["Waire", "Ostrush"],
+    "price": 70
+  },
+  "Vial Of Spores": {
+    "ingredients": ["Ooknove", "Stammerwort", "Hogweed", "Uplard"],
+    "price": 1000
+  },
+  "Vial Of The Seer": {
+    "ingredients": ["Iafloss", "Iriwood", "Ooknove", "Osloblover", "Odosie"],
+    "price": 1400
+  },
+  "Witch's Tangle": {
+    "ingredients": ["Zeflia", "Uzemmium", "Plomegon", "Pachrite", "Itrozlel"],
+    "price": 1500
+  }
+}

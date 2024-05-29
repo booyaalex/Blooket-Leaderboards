@@ -1,38 +1,36 @@
 /*Navagation Bar*/
 #navBar {
-  margin-left: -10px;
-  margin-top: -15px;
-  width: 110%;
-  height: 60px;
+  margin-top: -2px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
   background-color: transparent;
   position: fixed;
-  z-index: 5;
+  z-index: 2;
+  top: 0;
 }
 
 .navLink {
   /*Position*/
-  float: right;
   margin-right: 12px;
-  padding-top: 12px;
+  padding-top: 8px;
   padding-bottom: 5px;
   /*Looks*/
   background-color: #4a363a;
   font-size: 30px;
-  text-decoration: none;
   color: #f8d474;
-  font-family: Nunito;
-  font-weight: 600;
   border: 3px solid #988672;
-  width: 40px;
   text-align: center;
-  cursor: pointer;
   /*Transition*/
   transition-duration: 0.2s;
+  cursor: pointer;
+  width: 40px;
 }
-
 .navLink:hover {
-  padding-top: 20px;
-  padding-bottom: 15px;
+  margin-bottom: -17px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 }
 
 /*Main Section*/
@@ -150,4 +148,13 @@ body {
   font-family: Pixellari;
   font-weight: bold;
   color: #f8d474;
+}
+
+@media only screen and (max-width: 877px) {
+  #navBar {
+    justify-content: center;
+  }
+  #popLogo {
+    width: 90%;
+  }
 }
