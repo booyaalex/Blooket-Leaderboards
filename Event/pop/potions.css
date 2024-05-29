@@ -45,7 +45,6 @@ body {
   font-family: Pixellari;
   opacity: 1;
   background-blend-mode: darken;
-  background-size: 100%;
 }
 #main {
   z-index: 2;
