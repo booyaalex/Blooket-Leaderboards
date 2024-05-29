@@ -10,6 +10,7 @@ var img = "";
 let popUp = 0;
 
 function openUp() {
+    console.log(event.target);
   //Get Box Element
   getBox();
   //Get All Box Elements
