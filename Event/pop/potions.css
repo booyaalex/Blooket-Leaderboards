@@ -37,13 +37,15 @@
 
 body {
   overflow-x: hidden;
-  background: repeat-y;
-  background-image: url("https://i.ibb.co/6JG7Syz/Screenshot-2024-03-04-7-58-19-PM.png");
-  background-color: rgba(255, 255, 255, 0.6);
+  background: url("https://gooseterv.github.io/pop/images/background-left.png")
+      left repeat-y,
+    url("https://gooseterv.github.io/pop/images/background-right.png") right
+      repeat-y,
+    #523b40;
+  font-family: Pixellari;
   opacity: 1;
   background-blend-mode: darken;
   background-size: 100%;
-  overflow-y: visible;
 }
 #main {
   z-index: 2;
@@ -70,10 +72,6 @@ body {
   display: inline-flex;
   justify-content: flex-end;
   align-items: center;
-}
-.row {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 #popUp {
@@ -113,18 +111,14 @@ body {
 }
 .ingrText {
   font-size: 15px;
-  font-family: Pixellari;
   font-weight: bold;
   color: #f8d474;
 }
 
-@media only screen and (max-width: 877px) {
-  #navBar {
-    justify-content: center;
-  }
-  #popLogo {
-    width: 90%;
-  }
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
 }
 
 .boxes {
@@ -138,7 +132,6 @@ body {
 }
 .boxes p {
   color: #f8d474;
-  font-family: Pixellari;
   font-size: 23px;
   font-weight: bold;
   margin: 0;
@@ -153,5 +146,14 @@ body {
 @media only screen and (max-width: 1000px) {
   .boxes {
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 877px) {
+  #navBar {
+    justify-content: center;
+  }
+  #popLogo {
+    width: 90%;
   }
 }
