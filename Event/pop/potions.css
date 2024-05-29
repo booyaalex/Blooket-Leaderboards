@@ -39,7 +39,7 @@ body {
   overflow-x: hidden;
   background: repeat-y;
   background-image: url("https://i.ibb.co/6JG7Syz/Screenshot-2024-03-04-7-58-19-PM.png");
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   opacity: 1;
   background-blend-mode: darken;
   background-size: 100%;
@@ -47,48 +47,16 @@ body {
 }
 #main {
   z-index: 2;
-  transform: rotate(0deg);
   overflow-y: scroll;
   overflow-x: hidden;
   opacity: 1;
-  
-}
-#mainHeader {
-  font-family: Titan One;
-  font-size: 60px;
-  color: white;
-  font-weight: 400;
-  text-align: center;
-  text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
 }
 
-.box {
-  background-color: #4a363a;
-  border: 3.5px solid #988672;
-  margin-left: auto;
-  width: 30%;
-  margin-right: auto;
-  cursor: pointer;
-}
-.boxText {
-  color: #f8d474;
-  font-family: Pixellari;
-  font-size: 23px;
-  font-weight: bold;
-  margin: 10px;
-}
 .boxImg {
   width: 50px;
   height: 50px;
   border: 3.5px solid #988672;
   margin: 5px;
-}
-.boxTextGold {
-  color: #f8d474;
-  font-family: Pixellari;
-  font-size: 23px;
-  font-weight: bold;
-  margin: 10px;
 }
 
 .spacingBoxLeft {
@@ -156,5 +124,34 @@ body {
   }
   #popLogo {
     width: 90%;
+  }
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4a363a;
+  border: 3.5px solid #988672;
+  width: 30%;
+  cursor: pointer;
+}
+.boxes p {
+  color: #f8d474;
+  font-family: Pixellari;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0;
+}
+.goldIcon {
+  position: relative;
+  top: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .boxes {
+    flex-direction: column;
   }
 }
