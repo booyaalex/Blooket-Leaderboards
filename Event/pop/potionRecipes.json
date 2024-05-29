@@ -1,4 +1,5 @@
 {
+  "potions": [{
   "Bottle Of Expectation": {
     "ingredients": ["Fetty", "Theddium", "Krelgac"],
     "price": 450
@@ -383,4 +384,5 @@
     "ingredients": ["Zeflia", "Uzemmium", "Plomegon", "Pachrite", "Itrozlel"],
     "price": 1500
   }
+  }]
 }

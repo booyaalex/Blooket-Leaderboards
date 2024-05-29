@@ -581,7 +581,9 @@ function showPopUp() {
 }
 
 async function makePotions() {
+    let potions = ["Bottle Of Expectation"];
+
     const response = await fetch("potionRecipes.json");
     const JSON = await response.json();
-    console.log(JSON[0]);
+    console.log(JSON[ `${test[0]}` ]);
 }
