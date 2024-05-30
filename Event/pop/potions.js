@@ -45,9 +45,6 @@ function showPopUp() {
   if (popUp == 0) {
     //Stop Scrolling
     document.body.style.overflowY = "hidden";
-    //Clear Previous PopUp
-    document.getElementById("popUp").innerHTML =
-      "<div class='spacingBoxLeft'><span></span><img id='potionImg' class='boxImg' src='' alt='Selected Potion'><span class='boxText' id='potionName'>  </span></div><div class='spacingBoxRight'><span class='boxTextGold' id='goldCount'>  </span><img src='https://i.ibb.co/MfTLP2t/gold.png' alt='goldIcon' width='25px' height='25px'></div><div id='ingList'></div><div id='ingName'></div>";
     //Visibility
     document.getElementById("popUp").style.visibility = "visible";
     //Ingridients
@@ -149,6 +146,13 @@ function makePopUp(box) {
 
   if(!popUp) {
     document.body.style.overflowY = "hidden";
+    const POPUP = document.getElementById("popUp");
+    const potionName = POPUP.id;
+    const IMG = document.getElementById("selectedImg");
+    
+    POPUP.style.visibility = "visible";
+    IMG.src = `../../Images/popPot/${removeSpaces(potionName)}.png`;
+
   }
 }
 
