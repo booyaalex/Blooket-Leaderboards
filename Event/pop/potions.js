@@ -150,7 +150,7 @@ function makePopUp(box) {
     const IMG = document.getElementById("selectedImg");
     const NAME = document.getElementById("selectedName");
     const GOLD = document.getElementById("selectedGold");
-    const potionName = POPUP.id;
+    const potionName = box.id;
     
     POPUP.style.visibility = "visible";
     IMG.src = `../../Images/popPot/${removeSpaces(potionName)}.png`;
