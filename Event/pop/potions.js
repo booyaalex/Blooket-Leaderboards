@@ -142,6 +142,10 @@ async function makePotions() {
 }
 
 function makePopUp(box) {
+  const response = await fetch(
+    "https://blooket.games/Event/pop/potionRecipes.json"
+  );
+  const JSON = await response.json();
   console.log(box);
 
   if(!popUp) {
@@ -151,12 +155,13 @@ function makePopUp(box) {
     const NAME = document.getElementById("selectedName");
     const GOLD = document.getElementById("selectedGold");
     const potionName = box.id;
+    const potion = JSON[`${potionName}`];
     
     POPUP.style.visibility = "visible";
     IMG.src = `../../Images/popPot/${removeSpaces(potionName)}.png`;
     IMG.alt = potionName;
     NAME.innerHTML = potionName;
-    let textnode = document.createTextNode(JSON[`${potionName}`].price);
+    let textnode = document.createTextNode(potion.price);
     const GOLD_ICON = document.createElement("img");
     GOLD_ICON.className = "goldIcon";
     GOLD_ICON.src = "https://i.ibb.co/MfTLP2t/gold.png";
