@@ -148,12 +148,12 @@ async function makePopUp(box) {
       const IMG = document.createElement("img");
       IMG.className = "boxImg";
       IMG.src = `../../Images/popIng/${INGREDIENTS[i]}.png`;
-      IMG.alt = `${INGREDIENTS[i]}`;
+      IMG.alt = `${removeSpaces(INGREDIENTS[i])}`;
       DIV.appendChild(IMG);
 
       const P = document.createElement("p");
       P.className = "boxText";
-      P.innerHTML = `${removeSpaces(INGREDIENTS[i])}`;
+      P.innerHTML = `${INGREDIENTS[i]}`;
       DIV.appendChild(P);
 
       INGREDIENT_LIST.appendChild(DIV);
