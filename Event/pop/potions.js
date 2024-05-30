@@ -1,12 +1,3 @@
-var potion = "";
-var ele = "";
-var nodeList = "";
-var number = "";
-var ingredients = "";
-var gold = "";
-var ingImg = "";
-var ingText = "";
-var img = "";
 let popUp = false;
 
 function openUp() {
@@ -17,28 +8,6 @@ function openUp() {
   compareBox();
   //Activate PopUp
   showPopUp();
-}
-
-function compareBox() {
-  for (let i = 1; i < 98; i++) {
-    if (nodeList[i] == ele) {
-      number = i;
-      console.log(i);
-    }
-  }
-}
-function closeUp() {
-  if (popUp == 1) {
-    popUp = 0;
-    //Stop Scrolling
-    document.body.style.overflowY = "visible";
-    //Visibility
-    document.getElementById("popUp").style.visibility = "hidden";
-    //Shading
-    document.body.style.backgroundColor = "#523b40";
-    document.body.style.opacity = "1";
-    document.getElementById("main").style.opacity = "1";
-  }
 }
 
 function showPopUp() {
@@ -161,6 +130,7 @@ async function makePopUp(box) {
     IMG.src = `../../Images/popPot/${removeSpaces(potionName)}.png`;
     IMG.alt = potionName;
     NAME.innerHTML = potionName;
+    GOLD.innerHTML = "";
     let textnode = document.createTextNode(potion.price);
     const GOLD_ICON = document.createElement("img");
     GOLD_ICON.className = "goldIcon";
@@ -169,10 +139,20 @@ async function makePopUp(box) {
     GOLD.appendChild(textnode);
     GOLD.appendChild(GOLD_ICON);
 
+    popUp = true;
+
     function removeSpaces(name) {
       const str = name.replace(/\s/g, "");
       return str;
     }
+  }
+}
+
+function closeUp() {
+  if (popUp) {
+    popUp = false;
+    document.body.style.overflowY = "visible";
+    document.getElementById("popUp").style.visibility = "hidden";
   }
 }
 
