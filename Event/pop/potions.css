@@ -112,6 +112,14 @@ body {
   margin: 5px;
 }
 
+.ingredient {
+  display: flex;
+  flex-direction: column;
+}
+.ingredient p {
+  font-size: 16px;
+}
+
 @media only screen and (max-width: 1000px) {
   .boxes {
     flex-direction: column;

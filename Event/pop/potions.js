@@ -124,6 +124,7 @@ async function makePopUp(box) {
     const GOLD = document.getElementById("selectedGold");
     const potionName = box.id;
     const potion = JSON[`${potionName}`];
+    const INGREDIENT_LIST = document.getElementById("ingredientList");
     
     POPUP.style.visibility = "visible";
     IMG.src = `../../Images/popPot/${removeSpaces(potionName)}.png`;
@@ -137,6 +138,26 @@ async function makePopUp(box) {
     GOLD_ICON.alt = "Gold Icon";
     GOLD.appendChild(textnode);
     GOLD.appendChild(GOLD_ICON);
+
+    const INGREDIENTS = potion.ingredients;
+    for(let i = 0; i < INGREDIENTS.length; i++) {
+      const DIV = document.createElement("div");
+      DIV.className = "ingredient";
+
+      const IMG = document.createElement("img");
+      IMG.className = "boxImg";
+      IMG.src = `../../Images.popIng/${INGREDIENTS[i]}.png`;
+      IMG.alt = `${INGREDIENTS[i]}`;
+      DIV.appendChild(IMG);
+
+      const P = document.createElement("p");
+      P.className = "boxText";
+      P.innerHTML = `${INGREDIENTS[i]}`;
+      DIV.appendChild(P);
+      
+      INGREDIENT_LIST.appendChild(DIV);
+    }
+    
 
     popUp = true;
 
