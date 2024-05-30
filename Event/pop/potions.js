@@ -156,7 +156,13 @@ function makePopUp(box) {
     IMG.src = `../../Images/popPot/${removeSpaces(potionName)}.png`;
     IMG.alt = potionName;
     NAME.innerHTML = potionName;
-
+    let textnode = document.createTextNode(JSON[`${potionName}`].price);
+    const GOLD_ICON = document.createElement("img");
+    GOLD_ICON.className = "goldIcon";
+    GOLD_ICON.src = "https://i.ibb.co/MfTLP2t/gold.png";
+    GOLD_ICON.alt = "Gold Icon";
+    GOLD.appendChild(textnode);
+    GOLD.appendChild(GOLD_ICON);
 
     function removeSpaces(name) {
       const str = name.replace(/\s/g, "");
