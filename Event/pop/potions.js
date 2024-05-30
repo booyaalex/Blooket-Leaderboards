@@ -147,8 +147,8 @@ async function makePopUp(box) {
 
       const IMG = document.createElement("img");
       IMG.className = "boxImg";
-      IMG.src = `../../Images/popIng/${INGREDIENTS[i]}.png`;
-      IMG.alt = `${removeSpaces(INGREDIENTS[i])}`;
+      IMG.src = `../../Images/popIng/${removeSpaces(INGREDIENTS[i])}.png`;
+      IMG.alt = `${INGREDIENTS[i]}`;
       DIV.appendChild(IMG);
 
       const P = document.createElement("p");
