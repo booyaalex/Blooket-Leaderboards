@@ -141,7 +141,7 @@ async function makePotions() {
   }
 }
 
-function makePopUp(box) {
+async function makePopUp(box) {
   const response = await fetch(
     "https://blooket.games/Event/pop/potionRecipes.json"
   );
