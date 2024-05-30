@@ -111,6 +111,10 @@ body {
     flex-direction: column;
     justify-content: center;
   }
+  #popUp {
+    width: 40%;
+    margin-left: -20%;
+  }
 }
 
 @media only screen and (max-width: 877px) {
