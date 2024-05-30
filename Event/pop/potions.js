@@ -147,12 +147,21 @@ function makePopUp(box) {
   if(!popUp) {
     document.body.style.overflowY = "hidden";
     const POPUP = document.getElementById("popUp");
-    const potionName = POPUP.id;
     const IMG = document.getElementById("selectedImg");
+    const NAME = document.getElementById("selectedName");
+    const GOLD = document.getElementById("selectedGold");
+    const potionName = POPUP.id;
     
     POPUP.style.visibility = "visible";
     IMG.src = `../../Images/popPot/${removeSpaces(potionName)}.png`;
+    IMG.alt = potionName;
+    NAME.innerHTML = potionName;
 
+
+    function removeSpaces(name) {
+      const str = name.replace(/\s/g, "");
+      return str;
+    }
   }
 }
 
