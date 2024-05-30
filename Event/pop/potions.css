@@ -112,8 +112,12 @@ body {
   margin: 5px;
 }
 
+#ingredientList {
+  
+}
+
 .ingredient {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
 }
 .ingredient p {

@@ -139,6 +139,7 @@ async function makePopUp(box) {
     GOLD.appendChild(textnode);
     GOLD.appendChild(GOLD_ICON);
 
+    INGREDIENT_LIST.innerHTML = "";
     const INGREDIENTS = potion.ingredients;
     for(let i = 0; i < INGREDIENTS.length; i++) {
       const DIV = document.createElement("div");
@@ -146,7 +147,7 @@ async function makePopUp(box) {
 
       const IMG = document.createElement("img");
       IMG.className = "boxImg";
-      IMG.src = `../../Images.popIng/${INGREDIENTS[i]}.png`;
+      IMG.src = `../../Images/popIng/${INGREDIENTS[i]}.png`;
       IMG.alt = `${INGREDIENTS[i]}`;
       DIV.appendChild(IMG);
 
@@ -154,7 +155,7 @@ async function makePopUp(box) {
       P.className = "boxText";
       P.innerHTML = `${INGREDIENTS[i]}`;
       DIV.appendChild(P);
-      
+
       INGREDIENT_LIST.appendChild(DIV);
     }
     
