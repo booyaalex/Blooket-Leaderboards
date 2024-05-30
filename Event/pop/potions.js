@@ -625,7 +625,7 @@ function showPopUp() {
     popUp = 1;
 
     //Shading
-    document.body.style.backgroundColor = "rgba(0,0,0, 0.6)";
+    document.body.style.backgroundColor = "#281c1c";
     document.body.style.opacity = "0.9";
     document.getElementById("main").style.opacity = "0.7";
   }
@@ -663,7 +663,7 @@ async function makePotions() {
 
     const BOX = document.createElement("div");
     BOX.className = "boxes";
-    BOX.setAttribute("onclick", "openUp()");
+    BOX.setAttribute("onclick", "popUp()");
 
     const POTION_IMG = document.createElement("img");
     POTION_IMG.src = `../../Images/popPot/${removeSpaces(potionName)}.png`;
@@ -693,6 +693,10 @@ async function makePotions() {
     const str = name.replace(/\s/g, "");
     return str;
   }
+}
+
+function popUp(clickedElement) {
+  console.log(clickedElement);
 }
 
 makePotions();
