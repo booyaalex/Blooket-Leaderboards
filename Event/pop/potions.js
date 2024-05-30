@@ -663,7 +663,7 @@ async function makePotions() {
 
     const BOX = document.createElement("div");
     BOX.className = "boxes";
-    BOX.setAttribute("onclick", "popUp()");
+    BOX.setAttribute("onclick", "makePopUp()");
 
     const POTION_IMG = document.createElement("img");
     POTION_IMG.src = `../../Images/popPot/${removeSpaces(potionName)}.png`;
@@ -695,7 +695,7 @@ async function makePotions() {
   }
 }
 
-function popUp(clickedElement) {
+function makePopUp(clickedElement) {
   console.log(clickedElement);
 }
 
