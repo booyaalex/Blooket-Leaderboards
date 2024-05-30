@@ -132,5 +132,12 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 10px;
+    width: 70%;
+  }
+  #popUp {
+    width: 80%;
+    height: 250px;
+    margin-left: -40%;
+    margin-top: -125px;
   }
 }
