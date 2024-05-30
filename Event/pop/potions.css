@@ -53,26 +53,6 @@ body {
   opacity: 1;
 }
 
-.boxImg {
-  width: 50px;
-  height: 50px;
-  border: 3.5px solid #988672;
-  margin: 5px;
-}
-
-.spacingBoxLeft {
-  width: 70%;
-  display: inline-flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.spacingBoxRight {
-  width: 29%;
-  display: inline-flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 #popUp {
   /*Position*/
   top: 50%;
@@ -129,7 +109,7 @@ body {
   width: 30%;
   cursor: pointer;
 }
-.boxes p {
+.boxText {
   color: #f8d474;
   font-size: 23px;
   font-weight: bold;
@@ -141,6 +121,12 @@ body {
   top: 5px;
   width: 25px;
   height: 25px;
+}
+.boxImg {
+  width: 50px;
+  height: 50px;
+  border: 3.5px solid #988672;
+  margin: 5px;
 }
 
 @media only screen and (max-width: 1000px) {
