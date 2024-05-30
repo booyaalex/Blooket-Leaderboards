@@ -71,7 +71,6 @@ async function makePotions() {
 
   function makeBox(potionName, row) {
     const potion = JSON[`${potionName}`];
-    console.log(`${potionName}: ${potion.price}`);
 
     const BOX = document.createElement("div");
     BOX.id = potionName;
