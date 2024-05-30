@@ -153,7 +153,7 @@ async function makePopUp(box) {
 
       const P = document.createElement("p");
       P.className = "boxText";
-      P.innerHTML = `${INGREDIENTS[i]}`;
+      P.innerHTML = `${removeSpaces(INGREDIENTS[i])}`;
       DIV.appendChild(P);
 
       INGREDIENT_LIST.appendChild(DIV);
