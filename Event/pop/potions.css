@@ -71,29 +71,6 @@ body {
   opacity: 1;
 }
 
-#ingList {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.ingrImg {
-  width: 40px;
-  height: 40px;
-  background-color: #4a363a;
-  border: 3.5px solid #988672;
-  margin: 5px;
-  z-index: 6;
-}
-#ingName {
-  display: flex;
-  justify-content: space-evenly;
-}
-.ingrText {
-  font-size: 15px;
-  font-weight: bold;
-  color: #f8d474;
-}
-
 .row {
   display: flex;
   justify-content: space-evenly;
@@ -142,5 +119,18 @@ body {
   }
   #popLogo {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 877px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  .boxes {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
   }
 }
