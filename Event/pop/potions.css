@@ -134,6 +134,7 @@ body {
   font-size: 23px;
   font-weight: bold;
   margin: 0;
+  text-align: center;
 }
 .goldIcon {
   position: relative;
@@ -145,6 +146,7 @@ body {
 @media only screen and (max-width: 1000px) {
   .boxes {
     flex-direction: column;
+    justify-content: center;
   }
 }
 

@@ -589,7 +589,7 @@ function closeUp() {
     //Visibility
     document.getElementById("popUp").style.visibility = "hidden";
     //Shading
-    document.body.style.backgroundColor = "rgba(255,255,255,0.6)";
+    document.body.style.backgroundColor = "#523b40";
     document.body.style.opacity = "1";
     document.getElementById("main").style.opacity = "1";
   }
