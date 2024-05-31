@@ -48,7 +48,6 @@ body {
 }
 #main {
   z-index: 2;
-  overflow-y: scroll;
   overflow-x: hidden;
   opacity: 1;
 }
