@@ -1,102 +1,59 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Blooket Leaderboards </title>
   <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
   <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
-  <link rel='stylesheet' href='gamePages.css'>
-  <link rel='stylesheet' href='sideNav.css'>
-  <link rel='stylesheet' href='bgStyle.css'>
-  <link rel='stylesheet' href='YO_Container.css'>
-  <link rel='stylesheet' href='statBoxes.css'>
-  <link rel='stylesheet' href='navBar.css'>
+  <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/3fbe72ad61.js" crossorigin="anonymous"></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <!--Side Navagation Code-->
-  <div id='sidenav'>
-    <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
-    <br>
-    <a href='../' class='sideLink'> Home </a>
-    <br>
-    <a href='gamemode' class='sideLink'> Gamemodes </a>
-    <br>
-    
-    <a href='submissions' class='sideLink'> Submissions </a>
-    <br>
-    <a href='settings' class='sideLink'> Settings </a>
-    <br>
-    <a href='https://discord.gg/5nYGQtqyBZ' class='sideLink' style='padding-right: 10%;'> Discord </a>
-  </div>
-
-  <!--Everything Else-->
   <div id='navBar'>
-    <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
-    <a href='settings' class='navLink'> Settings </a>
-    <a href='submissions' class='navLink'> Submissions </a>
-    
-    <a href='gamemode' class='navLink'> Gamemodes </a>
     <a href='../' class='navLink'> Home </a>
+    <a href='gamemode' class='navLink'> Gamemodes </a>
+    <a href='submissions' class='navLink'> Submissions </a>
+    <a href='settings' class='navLink'> Settings </a>
+    <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
   </div>
   <br>
   <br>
   <div id='bgContain'>
     <div id='bg'></div>
   </div>
+  <br>
   <div id='main'>
     <h1 id='mainHeader'> Gamemodes </h1>
-    <br>
     <div class='board center'>
-      <div class='YO_Container'>
-        <div class='YO_Text'> Gamemodes </div>
-      </div>
+      <div class='YO_Text'> Gamemodes </div>
       <br>
       <div>
         <table style='justify-content: space-evenly;' class="tableIdentify">
           <tr>
-            <td><img
-                src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Factory_Logo_Resized.png'
-                alt='Factory Logo' class='imgLink' onclick='factoryPage()'></td>
-            <td><img
-                src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663366470/Media/logos/Monster_Brawl_270x156_1.png'
-                alt='Monster Brawl Logo' class='imgLink' onclick='monsterPage()'></td>
-            <td><img
-                src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Fishing_Frenzy_Logo_Resized.png'
-                alt='Fishing Frenzy Logo' class='imgLink' onclick='fishingPage()'></td>
+            <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Factory_Logo_Resized.png' alt='Factory Logo' class='imgLink' onclick='factoryPage()'></td>
+            <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663366470/Media/logos/Monster_Brawl_270x156_1.png' alt='Monster Brawl Logo' class='imgLink' onclick='monsterPage()'></td>
+            <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Fishing_Frenzy_Logo_Resized.png' alt='Fishing Frenzy Logo' class='imgLink' onclick='fishingPage()'></td>
           </tr>
           <tr>
-            <td><img
-                src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Tower_Defense_Logo_Resized.png'
-                alt='Tower Defense Logo' class='imgLink' onclick='towerOnePage()'></td>
-            <td><img
-                src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1676079918/Media/logos/Tower_Defense_2_Logo_Resize.png'
-                alt='Tower Defense 2 Logo' class='imgLink' onclick='towerTwoPage()'></td>
-            <td><img
-                src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Cafe_Logo_Resized.png'
-                alt='Cafe Logo' class='imgLink' onclick='cafePage()'></td>
+            <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Tower_Defense_Logo_Resized.png' alt='Tower Defense Logo' class='imgLink' onclick='towerOnePage()'></td>
+            <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1676079918/Media/logos/Tower_Defense_2_Logo_Resize.png' alt='Tower Defense 2 Logo' class='imgLink' onclick='towerTwoPage()'></td>
+            <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Cafe_Logo_Resized.png' alt='Cafe Logo' class='imgLink' onclick='cafePage()'></td>
           </tr>
           <tr>
-            <td><img
-                src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Crazy_Kingdom_Logo_Resized.png'
-                alt='Crazy Kingom Logo' class='imgLink' onclick='kingdomPage()'></td>
-            <td><img src="Images/gameTitles/stats_title.png" alt="Stats Image" class='imgLink' width="270px"
-                onclick='statsPage()'> </td>
-            <td><img src="Images/gameTitles/flappy_blook_title.png" alt='Flappy-Blook Logo' width='248px'
-                class='imgLink' onclick='flappyPage()'> </td>
+            <td><img src='https://media.blooket.com/image/upload/f_auto,q_auto:best/v1663212881/Media/logos/Crazy_Kingdom_Logo_Resized.png' alt='Crazy Kingom Logo' class='imgLink' onclick='kingdomPage()'></td>
+            <td><img src="Images/gameTitles/stats_title.png" alt="Stats Image" class='imgLink' onclick='statsPage()'> </td>
+            <td><img src="Images/gameTitles/flappy_blook_title.png" alt='Flappy-Blook Logo' class='imgLink' onclick='flappyPage()'> </td>
           </tr>
           <tr>
-            <td><img src='Images/gameTitles/crypto_hack_coming_soon.png' alt='Crypto Hack Logo'
-                class='imgLink' onclick='cryptoPage()'></td>
-            <td><img src='Images/gameTitles/gold_quest_coming_soon.png' alt='Gold Quest Logo' class='imgLink'
-                onclick='goldPage()'></td>
-            <td><img src='Images/gameTitles/tower_doom_coming_soon.png' alt='TOD Logo' class='imgLink'
-                onclick='TODPage()'></td>
+            <td><img src='Images/gameTitles/crypto_hack_coming_soon.png' alt='Crypto Hack Logo' class='imgLink' onclick='cryptoPage()'></td>
+            <td><img src='Images/gameTitles/gold_quest_coming_soon.png' alt='Gold Quest Logo' class='imgLink' onclick='goldPage()'></td>
+            <td><img src='Images/gameTitles/tower_doom_coming_soon.png' alt='TOD Logo' class='imgLink' onclick='TODPage()'></td>
           </tr>
         </table>
       </div>
@@ -104,9 +61,6 @@
   </div>
   <script src='windowLocation.js'></script>
   <script src='settings.js'></script>
-
-  <script src='screenAdjust.js'></script>
-
 </body>
 
 </html>
