@@ -1,72 +1,66 @@
 /*Navagation Bar*/
 #navBar {
-  margin-left: -10px;
-  margin-top: -15px;
-  width: 110%;
-  height: 60px;
+  margin-top: -2px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
   background-color: transparent;
   position: fixed;
-  z-index: 5;
+  z-index: 2;
+  top: 0;
 }
 
 .navLink {
   /*Position*/
-  float: right;
   margin-right: 12px;
-  padding-top: 12px;
+  padding-top: 8px;
   padding-bottom: 5px;
   /*Looks*/
   background-color: #4a363a;
   font-size: 30px;
-  text-decoration: none;
   color: #f8d474;
-  font-family: Nunito;
-  font-weight: 600;
   border: 3px solid #988672;
-  width: 40px;
   text-align: center;
-  cursor: pointer;
   /*Transition*/
   transition-duration: 0.2s;
+  cursor: pointer;
+  width: 40px;
 }
-
 .navLink:hover {
-  padding-top: 20px;
-  padding-bottom: 15px;
+  margin-bottom: -17px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 }
 
 /*Main Section*/
 
 body {
   overflow-x: hidden;
-  overflow-y: hidden;
-  background: repeat-y;
-  background-image: url("https://i.ibb.co/6JG7Syz/Screenshot-2024-03-04-7-58-19-PM.png");
-  background-color: rgba(255,255,255,0.6);
+  background: url("https://gooseterv.github.io/pop/images/background-left.png")
+      left repeat-y,
+    url("https://gooseterv.github.io/pop/images/background-right.png") right
+      repeat-y,
+    #523b40;
+  font-family: Pixellari;
   opacity: 1;
   background-blend-mode: darken;
-  background-size: 100%;
-  overflow-y: visible;
 }
 #main {
   z-index: 2;
-  transform: rotate(0deg);
-  overflow-y: hidden;
+  overflow-y: scroll;
   overflow-x: hidden;
   opacity: 1;
-  
 }
-#mainHeader {
-  font-family: Titan One;
-  font-size: 60px;
-  color: white;
-  font-weight: 400;
-  text-align: center;
-  text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+
+#popLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .boxText {
   color: #f8d474;
-  font-family: Pixellari;
   font-size: 11px;
   font-weight: bold;
   text-align: center;
@@ -87,7 +81,6 @@ body {
 
 /**/
 #ingredientList {
-  float: right;
   margin: 50px;
   width: 40%;
   height: 30%;
@@ -103,9 +96,6 @@ body {
   align-items: center;
   max-width: 45px;
 }
-html {
-  overflow-y: hidden;
-}
 
 #potionSec {
   width: 100%;
@@ -113,10 +103,8 @@ html {
   border: 3.5px solid #988672;
 }
 #potHolder {
-  float: left;
   margin: 60px;
   width: 40%;
-  height: 100%;
   margin-top: 10%;
 }
 
@@ -154,6 +142,9 @@ html {
   height: 60px;
  
 }
-#potionText {
-  
+
+@media only screen and (max-width: 877px) {
+  #navBar {
+    justify-content: center;
+  }
 }
