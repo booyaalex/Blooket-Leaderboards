@@ -279,6 +279,9 @@ body {
     color: orange;
   }
 }
+.imgLink {
+  width: 250px;
+}
 
 .TXT {
   font-family: Titan One;
