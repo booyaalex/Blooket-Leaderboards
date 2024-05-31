@@ -281,6 +281,10 @@ body {
 }
 .imgLink {
   width: 250px;
+  cursor: pointer;
+}
+.imgLink:hover {
+  transform: scale(1.1);
 }
 
 .TXT {
