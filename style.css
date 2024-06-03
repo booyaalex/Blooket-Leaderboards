@@ -75,6 +75,9 @@ body {
   flex-wrap: wrap;
   align-items: flex-start;
 }
+.row.center {
+  align-items: center;
+}
 
 .board {
   position: relative;
@@ -282,25 +285,40 @@ body {
 .imgLink {
   width: 250px;
   cursor: pointer;
+  transition-duration: 0.2s;
 }
 .imgLink:hover {
   transform: scale(1.1);
 }
 
-.TXT {
+.settingsBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.settingsText {
+  font-size: 20px;
+}
+
+h3.settingsText {
   font-family: Titan One;
   color: white;
-  width: 33%;
   font-size: 32px;
-}
-.TXT p {
-  font-family: Nunito;
-  font-size: 20px;
+  
 }
 
 .IMG {
   border-radius: 50px;
   border: solid 4px white;
+  width: 75px;
+  height: 75px;
+}
+
+.selectorBox {
+  width: 75px;
+  height: 75px;
 }
 
 @media only screen and (max-width: 1105px) {
