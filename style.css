@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
   font-family: Nunito;
+  font-size: 18px;
 }
 #main {
   display: flex;
@@ -8,7 +9,6 @@ body {
   flex-wrap: wrap;
 }
 #mainHeader {
-  font-family: Titan One;
   font-size: 60px;
   color: white;
   font-weight: 400;
@@ -33,7 +33,6 @@ body {
 }
 
 .navLink {
-  font-size: 18px;
   margin-right: 10px;
   transition-duration: 0.2s;
   text-decoration: none;
@@ -92,7 +91,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   color: white;
-  font-size: 18px;
   transition-duration: 0.5s;
 }
 .board.left {
@@ -111,7 +109,6 @@ body {
   background: linear-gradient(#fcd843, #fcd843 50%, #feb31a 50.01%, #feb31a);
   color: white;
   font-size: 1.5em;
-  font-family: Titan One;
   text-shadow: -1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464,
     2px 2px 0 #646464;
   text-align: center;
@@ -119,6 +116,9 @@ body {
   border-radius: 5px;
   z-index: 3;
   transition-duration: 0.5s;
+}
+.title {
+  font-family: Titan One;
 }
 
 .statsBox {
@@ -141,7 +141,6 @@ body {
 }
 
 .statTitle {
-  font-family: Titan One;
   color: white;
   font-size: 1.5em;
   margin: 6px;
@@ -303,7 +302,6 @@ body {
 }
 
 h3.settingsText {
-  font-family: Titan One;
   color: white;
   font-size: 32px;
 }
