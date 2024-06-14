@@ -1,195 +1,133 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
   <title> Blooket Leaderboards </title>
+
   <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
   <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
-  <link rel='stylesheet' href='gamePages.css'>
-  <link rel='stylesheet' href='sideNav.css'>
-  <link rel='stylesheet' href='bgStyle.css'>
-  <link rel='stylesheet' href='YO_Container.css'>
-  <link rel='stylesheet' href='statBoxes.css'>
-  <link rel='stylesheet' href='navBar.css'>
-  <script src="https://kit.fontawesome.com/3fbe72ad61.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <!--Side Navagation Code-->
-  <div id='sidenav'>
-    <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
-    <br>
-    <a href='../' class='sideLink'> Home </a>
-    <br>
-    <a href='gamemode' class='sideLink'> Gamemodes </a>
-    <br>
-    
-    <a href='submissions' class='sideLink'> Submissions </a>
-    <br>
-    <a href='settings' class='sideLink'> Settings </a>
-    <br>
-    <a href='https://discord.gg/5nYGQtqyBZ' class='sideLink' style='padding-right: 10%;'> Discord </a>
-  </div>
-
-  <!--Everything Else-->
   <div id='navBar'>
-    <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
-    <a href='settings' class='navLink'> Settings </a>
-    <a href='submissions' class='navLink'> Submissions </a>
-    
-    <a href='gamemode' class='navLink'> Gamemodes </a>
     <a href='../' class='navLink'> Home </a>
+    <a href='gamemode' class='navLink'> Gamemodes </a>
+    <a href='submissions' class='navLink'> Submissions </a>
+    <a href='settings' class='navLink'> Settings </a>
+    <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
   </div>
+  <br>
   <br>
   <br>
   <div id='bgContain'>
     <div id='bg'></div>
   </div>
   <div id='main'>
-    <h1 id='mainHeader'> Tower Defense 2 Leaderboards </h1>
+    <div id="mainHeader" class="title"> Factory Leaderboards </div>
     <br>
     <div class='board center'>
-      <div class='YO_Container'>
-        <div class='YO_Text'> Leaderboards </div>
+      <div class='YO_Text title'> Easy </div>
+      <div class='statsBox' onclick="easySM()">
+        <div class='statTitle title'> Sunny Meadows </div>
+        <div class='statImg'>
+          <img src='Images/customIcons/SunnyMeadow.png' alt='Sunny Meadow Icon'>
+        </div>
       </div>
-      <br>
-      <br>
-      <table style='justify-content: space-evenly; display: flex;'>
-        <tr>
-          <td>
-            <div class='statsBox' onclick="easySM()">
-              <div class='statTitle' style='font-size: 16px;'> (Easy) Sunny Meadows </div>
-              <div>
-                <img class='statImg' src='Images/customIcons/SunnyMeadow.png' alt='Sunny Meadow Icon'>
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class='statsBox' onclick="easyLD()">
-              <div class='statTitle' style='font-size: 19px;'> (Easy) Lost Desert </div>
-              <div>
-                <img class='statImg' src='Images/customIcons/Lost Desert Icon.png' alt='Lost Desert Icon'>
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class='statsBox' onclick="easyAM()">
-              <div class='statTitle' style='font-size: 16px;'> (Easy) Abandoned Mine </div>
-              <div>
-                <img class='statImg' src='Images/customIcons/Abandoned Mine Token.png' alt='Abandoned Mine Icon'>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class='statsBox' onclick="easyC()">
-              <div class='statTitle' style='font-size: 22px;'> (Easy) Crossroads </div>
-              <div>
-                <img class='statImg' src='https://i.ibb.co/RcXbqHS/download-12.png' alt='Checkmark Image'>
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class='statsBox' onclick="easyFF()">
-              <div class='statTitle' style='font-size: 16px;'> (Easy) Fractured Factory </div>
-              <div>
-                <img class='statImg' src='https://i.ibb.co/dJQgM6Q/download-10.png' alt='BR Image'>
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class='statsBox' onclick="normalSM()">
-              <div class='statTitle' style='font-size: 17px;'> (Normal) Sunny Meadows </div>
-              <div>
-                <img class='statImg' src='https://i.ibb.co/Kj0Qn5M/Sunny-Meadow.png' alt='Sunny Meadow Icon'>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class='statsBox' onclick="normalLD()">
-              <div class='statTitle' style='font-size: 18px;'> (Normal) Lost Desert </div>
-              <div>
-                <img class='statImg' src='Images/customIcons/Lost Desert Icon.png' alt='Lost Desert Icon'>
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class='statsBox' onclick="normalAM()">
-              <div class='statTitle' style='font-size: 17px;'> (Normal) Abandoned Mine </div>
-              <div>
-                <img class='statImg' src='Images/customIcons/Abandoned Mine Token.png' alt='Abandoned Mine Icon'>
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class='statsBox' onclick="normalC()">
-              <div class='statTitle' style='font-size: 20px;'> (Normal) Crossroads </div>
-              <div>
-                <img class='statImg' src='https://i.ibb.co/Yj04vs9/download-7.png' alt='Image of Red X'>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class='statsBox' onclick="normalFF()">
-              <div class='statTitle' style='font-size: 16px;'> (Normal) Fractured Factory </div>
-              <div>
-                <img class='statImg' src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class='statsBox' onclick="hardSM()">
-              <div class='statTitle' style='font-size: 18px;'> (Hard) Sunny Meadows </div>
-              <div>
-                <img class='statImg' src='https://i.ibb.co/Kj0Qn5M/Sunny-Meadow.png' alt='Sunny Meadow Icon'>
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class='statsBox' onclick="hardLD()">
-              <div class='statTitle' style='font-size: 20px;'> (Hard) Lost Desert </div>
-              <div>
-                <img class='statImg' src='Images/customIcons/Lost Desert Icon.png' alt='Lost Desert Icon'>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class='statsBox' onclick="hardAM()">
-              <div class='statTitle' style='font-size: 19px;'> (Hard) Abandoned Mine </div>
-              <div>
-                <img class='statImg' src='Images/customIcons/Abandoned Mine Token.png' alt='Abandoned Mine Icon'>
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class='statsBox' onclick="hardC()">
-              <div class='statTitle' style='font-size: 21px;'> (Hard) Crossroads </div>
-              <div>
-                <img class='statImg' src='https://i.ibb.co/m0bzdfj/download-9.png' alt='Factory Image'>
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class='statsBox' onclick="hardFF()">
-              <div class='statTitle' style='font-size: 17px;'> (Hard) Fractured Factory </div>
-              <div>
-                <img class='statImg' src='https://i.ibb.co/Yj04vs9/download-7.png' alt='Image of Red X'>
-              </div>
-            </div>
-          </td>
-        </tr>
-      </table>
+      <div class='statsBox' onclick="easyLD()">
+        <div class='statTitle title'> Lost Desert </div>
+        <div class='statImg'>
+          <img src='Images/customIcons/Lost Desert Icon.png' alt='Lost Desert Icon'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="easyAM()">
+        <div class='statTitle title'> Abandoned Mine </div>
+        <div class='statImg'>
+          <img src='Images/customIcons/Abandoned Mine Token.png' alt='Abandoned Mine Icon'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="easyC()">
+        <div class='statTitle title'> Crossroads </div>
+        <div class='statImg'>
+          <img src='https://i.ibb.co/RcXbqHS/download-12.png' alt='Checkmark Image'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="easyFF()">
+        <div class='statTitle title'> Fractured Factory </div>
+        <div class='statImg'>
+          <img src='https://i.ibb.co/dJQgM6Q/download-10.png' alt='BR Image'>
+        </div>
+      </div>
+    </div>
+    <div class='board center'>
+      <div class='YO_Text title'> Normal </div>
+      <div class='statsBox' onclick="normalSM()">
+        <div class='statTitle title'> Sunny Meadows </div>
+        <div class='statImg'>
+          <img src='https://i.ibb.co/Kj0Qn5M/Sunny-Meadow.png' alt='Sunny Meadow Icon'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="normalLD()">
+        <div class='statTitle title'> Lost Desert </div>
+        <div class='statImg'>
+          <img src='Images/customIcons/Lost Desert Icon.png' alt='Lost Desert Icon'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="normalAM()">
+        <div class='statTitle title' style='font-size: 17px;'> (Normal) Abandoned Mine </div>
+        <div>
+          <img class='statImg' src='Images/customIcons/Abandoned Mine Token.png' alt='Abandoned Mine Icon'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="normalC()">
+        <div class='statTitle title' style='font-size: 20px;'> (Normal) Crossroads </div>
+        <div>
+          <img class='statImg' src='https://i.ibb.co/Yj04vs9/download-7.png' alt='Image of Red X'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="normalFF()">
+        <div class='statTitle title' style='font-size: 16px;'> (Normal) Fractured Factory </div>
+        <div>
+          <img class='statImg' src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="hardSM()">
+        <div class='statTitle title' style='font-size: 18px;'> (Hard) Sunny Meadows </div>
+        <div>
+          <img class='statImg' src='https://i.ibb.co/Kj0Qn5M/Sunny-Meadow.png' alt='Sunny Meadow Icon'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="hardLD()">
+        <div class='statTitle title' style='font-size: 20px;'> (Hard) Lost Desert </div>
+        <div>
+          <img class='statImg' src='Images/customIcons/Lost Desert Icon.png' alt='Lost Desert Icon'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="hardAM()">
+        <div class='statTitle title' style='font-size: 19px;'> (Hard) Abandoned Mine </div>
+        <div>
+          <img class='statImg' src='Images/customIcons/Abandoned Mine Token.png' alt='Abandoned Mine Icon'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="hardC()">
+        <div class='statTitle title' style='font-size: 21px;'> (Hard) Crossroads </div>
+        <div>
+          <img class='statImg' src='https://i.ibb.co/m0bzdfj/download-9.png' alt='Factory Image'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="hardFF()">
+        <div class='statTitle title' style='font-size: 17px;'> (Hard) Fractured Factory </div>
+        <div>
+          <img class='statImg' src='https://i.ibb.co/Yj04vs9/download-7.png' alt='Image of Red X'>
+        </div>
+      </div>
     </div>
   </div>
   <script src='windowLocation.js'></script>
