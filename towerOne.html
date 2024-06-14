@@ -33,233 +33,74 @@
   <div id='main'>
     <div id="mainHeader" class="title"> Tower Defense Leaderboards </div>
     <br>
-    <div style="height: 275px;">
-      <!--One Blook Table-->
-      <div class='board left'>
-        <div class='YO_Container'>
-          <div class='YO_Text'> One Blook </div>
+    <div class="board center">
+      <div class='YO_Text title'> One Blook </div>
+      <div class='statsBox' onclick="chick()">
+        <div class='statTitle title'> Chick </div>
+        <div class='statImg'>
+          <img src='https://ac.blooket.com/marketassets/blooks/chick.svg' alt='Chick Blook'>
         </div>
-        <br>
-        <br>
-        <table style='justify-content: space-evenly; display: flex;'>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="chick()">
-                <div class='statTitle'> Chick </div>
-                <div class='statImg'>
-                  <img src='https://ac.blooket.com/marketassets/blooks/chick.svg' alt='Chick Blook'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="squirrel()">
-                <div class='statTitle'> Squirrel </div>
-                <div class='statImg'>
-                  <img src='https://ac.blooket.com/marketassets/blooks/squirrel.svg' alt='Squirrel Blook'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="owl()">
-                <div class='statTitle'> Owl </div>
-                <div class='statImg'>
-                  <img src='https://ac.blooket.com/marketassets/blooks/owl.svg' alt='Owl Blook'>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="fish()">
-                <div class='statTitle'> Fish </div>
-                <div class='statImg'>
-                  <img src='https://ac.blooket.com/marketassets/blooks/goldfish.svg' alt='Fish Blook'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="elf()">
-                <div class='statTitle'> Elf </div>
-                <div class='statImg'>
-                  <img src='https://ac.blooket.com/marketassets/blooks/elf.svg' alt='Elf Blook'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="pig()">
-                <div class='statTitle'> Pig </div>
-                <div class='statImg'>
-                  <img src='https://ac.blooket.com/marketassets/blooks/pig.svg' alt='Pig Blook'>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="dragon()">
-                <div class='statTitle'> Dragon </div>
-                <div class='statImg'>
-                  <img src='https://ac.blooket.com/marketassets/blooks/dragon.svg' alt='Dragon Blook'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="wizzard()">
-                <div class='statTitle'> Wizzard </div>
-                <div class='statImg'>
-                  <img src='https://ac.blooket.com/marketassets/blooks/wizard.svg' alt='Wizzard Blook'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="unicorn()">
-                <div class='statTitle'> Unicorn </div>
-                <div class='statImg'>
-                  <img src='https://ac.blooket.com/marketassets/blooks/unicorn.svg' alt='Unicorn Blook'>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
       </div>
-
-      <!--Highest Table-->
-      <div class='tinyRightBoards'>
-        <div class='YO_Container'>
-          <div class='YO_Text'> Highest Round </div>
+      <div class='statsBox' onclick="squirrel()">
+        <div class='statTitle title'> Squirrel </div>
+        <div class='statImg'>
+          <img src='https://ac.blooket.com/marketassets/blooks/squirrel.svg' alt='Squirrel Blook'>
         </div>
-        <br>
-        <br>
-        <table style='justify-content: space-evenly; display: flex;'>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="sunny()">
-                <div class='statTitle' style='font-size: 24px;'> Sunny Meadows </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="lost()">
-                <div class='statTitle'> Lost Desert </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/RcXbqHS/download-12.png' alt='Checkmark Image'>
-                </div>
-              </div>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="mine()">
-                <div class='statTitle' style='font-size: 24px;'> Abandoned Mine </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
+      </div>
+      <div class='statsBox' onclick="owl()">
+        <div class='statTitle title'> Owl </div>
+        <div class='statImg'>
+          <img src='https://ac.blooket.com/marketassets/blooks/owl.svg' alt='Owl Blook'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="pig()">
+        <div class='statTitle title'> Pig </div>
+        <div class='statImg'>
+          <img src='https://ac.blooket.com/marketassets/blooks/pig.svg' alt='Pig Blook'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="fish()">
+        <div class='statTitle title'> Fish </div>
+        <div class='statImg'>
+          <img src='https://ac.blooket.com/marketassets/blooks/goldfish.svg' alt='Fish Blook'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="elf()">
+        <div class='statTitle title'> Elf </div>
+        <div class='statImg'>
+          <img src='https://ac.blooket.com/marketassets/blooks/elf.svg' alt='Elf Blook'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="dragon()">
+        <div class='statTitle title'> Dragon </div>
+        <div class='statImg'>
+          <img src='https://ac.blooket.com/marketassets/blooks/dragon.svg' alt='Dragon Blook'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="wizzard()">
+        <div class='statTitle title'> Wizard </div>
+        <div class='statImg'>
+          <img src='https://ac.blooket.com/marketassets/blooks/wizard.svg' alt='Wizard Blook'>
+        </div>
+      </div>
+      <div class='statsBox' onclick="unicorn()">
+        <div class='statTitle title'> Unicorn </div>
+        <div class='statImg'>
+          <img src='https://ac.blooket.com/marketassets/blooks/unicorn.svg' alt='Unicorn Blook'>
+        </div>
       </div>
     </div>
-    <!------------------------->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div>
-      <!--Speedrun Table-->
-
-      <div class='tinyLeftBoards'>
-        <div class='YO_Container'>
-          <div class='YO_Text'> Speedruns </div>
-        </div>
-        <br>
-        <br>
-        <table style='justify-content: space-evenly; display: flex;'>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="sunnySpeed()">
-                <div class='statTitle' style='font-size: 24px;'> Sunny Meadows </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="lostSpeed()">
-                <div class='statTitle'> Lost Desert </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/RcXbqHS/download-12.png' alt='Checkmark Image'>
-                </div>
-              </div>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="mineSpeed()">
-                <div class='statTitle' style='font-size: 24px;'> Abandoned Mine </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
+    <div class="row">
+      <div class="board left">
+        <div class='YO_Text title'> Speedruns </div>
       </div>
-
-      <!--Extra Table-->
-      <div class='tinyRightBoards' style='float:right;'>
-        <div class='YO_Container'>
-          <div class='YO_Text'> Extras </div>
-        </div>
-        <br>
-        <br>
-        <table style='justify-content: space-evenly; display: flex;'>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="mostDamage()">
-                <div class='statTitle'> Most Damage </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="totalDamage()">
-                <div class='statTitle'> Total Damage </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/3vgFqKp/download-14.png' alt='Damage Image'>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="totalRounds()">
-                <div class='statTitle'> Total Rounds </div>
-                <div class='statImg'>
-                  <img src='https://i.ibb.co/Ycjvjh4/download-11.png' alt='Classic Image'>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
+      <div class="board">
+        <div class='YO_Text title'> Highscores </div>
       </div>
     </div>
   </div>
   <script src='windowLocation.js'></script>
   <script src='settings.js'></script>
-
-  <script src='screenAdjust.js'></script>
 </body>
 
 </html>
