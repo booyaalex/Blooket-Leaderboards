@@ -1,119 +1,78 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <title> Blooket Leaderboards </title>
+
     <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
-    <link rel='stylesheet' href='gamePages.css'>
-    <link rel='stylesheet' href='bgStyle.css'>
-    <link rel='stylesheet' href='sideNav.css'>
-    <link rel='stylesheet' href='YO_Container.css'>
-    <link rel='stylesheet' href='statBoxes.css'>
-    <link rel='stylesheet' href='navBar.css'>
-    <script src="https://kit.fontawesome.com/3fbe72ad61.js" crossorigin="anonymous"></script>
-<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
-    <!--Side Navagation Code-->
-    <div id='sidenav'>
-      <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
-      <br>
-      <a href='../' class='sideLink'> Home </a>
-      <br>
-      <a href='gamemode' class='sideLink'> Gamemodes </a>
-      <br>
-      <a href='submissions' class='sideLink'> Submissions </a>
-      <br>
-      <a href='settings' class='sideLink'> Settings </a>
-      <br>
-    <a href='https://discord.gg/5nYGQtqyBZ' class='sideLink' style='padding-right: 10%;'> Discord </a>
-  </div>
-
-    <!--Everything Else-->d
     <div id='navBar'>
-      <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
-      <a href='settings' class='navLink'> Settings </a>
-      <a href='submissions' class='navLink'> Submissions </a>
-      <a href='gamemode' class='navLink'> Gamemodes </a>
       <a href='../' class='navLink'> Home </a>
+      <a href='gamemode' class='navLink'> Gamemodes </a>
+      <a href='submissions' class='navLink'> Submissions </a>
+      <a href='settings' class='navLink'> Settings </a>
+      <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
     </div>
+    <br>
     <br>
     <br>
     <div id='bgContain'>
       <div id='bg'></div>
     </div>
     <div id='main'>
-      <h1 id='mainHeader'> Factory Leaderboards </h1>
+      <div id="mainHeader" class="title"> Factory Leaderboards </div>
       <br>
       <div class='board center'>
-        <div class='YO_Container'>
-          <div class='YO_Text'> Time Speedruns </div>
+        <div class='YO_Text title'> Speedruns </div>
+        <div class='statsBox' onclick="mostCash1()">
+          <div class='statTitle'> Most Cash [1] </div>
+          <div class='statImg'>
+            <img src='https://ac.blooket.com/dashboard/assets/TimeBeforeReset-CDNOz-Y-.svg' alt='Clock Image'>
+          </div>
         </div>
-        <br>
-        <br>
-        <table style='justify-content: space-evenly; display: flex;'>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="mostCash1()">
-                <div class='statTitle'> Most Cash [1] </div>
-                <div class='statImg'>
-                  <img src='https://ac.blooket.com/dashboard/assets/TimeBeforeReset-CDNOz-Y-.svg' alt='Clock Image'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="mostCash7()">
-                <div class='statTitle'> Most Cash [7] </div>
-                <div class='statImg'>
-                  <img src='https://ac.blooket.com/dashboard/assets/TimeBeforeReset-CDNOz-Y-.svg' alt='Clock Image'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="mostCash60()">
-                <div class='statTitle'> Most Cash [60] </div>
-                <div class='statImg'>
-                  <img src='https://ac.blooket.com/dashboard/assets/TimeBeforeReset-CDNOz-Y-.svg' alt='Clock Image'>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class='statsBox' onclick="cash1M()">
-                  <div class='statTitle'> 1M Cash </div>
-                  <div class='statImg'>
-                      <img src='https://ac.blooket.com/dashboard/assets/TotalCash-0BjvtiRQ.svg' alt='Cash Image'>
-                  </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="cash1B()">
-                <div class='statTitle'> 1B Cash </div>
-                <div class='statImg'>
-                    <img src='https://ac.blooket.com/dashboard/assets/TotalCash-0BjvtiRQ.svg' alt='Cash Image'>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class='statsBox' onclick="cash1T()">
-                  <div class='statTitle'> 1T Cash </div>
-                  <div class='statImg'>
-                      <img src='https://ac.blooket.com/dashboard/assets/TotalCash-0BjvtiRQ.svg' alt='Cash Image'>
-                  </div>
-              </div>
-            </td>
-          </tr>
-        </table>
+        <div class='statsBox' onclick="mostCash7()">
+          <div class='statTitle'> Most Cash [7] </div>
+          <div class='statImg'>
+            <img src='https://ac.blooket.com/dashboard/assets/TimeBeforeReset-CDNOz-Y-.svg' alt='Clock Image'>
+          </div>
+        </div>
+        <div class='statsBox' onclick="mostCash60()">
+          <div class='statTitle'> Most Cash [60] </div>
+          <div class='statImg'>
+            <img src='https://ac.blooket.com/dashboard/assets/TimeBeforeReset-CDNOz-Y-.svg' alt='Clock Image'>
+          </div>
+        </div>
+        <div class='statsBox' onclick="cash1M()">
+            <div class='statTitle'> 1M Cash </div>
+            <div class='statImg'>
+                <img src='https://ac.blooket.com/dashboard/assets/TotalCash-0BjvtiRQ.svg' alt='Cash Image'>
+            </div>
+        </div>
+        <div class='statsBox' onclick="cash1B()">
+          <div class='statTitle'> 1B Cash </div>
+          <div class='statImg'>
+              <img src='https://ac.blooket.com/dashboard/assets/TotalCash-0BjvtiRQ.svg' alt='Cash Image'>
+          </div>
+        </div>
+        <div class='statsBox' onclick="cash1T()">
+            <div class='statTitle'> 1T Cash </div>
+            <div class='statImg'>
+                <img src='https://ac.blooket.com/dashboard/assets/TotalCash-0BjvtiRQ.svg' alt='Cash Image'>
+            </div>
+        </div>
       </div>
     </div>
     <!--Page won't update this is BS-->
     <script src='windowLocation.js'></script>
     <script src='settings.js'></script>
-
-    <script src='screenAdjust.js'></script>
   </body>
 </html>
