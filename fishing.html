@@ -1,77 +1,81 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title> Blooket Leaderboards </title>
 
-    <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
-    <link rel='stylesheet' href='style.css'>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title> Blooket Leaderboards </title>
 
-    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <div id='navBar'>
-      <a href='../' class='navLink'> Home </a>
-      <a href='gamemode' class='navLink'> Gamemodes </a>
-      <a href='submissions' class='navLink'> Submissions </a>
-      <a href='settings' class='navLink'> Settings </a>
-      <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
-    </div>
+  <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
+  <link rel='stylesheet' href='style.css'>
+
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id='navBar'>
+    <a href='../' class='navLink'> Home </a>
+    <a href='gamemode' class='navLink'> Gamemodes </a>
+    <a href='submissions' class='navLink'> Submissions </a>
+    <a href='settings' class='navLink'> Settings </a>
+    <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div id='bgContain'>
+    <div id='bg'></div>
+  </div>
+  <div id='main'>
+    <div id="mainHeader" class="title"> Fishing Leaderboards </div>
     <br>
-    <br>
-    <br>
-    <div id='bgContain'>
-      <div id='bg'></div>
-    </div>
-    <div id='main'>
-      <div id="mainHeader" class="title"> Fishing Leaderboards </div>
-      <br>
-      <div class='board center'>
-        <div class='YO_Text title'> Speedruns </div>
-        <div class='statsBox' onclick="mostWeight7()">
-          <div class='statTitle title'> Most Weight [7] </div>
-          <div class='statImg'>
-            <img src='https://ac.blooket.com/dashboard/assets/FishWeight-DxmrKsPp.svg' alt='Fishing Weight Image'>
-          </div>
+    <div class='board center'>
+      <div class='YO_Text title'> Speedruns </div>
+      <div class='statsBox' onclick="mostWeight7()">
+        <div class='statTitle title'> Most Weight [7] </div>
+        <div class='statImg'>
+          <img src='https://ac.blooket.com/dashboard/assets/FishWeight-DxmrKsPp.svg' alt='Fishing Weight Image'>
         </div>
-        <div class='statsBox' onclick="mostWeight15()">
-          <div class='statTitle title'> Most Weight [15] </div>
-          <div class='statImg'>
-            <img src='https://ac.blooket.com/dashboard/assets/FishWeight-DxmrKsPp.svg' alt='Fishing Weight Image'>
-          </div>
+      </div>
+      <div class='statsBox' onclick="mostWeight15()">
+        <div class='statTitle title'> Most Weight [15] </div>
+        <div class='statImg'>
+          <img src='https://ac.blooket.com/dashboard/assets/FishWeight-DxmrKsPp.svg' alt='Fishing Weight Image'>
         </div>
-        <div class='statsBox' onclick="mostWeight30()">
-          <div class='statTitle title'> Most Weight [30] </div>
-          <div class='statImg'>
-            <img src='https://ac.blooket.com/dashboard/assets/FishWeight-DxmrKsPp.svg' alt='Fishing Weight Image'>
-          </div>
+      </div>
+      <div class='statsBox' onclick="mostWeight30()">
+        <div class='statTitle title'> Most Weight [30] </div>
+        <div class='statImg'>
+          <img src='https://ac.blooket.com/dashboard/assets/FishWeight-DxmrKsPp.svg' alt='Fishing Weight Image'>
         </div>
-        <div class='statsBox' onclick="weight100K()">
-          <div class='statTitle title'> 100K Weight </div>
-          <div class='statImg'>
-              <img src='https://ac.blooket.com/dashboard/assets/FishWeight-DxmrKsPp.svg' alt='Fishing Weight Image'>
-          </div>
+      </div>
+      <div class='statsBox' onclick="weight100K()">
+        <div class='statTitle title'> 100K Weight </div>
+        <div class='statImg'>
+          <img src='https://ac.blooket.com/dashboard/assets/FishWeight-DxmrKsPp.svg' alt='Fishing Weight Image'>
         </div>
-        <div class='statsBox' onclick="weight1M()">
-          <div class='statTitle title'> 1M Weight </div>
-          <div class='statImg'>
-              <img src='https://ac.blooket.com/dashboard/assets/FishWeight-DxmrKsPp.svg' alt='Fishing Weight Image'>
-          </div>
+      </div>
+      <div class='statsBox' onclick="weight1M()">
+        <div class='statTitle title'> 1M Weight </div>
+        <div class='statImg'>
+          <img src='https://ac.blooket.com/dashboard/assets/FishWeight-DxmrKsPp.svg' alt='Fishing Weight Image'>
         </div>
-        <div class='statsBox' onclick="weight10M()">
-          <div class='statTitle title'> 10M Weight </div>
-          <div class='statImg'>
-              <img src='https://ac.blooket.com/dashboard/assets/FishWeight-DxmrKsPp.svg' alt='Fishing Weight Image'>
-          </div>
+      </div>
+      <div class='statsBox' onclick="weight10M()">
+        <div class='statTitle title'> 10M Weight </div>
+        <div class='statImg'>
+          <img src='https://ac.blooket.com/dashboard/assets/FishWeight-DxmrKsPp.svg' alt='Fishing Weight Image'>
         </div>
       </div>
     </div>
-    <script src='windowLocation.js'></script>
-    <script src='settings.js'></script>
-  </body>
+  </div>
+  <script src='windowLocation.js'></script>
+  <script src='settings.js'></script>
+</body>
+
 </html>
