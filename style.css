@@ -151,10 +151,14 @@ body {
 .statImg {
   width: 50px;
   height: 50px;
-  transform: translateY(-50%) rotate(-15deg);
+  transform: rotate(-15deg);
   position: absolute;
-  top: 60%;
+  top: 10%;
   left: -30px;
+}
+.statImg img {
+  width: 50px;
+  height: 50px;
 }
 
 /*LB Classes*/
