@@ -153,7 +153,6 @@ body {
   height: 50px;
   transform: rotate(-15deg);
   position: absolute;
-  top: 10%;
   left: -32px;
 }
 .statImg img {
