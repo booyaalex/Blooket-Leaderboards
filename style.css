@@ -80,7 +80,7 @@ body {
 
 .board {
   position: relative;
-  padding-left: 10px;
+  padding: 0 10px;
   margin-bottom: 75px;
   width: calc(65% - 340px);
   min-width: 300px;
@@ -331,6 +331,10 @@ h3.settingsText {
   height: 75px;
 }
 
+#lb_div {
+  overflow-x: scroll;
+}
+
 #lb_table {
   width: 100%;
 }
@@ -356,7 +360,7 @@ h3.settingsText {
     border: solid 4px #ef7426;
   }
 }
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 960px) {
   .board.left {
     width: 400px;
   }
@@ -383,7 +387,7 @@ h3.settingsText {
     width: 80%;
   }
   .board.center {
-    width: 80vw;
+    width: 80%;
   }
   .YO_Text {
     font-size: 1.5em;
