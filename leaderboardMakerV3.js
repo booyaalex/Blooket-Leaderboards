@@ -75,6 +75,7 @@ function makeHeader(a) {
       textnode = document.createTextNode("Person");
       TD.classList.add("sticky");
       TD.classList.add("left");
+      TD.style = "left: 75";
     } else if (i == 2) {
       textnode = document.createTextNode(a);
     } else if (i == 3) {
