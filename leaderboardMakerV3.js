@@ -12,7 +12,7 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
 let LEADERBOARD,
-  TYPE
+  TYPE,
   textnode;
 
 const TABLE = document.getElementById("lb_table");
