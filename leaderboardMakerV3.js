@@ -12,7 +12,8 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
 let LEADERBOARD,
-  TYPE;
+  TYPE
+  textnode;
 
 const TABLE = document.getElementById("lb_table");
 const THEAD = document.getElementById("lb_head");
@@ -65,14 +66,15 @@ function makeHeader(a) {
     const TITLE = document.createElement("div");
     TITLE.classList.add("lb_title");
     TITLE.classList.add("title");
+    
     if (i == 0) {
-      const textnode = document.createTextNode("Rank");
+      textnode = document.createTextNode("Rank");
     } else if (i == 1) {
-      const textnode = document.createTextNode("Person");
+      textnode = document.createTextNode("Person");
     } else if (i == 2) {
-      const textnode = document.createTextNode(a);
+      textnode = document.createTextNode(a);
     } else if (i == 3) {
-      const textnode = document.createTextNode("Blooket Username");
+      textnode = document.createTextNode("Blooket Username");
     }
     TITLE.appendChild(textnode);
     BOX.appendChild(TITLE);
