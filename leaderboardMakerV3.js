@@ -80,6 +80,8 @@ function makeHeader(a) {
     BOX.appendChild(TITLE);
     TD.appendChild(BOX);
     TR.appendChild(TD);
+    console.log(TR);
   }
+  console.log(TR);
   THEAD.appendChild("TR");
 }
