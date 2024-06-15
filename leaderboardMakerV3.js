@@ -48,6 +48,9 @@ function getData() {
   db.ref("/").on('value', function (snapshot) {
     //Make thead
     makeHeader(TYPE);
+
+    //Make tbody
+
   });
 }
 
@@ -59,7 +62,7 @@ function makeHeader(a) {
     const BOX = document.createElement("div");
     BOX.classList.add("lb_box");
 
-    const TTILE = document.createElement("div");
+    const TITLE = document.createElement("div");
     TITLE.classList.add("lb_title");
     TITLE.classList.add("title");
     if (i == 0) {
