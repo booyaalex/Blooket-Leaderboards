@@ -331,9 +331,12 @@ h3.settingsText {
   height: 75px;
 }
 
+#lb_div {
+  overflow-x: scroll;
+}
+
 #lb_table {
   width: 100%;
-  overflow-x: scroll;
 }
 
 .lb_box {
@@ -347,6 +350,7 @@ h3.settingsText {
 }
 
 .lb_title {
+  color: white;
   font-size: 20px;
 }
 
@@ -384,8 +388,7 @@ h3.settingsText {
     width: 80%;
   }
   .board.center {
-    width: 80%;
-    min-width: 0px;
+    width: 80vw;
   }
   .YO_Text {
     font-size: 1.5em;

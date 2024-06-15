@@ -69,8 +69,12 @@ function makeHeader(a) {
     
     if (i == 0) {
       textnode = document.createTextNode("Rank");
+      BOX.classList.add("sticky");
+      BOX.classList.add("left");
     } else if (i == 1) {
       textnode = document.createTextNode("Person");
+      BOX.classList.add("sticky");
+      BOX.classList.add("left");
     } else if (i == 2) {
       textnode = document.createTextNode(a);
     } else if (i == 3) {
