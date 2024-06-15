@@ -1,1 +1,223 @@
-eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('53 88={156:"148-151",163:"64.175.69",174:"71://64-176-177.179.69",171:"64",170:"64.145.69",119:"89",121:"1:89:141:143"};86.142(88);53 61=129 128();19 13=[];19 11;41 127(){11=130.131("134");19 25;14(11==12){25="168/132/133"}21 14(11==49||11==50||11==51){25="44"}21 14(11==16||11==17||11==18){25="44"}21 14(11>72&&11<79){25="44"}21 14(11>18&&11<31){25="44"}21 14(11>36&&11<49){25="87"}21 14(11>54&&11<70){25="87"}21 14(11>78&&11<83||11==84){25="44"}21 14(11==34||11==35||11==36){25="44"}21{25="140"}86.138().139("/").126(\'125\',41(90){26.113("114").115="<39><24><22 29=\'59\'><22 29=\'46\'>112</22></22></24><24><22 29=\'59\'><22 29=\'46\'>111</22></22></24><24><22 29=\'59\'><22 29=\'46\'>108</22></22></24><24><22 29=\'59\'><22 29=\'46\'>"+25+"</22></22></24><24><22 29=\'59\'><22 29=\'46\'>106 116</22></22></24></39>";19 7=0;90.123(41(45){19 58,56,52;19 68;91=45.124;15.20("122 - "+91);58=45.66().40;15.20("58 - "+58);56=45.66().118;15.20("56 - "+56);52=45.66().43;15.20("52 - "+52);13[7]=45.66().144[11*2-1];14(11>72&&11<79){14(13[7]!="0"){19 9=13[7];9=9.55(/:/67,"");13[7]=9;15.20("13[7] - "+13[7]);15.20("9 - "+9)}}21 14(11>18&&11<31){14(13[7]!="0"){19 9=13[7];9=9.55(/:/67,"");13[7]=9;15.20("13[7] - "+13[7]);15.20("9 - "+9)}}21 14(11>78&&11<83||11==84){14(13[7]!="0"){19 9=13[7];9=9.55(/:/67,"");13[7]=9;15.20("13[7] - "+13[7]);15.20("9 - "+9)}}21 14(11!=12){19 9=13[7];9=9+(0.85*7);13[7]=9;15.20("13[7] - "+13[7]);15.20("9 - "+9)}21 14(11==12){19 9=13[7].98(0,10);9=9.55(/-/67,"");9=9+(0.85*7);13[7]=9;15.20("13[7] - "+13[7]);15.20("9 - "+9)}14(13[7]==165){13.166(7,1)}21{15.20(13[7]);61.167(13[7],{40:58,104:56,43:52});68=61.97(13[7]);15.20("68.40 - "+68.40)}7++});15.20("13.65 - "+13.65);19 23;14(11==12){23=13.60(41(7,37){57 7-37})}21 14(11>72&&11<79){23=13.60(41(7,37){57 7-37})}21 14(11>18&&11<31){23=13.60(41(7,37){57 7-37})}21{23=13.60(41(7,37){57 37-7})}23=23.93(94=>94);23=23.93(41(92){57 92>=1});15.20("23 - "+23);82(19 28=0;28<23.65;28++){15.20(23);15.20(28);19 30=61.97(23[28]);15.20(30.40);19 39=26.63("39");53 96=30.40;39.154=96.55(/\\162/160,\'\');82(19 7=0;7<5;7++){19 24=26.63("24");19 32=26.63("22");14(7==1){32.73="81"}21{32.73="46"}14(7==0){19 77=26.48("#"+(28+1)+".");32.38(77)}14(7==1){19 33=26.63("146");33.73="81";14(30.43=="180"){33.62="71://28.80.95/169/120-100.137"}21 14(30.43=="136"){33.62="71://28.80.95/117/164.152"}21{33.62="71://147.172.69/158/157/"+30.43+".159"}15.20(33.62);33.161=30.43+" 43";33.155=75;32.38(33)}14(7==2){19 99=26.48(30.40);14(30.40=="106 100"){32.149.150("153")}32.38(99)}14(7==3){19 27;19 47;14(11==12){27=74.76(23[28]).102();19 9=27.42(0,4)+"-"+27.42(4,6)+"-"+27.42(6);47=26.48(9.98(0,9.65-1))}21 14(25=="44"){53 105=(101,107)=>178(101).173(107,\'0\');27=74.76(23[28]).102();19 9=105(27,8);15.20(9);47=26.48(9.42(0,2)+":"+9.42(2,4)+":"+9.42(4,6)+"."+9.42(6))}21{27=74.76(23[28]);27=27.110();47=26.48(27);15.20(27)}15.20(47);32.38(47)}14(7==4){19 103=26.48(30.104);32.38(103)}24.38(32);39.38(24)}15.20(39);53 9=26.135("109");9[0].38(39)}})}',10,181,'|||||||a||temp||LEADERBOARD||SCORES|if|console||||let|log|else|div|SORTED_SCORE|td|headerDisplay|document|SCORE1|i|class|MAP||DIV|IMG||||b|appendChild|tr|name|function|slice|blook|Time|childSnapshot|statTitleLB|SCORE2|createTextNode||||displayBlook|const||replace|userName|return|displayName|statsBoxLB|sort|playerMap|src|createElement|blooketleaderboardserver|length|val|gi|LOG|com||https||className|Math||trunc|textnode|||ibb|statImgLB|for|||0001|firebase|Round|firebaseConfig|145605729271|snapshot|childKey|x|filter|elm|co|MAPNAME|get|substring|NAME|Elite|num|toString|USER|user|zeroPad|Blooket|places|Person|table|toLocaleString|Blook|Ranking|getElementById|TABLE|innerHTML|Username|9TdzQVS|username|messagingSenderId|Y|appId|User|forEach|key|value|on|getData|Map|new|localStorage|getItem|MM|DD|leaderboard|getElementsByTagName|ylm|png|database|ref|Score|web|initializeApp|f02924e11bfb1472256cf2|test|appspot|img|ac|AIzaSyBepZFDy6U3GQaJyTib|classList|add|uItZOqLuW_Cv_o|webp|rainbow|id|width|apiKey|blooks|marketassets|svg|g|alt|s|authDomain|scuba|null|splice|set|YYYY|vP0WW4B|storageBucket|projectId|blooket|padStart|databaseURL|firebaseapp|default|rtdb|String|firebaseio|elite'.split('|'),0,{}))
+const firebaseConfig = {
+  apiKey: "AIzaSyBepZFDy6U3GQaJyTib-uItZOqLuW_Cv_o",
+  authDomain: "blooketleaderboardserver.firebaseapp.com",
+  databaseURL: "https://blooketleaderboardserver-default-rtdb.firebaseio.com",
+  projectId: "blooketleaderboardserver",
+  storageBucket: "blooketleaderboardserver.appspot.com",
+  messagingSenderId: "145605729271",
+  appId: "1:145605729271:web:f02924e11bfb1472256cf2"
+};
+firebase.initializeApp(firebaseConfig);
+
+const playerMap = new Map();
+let SCORES = [];
+
+let LEADERBOARD;
+
+
+function getData() {
+  LEADERBOARD = localStorage.getItem("leaderboard");
+  let headerDisplay;
+  if (LEADERBOARD == 12) {
+      headerDisplay = "YYYY/MM/DD";
+  } else if (LEADERBOARD == 49 || LEADERBOARD == 50 || LEADERBOARD == 51) { //TD
+      headerDisplay = "Time";
+  } else if (LEADERBOARD == 16 || LEADERBOARD == 17 || LEADERBOARD == 18) { //Factory
+      headerDisplay = "Time";
+  } else if (LEADERBOARD > 72 && LEADERBOARD < 79) { //Cafe
+      headerDisplay = "Time";
+  } else if (LEADERBOARD > 18 && LEADERBOARD < 31) { //MB
+      headerDisplay = "Time";
+  } else if (LEADERBOARD > 36 && LEADERBOARD < 49) { //TD
+      headerDisplay = "Round";
+  } else if (LEADERBOARD > 54 && LEADERBOARD < 70) { //TD2
+      headerDisplay = "Round";
+  } else if (LEADERBOARD > 78 && LEADERBOARD < 83 || LEADERBOARD == 84) { //Kingdom
+      headerDisplay = "Time";
+  } else if (LEADERBOARD == 34 || LEADERBOARD == 35 || LEADERBOARD == 36) { //Fishing
+      headerDisplay = "Time";
+  } else {
+      headerDisplay = "Score";
+  }
+  firebase.database().ref("/").on('value', function (snapshot) {
+      document.getElementById("TABLE").innerHTML = "<tr><td><div class='statsBoxLB'><div class='statTitleLB'>Ranking</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blook</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Person</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>" + headerDisplay + "</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blooket Username</div></div></td></tr>";
+      let a = 0;
+      snapshot.forEach(function (childSnapshot) {
+          //Declare const's to make getting data easier.
+          let displayName,
+              userName,
+              displayBlook;
+
+          let LOG;
+
+
+          //Get Dem Data
+          childKey = childSnapshot.key;
+          console.log("User - " + childKey);
+
+          displayName = childSnapshot.val().name;
+          console.log("displayName - " + displayName);
+          userName = childSnapshot.val().username;
+          console.log("userName - " + userName);
+          displayBlook = childSnapshot.val().blook;
+          console.log("displayBlook - " + displayBlook);
+          SCORES[a] = childSnapshot.val().test[LEADERBOARD * 2 - 1];
+          if (LEADERBOARD > 72 && LEADERBOARD < 79) { //Cafe
+              if (SCORES[a] != "0") {
+                  let temp = SCORES[a];
+                  temp = temp.replace(/:/gi, "");
+                  SCORES[a] = temp;
+                  console.log("SCORES[a] - " + SCORES[a]);
+                  console.log("temp - " + temp);
+              }
+          } else if (LEADERBOARD > 18 && LEADERBOARD < 31) { //MB
+              if (SCORES[a] != "0") {
+                  let temp = SCORES[a];
+                  temp = temp.replace(/:/gi, "");
+                  SCORES[a] = temp;
+                  console.log("SCORES[a] - " + SCORES[a]);
+                  console.log("temp - " + temp);
+              }
+          } else if (LEADERBOARD > 78 && LEADERBOARD < 83 || LEADERBOARD == 84) { //Kingdom
+              if (SCORES[a] != "0") {
+                  let temp = SCORES[a];
+                  temp = temp.replace(/:/gi, "");
+                  SCORES[a] = temp;
+                  console.log("SCORES[a] - " + SCORES[a]);
+                  console.log("temp - " + temp);
+              }
+          } else if (LEADERBOARD != 12) {
+              let temp = SCORES[a];
+              temp = temp + (0.0001 * a);
+              SCORES[a] = temp;
+              console.log("SCORES[a] - " + SCORES[a]);
+              console.log("temp - " + temp);
+          } else if (LEADERBOARD == 12) { //Date LB
+              let temp = SCORES[a].substring(0, 10);
+              temp = temp.replace(/-/gi, "");
+              temp = temp + (0.0001 * a);
+              SCORES[a] = temp;
+              console.log("SCORES[a] - " + SCORES[a]);
+              console.log("temp - " + temp);
+          }
+          if (SCORES[a] == null) {
+              SCORES.splice(a, 1);
+          } else {
+              console.log(SCORES[a]);
+              playerMap.set(SCORES[a], { name: displayName, user: userName, blook: displayBlook });
+              LOG = playerMap.get(SCORES[a]);
+              console.log("LOG.name - " + LOG.name);
+          }
+
+          a++;
+      });
+
+      console.log("SCORES.length - " + SCORES.length);
+
+      //Sorts Scores either alphabetically or GTL depending on type of LB
+      let SORTED_SCORE;
+      if (headerDisplay = "YYYY/MM/DD" || headerDisplay == "Time") {
+          SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
+      } else {
+          SORTED_SCORE = SCORES.sort(function (a, b) { return b - a });
+      }
+      SORTED_SCORE = SORTED_SCORE.filter(elm => elm);
+      //Ruturns values that are greater than or equal to one.
+      SORTED_SCORE = SORTED_SCORE.filter(function (x) {
+          return x >= 1;
+      }); 
+
+      console.log("SORTED_SCORE - " + SORTED_SCORE);
+
+      for (let i = 0; i < SORTED_SCORE.length; i++) {
+          console.log(SORTED_SCORE);
+          console.log(i);
+          let MAP = playerMap.get(SORTED_SCORE[i]);
+          console.log(MAP.name);
+
+          //Make Table Stuff
+          let tr = document.createElement("tr");
+          const MAPNAME = MAP.name;
+          tr.id = MAPNAME.replace(/\s/g, '');
+
+          for (let a = 0; a < 5; a++) {
+              let td = document.createElement("td");
+
+              //Make Div
+              let DIV = document.createElement("div");
+              if (a == 1) {
+                  DIV.className = "statImgLB";
+              } else {
+                  DIV.className = "statTitleLB";
+              }
+
+
+              //Make Content
+              if (a == 0) {
+                  let textnode = document.createTextNode("#" + (i + 1) + ".");
+
+                  DIV.appendChild(textnode);
+              }
+              if (a == 1) {
+                  let IMG = document.createElement("img");
+                  IMG.className = "statImgLB";
+                  if (MAP.blook == "elite") {
+                      IMG.src = "https://i.ibb.co/vP0WW4B/Y-Elite.png";
+                  } else if (MAP.blook == "ylm") {
+                      IMG.src = "https://i.ibb.co/9TdzQVS/scuba.webp";
+                  } else {
+                      IMG.src = "https://ac.blooket.com/marketassets/blooks/" + MAP.blook + ".svg";
+                  }
+                  console.log(IMG.src);
+                  IMG.alt = MAP.blook + " blook";
+                  IMG.width = 75;
+
+                  DIV.appendChild(IMG);
+              }
+              if (a == 2) {
+                  let NAME = document.createTextNode(MAP.name);
+                  if (MAP.name == "Blooket Elite") {
+                      DIV.classList.add("rainbow");
+                  }
+                  DIV.appendChild(NAME);
+              }
+              if (a == 3) {
+                  let SCORE1;
+                  let SCORE2;
+                  if (LEADERBOARD == 12) {
+                      SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
+                      let temp = SCORE1.slice(0, 4) + "-" + SCORE1.slice(4, 6) + "-" + SCORE1.slice(6);
+                      SCORE2 = document.createTextNode(temp.substring(0, temp.length - 1));
+                  } else if (headerDisplay == "Time") {
+                      const zeroPad = (num, places) => String(num).padStart(places, '0');
+                      SCORE1 = Math.trunc(SORTED_SCORE[i]).toString();
+                      let temp = zeroPad(SCORE1, 8);
+                      console.log(temp);
+                      SCORE2 = document.createTextNode(temp.slice(0, 2) + ":" + temp.slice(2, 4) + ":" + temp.slice(4, 6) + "." + temp.slice(6));
+                  } else {
+                      SCORE1 = Math.trunc(SORTED_SCORE[i]);
+                      SCORE1 = SCORE1.toLocaleString();
+                      SCORE2 = document.createTextNode(SCORE1);
+                      console.log(SCORE1);
+                  }
+                  console.log(SCORE2);
+
+                  DIV.appendChild(SCORE2);
+              }
+              if (a == 4) {
+                  let USER = document.createTextNode(MAP.user);
+
+                  DIV.appendChild(USER);
+              }
+
+              td.appendChild(DIV);
+              tr.appendChild(td);
+          }
+
+
+          console.log(tr);
+          const temp = document.getElementsByTagName("table");
+          temp[0].appendChild(tr);
+      }
+  });
+}
