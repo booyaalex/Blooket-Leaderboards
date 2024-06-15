@@ -83,5 +83,5 @@ function makeHeader(a) {
     console.log(TR);
   }
   console.log(TR);
-  THEAD.appendChild("TR");
+  THEAD.appendChild(TR);
 }
