@@ -62,7 +62,7 @@ function getData() {
           displayBlook = childSnapshot.val().blook;
           console.log("displayBlook - " + displayBlook);
           SCORES[a] = childSnapshot.val().test[LEADERBOARD * 2 - 1];
-          if (headerDisplay == "Time") { //Cafe
+          if (headerDisplay == "Time") { 
               if (SCORES[a] != "0") {
                   let temp = SCORES[a];
                   temp = temp.replace(/:/gi, "");
@@ -101,11 +101,12 @@ function getData() {
       //Sorts Scores either alphabetically or GTL depending on type of LB
       let SORTED_SCORE;
       console.log(headerDisplay);
-      if (headerDisplay = "YYYY/MM/DD" || headerDisplay == "Time") {
+      if (headerDisplay == "YYYY/MM/DD" || headerDisplay == "Time") {
           SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
       } else {
           SORTED_SCORE = SCORES.sort(function (a, b) { return b - a });
       }
+      //Don't ask me what this does
       SORTED_SCORE = SORTED_SCORE.filter(elm => elm);
       //Ruturns values that are greater than or equal to one.
       SORTED_SCORE = SORTED_SCORE.filter(function (x) {
