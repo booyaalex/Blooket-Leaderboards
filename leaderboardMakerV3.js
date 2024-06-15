@@ -81,5 +81,5 @@ function makeHeader(a) {
     TD.appendChild(BOX);
     TR.appendChild(TD);
   }
-  TR.appendChild("THEAD");
+  THEAD.appendChild("TR");
 }
