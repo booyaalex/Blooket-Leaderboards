@@ -62,23 +62,7 @@ function getData() {
           displayBlook = childSnapshot.val().blook;
           console.log("displayBlook - " + displayBlook);
           SCORES[a] = childSnapshot.val().test[LEADERBOARD * 2 - 1];
-          if (LEADERBOARD > 72 && LEADERBOARD < 79) { //Cafe
-              if (SCORES[a] != "0") {
-                  let temp = SCORES[a];
-                  temp = temp.replace(/:/gi, "");
-                  SCORES[a] = temp;
-                  console.log("SCORES[a] - " + SCORES[a]);
-                  console.log("temp - " + temp);
-              }
-          } else if (LEADERBOARD > 18 && LEADERBOARD < 31) { //MB
-              if (SCORES[a] != "0") {
-                  let temp = SCORES[a];
-                  temp = temp.replace(/:/gi, "");
-                  SCORES[a] = temp;
-                  console.log("SCORES[a] - " + SCORES[a]);
-                  console.log("temp - " + temp);
-              }
-          } else if (LEADERBOARD > 78 && LEADERBOARD < 83 || LEADERBOARD == 84) { //Kingdom
+          if (headerDisplay == "Time") { //Cafe
               if (SCORES[a] != "0") {
                   let temp = SCORES[a];
                   temp = temp.replace(/:/gi, "");
@@ -116,6 +100,7 @@ function getData() {
 
       //Sorts Scores either alphabetically or GTL depending on type of LB
       let SORTED_SCORE;
+      console.log(headerDisplay);
       if (headerDisplay = "YYYY/MM/DD" || headerDisplay == "Time") {
           SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
       } else {
