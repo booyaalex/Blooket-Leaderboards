@@ -21,7 +21,7 @@ let SCORES = [];
 const TABLE = document.getElementById("lb_table");
 const THEAD = document.getElementById("lb_head");
 const TBODY = document.getElementById("lb_body");
-function getData() {
+async function getData() {
   //Get what leaderboard to display
   LEADERBOARD = localStorage.getItem("leaderboard");
 
