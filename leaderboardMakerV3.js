@@ -60,9 +60,6 @@ function makeHeader(a) {
   for (let i = 0; i < 4; i++) {
     const TD = document.createElement("td");
 
-    const BOX = document.createElement("div");
-    BOX.classList.add("lb_box");
-
     const TITLE = document.createElement("div");
     TITLE.classList.add("lb_title");
     TITLE.classList.add("title");
@@ -82,8 +79,7 @@ function makeHeader(a) {
       textnode = document.createTextNode("Blooket Username");
     }
     TITLE.appendChild(textnode);
-    BOX.appendChild(TITLE);
-    TD.appendChild(BOX);
+    TD.appendChild(TITLE);
     TR.appendChild(TD);
     console.log(TR);
   }
