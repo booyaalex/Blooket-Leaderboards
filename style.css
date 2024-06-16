@@ -75,7 +75,7 @@ body {
 .board {
   position: relative;
   padding: 0 10px;
-  margin: 0 5px 75px;
+  margin: 0 10px 75px;
   width: calc(65% - 340px);
   min-width: 300px;
   min-height: 100px;
@@ -332,6 +332,10 @@ h3.settingsText {
   width: 100%;
   background-color: rgb(128, 60, 140);
   border-radius: 10px;
+}
+
+#lb_table td {
+  text-align: center;
 }
 
 #lb_head td {

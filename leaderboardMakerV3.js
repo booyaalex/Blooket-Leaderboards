@@ -47,11 +47,18 @@ function getData() {
 
   //Add scores to da leaderboard
   db.ref("/").on('value', function (snapshot) {
+    //Clear old HTML
+    THEAD.innerHTML = "";
+    TBODY.innerHTML = "";
+
     //Make thead
     makeHeader(TYPE);
 
     //Make tbody
-
+    let count = 0;
+    snapshot.forEach(function (childSnapshot) {
+      console.log(childSnapshot.key);
+    });
   });
 }
 
@@ -65,7 +72,7 @@ function makeHeader(a) {
     TITLE.classList.add("title");
     
     if (i == 0) {
-      textnode = document.createTextNode("Rank");
+      textnode = document.createTextNode("#");
     } else if (i == 1) {
       textnode = document.createTextNode("Person");
     } else if (i == 2) {
