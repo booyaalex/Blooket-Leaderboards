@@ -15,6 +15,9 @@ let LEADERBOARD,
   TYPE,
   textnode;
 
+const playerMap = newMap();
+let SCORES = [];
+
 const TABLE = document.getElementById("lb_table");
 const THEAD = document.getElementById("lb_head");
 const TBODY = document.getElementById("lb_body");
@@ -57,7 +60,37 @@ function getData() {
     //Make tbody
     let count = 0;
     snapshot.forEach(function (childSnapshot) {
-      console.log(childSnapshot.key);
+      //Add each persons score to a list
+      SCORES[count] = childSnapshot.val().test[LEADERBOARD * 2 - 1];
+
+      //Change formatting of each score depending on the type to sort it
+      if (TYPE == "YYYY/MM/DD") {
+        let temp = SCORES[count].substring(0, 10);
+        temp = temp.replace(/-/gi, "");
+        temp = temp + (0.0001 * count);
+        SCORES[count] = temp;
+      } else if (TYPE == "Time") {
+        if (SCORES[count] != "0") {
+          let temp = SCORES[count];
+          temp = temp.replace(/:/gi, "");
+          SCORES[count] = temp;
+        }
+      } else if (TYPE == "Score" || TYPE == "Round") {
+        let temp = SCORES[count];
+        temp = temp + (0.0001 * count);
+        SCORES[count] = temp;
+      }
+
+      //Delete scores that don't exist, and map the ones that do
+      if(SCORES[count] == null) {
+        SCORES.splice(count, 1);
+      } else {
+        console.log(SCORES[count]);
+        playerMap.set(SCORES[count], { name: childSnapshot.val().name, user: childSnapshot.val().username, blook: childSnapshot.val().blook });
+      }
+
+      //Increase Count
+      count++;
     });
   });
 }
@@ -70,7 +103,7 @@ function makeHeader(a) {
     const TITLE = document.createElement("div");
     TITLE.classList.add("lb_title");
     TITLE.classList.add("title");
-    
+
     if (i == 0) {
       textnode = document.createTextNode("#");
     } else if (i == 1) {
@@ -83,8 +116,6 @@ function makeHeader(a) {
     TITLE.appendChild(textnode);
     TD.appendChild(TITLE);
     TR.appendChild(TD);
-    console.log(TR);
   }
-  console.log(TR);
   THEAD.appendChild(TR);
 }
