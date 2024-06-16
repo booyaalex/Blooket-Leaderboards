@@ -156,6 +156,8 @@ function getData() {
 
       count++;
     });
+
+    TBODY.appendChild(TR);
   });
 }
 
