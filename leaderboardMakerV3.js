@@ -103,7 +103,10 @@ function getData() {
       SORTED_SCORE = SCORES.sort(function (a, b) { return b - a });
     }
 
-    //Ruturns values that are greater than or equal to one.
+    //Don't ask me what this does
+    SORTED_SCORE = SORTED_SCORE.filter(elm => elm);
+    
+    //Returns values that are greater than or equal to one.
     SORTED_SCORE = SORTED_SCORE.filter(function (x) {
       return x >= 1;
     });
