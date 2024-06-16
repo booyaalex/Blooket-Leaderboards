@@ -66,17 +66,12 @@ function makeHeader(a) {
     
     if (i == 0) {
       textnode = document.createTextNode("Rank");
-      TD.classList.add("sticky");
-      TD.classList.add("left");
     } else if (i == 1) {
       textnode = document.createTextNode("Person");
-      TD.classList.add("sticky");
-      TD.classList.add("left");
-      TD.style = "left: 75";
     } else if (i == 2) {
       textnode = document.createTextNode(a);
     } else if (i == 3) {
-      textnode = document.createTextNode("Blooket Username");
+      textnode = document.createTextNode("Username");
     }
     TITLE.appendChild(textnode);
     TD.appendChild(TITLE);
