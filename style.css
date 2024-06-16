@@ -333,15 +333,15 @@ h3.settingsText {
 
 #lb_div {
   padding: 0;
-  overflow-x: scroll;
 }
 
 #lb_table {
   width: 100%;
 }
 
-#t_head tr td {
+#t_head td {
   background-color: #9a49aa;
+  border: solid 1px rgb(128, 60, 140);
 }
 
 .lb_title {
