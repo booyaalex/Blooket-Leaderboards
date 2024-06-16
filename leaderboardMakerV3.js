@@ -82,16 +82,33 @@ function getData() {
       }
 
       //Delete scores that don't exist, and map the ones that do
-      if(SCORES[count] == null) {
+      if (SCORES[count] == null) {
         SCORES.splice(count, 1);
       } else {
-        console.log(SCORES[count]);
+        console.log(`${childSnapshot.key} - ${SCORES[count]}`);
         playerMap.set(SCORES[count], { name: childSnapshot.val().name, user: childSnapshot.val().username, blook: childSnapshot.val().blook });
       }
 
       //Increase Count
       count++;
     });
+
+    console.log(SCORES);
+
+    //Sort the scores based on type
+    let SORTED_SCORE;
+    if (TYPE == "YYYY/MM/DD" || TYPE == "Time") {
+      SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
+    } else {
+      SORTED_SCORE = SCORES.sort(function (a, b) { return b - a });
+    }
+
+    //Ruturns values that are greater than or equal to one.
+    SORTED_SCORE = SORTED_SCORE.filter(function (x) {
+      return x >= 1;
+    });
+
+    console.log(SORTED_SCORE);
   });
 }
 
