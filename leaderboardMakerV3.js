@@ -111,7 +111,7 @@ function getData() {
     console.log(SORTED_SCORE);
 
     //Time to make shi- appear
-    let count = 0;
+    count = 0;
     SORTED_SCORE.forEach(function (child) {
       const MAP = playerMap.get(child);
 
