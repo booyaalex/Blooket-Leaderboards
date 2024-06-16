@@ -75,7 +75,7 @@ body {
 .board {
   position: relative;
   padding: 0 10px;
-  margin-bottom: 75px;
+  margin: 0 5px 75px;
   width: calc(65% - 340px);
   min-width: 300px;
   min-height: 100px;
