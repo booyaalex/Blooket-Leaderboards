@@ -13,7 +13,7 @@
   <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
   <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
-  <link rel='stylesheet' href='style.css'>
+  <link rel='stylesheet' href="style.css">
   
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <div id='navBar'>
+  <div id="navBar" class="flex">
     <a href='../' class='navLink'> Home </a>
     <a href='gamemode' class='navLink'> Gamemodes </a>
     <a href='submissions' class='navLink'> Submissions </a>
@@ -35,12 +35,12 @@
   <div id='bgContain'>
     <div id='bg'></div>
   </div>
-  <div id='main'>
+  <div id="main" class="flex">
     <h1 id='mainHeader' class="title"> Settings </h1>
     <br>
-    <div class="board center">
+    <div class="board flex center">
       <div class='YO_Text title'> Themes </div>
-      <div class="row center">
+      <div class="row center flex">
         <div class="selectorBox" onclick="blooket()" style="background: linear-gradient(135deg, #0bc2cf 50%, #9a49aa 50%);"></div>
         <div class="selectorBox" onclick="blacket()" style="background: linear-gradient(135deg, #4f4f4f 50%, #2f2f2f 50%);"></div>
         <div class="selectorBox" onclick="triangulet()" style="background: linear-gradient(135deg, #37a83f 50%, #30640c 50%);"></div>
@@ -48,19 +48,19 @@
         <div class="selectorBox" onclick="seaside()" style="background: linear-gradient(135deg, #ffa4b6 50%, #3e28a2 50%);"></div>
       </div>
     </div>
-    <div class="board center">
+    <div class="board flex center">
       <div class='YO_Text title'> Credits </div>
-      <div class="row center settingsBox">
+      <div class="row center settingsBox flex">
         <img class="IMG" src="https://i.ibb.co/vP0WW4B/Y-Elite.png" alt="Elite Blook">
         <h3 class="settingsText title">Blooket Elite</h3>
         <p class="settingsText"> Made most of the stuff. </p>
       </div>
-      <div class="row center settingsBox">
+      <div class="row center settingsBox flex">
         <img class="IMG" src="Images/avatarImages/Clover.webp" alt="Clover pfp">
         <h3 class="settingsText title"> Clover </h3>
         <p class="settingsText"> Taught me how to use JSON, and experimented with easier submissions. She dealt with my idiocy for so long I'm shocked she's still helping. </p>
       </div>
-      <div class="row center settingsBox">
+      <div class="row center settingsBox flex">
         <img class="IMG" src="Images/avatarImages/pnbw.webp" alt="pnbw pfp">
         <h3 class="settingsText title">Painbow</h3>
         <p> Gave me a ton of assets, making the PoP event page possible. </p>

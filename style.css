@@ -5,9 +5,7 @@ body {
   margin: 0;
 }
 #main {
-  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 #mainHeader {
   font-size: 60px;
@@ -25,8 +23,6 @@ body {
   transition-duration: 0.5s;
   position: fixed;
   top: 0;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   z-index: 5;
@@ -69,9 +65,7 @@ body {
 }
 
 .row {
-  display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: flex-start;
 }
 .row.center {
@@ -87,9 +81,7 @@ body {
   min-height: 100px;
   background-color: #40115f;
   border-radius: 10px;
-  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   color: white;
   transition-duration: 0.5s;
 }
@@ -130,12 +122,15 @@ body {
 .sticky.left {
   left: 0;
 }
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .statsBox {
   background-color: #9a49aa;
   border-radius: 7px;
   align-items: center;
-  display: flex;
   flex-direction: column;
   position: relative;
   margin: 15px;
@@ -195,7 +190,6 @@ body {
   top: 65%;
   margin-right: auto;
   margin-left: auto;
-  display: flex;
 }
 
 #mainBoard table {
@@ -304,9 +298,7 @@ body {
 }
 
 .settingsBox {
-  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
 }
 

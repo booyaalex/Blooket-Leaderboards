@@ -9,7 +9,7 @@
   <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
   <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
-  <link rel='stylesheet' href='style.css'>
+  <link rel='stylesheet' href="style.css">
 
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <div id='navBar'>
+  <div id="navBar" class="flex">
     <a href='../' class='navLink'> Home </a>
     <a href='gamemode' class='navLink'> Gamemodes </a>
     <a href='submissions' class='navLink'> Submissions </a>
@@ -31,64 +31,64 @@
   <div id='bgContain'>
     <div id='bg'></div>
   </div>
-  <div id='main'>
+  <div id="main" class="flex">
     <div id="mainHeader" class="title"> Cafe Leaderboards </div>
     <br>
-    <div class="row">
-      <div class="board left">
+    <div class="row flex">
+      <div class="board flex left">
         <div class='YO_Text title'> Highscores </div>
-        <div class='statsBox' onclick="cafeDay()">
+        <div class='statsBox flex' onclick="cafeDay()">
           <div class='statTitle title'> Highest Cafe Day </div>
           <div class='statImg'>
             <img src='https://i.ibb.co/zG6sChZ/download-5.png' alt='Wins Image'>
           </div>
         </div>
-        <div class='statsBox' onclick="totalCash()">
+        <div class='statsBox flex' onclick="totalCash()">
           <div class='statTitle title'> Total Cafe Cash </div>
           <div class='statImg'>
             <img src='https://i.ibb.co/RcXbqHS/download-12.png' alt='Checkmark Image'>
           </div>
         </div>
-        <div class='statsBox' onclick="totalFood()">
+        <div class='statsBox flex' onclick="totalFood()">
           <div class='statTitle title'> Total Food Served </div>
           <div class='statImg'>
             <img src='https://i.ibb.co/kDmNJrJ/download-6.png' alt='Unlocks Image'>
           </div>
         </div>
       </div>
-      <div class="board">
+      <div class="board flex">
         <div class='YO_Text title'> Speedruns </div>
-        <div class='statsBox' onclick="toast99()">
+        <div class='statsBox flex' onclick="toast99()">
           <div class='statTitle title'> 99 Toast </div>
           <div class='statImg'>
             <img src='https://ac.blooket.com/marketassets/blooks/toast.svg' alt='Toast Blook'>
           </div>
         </div>
-        <div class='statsBox' onclick="maxUpgrade()">
+        <div class='statsBox flex' onclick="maxUpgrade()">
           <div class='statTitle title'> Max Upgrades </div>
           <div class='statImg'>
             <img src='https://ac.blooket.com/marketassets/blooks/milk.svg' alt='Milk Blook'>
           </div>
         </div>
-        <div class='statsBox' onclick="day10()">
+        <div class='statsBox flex' onclick="day10()">
           <div class='statTitle title'> Day 10 </div>
           <div class='statImg'>
             <img src='https://ac.blooket.com/marketassets/blooks/breakfastcombo.svg' alt='Breakfast Combo Blook'>
           </div>
         </div>
-        <div class='statsBox' onclick="day50()">
+        <div class='statsBox flex' onclick="day50()">
           <div class='statTitle title'> Day 50 </div>
           <div class='statImg'>
             <img src='https://ac.blooket.com/marketassets/blooks/waffle.svg' alt='Waffle Blook'>
           </div>
         </div>
-        <div class='statsBox' onclick="allFood()">
+        <div class='statsBox flex' onclick="allFood()">
           <div class='statTitle title'> All Food </div>
           <div class='statImg'>
             <img src='https://ac.blooket.com/marketassets/blooks/frenchtoast.svg' alt='French Toast Blook'>
           </div>
         </div>
-        <div class='statsBox' onclick="maxFood()">
+        <div class='statsBox flex' onclick="maxFood()">
           <div class='statTitle title'> Max Foods </div>
           <div class='statImg'>
             <img src='https://ac.blooket.com/marketassets/blooks/pizza.svg' alt='Pizza Blook'>
