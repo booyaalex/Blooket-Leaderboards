@@ -103,15 +103,18 @@ function getData() {
       SORTED_SCORE = SCORES.sort(function (a, b) { return b - a });
     }
 
-    //Don't ask me what this does
-    SORTED_SCORE = SORTED_SCORE.filter(elm => elm);
-    
     //Returns values that are greater than or equal to one.
-    SORTED_SCORE = SORTED_SCORE.filter(function (x) {
-      return x >= 1;
+    SORTED_SCORE = SORTED_SCORE.filter(function (a) {
+      return a >= 1;
     });
 
     console.log(SORTED_SCORE);
+
+    //Time to make shi- appear
+    SORTED_SCORE.forEach(function (child) {
+      const MAP = playerMap.get(child);
+      console.log(`${child} - ${MAP.name}`);
+    });
   });
 }
 
