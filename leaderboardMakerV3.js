@@ -154,10 +154,9 @@ function getData() {
         TR.appendChild(TD);
       }
 
+      TBODY.appendChild(TR);
       count++;
     });
-
-    TBODY.appendChild(TR);
   });
 }
 
