@@ -330,7 +330,6 @@ h3.settingsText {
 
 #lb_table {
   width: 100%;
-  background-color: rgb(128, 60, 140);
   border-radius: 10px;
 }
 
@@ -346,6 +345,15 @@ h3.settingsText {
   color: white;
   font-size: 20px;
   white-space: nowrap;
+}
+
+.lb_person_div {
+  align-items: center;
+}
+
+.lb_person_div img {
+  width: 45px;
+  height: 45px;
 }
 
 @media only screen and (max-width: 1105px) {

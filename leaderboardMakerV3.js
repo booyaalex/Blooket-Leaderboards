@@ -111,9 +111,50 @@ function getData() {
     console.log(SORTED_SCORE);
 
     //Time to make shi- appear
+    let count = 0;
     SORTED_SCORE.forEach(function (child) {
       const MAP = playerMap.get(child);
-      console.log(`${child} - ${MAP.name}`);
+
+      const TR = document.createElement("tr");
+      TR.id = `${MAP.name}`.replace(/\s/g, '');
+
+      for (let i = 0; i < 4; i++) {
+        const TD = document.createElement("td");
+
+        if (i == 0) {
+          const TITLE = document.createElement("div");
+          TITLE.classList.add("lb_title");
+          textnode = document.createTextNode(`${count + 1}.`);
+          TITLE.appendChild(textnode);
+
+          TD.appendChild(TITLE);
+        } else if (i == 1) {
+          const DIV = document.createElement("div");
+          DIV.classList.add("lb_person_div");
+          DIV.classList.add("flex");
+
+          const IMG = document.createElement("img");
+          if (MAP.blook == "elite") {
+            IMG.src = "https://i.ibb.co/vP0WW4B/Y-Elite.png";
+          } else {
+            IMG.src = `https://ac.blooket.com/marketassets/blooks/${MAP.blook}.svg`;
+          }
+          IMG.alt = `${MAP.blook} blook`;
+          DIV.appendChild(IMG);
+
+          const TITLE = document.createElement("div");
+          TITLE.classList.add("lb_title");
+          textnode = document.createTextNode(MAP.name);
+          TITLE.appendChild(textnode);
+          DIV.appendChild(TITLE);
+
+          TD.appendChild(DIV);
+        }
+
+        TR.appendChild(TD);
+      }
+
+      count++;
     });
   });
 }
@@ -133,7 +174,7 @@ function makeHeader(a) {
       textnode = document.createTextNode("Person");
     } else if (i == 2) {
       textnode = document.createTextNode(a);
-      if(a == "Date") {
+      if (a == "Date") {
         TD.setAttribute("title", "YYYY/MM/DD");
       }
     } else if (i == 3) {
