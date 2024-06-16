@@ -27,7 +27,7 @@ function getData() {
 
   //Set the type of leaderboard to display
   if (LEADERBOARD == 12) {
-    TYPE = "YYYY/MM/DD";
+    TYPE = "Date";
   } else if (LEADERBOARD >= 16 && LEADERBOARD <= 18) { //Factory
     TYPE = "Time";
   } else if (LEADERBOARD >= 19 && LEADERBOARD <= 30) { //Monster
@@ -64,7 +64,7 @@ function getData() {
       SCORES[count] = childSnapshot.val().test[LEADERBOARD * 2 - 1];
 
       //Change formatting of each score depending on the type to sort it
-      if (TYPE == "YYYY/MM/DD") {
+      if (TYPE == "Date") {
         let temp = SCORES[count].substring(0, 10);
         temp = temp.replace(/-/gi, "");
         temp = temp + (0.0001 * count);
@@ -97,7 +97,7 @@ function getData() {
 
     //Sort the scores based on type
     let SORTED_SCORE;
-    if (TYPE == "YYYY/MM/DD" || TYPE == "Time") {
+    if (TYPE == "Date" || TYPE == "Time") {
       SORTED_SCORE = SCORES.sort(function (a, b) { return a - b });
     } else {
       SORTED_SCORE = SCORES.sort(function (a, b) { return b - a });
@@ -127,6 +127,9 @@ function makeHeader(a) {
       textnode = document.createTextNode("Person");
     } else if (i == 2) {
       textnode = document.createTextNode(a);
+      if(a == "Date") {
+        TD.setAttribute("title", "YYYY/MM/DD");
+      }
     } else if (i == 3) {
       textnode = document.createTextNode("Username");
     }
