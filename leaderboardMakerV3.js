@@ -193,6 +193,7 @@ function makeHeader(a) {
 
     if (i == 0) {
       textnode = document.createTextNode("#");
+      TD.style = "border-top-left-radius: 10px;";
     } else if (i == 1) {
       textnode = document.createTextNode("Person");
       TD.classList.add("sticky");
@@ -204,6 +205,7 @@ function makeHeader(a) {
       }
     } else if (i == 3) {
       textnode = document.createTextNode("Username");
+      TD.style = "border-top-right-radius: 10px;";
     }
     TITLE.appendChild(textnode);
     TD.appendChild(TITLE);
