@@ -4,6 +4,9 @@ body {
   font-size: 18px;
   margin: 0;
 }
+::-webkit-scrollbar {
+  width: 1px;
+}
 #main {
   flex-direction: column;
 }
