@@ -349,6 +349,7 @@ h3.settingsText {
 
 .lb_person_div {
   align-items: center;
+  white-space: nowrap;
 }
 
 .lb_person_div img {

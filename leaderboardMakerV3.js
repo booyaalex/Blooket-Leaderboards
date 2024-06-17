@@ -124,6 +124,7 @@ function getData() {
         if (i == 0) {
           const TITLE = document.createElement("div");
           TITLE.classList.add("lb_title");
+          TITLE.classList.add("title");
           textnode = document.createTextNode(`${count + 1}.`);
           TITLE.appendChild(textnode);
 
@@ -149,6 +150,22 @@ function getData() {
           DIV.appendChild(TITLE);
 
           TD.appendChild(DIV);
+        } else if (i == 2) {
+          if (TYPE == "Date") {
+            const TITLE = document.createElement("div");
+            TITLE.classList.add("lb_title");
+
+            let temp = Math.trunc(SORTED_SCORE[count]).toString();
+            temp = temp.slice(0, 4) + "-" + temp.slice(4, 6) + "-" + temp.slice(6);
+            textnode = document.createTextNode(temp.substring(0, temp.length - 1));
+
+            TITLE.appendChild(textnode);
+            TD.appendChild(TITLE);
+          }
+        } else if (i == 3) {
+          const TITLE = document.createElement("div");
+          TITLE.classList.add("lb_title");
+          textnode = document.createTextNode(MAP.user);
         }
 
         TR.appendChild(TD);
