@@ -331,11 +331,6 @@ h3.settingsText {
   width: 100vw;
 }
 
-.table_overflow_hidden {
-  width: 100%;
-  overflow-x: hidden;
-}
-
 .table_overflow_scroll {
   width: 100%;
   overflow-x: scroll;

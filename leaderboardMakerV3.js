@@ -164,6 +164,14 @@ function getData() {
 
             TITLE.appendChild(textnode);
             TD.appendChild(TITLE);
+          } else if (TYPE == "Time") {
+            const zeroPad = (num, places) => String(num).padStart(places, '0');
+            let temp = zeroPad(Math.trunc(SORTED_SCORE[count]).toString(), 8);
+            console.log(`temp - ${temp}`);
+            textnode = document.createTextNode(temp.slice(0, 2) + ":" + temp.slice(2, 4) + ":" + temp.slice(4, 6) + "." + temp.slice(6));
+            
+            TITLE.appendChild(textnode);
+            TD.appendChild(TITLE);
           }
         } else if (i == 3) {
           const TITLE = document.createElement("div");
