@@ -116,8 +116,11 @@ body {
   position: sticky;
   z-index: 2;
 }
-.sticky.top {
+.sticky.top-0 {
   top: 0;
+}
+.sticky.top-75 {
+  top: 75;
 }
 .sticky.left {
   left: 0;
@@ -328,13 +331,14 @@ h3.settingsText {
   width: 100vw;
 }
 
+.table_overflow {
+  width: 100%;
+  overflow-x: scroll;
+}
+
 #lb_table {
   width: 100%;
   border-radius: 10px;
-}
-
-#lb_table td {
-  text-align: center;
 }
 
 #lb_head td {
