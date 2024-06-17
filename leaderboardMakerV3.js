@@ -130,6 +130,9 @@ function getData() {
 
           TD.appendChild(TITLE);
         } else if (i == 1) {
+          TD.classList.add("sticky");
+          TD.classList.add("left");
+
           const DIV = document.createElement("div");
           DIV.classList.add("lb_person_div");
           DIV.classList.add("flex");

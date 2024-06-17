@@ -120,7 +120,7 @@ body {
   top: 0;
 }
 .sticky.top-75 {
-  top: 75;
+  top: 75px;
 }
 .sticky.left {
   left: 0;
@@ -341,6 +341,10 @@ h3.settingsText {
   border-radius: 10px;
 }
 
+#lb_table td {
+  margin: 3px;
+}
+
 #lb_head td {
   background-color: #9a49aa;
   text-align: center;
@@ -348,7 +352,7 @@ h3.settingsText {
 
 .lb_title {
   color: white;
-  font-size: 26px;
+  font-size: 24px;
   white-space: nowrap;
 }
 
