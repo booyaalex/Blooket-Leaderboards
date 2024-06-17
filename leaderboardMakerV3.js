@@ -167,12 +167,22 @@ function getData() {
           } else if (TYPE == "Time") {
             const TITLE = document.createElement("div");
             TITLE.classList.add("lb_title");
-            
+
             const zeroPad = (num, places) => String(num).padStart(places, '0');
             let temp = zeroPad(Math.trunc(SORTED_SCORE[count]).toString(), 8);
             console.log(`temp - ${temp}`);
             textnode = document.createTextNode(temp.slice(0, 2) + ":" + temp.slice(2, 4) + ":" + temp.slice(4, 6) + "." + temp.slice(6));
             
+            TITLE.appendChild(textnode);
+            TD.appendChild(TITLE);
+          } else {
+            const TITLE = document.createElement("div");
+            TITLE.classList.add("lb_title");
+            
+            let temp = Math.trunc(SORTED_SCORE[count]);
+            temp = temp.toLocaleString();
+            textnode = document.createTextNode(temp);
+
             TITLE.appendChild(textnode);
             TD.appendChild(TITLE);
           }
