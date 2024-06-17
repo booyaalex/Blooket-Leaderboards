@@ -343,22 +343,23 @@ h3.settingsText {
 
 #lb_head td {
   background-color: #9a49aa;
+  text-align: center;
 }
 
 .lb_title {
   color: white;
-  font-size: 20px;
+  font-size: 26px;
   white-space: nowrap;
 }
 
 .lb_person_div {
   align-items: center;
-  white-space: nowrap;
+  flex-wrap: nowrap;
 }
 
 .lb_person_div img {
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 65px;
 }
 
 @media only screen and (max-width: 1105px) {
@@ -404,5 +405,12 @@ h3.settingsText {
   }
   #lb_div {
     width: 100vw;
+  }
+  .lb_title {
+    font-size: 20px;
+  }
+  .lb_person_div img {
+    width: 45px;
+    height: 50px;
   }
 }

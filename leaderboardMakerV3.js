@@ -166,6 +166,8 @@ function getData() {
           const TITLE = document.createElement("div");
           TITLE.classList.add("lb_title");
           textnode = document.createTextNode(MAP.user);
+          TITLE.appendChild(textnode);
+          TD.appendChild(TITLE);
         }
 
         TR.appendChild(TD);
