@@ -165,6 +165,9 @@ function getData() {
             TITLE.appendChild(textnode);
             TD.appendChild(TITLE);
           } else if (TYPE == "Time") {
+            const TITLE = document.createElement("div");
+            TITLE.classList.add("lb_title");
+            
             const zeroPad = (num, places) => String(num).padStart(places, '0');
             let temp = zeroPad(Math.trunc(SORTED_SCORE[count]).toString(), 8);
             console.log(`temp - ${temp}`);
