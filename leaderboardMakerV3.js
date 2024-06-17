@@ -195,6 +195,8 @@ function makeHeader(a) {
       textnode = document.createTextNode("#");
     } else if (i == 1) {
       textnode = document.createTextNode("Person");
+      TD.classList.add("sticky");
+      TD.classList.add("left");
     } else if (i == 2) {
       textnode = document.createTextNode(a);
       if (a == "Date") {

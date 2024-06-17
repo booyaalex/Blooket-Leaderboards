@@ -359,6 +359,7 @@ h3.settingsText {
 .lb_person_div {
   align-items: center;
   flex-wrap: nowrap;
+  background-color: #40115f;
 }
 
 .lb_person_div img {
