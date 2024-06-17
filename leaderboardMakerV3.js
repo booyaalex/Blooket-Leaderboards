@@ -148,6 +148,9 @@ function getData() {
 
           const TITLE = document.createElement("div");
           TITLE.classList.add("lb_title");
+          if (MAP.blook == "elite") {
+            TITLE.classList.add("rainbow");
+          }
           textnode = document.createTextNode(MAP.name);
           TITLE.appendChild(textnode);
           DIV.appendChild(TITLE);

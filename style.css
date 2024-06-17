@@ -203,7 +203,7 @@ body {
 }
 
 .rainbow {
-  font-size: 20px;
+  font-size: 26px;
   display: inline-block;
   text-shadow: 2px 2px 4px #000000;
   -webkit-animation: rainbow 5s infinite;
@@ -211,55 +211,55 @@ body {
 
 @-webkit-keyframes rainbow {
   0% {
-    color: orange;
+    color: #ffa500;
   }
 
   5% {
-    color: red
+    color: #ff0000
   }
 
   10% {
-    color: purple;
+    color: #ff0062;
   }
 
   15% {
-    color: magenta;
+    color: #ff00ff;
   }
 
   20% {
-    color: red;
+    color: #ff0000;
   }
 
   25% {
-    color: purple;
+    color: #7700ff;
   }
 
   30% {
-    color: CadetBlue;
+    color: #98fcff;
   }
 
   35% {
-    color: lightgreen;
+    color: #90ee90;
   }
 
   40% {
-    color: yellow;
+    color: #ffff00;
   }
 
   45% {
-    color: lightsalmon;
+    color: #ffa500;
   }
 
   50% {
-    color: coral;
+    color: #d9ff00;
   }
 
   55% {
-    color:yellowgreen;
+    color:#9acd32;
   }
 
   60% {
-    color: green;
+    color: #00ff00;
   }
 
   65% {
@@ -271,27 +271,27 @@ body {
   }
 
   75% {
-    color: purple;
+    color: #7700ff;
   }
 
   80% {
-    color: DeepPink;
+    color: #ff1493;
   }
 
   85% {
-    color: darkslateblue'
+    color: #8471ff'
   }
 
   90% {
-    color: DodgerBlue;
+    color: #1e90ff;
   }
 
   95% {
-    color: yellow;
+    color: #ffff00;
   }
 
   100% {
-    color: orange;
+    color: #ffa500;
   }
 }
 .imgLink {
@@ -420,5 +420,8 @@ h3.settingsText {
   .lb_person_div img {
     width: 45px;
     height: 50px;
+  }
+  .rainbow {
+    font-size: 22px;
   }
 }
