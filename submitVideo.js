@@ -32,7 +32,7 @@ async function uploadImage() {
   let leaderboard = document.getElementById("lbSubmit").value;
   const fileInput = document.getElementById("fileInput");
   const file = fileInput.files[0];
-  console.log(file);
+  console.log(file.name);
   const NUMBER = namesArray.indexOf(displayName);
 
   let today = new Date();
@@ -50,22 +50,26 @@ async function uploadImage() {
       } else {
         console.log("wowie!!");
         if (file) {
-          alert("Stay on this page until you are instructed to do so. Press ok to confirm.");
+          if (fileType(file) == "mp4" || fileType(file) == "webm" || fileType(file) == "MOV") {
+            alert("Stay on this page until you are instructed to do so. Press ok to confirm.");
 
-          storageRef = ref(storage, `${displayName}/${leaderboard}`); //I assume something to get the file and set its name
-          await uploadBytes(storageRef, file); //Uploads File
+            storageRef = ref(storage, `${displayName}/${file.name}`); //I assume something to get the file and set its name
+            await uploadBytes(storageRef, file); //Uploads File
 
-          const runCount = getRunCount();
-          firebase.database().ref("/Runs").child(`run_${runCount + 1}`).update({
-            date: today,
-            runType: leaderboard,
-            score: null,
-            user: displayName,
-            verified: false
-          });
+            const runCount = getRunCount();
+            firebase.database().ref("/Runs").child(`run_${runCount + 1}`).update({
+              date: today,
+              runType: leaderboard,
+              score: null,
+              user: displayName,
+              verified: false
+            });
 
-          console.log("In the database!");
-          alert("You may now leave the webpage!");
+            console.log("In the database!");
+            alert("You may now leave the webpage!");
+          }
+        } else {
+          alert("Please provide a video file!");
         }
       }
     }
@@ -98,4 +102,7 @@ function getRunCount() {
     });
     return count;
   });
+}
+function fileType(filename) {
+  return filename.split('.').pop();
 }
