@@ -32,6 +32,7 @@ async function uploadImage() {
   let leaderboard = document.getElementById("lbSubmit").value;
   const fileInput = document.getElementById("fileInput");
   const file = fileInput.files[0];
+  console.log(file);
   const NUMBER = namesArray.indexOf(displayName);
 
   let today = new Date();
