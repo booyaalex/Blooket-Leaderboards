@@ -103,7 +103,6 @@ function getRunCount() {
     snapshot.forEach(function (run) {
       count++;
     });
-    console.log(count);
   });
   return count;
 }

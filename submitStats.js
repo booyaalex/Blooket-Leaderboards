@@ -98,7 +98,8 @@ function getDemStats() {
         displayName.includes(';') ||
         displayName.includes('$') ||
         displayName.includes('#') ||
-        displayName.includes('?') 
+        displayName.includes('?') ||
+        displayName.includes('@')
       ) {
         alert(
           'You used a not allowed character(!, <, >, -, :, ;)! Change your display name!'
