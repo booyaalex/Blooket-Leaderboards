@@ -98,14 +98,14 @@ function getData() {
 getData();
 
 function getRunCount() {
+  let count = 0;
   firebase.database().ref("/Runs").on('value', function (snapshot) {
-    let count = 0;
     snapshot.forEach(function (run) {
       count++;
     });
     console.log(count);
-    return count;
   });
+  return count;
 }
 function fileType(filename) {
   return filename.split('.').pop();
