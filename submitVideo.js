@@ -50,7 +50,7 @@ async function uploadImage() {
       } else {
         console.log("wowie!!");
         if (file) {
-          if (fileType(file.name) == "mp4" || fileType(file.name) == "webm" || fileType(file.name) == "MOV") {
+          if (fileType(file.name) == "mp4" || fileType(file.name) == "webm" || fileType(file.name) == "MOV" || fileType(file.name) == "mkv") {
             alert("Stay on this page until you are instructed to do so. Press ok to confirm.");
 
             storageRef = ref(storage, `${displayName}/${file.name}`); //I assume something to get the file and set its name
@@ -67,6 +67,8 @@ async function uploadImage() {
 
             console.log("In the database!");
             alert("You may now leave the webpage!");
+          } else {
+            alert("Please provide a video file with a proper extension (.mp4, .webm, .MOV, .mkv)")
           }
         } else {
           alert("Please provide a video file!");
@@ -100,6 +102,7 @@ function getRunCount() {
     snapshot.forEach(function (run) {
       count++;
     });
+    console.log(count);
     return count;
   });
 }
