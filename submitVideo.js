@@ -1,1 +1,72 @@
-const _0x513f62=_0x475a;(function(_0x284d35,_0xd6d4be){const _0x437169=_0x475a,_0x54d768=_0x284d35();while(!![]){try{const _0x1cb9f0=-parseInt(_0x437169(0x1ae))/0x1*(-parseInt(_0x437169(0x1c3))/0x2)+-parseInt(_0x437169(0x1a8))/0x3+parseInt(_0x437169(0x1a7))/0x4+parseInt(_0x437169(0x1ad))/0x5+parseInt(_0x437169(0x1b5))/0x6+parseInt(_0x437169(0x1ac))/0x7+-parseInt(_0x437169(0x1c2))/0x8*(parseInt(_0x437169(0x1c0))/0x9);if(_0x1cb9f0===_0xd6d4be)break;else _0x54d768['push'](_0x54d768['shift']());}catch(_0x30d170){_0x54d768['push'](_0x54d768['shift']());}}}(_0xc10e,0xeff20));function _0x475a(_0x3604c2,_0x15f938){const _0xc10e59=_0xc10e();return _0x475a=function(_0x475a16,_0x328b8c){_0x475a16=_0x475a16-0x1a5;let _0x4fe1ba=_0xc10e59[_0x475a16];return _0x4fe1ba;},_0x475a(_0x3604c2,_0x15f938);}const _0x46c1a1=[],_0x4bb219=[];let _0xae2583=[];import{initializeApp}from'https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js';import{getStorage,ref,uploadBytes}from'https://www.gstatic.com/firebasejs/10.11.1/firebase-storage.js';const _0x4f2354={'apiKey':_0x513f62(0x1bd),'authDomain':_0x513f62(0x1ba),'databaseURL':_0x513f62(0x1b8),'projectId':_0x513f62(0x1b7),'storageBucket':_0x513f62(0x1b2),'messagingSenderId':'145605729271','appId':_0x513f62(0x1b3)},_0x40f150=initializeApp(_0x4f2354),_0x1301c0=getStorage(_0x40f150);let _0x3a1c45;function _0xc10e(){const _0x5d55eb=['https://blooketleaderboardserver-default-rtdb.firebaseio.com/','ref','blooketleaderboardserver.firebaseapp.com','name','log','AIzaSyBepZFDy6U3GQaJyTib-uItZOqLuW_Cv_o','clean','Stay\x20on\x20this\x20page\x20until\x20you\x20are\x20instructed\x20to\x20do\x20so.\x20Press\x20ok\x20to\x20confirm.','519543ZAqjLS','parse','472LSiSjc','828900UpKxrV','Please\x20enter\x20your\x20display\x20name\x20in\x20the\x20\x22Display\x20Name\x22\x20box.','getElementById','click','files','wowie!!','fileInput','In\x20the\x20database!','forEach','value','lbSubmit','1588236BfKiHb','4830432VdpNvw','database','statsInput','It\x20looks\x20like\x20no\x20one\x20in\x20the\x20database\x20has\x20your\x20ID.\x20Try\x20using\x20a\x20different\x20account\x20for\x20your\x20stats\x20or\x20repaste\x20your\x20account\x20stats!','8114057HRRhhp','8593825jCoCDq','3jlaRDV','indexOf','displayNameInput','_id','blooketleaderboardserver.appspot.com','1:145605729271:web:f02924e11bfb1472256cf2','val','8883168pkMFfl','You\x20may\x20now\x20leave\x20the\x20webpage!','blooketleaderboardserver'];_0xc10e=function(){return _0x5d55eb;};return _0xc10e();}async function _0x4d24c2(){const _0x20d962=_0x513f62;_0xae2583=[JSON[_0x20d962(0x1c1)](document[_0x20d962(0x1c5)](_0x20d962(0x1aa))[_0x20d962(0x1a5)])],console[_0x20d962(0x1bc)](_0xae2583[0x0]);let _0x30d7b9=document[_0x20d962(0x1c5)](_0x20d962(0x1b0))[_0x20d962(0x1a5)],_0xd7604e=profanityCleaner[_0x20d962(0x1be)](_0x30d7b9),_0x4fe870=document[_0x20d962(0x1c5)](_0x20d962(0x1a6))[_0x20d962(0x1a5)];const _0x10f21c=document[_0x20d962(0x1c5)](_0x20d962(0x1c9)),_0x18ff5f=_0x10f21c[_0x20d962(0x1c7)][0x0],_0x923656=_0x46c1a1[_0x20d962(0x1af)](_0xd7604e);_0xae2583[0x0][_0x20d962(0x1b1)]==_0x4bb219[_0x923656]?_0x4fe870==null?alert('You\x20need\x20to\x20pick\x20a\x20category\x20for\x20your\x20run!'):_0xd7604e==null?alert(_0x20d962(0x1c4)):(console[_0x20d962(0x1bc)](_0x20d962(0x1c8)),_0x18ff5f&&(alert(_0x20d962(0x1bf)),_0x3a1c45=ref(_0x1301c0,_0xd7604e+'/'+_0x4fe870),await uploadBytes(_0x3a1c45,_0x18ff5f),console[_0x20d962(0x1bc)](_0x20d962(0x1ca)),alert(_0x20d962(0x1b6)))):alert(_0x20d962(0x1ab));}const _0x2efb13=document[_0x513f62(0x1c5)]('videoSubmit');_0x2efb13['addEventListener'](_0x513f62(0x1c6),_0x4d24c2);function _0x3b49f8(){const _0x6d7b9c=_0x513f62;firebase[_0x6d7b9c(0x1a9)]()[_0x6d7b9c(0x1b9)]('/')['on'](_0x6d7b9c(0x1a5),function(_0x7d26f5){const _0x4394c6=_0x6d7b9c;let _0x3c2728=0x0;_0x7d26f5[_0x4394c6(0x1cb)](function(_0xacbe92){const _0x5b3ac5=_0x4394c6;_0x46c1a1[_0x3c2728]=_0xacbe92[_0x5b3ac5(0x1b4)]()[_0x5b3ac5(0x1bb)],_0x4bb219[_0x3c2728]=_0xacbe92[_0x5b3ac5(0x1b4)]()['userID'],_0x3c2728++;}),console[_0x4394c6(0x1bc)](_0x46c1a1[0x0]),console[_0x4394c6(0x1bc)](_0x4bb219[0x0]);});}_0x3b49f8();
+const namesArray = [];
+const idArray = [];
+let OI = [];
+
+import {
+    initializeApp
+} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+import {
+    getStorage,
+    ref,
+    uploadBytes,
+} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-storage.js";
+
+const secFirebaseConfig = {
+    apiKey: "AIzaSyBepZFDy6U3GQaJyTib-uItZOqLuW_Cv_o",
+    authDomain: "blooketleaderboardserver.firebaseapp.com",
+    databaseURL: "https://blooketleaderboardserver-default-rtdb.firebaseio.com/",
+    projectId: "blooketleaderboardserver",
+    storageBucket: "blooketleaderboardserver.appspot.com",
+    messagingSenderId: "145605729271",
+    appId: "1:145605729271:web:f02924e11bfb1472256cf2"
+};
+const app = initializeApp(secFirebaseConfig);
+const storage = getStorage(app);
+
+let storageRef;
+async function uploadImage() {
+    OI = [JSON.parse(document.getElementById("statsInput").value)];
+    console.log(OI[0]);
+    let temp = document.getElementById("displayNameInput").value;
+    let displayName = profanityCleaner.clean(temp);
+    let leaderboard = document.getElementById("lbSubmit").value;
+    const fileInput = document.getElementById("fileInput");
+    const file = fileInput.files[0];
+    const NUMBER = namesArray.indexOf(displayName);
+    if (OI[0]._id == idArray[NUMBER]) {
+        if (leaderboard == null) {
+            alert("You need to pick a category for your run!");
+        } else {
+            if (displayName == null) {
+                alert('Please enter your display name in the "Display Name" box.');
+            } else {
+                console.log("wowie!!");
+                if (file) {
+                    alert("Stay on this page until you are instructed to do so. Press ok to confirm.");
+                    storageRef = ref(storage, `${displayName}/${leaderboard}`); //I assume something to get the file and set its name
+                    await uploadBytes(storageRef, file); //Uploads File
+                    console.log("In the database!");
+                    alert("You may now leave the webpage!");
+                }
+            }
+        }
+    } else {
+        alert("It looks like no one in the database has your ID. Try using a different account for your stats or repaste your account stats!");
+    }
+}
+const submitButton = document.getElementById("videoSubmit");
+submitButton.addEventListener('click', uploadImage);
+
+function getData() {
+    firebase.database().ref("/Users").on('value', function (snapshot) {
+        let a = 0;
+        snapshot.forEach(function (childSnapshot) {
+            namesArray[a] = childSnapshot.val().name;
+            idArray[a] = childSnapshot.val().userID;
+            a++;
+        });
+        console.log(namesArray[0]);
+        console.log(idArray[0]);
+    });
+}
+getData();

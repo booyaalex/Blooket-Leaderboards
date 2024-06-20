@@ -39,7 +39,7 @@ function getData() {
   } else {
       headerDisplay = "Score";
   }
-  firebase.database().ref("/").on('value', function (snapshot) {
+  firebase.database().ref("/Users").on('value', function (snapshot) {
       document.getElementById("TABLE").innerHTML = "<tr><td><div class='statsBoxLB'><div class='statTitleLB'>Ranking</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blook</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Person</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>" + headerDisplay + "</div></div></td><td><div class='statsBoxLB'><div class='statTitleLB'>Blooket Username</div></div></td></tr>";
       let a = 0;
       snapshot.forEach(function (childSnapshot) {

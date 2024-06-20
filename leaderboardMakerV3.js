@@ -49,7 +49,7 @@ function getData() {
   }
 
   //Add scores to da leaderboard
-  db.ref("/").on('value', function (snapshot) {
+  db.ref("/Users").on('value', function (snapshot) {
     //Clear old HTML
     THEAD.innerHTML = "";
     TBODY.innerHTML = "";
