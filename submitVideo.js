@@ -50,7 +50,7 @@ async function uploadImage() {
       } else {
         console.log("wowie!!");
         if (file) {
-          if (fileType(file) == "mp4" || fileType(file) == "webm" || fileType(file) == "MOV") {
+          if (fileType(file.name) == "mp4" || fileType(file.name) == "webm" || fileType(file.name) == "MOV") {
             alert("Stay on this page until you are instructed to do so. Press ok to confirm.");
 
             storageRef = ref(storage, `${displayName}/${file.name}`); //I assume something to get the file and set its name
