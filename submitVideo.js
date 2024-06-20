@@ -57,6 +57,7 @@ async function uploadImage() {
             await uploadBytes(storageRef, file); //Uploads File
 
             const runCount = getRunCount();
+            console.log(runCount);
             firebase.database().ref("/Runs").child(`run_${runCount + 1}`).update({
               date: today,
               runType: leaderboard,
