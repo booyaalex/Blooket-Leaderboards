@@ -44,6 +44,9 @@ a:visited {
   color: white;
   font-weight: 600;
 }
+.navLink:visited {
+  color:white;
+}
 
 .navLink:hover {
   font-size: 23px;
