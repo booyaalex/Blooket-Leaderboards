@@ -360,7 +360,7 @@ h3.settingsText {
   font-size: 23px;
 }
 input[type="text"].valueInput {
-  width: 100%;
+  width: 90%;
   margin: 5px 0;
 }
 button.valueInput {
