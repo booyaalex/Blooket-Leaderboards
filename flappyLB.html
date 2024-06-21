@@ -1,142 +1,66 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
   <title> Blooket Leaderboards </title>
+
+  <link rel="stylesheet" href="../style.css">
   <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
   <link rel="icon" type="image/x-icon" href="https://ac.blooket.com/dashboard/favicon.ico">
-  <link rel='stylesheet' href='gamePages.css'>
-  <link rel='stylesheet' href='sideNav.css'>
-  <link rel='stylesheet' href='bgStyle.css'>
-  <link rel='stylesheet' href='YO_Container.css'>
-  <link rel='stylesheet' href='statBoxes.css'>
-  <link rel='stylesheet' href='navBar.css'>
-  <script src="https://kit.fontawesome.com/3fbe72ad61.js" crossorigin="anonymous"></script>
+
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <!--Side Navagation Code-->
-  <div id='sidenav'>
-    <a id="closeBtn" class='sideLink' onclick='closeUp()'> X </a>
-    <a href='gamemode' class='sideLink'> Back </a>
-    <br>
-    <br>
-    <a href='../' class='sideLink'> Home </a>
-    <br>
-    <a href='gamemode' class='sideLink'> Gamemodes </a>
-    <br>
-    
-    <a href='submissions' class='sideLink'> Submissions </a>
-    <br>
-    <a href='settings' class='sideLink'> Settings </a>
-    <br>
-    <a href='https://discord.gg/5nYGQtqyBZ' class='sideLink' style='padding-right: 10%;'> Discord </a>
-  </div>
-
-  <!--Everything Else-->
-  <div id='navBar'>
+  <div id="navBar" class="flex">
+    <a href='../../' class='navLink'> Home </a>
+    <a href='../gamemode' class='navLink'> Gamemodes </a>
+    <a href='../submissions' class='navLink'> Submissions </a>
+    <a href='../settings' class='navLink'> Settings </a>
     <a href='https://discord.gg/5nYGQtqyBZ' class='navLink'> Discord </a>
-    <a href='settings' class='navLink'> Settings </a>
-    <a href='submissions' class='navLink'> Submissions </a>
-    
-    <a href='gamemode' class='navLink'> Gamemodes </a>
-    <a href='../' class='navLink'> Home </a>
-    <a href='gamemode' class='navLink' style='float: left; padding-left: 10px'> Back </a>
+    <a href='../gamemode' class='navLink'> Back </a>
   </div>
+  <br>
   <br>
   <br>
   <div id='bgContain'>
     <div id='bg'></div>
   </div>
-  <div id='main'>
-    <h1 id='mainHeader'> Highest Flappy Blook Leaderboard </h1>
+  <div id="main" class="flex">
+    <div id="mainHeader" class="title"> Highest Flappy Blook Run </div>
     <br>
-    <div class="boardBlock">
-      <div class='lbBoard infoBoard'>
-      <div class='YO_Container'>
-        <div class='YO_Text'> Info </div>
+    <div class="row flex">
+      <div class="board flex left">
+        <div class='YO_Text title'> Info </div>
+        <p> This leaderboard lists the players who have the highest scores in the Flappy Blook minigame. </p>
       </div>
-      <h3 style='font-family: Nunito; color: white; padding-left: 10px;'> This leaderboard lists the players who have
-        the highest scores in the Flappy Blook minigame. This LB requires you to submit a video as proof of your run.
-      </h3>
+      <div class="board flex">
+        <div class='YO_Text title'> How to Submit </div>
+        <p> You can submit your score by clicking on the submssions button on the navagation bar above. </p>
+      </div>
     </div>
-    <div class='lbBoard submissionsBoard'>
-      <div class='YO_Container'>
-        <div class='YO_Text'> How to Submit </div>
+    <div id="lb_div" class="board flex center sticky top-75">
+      <div class='YO_Text title'> Ranking </div>
+      <div class="table_overflow_scroll">
+        <table id="lb_table">
+          <thead id="lb_head"></thead>
+          <tbody id="lb_body"></tbody>
+        </table>
       </div>
-      <h3 style='font-family: Nunito; color: white;'> You can submit your score by clicking on the submssions button on
-        the navagation bar above.</h3>
-    </div>
-</div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class='lbBoard mainBoard'>
-      <div class='YO_Container'>
-        <div class='YO_Text'> Rankings </div>
-      </div>
-      <br>
-      <br>
-      <table id="TABLE">
-        <tr>
-          <td>
-            <div class='statsBoxLB'>
-              <div class='statTitleLB'>
-                Ranking
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class='statsBoxLB'>
-              <div class='statTitleLB'>
-                Blook
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class='statsBoxLB'>
-              <div class='statTitleLB'>
-                Person
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class='statsBoxLB'>
-              <div class='statTitleLB'>
-                Score
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class='statsBoxLB'>
-              <div class='statTitleLB'>
-                Blooket Username
-              </div>
-            </div>
-          </td>
-        </tr>
-      </table>
     </div>
   </div>
-  <script src='settings.js'></script>
-  <script src='screenAdjust.js'></script>
+  <script src='../settings.js'></script>
 
- <script src='../searchBar.js'></script>
-
-  <script src='../leaderboardMakerV2.js'></script>
+  <script src='../leaderboardMakerV3.js'></script>
   <script>
     localStorage.setItem("leaderboard", 85);
     setTimeout(() => getData(), 100);
-    setTimeout(() => changeTheme(), 500);
   </script>
 </body>
 
