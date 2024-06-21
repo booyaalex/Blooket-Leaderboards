@@ -32,28 +32,28 @@ const submitButton = document.getElementById("video_submit");
 
 let storageRef;
 async function uploadImage() {
-  OI = [JSON.parse(accountStatsInput.value)];
-  console.log(OI[0]);
-  let temp = displayNameInput.value;
-  let displayName = profanityCleaner.clean(temp);
-  let leaderboard = leaderboardInput.value;
-  const fileInput = document.getElementById("fileInput");
-  const file = fileInput.files[0];
-  console.log(file.name);
-  const NUMBER = namesArray.indexOf(displayName);
-
-  let today = new Date();
-  let dd = String(today.getDate()).padStart(2, '0');
-  let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-  let yyyy = today.getFullYear();
-  today = `${yyyy}-${mm}-${dd}`;
-
   if (
     !ageCheckbox.checked ||
     !privacyCheckbox.checked
   ) {
     alert('Please agree to the Privacy Policy and be over the age of 13!');
   } else {
+    OI = [JSON.parse(accountStatsInput.value)];
+    console.log(OI[0]);
+    let temp = displayNameInput.value;
+    let displayName = profanityCleaner.clean(temp);
+    let leaderboard = leaderboardInput.value;
+    const fileInput = document.getElementById("fileInput");
+    const file = fileInput.files[0];
+    console.log(file.name);
+    const NUMBER = namesArray.indexOf(displayName);
+
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = today.getFullYear();
+    today = `${yyyy}-${mm}-${dd}`;
+
     if (OI[0]._id == idArray[NUMBER]) {
       if (leaderboard == null) {
         alert("You need to pick a category for your run!");
