@@ -11,7 +11,7 @@ a {
   color: antiquewhite;
 }
 a:visited {
-  color: rgb(226, 194, 194);
+  color: #f8be72;
 }
 #main {
   flex-direction: column;
