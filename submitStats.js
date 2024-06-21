@@ -7,87 +7,95 @@ const firebaseConfig = {
   messagingSenderId: '145605729271',
   appId: '1:145605729271:web:f02924e11bfb1472256cf2',
 }
-firebase.initializeApp(firebaseConfig)
-const playerMap = new Map()
-const nameMap = []
-let SCORES = []
-scoreMap = new Map()
-let playerScores
+firebase.initializeApp(firebaseConfig);
+const playerMap = new Map();
+const nameMap = [];
+let SCORES = [];
+scoreMap = new Map();
+let playerScores;
 let idList = [];
+
+const displayNameInput = document.getElementById("stats_display_name");
+const contactInfoInput = document.getElementById("stats_contact_info");
+const accountStatsInput = document.getElementById("stats_account_stats");
+const ageCheckbox = document.getElementById("stats_age");
+const privacyCheckbox = document.getElementById("stats_privacy");
+const submitButton = document.getElementById("stats_submit");
+
 function getStuff() {
   firebase
     .database()
     .ref("/Users")
     .on('value', function (snapshot) {
-      let a = 0
+      let a = 0;
       snapshot.forEach(function (childSnapshot) {
-        let displayName, userName, displayBlook, ID, scores
-        let LOG
-        childKey = childSnapshot.key
-        displayName = childSnapshot.val().name
-        userName = childSnapshot.val().username
-        displayBlook = childSnapshot.val().blook
-        ID = childSnapshot.val().userID
+        let displayName, userName, displayBlook, ID, scores;
+        let LOG;
+        childKey = childSnapshot.key;
+        displayName = childSnapshot.val().name;
+        userName = childSnapshot.val().username;
+        displayBlook = childSnapshot.val().blook;
+        ID = childSnapshot.val().userID;
         idList[a] = ID;
-        scores = childSnapshot.val().test
-        scoreMap.set(displayName, { scores: scores })
-        playerScores = scoreMap.get(displayName)
-        SCORES[a] = childSnapshot.val().test[1]
-        let temp = SCORES[a]
-        temp = temp + 0.0001 * a
-        SCORES[a] = temp
+        scores = childSnapshot.val().test;
+        scoreMap.set(displayName, { scores: scores });
+        playerScores = scoreMap.get(displayName);
+        SCORES[a] = childSnapshot.val().test[1];
+        let temp = SCORES[a];
+        temp = temp + 0.0001 * a;
+        SCORES[a] = temp;
         if (SCORES[a] == null) {
-          SCORES.splice(a, 1)
+          SCORES.splice(a, 1);
         } else {
           playerMap.set(SCORES[a], {
             name: displayName,
             user: userName,
             blook: displayBlook,
             Id: ID,
-          })
-          LOG = playerMap.get(SCORES[a])
-          nameMap[a] = LOG.name
+          });
+          LOG = playerMap.get(SCORES[a]);
+          nameMap[a] = LOG.name;
         }
-        a++
-      })
-    })
+        a++;
+      });
+    });
 }
-getStuff()
+getStuff();
 function getDemStats() {
   if (
-    !document.getElementById('age_0').checked ||
-    !document.getElementById('privacy_0').checked
+    !ageCheckbox.checked ||
+    !privacyCheckbox.checked
   ) {
-    alert('Please agree to the Privacy Policy and be over the age of 13!')
+    alert('Please agree to the Privacy Policy and be over the age of 13!');
   } else {
-    let OI = []
-    OI = [JSON.parse(document.getElementById('epic_stats').value)]
-    const temp1 = document.getElementById('display_name').value
-    const displayName = profanityCleaner.clean(temp1)
-    let temp = OI[0].blook
-    const temp2 = temp.toLowerCase()
-    const displayBlook = temp2.replace(/\s/g, '')
-    const totalWins = OI[0].wins
-    const totalAnswers = OI[0].correctAnswers
-    const fishingWeight = OI[0].totalFishWeight
-    const totalPoints = OI[0].classicPoints
-    const showdownWins = OI[0].showdownWins
-    const factoryUpgrades = OI[0].upgrades
-    const boxesOpened = OI[0].boxesOpened
-    const playersDefeated = OI[0].playersDefeated
-    const gamesPlayed = OI[0].gamesPlayed
-    const totalTokens = OI[0].totalTokens
-    const dateCreated = OI[0].dateCreated
-    const totalBlooks = OI[0].numUnlocks
-    const cafeCash = OI[0].cafeCash
-    const foodServed = OI[0].foodServed
-    const defenseDmg = OI[0].defenseDmg
-    const defenseRounds = OI[0].defenseRounds
-    const mostTowers = OI[0].towerClears
-    const contactInfo = document.getElementById('contact_info').value
-    const ID = OI[0]._id
+    let OI = [];
+    OI = [JSON.parse(accountStatsInput.value)];
+    const temp1 = displayNameInput.value;
+    const displayName = profanityCleaner.clean(temp1);
+    let temp = OI[0].blook;
+    const temp2 = temp.toLowerCase();
+    const displayBlook = temp2.replace(/\s/g, '');
+    const totalWins = OI[0].wins;
+    const totalAnswers = OI[0].correctAnswers;
+    const fishingWeight = OI[0].totalFishWeight;
+    const totalPoints = OI[0].classicPoints;
+    const showdownWins = OI[0].showdownWins;
+    const factoryUpgrades = OI[0].upgrades;
+    const boxesOpened = OI[0].boxesOpened;
+    const playersDefeated = OI[0].playersDefeated;
+    const gamesPlayed = OI[0].gamesPlayed;
+    const totalTokens = OI[0].totalTokens;
+    const dateCreated = OI[0].dateCreated;
+    const totalBlooks = OI[0].numUnlocks;
+    const cafeCash = OI[0].cafeCash;
+    const foodServed = OI[0].foodServed;
+    const defenseDmg = OI[0].defenseDmg;
+    const defenseRounds = OI[0].defenseRounds;
+    const mostTowers = OI[0].towerClears;
+    const contactInfo = contactInfoInput.value;
+    const ID = OI[0]._id;
     if (contactInfo == null) {
-      alert('Fill in the contact info bozo!')
+      alert('Fill in the contact info bozo!');
     } else {
       if (
         displayName.includes('!') ||
@@ -103,16 +111,16 @@ function getDemStats() {
       ) {
         alert(
           'You used a not allowed character(!, <, >, -, :, ;)! Change your display name!'
-        )
+        );
       } else {
         if (nameMap.includes(displayName) == true) {
-          console.log("You may be doing a hack, that's not okie-dokie!")
-          const NUMBER = nameMap.indexOf(displayName)
-          const CHECK_ID = playerMap.get(SCORES[NUMBER])
+          console.log("You may be doing a hack, that's not okie-dokie!");
+          const NUMBER = nameMap.indexOf(displayName);
+          const CHECK_ID = playerMap.get(SCORES[NUMBER]);
           if (OI[0]._id == CHECK_ID.Id) {
-            console.log('Okie everything is good')
-            playerScore = scoreMap.get(displayName)
-            console.log(playerScore.scores[25])
+            console.log('Okie everything is good');
+            playerScore = scoreMap.get(displayName);
+            console.log(playerScore.scores[25]);
             firebase
               .database()
               .ref("/Users")
@@ -335,8 +343,8 @@ function getDemStats() {
                   mostTowers,
                 ],
                 contact: contactInfo,
-              })
-            alert('Your stats have been submitted. YIPPEE!!')
+              });
+            alert('Your stats have been submitted. YIPPEE!!');
           }
         } else {
           if (nameMap.includes(displayName) == false) {
@@ -565,8 +573,8 @@ function getDemStats() {
                     mostTowers,
                   ],
                   contact: contactInfo,
-                })
-              alert('Your stats have been submitted. YIPPEE!!')
+                });
+              alert('Your stats have been submitted. YIPPEE!!');
             }
           }
         }
@@ -574,5 +582,5 @@ function getDemStats() {
     }
   }
 }
-const statsSubmit = document.getElementById('statsSubmit')
-statsSubmit.addEventListener('click', getDemStats)
+
+submitButton.addEventListener('click', getDemStats);
