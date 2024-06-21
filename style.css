@@ -7,6 +7,12 @@ body {
 ::-webkit-scrollbar {
   width: 1px;
 }
+a {
+  color: antiquewhite;
+}
+a:visited {
+  color: rgb(226, 194, 194);
+}
 #main {
   flex-direction: column;
 }
@@ -353,6 +359,9 @@ h3.settingsText {
 input[type="text"].valueInput {
   width: 100%;
   margin: 5px 0;
+}
+button.valueInput {
+  cursor: pointer;
 }
 input::file-selector-button {
   font-size: 23px;
