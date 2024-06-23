@@ -69,9 +69,16 @@ async function uploadImage() {
               storageRef = ref(storage, `${displayName}/${file.name}`); //I assume something to get the file and set its name
               await uploadBytes(storageRef, file); //Uploads File
 
-              const runCount = getRunCount();
-              console.log(runCount);
-              firebase.database().ref("/Runs").child(`run_${runCount + 1}`).update({
+              
+              firebase.database().ref("/Runs").on('value', function (snapshot) {
+                let runCount = 0;
+                snapshot.forEach(function (run) {
+                  runCount++;
+                });
+                localStorage.setItem("runCount", runCount);
+              });
+
+              firebase.database().ref("/Runs").child(`run_${Number(localStorage.getItem("runCount")) + 1}`).update({
                 date: today,
                 runType: leaderboard,
                 score: null,
@@ -112,12 +119,7 @@ function getData() {
 getData();
 
 function getRunCount() {
-  let count = 0;
-  firebase.database().ref("/Runs").on('value', function (snapshot) {
-    snapshot.forEach(function (run) {
-      count++;
-    });
-  });
+
   return count;
 }
 function fileType(filename) {
