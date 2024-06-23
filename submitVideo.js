@@ -78,7 +78,10 @@ async function uploadImage() {
                 localStorage.setItem("runCount", runCount);
               });
 
-              firebase.database().ref("/Runs").child(`run_${Number(localStorage.getItem("runCount")) + 1}`).update({
+              const number = Number(localStorage.getItem("runCount")) + 1;
+              console.log(number);
+
+              firebase.database().ref("/Runs").child(`run_${number}`).set({
                 date: today,
                 runType: leaderboard,
                 score: null,
