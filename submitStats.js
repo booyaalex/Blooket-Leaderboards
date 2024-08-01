@@ -97,22 +97,6 @@ function getDemStats() {
     if (contactInfo == null) {
       alert('Fill in the contact info bozo!');
     } else {
-      if (
-        displayName.includes('!') ||
-        displayName.includes('-') ||
-        displayName.includes('<') ||
-        displayName.includes('>') ||
-        displayName.includes(':') ||
-        displayName.includes(';') ||
-        displayName.includes('$') ||
-        displayName.includes('#') ||
-        displayName.includes('?') ||
-        displayName.includes('@')
-      ) {
-        alert(
-          'You used a not allowed character(!, <, >, -, :, ;)! Change your display name!'
-        );
-      } else {
         if (nameMap.includes(displayName) == true) {
           console.log("You may be doing a hack, that's not okie-dokie!");
           const NUMBER = nameMap.indexOf(displayName);
@@ -578,7 +562,6 @@ function getDemStats() {
             }
           }
         }
-      }
     }
   }
 }
