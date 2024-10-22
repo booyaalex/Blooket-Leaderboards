@@ -1,26 +1,26 @@
 //Nav Functions
 function home() {
-  window.location.href = "https://blooket.games/../";
+  window.location.href = "https://booyaalex.github.io/Blooket-Leaderboards/index";
 }
 
 function LB() {
-  window.location.href = "https://blooket.games/Event/pop";
+  window.location.href = "https://booyaalex.github.io/Blooket-Leaderboards/Event/pop";
 }
 
 function dance() {
-  window.location.href = "https://blooket.games/Event/pop/funni";
+  window.location.href = "https://booyaalex.github.io/Blooket-Leaderboards/Event/pop/funni";
 }
 
 function place() {
-  window.location.href = "https://blooket.games/Event/pop/place";
+  window.location.href = "https://booyaalex.github.io/Blooket-Leaderboards/Event/pop/place";
 }
 
 function workshop() {
-  window.location.href = "https://blooket.games/Event/pop/ingredients";
+  window.location.href = "https://booyaalex.github.io/Blooket-Leaderboards/Event/pop/ingredients";
 }
 
 function potions() {
-  window.location.href = "https://blooket.games/Event/pop/potions";
+  window.location.href = "https://booyaalex.github.io/Blooket-Leaderboards/Event/pop/potions";
 }
 
 
