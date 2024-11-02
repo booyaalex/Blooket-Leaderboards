@@ -1,0 +1,1 @@
+document.getElementById("main").innerHTML += `<div id="alert" onclick="window.open('https://booyaalex.github.io/transfer.html', '_blank').focus();"><h3>New Website!</h3><p>Click for more info!</p></div>`;

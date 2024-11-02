@@ -442,3 +442,24 @@ input::file-selector-button {
     font-size: 22px;
   }
 }
+
+#alert {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 15vw;
+  height: 100px;
+  background-color:crimson;
+  z-index: 10;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px;
+}
+#alert * {
+  margin: 0;
+}
+#alert h3 {
+  font-family: Titan One;
+  font-weight: 400;
+}
